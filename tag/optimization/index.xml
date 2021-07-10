@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/tag/optimization/</link>
+      <atom:link href="https://dissyskcl.github.io/tag/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Optimization</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>Optimization</title>
+      <link>https://dissyskcl.github.io/tag/optimization/</link>
+    </image>
+    
+    <item>
+      <title>Criticality and conformality in the random dimer model</title>
+      <link>https://dissyskcl.github.io/publication/caracciolo2021/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/caracciolo2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The planted $k$-factor problem</title>
+      <link>https://dissyskcl.github.io/publication/sicuro2021/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/sicuro2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

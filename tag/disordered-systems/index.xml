@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disordered Systems | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
+      <atom:link href="https://dissyskcl.github.io/tag/disordered-systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Disordered Systems</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>Disordered Systems</title>
+      <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
+    </image>
+    
+    <item>
+      <title>Disordered systems</title>
+      <link>https://dissyskcl.github.io/project/ds/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lectures | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/lectures/</link>
+      <atom:link href="https://dissyskcl.github.io/lectures/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lectures</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2019 11:30:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>Lectures</title>
+      <link>https://dissyskcl.github.io/lectures/</link>
+    </image>
+    
+    <item>
+      <title>Generalized hydrodynamics</title>
+      <link>https://dissyskcl.github.io/lectures/ben112019/</link>
+      <pubDate>Thu, 21 Nov 2019 11:30:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/ben112019/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+Hydrodynamics is a powerful theory for describing the emergent dynamics, away from equilibrium, at large scales in space and time. In recent years, the theory adapting hydrodynamics to integrability, called &#34;generalised hydrodynamics&#34; (GHD), has been developed. It turns out to be extremely general, applicable to quantum and classical chains, field theories and gases. These lectures will cover the fundamental concepts of this theory. Starting from an overview of hydrodynamics, I will describe the most important aspects of integrability, from which I will derive the basic GHD equations. I will emphasise the universality of GHD and the physical interpretation of its various ingredients, and if time allows, explain some of its applications and more advanced concepts.  Only very basic knowledge of hydrodynamics and integrability is assumed, and I will keep everything as non-technical as possible.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f7LYDyqGpW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f7LYDyqGpW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Counting equilibria in complex systems via random matrices</title>
+      <link>https://dissyskcl.github.io/lectures/yan062017/</link>
+      <pubDate>Tue, 27 Jun 2017 09:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/yan062017/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+How many equilibria will a large complex system, modeled by N randomly coupled autonomous nonlinear differential equations typically have? How many of those equilibria are stable, that is are local attractors of the nearby trajectories? These questions arise in many applications and can be partly answered by employing the methods of Random Matrix Theory.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KeKIO6Z1Mhw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NotrBgk-RbQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bwURE0o8UF8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kjpWN8ZCt8w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Zj5e0WcWPdQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zD24lV2l3kI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BCkeRDgoBSw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0J1lWkGJZvg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Bc0NY8iSvIk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Random matrices: Theory and Practice</title>
+      <link>https://dissyskcl.github.io/lectures/pier122017/</link>
+      <pubDate>Tue, 11 Apr 2017 09:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/pier122017/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+A brief course on random matrix theory given at ICTP Trieste, from the theoretical foundations to applications to complex systems.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Je4bU3g_QGk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Ods4H8gOJlY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/te6V9OvtGww&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

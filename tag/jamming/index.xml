@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jamming | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/tag/jamming/</link>
+      <atom:link href="https://dissyskcl.github.io/tag/jamming/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jamming</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 07 Apr 2021 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>Jamming</title>
+      <link>https://dissyskcl.github.io/tag/jamming/</link>
+    </image>
+    
+    <item>
+      <title>Mean field model of interacting quasi-localized excitations in glasses</title>
+      <link>https://dissyskcl.github.io/talks/zamponi042021/</link>
+      <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/talks/zamponi042021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

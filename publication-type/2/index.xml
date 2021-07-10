@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/publication-type/2/</link>
+      <atom:link href="https://dissyskcl.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://dissyskcl.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Criticality and conformality in the random dimer model</title>
+      <link>https://dissyskcl.github.io/publication/caracciolo2021/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/caracciolo2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The planted $k$-factor problem</title>
+      <link>https://dissyskcl.github.io/publication/sicuro2021/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/sicuro2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A combined model of aggregation, fragmentation, and exchange processes: insights from analytical calculations</title>
+      <link>https://dissyskcl.github.io/publication/robson-2021/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/robson-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to study a persistent active glassy system</title>
+      <link>https://dissyskcl.github.io/publication/sollich-2021/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/sollich-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling the effect of ribosome mobility on the rate of protein synthesis</title>
+      <link>https://dissyskcl.github.io/publication/dauloudet-2021/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/dauloudet-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamical instantons and activated processes in mean-field glass models</title>
+      <link>https://dissyskcl.github.io/publication/ros-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/ros-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localization and Universality of Eigenvectors in Directed Random Graphs</title>
+      <link>https://dissyskcl.github.io/publication/metz-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/metz-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opinion dynamics with emergent collective memory: The impact of a long and heterogeneous news history</title>
+      <link>https://dissyskcl.github.io/publication/boschi-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/boschi-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Out-of-equilibrium phase diagram of the quantum random energy model</title>
+      <link>https://dissyskcl.github.io/publication/biroli-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/biroli-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
+      <link>https://dissyskcl.github.io/publication/exelby-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/exelby-2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
