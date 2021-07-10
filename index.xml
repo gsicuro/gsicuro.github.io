@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/</link>
-      <atom:link href="https://dissyskcl.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>KCL Disordered Systems</description>
+    <title>Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/</link>
+      <atom:link href="https://gsicuro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gabriele Sicuro</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
-      <title>KCL Disordered Systems</title>
-      <link>https://dissyskcl.github.io/</link>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>Gabriele Sicuro</title>
+      <link>https://gsicuro.github.io/</link>
     </image>
     
     <item>
       <title>The CANES seminar series</title>
-      <link>https://dissyskcl.github.io/talks/canes/</link>
+      <link>https://gsicuro.github.io/talks/canes/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/canes/</guid>
+      <guid>https://gsicuro.github.io/talks/canes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Statistics seminar series</title>
-      <link>https://dissyskcl.github.io/talks/statistics/</link>
+      <link>https://gsicuro.github.io/talks/statistics/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/statistics/</guid>
+      <guid>https://gsicuro.github.io/talks/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantitative and Digital Law Lab</title>
-      <link>https://dissyskcl.github.io/project/ql/</link>
+      <link>https://gsicuro.github.io/project/ql/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ql/</guid>
+      <guid>https://gsicuro.github.io/project/ql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example Talk</title>
-      <link>https://dissyskcl.github.io/talk/example-talk/</link>
+      <link>https://gsicuro.github.io/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talk/example-talk/</guid>
+      <guid>https://gsicuro.github.io/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -57,201 +57,122 @@
     </item>
     
     <item>
-      <title>MSc Complex System Modelling</title>
-      <link>https://dissyskcl.github.io/education/master/</link>
-      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/master/</guid>
-      <description>&lt;p&gt;The &lt;strong&gt;MSc Complex System Modelling&lt;/strong&gt; is run by the Disordered Systems group, one of the research groups in the Department of Mathematics at KCL, in collaboration with the &lt;a href=&#34;https://www.kcl.ac.uk/research/financial-maths&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Financial Mathematics group&lt;/a&gt; and the Departments of &lt;a href=&#34;https://www.kcl.ac.uk/informatics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Informatics&lt;/a&gt; and &lt;a href=&#34;https://www.kcl.ac.uk/physics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physics&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/fS5sHGW5PEw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
- &lt;/p&gt;
-&lt;p&gt;Read &lt;a href=&#34;https://blogs.kcl.ac.uk/nms/2020/01/27/why-i-chose-complex-systems-modelling/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; the experience of a student that studied with us.&lt;/p&gt;
-&lt;p&gt;Prospective students may also find useful our brochure and student testimonial. To apply for the programme click here.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kcl.ac.uk/study/postgraduate/taught-courses/complex-systems-modelling-msc&#34; class=&#34;btn btn-primary btn-lg btn-block active&#34; role=&#34;button&#34; aria-pressed=&#34;true&#34;&gt;&lt;strong&gt;Apply&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;alert alert-danger&#34;&gt;
-  &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; Due to Covid19, students will be given the opportunity to take this programme entirely remotely in 2020/21, if they wish to do so. All the course material will be made available online and there will be regular live interactions with lecturers and tutors.
-&lt;/div&gt;
-&lt;h2 id=&#34;course-pre-requisites&#34;&gt;Course pre-requisites&lt;/h2&gt;
-&lt;p&gt;The course has as entry requirement first or upper second class in &lt;strong&gt;Mathematics&lt;/strong&gt; or &lt;strong&gt;Physics&lt;/strong&gt;. Outstanding candidates from other degrees in quantitative subjects may be considered, provided they have had sufficient exposure to mathematical and physical sciences. Please check whether your background is suitable for this programme, by answering our &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/CSM_Questionnaire-2021.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;admission questionnaire&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you have a few gaps in your background or need a refresher, we offer a non-examinable support course, &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=66816&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Foundations for CSM&lt;/a&gt;, which runs for 6 weeks in Semester I. You are encouraged to start reading the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Course_Book.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lecture notes&lt;/a&gt; prior to the start of the course.&lt;/p&gt;
-&lt;h1 id=&#34;general-information&#34;&gt;General Information&lt;/h1&gt;
-&lt;h2 id=&#34;course-structure&#34;&gt;Course Structure&lt;/h2&gt;
-&lt;p&gt;The course is &lt;strong&gt;one year&lt;/strong&gt; long if attended full-time, or two years long if attended Part-time, from September to September. It consists of &lt;strong&gt;8 modules&lt;/strong&gt; (15 credits each) plus a &lt;em&gt;Summer research project&lt;/em&gt; (60 credits, running from June to September) for a total of 180 credits.
-You can also take up to two modules from other &lt;strong&gt;University of London institutions&lt;/strong&gt;, such as UCL and QMUL, subject to the approval of the programme director. See the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/1920induction.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction slides&lt;/a&gt; and the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Modules1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction handouts&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;div class=&#34;card text-center&#34;&gt;
-  &lt;div class=&#34;card-header&#34;&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;card-body&#34;&gt;
-    &lt;p class=&#34;card-text&#34;&gt;Take a look to the detailed structure of the module on KEATS.&lt;/p&gt;
-    &lt;a href=&#34;https://keats.kcl.ac.uk/mod/book/view.php?id=3259805&amp;chapterid=276617&#34; class=&#34;btn btn-primary&#34;&gt;Go to KEATS!&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;card-footer text-muted&#34;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;expected-workload&#34;&gt;Expected workload&lt;/h2&gt;
-&lt;p&gt;The workload is at least &lt;strong&gt;10 hours per module per week&lt;/strong&gt;, typically distributed as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;3 hours lecture (some modules may have 2 hours);&lt;/li&gt;
-&lt;li&gt;1 hour tutorial;&lt;/li&gt;
-&lt;li&gt;6 hours self-study and coursework (depending on your background, some modules may require more hours).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
-&lt;p&gt;Assessments are mostly two-hour written exams in May (very few modules have January exams). They consits in essays, oral presentations and dissertations. Practicals, class tests and assessed courseworks are possible, depending on the modules selected. Resits opportunities (for modules failed in May) are normally offered in August&lt;/p&gt;
-&lt;h1 id=&#34;additional-information-and-documents&#34;&gt;Additional information and documents&lt;/h1&gt;
-&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;For an &lt;strong&gt;overview&lt;/strong&gt; of the programme see the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/1920induction.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;For detailed &lt;strong&gt;module information&lt;/strong&gt; see the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Modules1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction handouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;All the information about &lt;strong&gt;Summer projects&lt;/strong&gt; can be found on the &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=66817&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KEATS page&lt;/a&gt;. This will include the most recent version of the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/CSM_and_CANES_Dissertation_Handbook-18-19.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dissertation handbook&lt;/a&gt; and a list of projects that were &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Projects-1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;offered in previous years&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;online-handbooks-and-timetables&#34;&gt;Online handbooks and timetables&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Online handbook for the &lt;a href=&#34;https://www.kcl.ac.uk/study/postgraduate/taught-courses/complex-systems-modelling-msc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSc CSM programme&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Online handbook for the &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=68787&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathematics Department&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kcl.ac.uk/aboutkings/Academic-Calendar&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Term dates&lt;/a&gt; and &lt;a href=&#34;https://timetables.kcl.ac.uk/KCLSWS/SDB1920RDB/login.aspx?ReturnUrl=%2fkclsws%2fSDB1920RDB%2fdefault.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KCL timetable&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;documents&#34;&gt;Documents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Module Amendment Form&lt;/li&gt;
-&lt;li&gt;Mitigating circumstances form&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;career-prospects&#34;&gt;Career prospects&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;A non-exhaustive &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Career_prospect.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;list of potential employers&lt;/a&gt; in Complex Systems&lt;/li&gt;
-&lt;li&gt;Adverts of career and networking events for MSc students in Mathematics are regularly circulated by &lt;a href=&#34;mailto:pg-mathematics@kcl.ac.uk&#34;&gt;pg-mathematics@kcl.ac.uk&lt;/a&gt; through the CSM mailing list&lt;/li&gt;
-&lt;li&gt;Some of the events organised by &lt;a href=&#34;https://www.kcl.ac.uk/careers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KCL Careers&lt;/a&gt; may also be of interest&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Random Matrix Theory and Networks Workshop</title>
-      <link>https://dissyskcl.github.io/news/rmtn2021/</link>
+      <link>https://gsicuro.github.io/news/rmtn2021/</link>
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/rmtn2021/</guid>
+      <guid>https://gsicuro.github.io/news/rmtn2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Criticality and conformality in the random dimer model</title>
-      <link>https://dissyskcl.github.io/publication/caracciolo2021/</link>
+      <link>https://gsicuro.github.io/publication/caracciolo2021/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/caracciolo2021/</guid>
+      <guid>https://gsicuro.github.io/publication/caracciolo2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dissipation bounds the moments of first-passage times of dissipative currents</title>
-      <link>https://dissyskcl.github.io/talks/izaak052021/</link>
+      <link>https://gsicuro.github.io/talks/izaak052021/</link>
       <pubDate>Thu, 15 Apr 2021 15:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/izaak052021/</guid>
+      <guid>https://gsicuro.github.io/talks/izaak052021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mean field model of interacting quasi-localized excitations in glasses</title>
-      <link>https://dissyskcl.github.io/talks/zamponi042021/</link>
+      <link>https://gsicuro.github.io/talks/zamponi042021/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/zamponi042021/</guid>
+      <guid>https://gsicuro.github.io/talks/zamponi042021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The planted $k$-factor problem</title>
-      <link>https://dissyskcl.github.io/publication/sicuro2021/</link>
+      <link>https://gsicuro.github.io/publication/sicuro2021/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/sicuro2021/</guid>
+      <guid>https://gsicuro.github.io/publication/sicuro2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A combined model of aggregation, fragmentation, and exchange processes: insights from analytical calculations</title>
-      <link>https://dissyskcl.github.io/publication/robson-2021/</link>
+      <link>https://gsicuro.github.io/publication/robson-2021/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/robson-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apply to the KCL MPhil/PhD Mathematics Program</title>
-      <link>https://dissyskcl.github.io/education/mphilphd/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/mphilphd/</guid>
+      <guid>https://gsicuro.github.io/publication/robson-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gioia Boschi awarded Bronze for Disordered Systems presentation at STEM for Britain</title>
-      <link>https://dissyskcl.github.io/news/boschi2021/</link>
+      <link>https://gsicuro.github.io/news/boschi2021/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/boschi2021/</guid>
+      <guid>https://gsicuro.github.io/news/boschi2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to study a persistent active glassy system</title>
-      <link>https://dissyskcl.github.io/publication/sollich-2021/</link>
+      <link>https://gsicuro.github.io/publication/sollich-2021/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/sollich-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/sollich-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling the effect of ribosome mobility on the rate of protein synthesis</title>
-      <link>https://dissyskcl.github.io/publication/dauloudet-2021/</link>
+      <link>https://gsicuro.github.io/publication/dauloudet-2021/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/dauloudet-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/dauloudet-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamical instantons and activated processes in mean-field glass models</title>
-      <link>https://dissyskcl.github.io/publication/ros-2021/</link>
+      <link>https://gsicuro.github.io/publication/ros-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/ros-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/ros-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Localization and Universality of Eigenvectors in Directed Random Graphs</title>
-      <link>https://dissyskcl.github.io/publication/metz-2021/</link>
+      <link>https://gsicuro.github.io/publication/metz-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/metz-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/metz-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opinion dynamics with emergent collective memory: The impact of a long and heterogeneous news history</title>
-      <link>https://dissyskcl.github.io/publication/boschi-2021/</link>
+      <link>https://gsicuro.github.io/publication/boschi-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/boschi-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/boschi-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Out-of-equilibrium phase diagram of the quantum random energy model</title>
-      <link>https://dissyskcl.github.io/publication/biroli-2021/</link>
+      <link>https://gsicuro.github.io/publication/biroli-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/biroli-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/biroli-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
-      <link>https://dissyskcl.github.io/publication/exelby-2021/</link>
+      <link>https://gsicuro.github.io/publication/exelby-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/exelby-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/exelby-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://dissyskcl.github.io/post/getting-started/</link>
+      <link>https://gsicuro.github.io/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/post/getting-started/</guid>
+      <guid>https://gsicuro.github.io/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
@@ -326,9 +247,9 @@ You can also take up to two modules from other &lt;strong&gt;University of Londo
     
     <item>
       <title>On eigenvector statistics in non-normal random matrices</title>
-      <link>https://dissyskcl.github.io/talks/yan072020/</link>
+      <link>https://gsicuro.github.io/talks/yan072020/</link>
       <pubDate>Fri, 24 Jul 2020 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/yan072020/</guid>
+      <guid>https://gsicuro.github.io/talks/yan072020/</guid>
       <description>&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3OOK651z8jc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -340,9 +261,9 @@ You can also take up to two modules from other &lt;strong&gt;University of Londo
     
     <item>
       <title>Generalized hydrodynamics</title>
-      <link>https://dissyskcl.github.io/lectures/ben112019/</link>
+      <link>https://gsicuro.github.io/lectures/ben112019/</link>
       <pubDate>Thu, 21 Nov 2019 11:30:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/ben112019/</guid>
+      <guid>https://gsicuro.github.io/lectures/ben112019/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 Hydrodynamics is a powerful theory for describing the emergent dynamics, away from equilibrium, at large scales in space and time. In recent years, the theory adapting hydrodynamics to integrability, called &#34;generalised hydrodynamics&#34; (GHD), has been developed. It turns out to be extremely general, applicable to quantum and classical chains, field theories and gases. These lectures will cover the fundamental concepts of this theory. Starting from an overview of hydrodynamics, I will describe the most important aspects of integrability, from which I will derive the basic GHD equations. I will emphasise the universality of GHD and the physical interpretation of its various ingredients, and if time allows, explain some of its applications and more advanced concepts.  Only very basic knowledge of hydrodynamics and integrability is assumed, and I will keep everything as non-technical as possible.
 &lt;/div&gt;
@@ -362,25 +283,25 @@ Hydrodynamics is a powerful theory for describing the emergent dynamics, away fr
     
     <item>
       <title>Diffusion and superdiffusion from hydrodynamic projection</title>
-      <link>https://dissyskcl.github.io/talks/ben112019/</link>
+      <link>https://gsicuro.github.io/talks/ben112019/</link>
       <pubDate>Tue, 05 Nov 2019 14:30:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/ben112019/</guid>
+      <guid>https://gsicuro.github.io/talks/ben112019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hydrodynamics of quantum and classical integrable systems, correlations and fluctuations</title>
-      <link>https://dissyskcl.github.io/talks/ben052019/</link>
+      <link>https://gsicuro.github.io/talks/ben052019/</link>
       <pubDate>Mon, 13 May 2019 14:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/ben052019/</guid>
+      <guid>https://gsicuro.github.io/talks/ben052019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://dissyskcl.github.io/slides/example/</link>
+      <link>https://gsicuro.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/slides/example/</guid>
+      <guid>https://gsicuro.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -507,9 +428,9 @@ Three
     
     <item>
       <title>Counting equilibria in complex systems via random matrices</title>
-      <link>https://dissyskcl.github.io/lectures/yan062017/</link>
+      <link>https://gsicuro.github.io/lectures/yan062017/</link>
       <pubDate>Tue, 27 Jun 2017 09:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/yan062017/</guid>
+      <guid>https://gsicuro.github.io/lectures/yan062017/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 How many equilibria will a large complex system, modeled by N randomly coupled autonomous nonlinear differential equations typically have? How many of those equilibria are stable, that is are local attractors of the nearby trajectories? These questions arise in many applications and can be partly answered by employing the methods of Random Matrix Theory.
 &lt;/div&gt;
@@ -571,9 +492,9 @@ How many equilibria will a large complex system, modeled by N randomly coupled a
     
     <item>
       <title>Random matrices: Theory and Practice</title>
-      <link>https://dissyskcl.github.io/lectures/pier122017/</link>
+      <link>https://gsicuro.github.io/lectures/pier122017/</link>
       <pubDate>Tue, 11 Apr 2017 09:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/pier122017/</guid>
+      <guid>https://gsicuro.github.io/lectures/pier122017/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 A brief course on random matrix theory given at ICTP Trieste, from the theoretical foundations to applications to complex systems.
 &lt;/div&gt;
@@ -599,18 +520,18 @@ A brief course on random matrix theory given at ICTP Trieste, from the theoretic
     
     <item>
       <title>Disordered systems</title>
-      <link>https://dissyskcl.github.io/project/ds/</link>
+      <link>https://gsicuro.github.io/project/ds/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <guid>https://gsicuro.github.io/project/ds/</guid>
       <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Example Project</title>
-      <link>https://dissyskcl.github.io/project/example/</link>
+      <link>https://gsicuro.github.io/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/example/</guid>
+      <guid>https://gsicuro.github.io/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -621,53 +542,53 @@ A brief course on random matrix theory given at ICTP Trieste, from the theoretic
     
     <item>
       <title>Physical Systems</title>
-      <link>https://dissyskcl.github.io/project/ps/</link>
+      <link>https://gsicuro.github.io/project/ps/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ps/</guid>
+      <guid>https://gsicuro.github.io/project/ps/</guid>
       <description>&lt;p&gt;In the domain of physical systems, the question of how to pack spheres optimally is familiar from everyday examples such as a greengrocer&amp;rsquo;s stack of oranges. But what if the spheres have a range of sizes, as happens for example in colloidal suspensions? Controversy has surrounded this issue, with proposals that the optimal structure could be disordered. Sollich and co-workers have recently provided a definitive answer, combining mathematical theory (polydisperse phase equilibrium calculations) with specialized numerical simulation techniques. The optimal structures are ordered, i.e. crystalline solids, but depending on the density and the spread of particle sizes the system will fractionate: the particles are effectively sorted out into several solid phases, with each containing only a small range of particle sizes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Protein interaction network</title>
-      <link>https://dissyskcl.github.io/project/pin/</link>
+      <link>https://gsicuro.github.io/project/pin/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/pin/</guid>
+      <guid>https://gsicuro.github.io/project/pin/</guid>
       <description>&lt;p&gt;The definition and generation of good null models to assess the statistical relevance of observed features in protein interaction networks (PIN) is a well known problem in systems biology, where the aim is to understand how the structure of PINs relates to their biological functionality. By using statistical mechanics techniques, Annibale and Coolen recently derived explicit formulae for complex network ensembles with built-in topologies beyond the degrees, as proxies for real networks; provided exact algorithms for generating random graphs from such ensembles; and derived information-theoretic tools to quantify distances between networks. The application of these tools has enabled them and their coworkers to quantify detection biases in PIN data sets and species consistency.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Sparse Symmetric Random Matrices</title>
-      <link>https://dissyskcl.github.io/project/rmt/</link>
+      <link>https://gsicuro.github.io/project/rmt/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/rmt/</guid>
+      <guid>https://gsicuro.github.io/project/rmt/</guid>
       <description>&lt;p&gt;A collaboration between group members prof. Reimer Kuehn and Dr. Perez Castillo and international collaborators also led to a breakthrough in the spectral problem for sparse symmetric random matrices, allowing to efficiently compute spectral densities of such systems in the limit of large matrix size to any desired accuracy &amp;ndash; more than 20 years after a solution to this problem was first attempted.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Universal Glassy Low-Temperature Anomalies</title>
-      <link>https://dissyskcl.github.io/project/ga/</link>
+      <link>https://gsicuro.github.io/project/ga/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ga/</guid>
+      <guid>https://gsicuro.github.io/project/ga/</guid>
       <description>&lt;p&gt;Prof. Reimer Kühn has provided the first formulation of a microscopic model to describe the emergence of the universal glassy low-temperature anomalies, including an understanding of the origin of the mysterious so-called quantitative universality &amp;ndash; a problem that had been open since its formulation in the late 80s. He has also given the first proper formulation and analysis of the role of interactions (networks of functional dependencies) on operational and credit risk, including recently an analysis of the influence of credit derivatives on systemic risk.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Spectra of Large Random Stochastic Matrices and relaxation in complex systems</title>
-      <link>https://dissyskcl.github.io/talks/reimer052019/</link>
+      <link>https://gsicuro.github.io/talks/reimer052019/</link>
       <pubDate>Tue, 01 Apr 2014 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/reimer052019/</guid>
+      <guid>https://gsicuro.github.io/talks/reimer052019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example conference paper</title>
-      <link>https://dissyskcl.github.io/publication/example/</link>
+      <link>https://gsicuro.github.io/publication/example/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/example/</guid>
+      <guid>https://gsicuro.github.io/publication/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -684,9 +605,9 @@ A brief course on random matrix theory given at ICTP Trieste, from the theoretic
     
     <item>
       <title></title>
-      <link>https://dissyskcl.github.io/admin/config.yml</link>
+      <link>https://gsicuro.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/admin/config.yml</guid>
+      <guid>https://gsicuro.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     
