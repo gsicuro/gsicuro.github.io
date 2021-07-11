@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&#34;-Fourier transform&#34; | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/tag/fourier-transform/</link>
+      <atom:link href="https://gsicuro.github.io/tag/fourier-transform/index.xml" rel="self" type="application/rss+xml" />
+    <description>&#34;-Fourier transform&#34;</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 Gabriele Sicuro</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
+      <title>&#34;-Fourier transform&#34;</title>
+      <link>https://gsicuro.github.io/tag/fourier-transform/</link>
+    </image>
+    
+    <item>
+      <title>q-generalized representation of the d-dimensional Dirac delta and q-Fourier transform</title>
+      <link>https://gsicuro.github.io/publication/sicuro-20172583/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/sicuro-20172583/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
