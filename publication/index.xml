@@ -5,7 +5,7 @@
     <link>https://gsicuro.github.io/publication/</link>
       <atom:link href="https://gsicuro.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -13,102 +13,171 @@
     </image>
     
     <item>
-      <title>Criticality and conformality in the random dimer model</title>
-      <link>https://gsicuro.github.io/publication/caracciolo2021/</link>
-      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/caracciolo2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The planted $k$-factor problem</title>
-      <link>https://gsicuro.github.io/publication/sicuro2021/</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/sicuro2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A combined model of aggregation, fragmentation, and exchange processes: insights from analytical calculations</title>
-      <link>https://gsicuro.github.io/publication/robson-2021/</link>
+      <title>The planted k-factor problem</title>
+      <link>https://gsicuro.github.io/publication/sicuro-2021/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/robson-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/sicuro-2021/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>How to study a persistent active glassy system</title>
-      <link>https://gsicuro.github.io/publication/sollich-2021/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/sollich-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Modelling the effect of ribosome mobility on the rate of protein synthesis</title>
-      <link>https://gsicuro.github.io/publication/dauloudet-2021/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/dauloudet-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dynamical instantons and activated processes in mean-field glass models</title>
-      <link>https://gsicuro.github.io/publication/ros-2021/</link>
+      <title>Random Assignment Problems on 2d Manifolds</title>
+      <link>https://gsicuro.github.io/publication/benedetto-2020/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/ros-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/benedetto-2020/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Localization and Universality of Eigenvectors in Directed Random Graphs</title>
-      <link>https://gsicuro.github.io/publication/metz-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/metz-2021/</guid>
+      <title>Recovery thresholds in the sparse planted matching problem</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-102-022304/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-102-022304/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Opinion dynamics with emergent collective memory: The impact of a long and heterogeneous news history</title>
-      <link>https://gsicuro.github.io/publication/boschi-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/boschi-2021/</guid>
+      <title>Random-link matching problems on random regular graphs</title>
+      <link>https://gsicuro.github.io/publication/parisi-2020/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/parisi-2020/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Out-of-equilibrium phase diagram of the quantum random energy model</title>
-      <link>https://gsicuro.github.io/publication/biroli-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/biroli-2021/</guid>
+      <title>Fluctuations in the random-link matching problem</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-100-032102/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-100-032102/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
-      <link>https://gsicuro.github.io/publication/exelby-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/exelby-2021/</guid>
+      <title>Anomalous Scaling of the Optimal Cost in the One-Dimensional Random Assignment Problem</title>
+      <link>https://gsicuro.github.io/publication/caracciolo-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/caracciolo-2019/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://gsicuro.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Mean-field model for the density of states of jammed soft spheres</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-97-062157/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-97-062157/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The random fractional matching problem</title>
+      <link>https://gsicuro.github.io/publication/lucibello-2018/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/lucibello-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Euclidean matching problems in one dimension</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-96-042102/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-96-042102/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finite-size corrections in the random assignment problem</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-95-052129/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-95-052129/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A foundational approach to the Lie theory for fractional order partial differential equations</title>
+      <link>https://gsicuro.github.io/publication/leo-sicuro-tempesta/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/leo-sicuro-tempesta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>One-loop diagrams in the random Euclidean matching problem</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-95-012302/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-95-012302/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>q-generalized representation of the d-dimensional Dirac delta and q-Fourier transform</title>
+      <link>https://gsicuro.github.io/publication/sicuro-20172583/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/sicuro-20172583/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonlinear inhomogeneous Fokker-Planck equations: Entropy and free-energy time evolution</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-94-062117/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-94-062117/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Groups, information theory, and Einstein&#39;s likelihood principle</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-93-040101/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-93-040101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the connection between linear combination of entropies and linear combination of extremizing distributions</title>
+      <link>https://gsicuro.github.io/publication/sicuro-20162025/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/sicuro-20162025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quadratic Stochastic Euclidean Bipartite Matching Problem</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-lett-115-230601/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-lett-115-230601/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scaling hypothesis for the Euclidean bipartite matching problem. II. Correlation functions</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-91-062125/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-91-062125/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the robustness of the q-Gaussian family</title>
+      <link>https://gsicuro.github.io/publication/sicuro-2015316/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/sicuro-2015316/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>One-dimensional Euclidean matching problem: Exact solutions, correlation functions, and universality</title>
+      <link>https://gsicuro.github.io/publication/phys-rev-e-90-042112/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/phys-rev-e-90-042112/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A theorem on the existence of symmetries of fractional PDEs</title>
+      <link>https://gsicuro.github.io/publication/leo-2014219/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/leo-2014219/</guid>
+      <description></description>
     </item>
     
   </channel>
