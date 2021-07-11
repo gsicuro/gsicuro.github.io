@@ -2,8 +2,8 @@
   "name": "Gabriele Sicuro",
   "short_name": "Gabriele Sicuro",
   "lang": "en-us",
-  "theme_color": "rgb(251, 191, 183)",
-  "background_color": "rgb(251, 191, 183)",
+  "theme_color": "#3f51b5",
+  "background_color": "#3f51b5",
   "icons": [{
     "src": "/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
