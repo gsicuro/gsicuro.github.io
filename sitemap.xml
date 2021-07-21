@@ -83,15 +83,6 @@
     <loc>https://gsicuro.github.io/publication/phys-rev-e-94-062117/</loc>
     <lastmod>2021-07-11T11:32:59+02:00</lastmod>
   </url><url>
-    <loc>https://gsicuro.github.io/tag/disordered-systems/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gsicuro.github.io/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gsicuro.github.io/project/ass/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://gsicuro.github.io/publication/phys-rev-e-93-040101/</loc>
     <lastmod>2021-07-11T11:32:59+02:00</lastmod>
   </url><url>
@@ -140,5 +131,7 @@
     <loc>https://gsicuro.github.io/admin/</loc>
   </url><url>
     <loc>https://gsicuro.github.io/categories/</loc>
+  </url><url>
+    <loc>https://gsicuro.github.io/project/</loc>
   </url>
 </urlset>
