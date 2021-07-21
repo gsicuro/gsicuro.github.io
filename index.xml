@@ -5,12 +5,21 @@
     <link>https://gsicuro.github.io/</link>
       <atom:link href="https://gsicuro.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Gabriele Sicuro</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 Gabriele Sicuro</copyright><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 Gabriele Sicuro</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_2.png</url>
       <title>Gabriele Sicuro</title>
       <link>https://gsicuro.github.io/</link>
     </image>
+    
+    <item>
+      <title>Random matching and assignment problems</title>
+      <link>https://gsicuro.github.io/project/ass/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/project/ass/</guid>
+      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Criticality and conformality in the random dimer model</title>
@@ -33,6 +42,15 @@
       <link>https://gsicuro.github.io/lectures/dacs/</link>
       <pubDate>Fri, 01 Jan 2021 09:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/lectures/dacs/</guid>
+      <description>&lt;p&gt;TBA&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Foundations of Complex Systems Modelling</title>
+      <link>https://gsicuro.github.io/lectures/fcsm/</link>
+      <pubDate>Fri, 01 Jan 2021 09:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/fcsm/</guid>
       <description>&lt;p&gt;TBA&lt;/p&gt;
 </description>
     </item>
