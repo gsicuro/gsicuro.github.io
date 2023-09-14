@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News | KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/education/</link>
-      <atom:link href="https://dissyskcl.github.io/education/index.xml" rel="self" type="application/rss+xml" />
+    <title>News | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/education/</link>
+      <atom:link href="https://gsicuro.github.io/education/index.xml" rel="self" type="application/rss+xml" />
     <description>News</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>News</title>
-      <link>https://dissyskcl.github.io/education/</link>
+      <link>https://gsicuro.github.io/education/</link>
     </image>
     
     <item>
       <title>The Cross-Disciplinary Approaches to Non-Equilibrium Systems Centre</title>
-      <link>https://dissyskcl.github.io/education/canes/</link>
+      <link>https://gsicuro.github.io/education/canes/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/canes/</guid>
+      <guid>https://gsicuro.github.io/education/canes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MSc Complex System Modelling</title>
-      <link>https://dissyskcl.github.io/education/master/</link>
+      <link>https://gsicuro.github.io/education/master/</link>
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/master/</guid>
+      <guid>https://gsicuro.github.io/education/master/</guid>
       <description>&lt;div class=&#34;row&#34;&gt;
   &lt;div class=&#34;col-sm-5&#34;&gt;
       &lt;div class=&#34;card-body&#34;&gt;
@@ -107,9 +107,9 @@ You can also take up to two modules from other &lt;strong&gt;University of Londo
     
     <item>
       <title>Apply to the KCL MPhil/PhD Mathematics Program</title>
-      <link>https://dissyskcl.github.io/education/mphilphd/</link>
+      <link>https://gsicuro.github.io/education/mphilphd/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/mphilphd/</guid>
+      <guid>https://gsicuro.github.io/education/mphilphd/</guid>
       <description>&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/f0N1muuhIV0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;

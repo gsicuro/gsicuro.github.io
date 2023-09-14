@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Disordered Systems | KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
-      <atom:link href="https://dissyskcl.github.io/tag/disordered-systems/index.xml" rel="self" type="application/rss+xml" />
+    <title>Disordered Systems | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/tag/disordered-systems/</link>
+      <atom:link href="https://gsicuro.github.io/tag/disordered-systems/index.xml" rel="self" type="application/rss+xml" />
     <description>Disordered Systems</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>Disordered Systems</title>
-      <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
+      <link>https://gsicuro.github.io/tag/disordered-systems/</link>
     </image>
     
     <item>
       <title>Spin Glass Theory &amp; Far Beyond</title>
-      <link>https://dissyskcl.github.io/news/rsb40/</link>
+      <link>https://gsicuro.github.io/news/rsb40/</link>
       <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/rsb40/</guid>
+      <guid>https://gsicuro.github.io/news/rsb40/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;img src=&#34;featured.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
 &lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;
@@ -171,26 +171,10 @@ The Arcsine Law as a Universal Aging Scheme for Activated Dynamics of Random Ene
     </item>
     
     <item>
-      <title>Welcoming the 2021 Nobel Prize for Physics to Giorgio Parisi</title>
-      <link>https://dissyskcl.github.io/news/parisi2021/</link>
-      <pubDate>Tue, 05 Oct 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/parisi2021/</guid>
-      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;img src=&#34;featured0.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
-&lt;p&gt;Giorgio Parisi made several groundbreaking contributions to the Physics of Complex Systems. These are systems consisting of many interacting particles, and frequently, in the real world, this interaction is essentially random. He has provided deep insights, both physical and mathematical, into several paradigmatic models which serve as benchmarks in the field. These models, sometimes developed to understand very concrete physical systems, help to elucidate generic (or as physicists frequently call them, &amp;lsquo;&amp;lsquo;universal&amp;rsquo;&amp;rsquo;) properties, common to a very broad class of phenomena which look remote from the original model.&lt;/p&gt;
-&lt;img src=&#34;featured1.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
-&lt;p&gt;One of the models, now known as the Kardar-Parisi-Zhang (KPZ) model, addressed patterns which arise when some material is randomly deposited onto a surface (imagine snowfall on the floor), and in this way the height of the surface grows. It is intuitively clear that the resulting surface becomes rough over time, but to characterize the surface roughness in a precise quantitative way via a tractable mathematical formalism is a very challenging problem. The KPZ model, proposed in 1985, allows such a characterization, possesses beautiful mathematical properties which have been fully understood and utilized only in the last decade, and remains a very active field of research both in Physics and Mathematics.&lt;/p&gt;
-&lt;p&gt;Another beautiful discovery by Parisi (this time without collaborators) stemmed from solving the paradigmatic model of random magnetic materials. To begin with, one may think of standard magnetic substances like iron or steel as a collection of a huge number of elementary &amp;lsquo;&amp;lsquo;atomic magnets&amp;rsquo;&amp;rsquo;, known as &amp;lsquo;&amp;lsquo;spins&amp;rsquo;&amp;rsquo;. These can be usefully visualized as tiny arrows, and each taken alone may point in any direction. In standard magnets neighbouring atoms have a tendency to alligning their arrows along the same direction (one may say they &amp;lsquo;&amp;rsquo;like to look in the same direction&amp;rsquo;&amp;rsquo;), and as the result of such interaction all arrows in the substance will eventually look in the same direction. Such pattern of arrows is obviously highly ordered - one can think of it as a &amp;lsquo;&amp;lsquo;magnetic crystal&amp;rsquo;&amp;rsquo;. However, there exist substances where some pairs of atoms may have a tendency for their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; to look in the same direction, whereas other pairs of atoms may prefer to have their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; looking in exactly opposite directions. If the number of &amp;lsquo;&amp;lsquo;alligning&amp;rsquo;&amp;rsquo; and &amp;lsquo;&amp;lsquo;anti-alligning&amp;rsquo;&amp;rsquo; pairs are roughly the same the whole pattern of arrows will look at first glance highly irregular, seemingly without order. Such substances are called &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo; (akin to atoms in usual glasses being not ordered, but randomly positioned in space). A surprising and completely unexpected discovery by Parisi in 1979 was that actually such substances do have an unusual, well hidden order in the pattern of their &amp;lsquo;&amp;lsquo;spin arrows&amp;rsquo;&amp;rsquo;. But this order can not be seen by the naked eye, and can be revealed only by exploiting equally unusual mathematical machinery. To give a flavour of the striking features behind the &amp;lsquo;&amp;lsquo;Parisi solution&amp;rsquo;&amp;rsquo; one may mention that it required to consider geometry in &amp;lsquo;&amp;lsquo;zero spatial dimension&amp;rsquo;&amp;rsquo;! Recall that we live in three-dimensional world; structures in the plane are called two-dimensional, and on a single line one-dimensional. One might think of zero-dimensional object as a single point, and this naively has no structure. Parisi ingeniously suggested that in a certain sense such objects may have a rich hierarchic structure - which in the end helps to describe hidden order in &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo;. And this is not at all an academic oddity - by now &amp;lsquo;&amp;lsquo;zero dimensional&amp;rsquo;&amp;rsquo; hierarchic patterns discovered by Giorgio Parisi turned out to be relevant in many fields in Physics - ranging from Quantum Gravity to Machine Learning, and eventually in pure mathematical works aiming to understand patterns behind the main building blocks of Arithmetics - the prime numbers.&lt;/p&gt;
-&lt;p&gt;Parisi&amp;rsquo;s contributions are among the most important to the theory of complex systems, not only in physics but also in other areas such as mathematics, biology, neuroscience, to mention a few. His work gives an example of the power of interdisciplinary research to tackle, understand and solve challenging problems. An example to follow. Thanks Giorgio!&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Disordered systems</title>
-      <link>https://dissyskcl.github.io/project/ds/</link>
+      <link>https://gsicuro.github.io/project/ds/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <guid>https://gsicuro.github.io/project/ds/</guid>
       <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
 </description>
     </item>

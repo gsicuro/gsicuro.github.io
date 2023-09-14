@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent Talks | KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/talks/</link>
-      <atom:link href="https://dissyskcl.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <title>Recent Talks | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/talks/</link>
+      <atom:link href="https://gsicuro.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent Talks</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 07 Apr 2021 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>Recent Talks</title>
-      <link>https://dissyskcl.github.io/talks/</link>
+      <link>https://gsicuro.github.io/talks/</link>
     </image>
     
     <item>
       <title>The Group Research</title>
-      <link>https://dissyskcl.github.io/talks/dstalks/</link>
+      <link>https://gsicuro.github.io/talks/dstalks/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/dstalks/</guid>
-      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+      <guid>https://gsicuro.github.io/talks/dstalks/</guid>
+      <description>&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nwaQxr3ymwQ&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 September 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;In every finite-range quantum spinchain linearised Euler hydrodynamic equations hold&lt;/em&gt;. Talk given at the &lt;a href=&#34;http://www.crm.umontreal.ca/2022/Conformal22/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Théorie des champs conforme et systèmes quantiques à plusieurs corps&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=vJdmK0Vqvpo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;31 August 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement Rényi entropies from Ballistic Fluctuations Theory: the free fermionic case&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.kitp.ucsb.edu/activities/integrable-c22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Talking Integrability: Spins, Fields, and Strings conference at KITP&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;A few results and conjectures on some product-ratio correlation functions of characteristic polynomials of β-Hermite ensembles&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/events/50yntrmt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;50 Years of Number Theory and Random Matrix Theory&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
@@ -36,18 +36,18 @@
     
     <item>
       <title>The King&#39;s Mathematical Colloquia</title>
-      <link>https://dissyskcl.github.io/talks/colloquia/</link>
+      <link>https://gsicuro.github.io/talks/colloquia/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/colloquia/</guid>
+      <guid>https://gsicuro.github.io/talks/colloquia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Disordered Systems Group Journal Club</title>
-      <link>https://dissyskcl.github.io/talks/dsjournalclub/</link>
+      <link>https://gsicuro.github.io/talks/dsjournalclub/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/dsjournalclub/</guid>
-      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+      <guid>https://gsicuro.github.io/talks/dsjournalclub/</guid>
+      <description>&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;10 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Friedrich Huebner&lt;/strong&gt; (KCL), &lt;em&gt;Existence/uniqueness of solutions and absence of shock formation in the generalized hydrodynamics equation of the Lieb-Liniger model&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt; (KCL), &lt;em&gt;Resonances in wave reflection from a disordered medium: nonlinear Sigma-model approach&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;26 April 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Rosalba Garcia-Millan&lt;/strong&gt; (Cambridge), &lt;em&gt;Active matter, non-reciprocal interactions and entropy production&lt;/em&gt;.&lt;/p&gt;
@@ -112,9 +112,9 @@
     
     <item>
       <title>The Statistics seminar series</title>
-      <link>https://dissyskcl.github.io/talks/statistics/</link>
+      <link>https://gsicuro.github.io/talks/statistics/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/statistics/</guid>
+      <guid>https://gsicuro.github.io/talks/statistics/</guid>
       <description></description>
     </item>
     

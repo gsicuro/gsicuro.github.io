@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conferences | KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/tag/conferences/</link>
-      <atom:link href="https://dissyskcl.github.io/tag/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <title>Conferences | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/tag/conferences/</link>
+      <atom:link href="https://gsicuro.github.io/tag/conferences/index.xml" rel="self" type="application/rss+xml" />
     <description>Conferences</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>Conferences</title>
-      <link>https://dissyskcl.github.io/tag/conferences/</link>
+      <link>https://gsicuro.github.io/tag/conferences/</link>
     </image>
     
     <item>
       <title>Disordered Systems Days at King&#39;s College London</title>
-      <link>https://dissyskcl.github.io/news/kuhn2023/</link>
+      <link>https://gsicuro.github.io/news/kuhn2023/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/kuhn2023/</guid>
+      <guid>https://gsicuro.github.io/news/kuhn2023/</guid>
       <description>&lt;img src=&#34;headr.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
 &lt;p&gt;The Disordered Systems group organised a &lt;a href=&#34;https://disorderdayskcl.weebly.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;two-day event&lt;/a&gt; on the physics of disorder in both the classical and quantum setting, hosting a selection of international leading experts in the field. The first day of the event has been dedicated to our dear colleague &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, who retired in 2023. The Workshop has been an opportunity to thank Reimer for his invaluable contributions to the field and to the life of our research group.&lt;/p&gt;
 &lt;p&gt;You can find the program of the event, with some material, below.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;monday-september-11th-2023&#34;&gt;Monday September 11th, 2023&lt;/h2&gt;
-&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Peter Sollich&lt;/strong&gt;&lt;/span&gt;.  (University of Göttingen)&lt;br&gt;
 &lt;a href=&#34;./SOLLICH.pdf&#34;&gt;Glassy random walks: large deviations and aging.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Eytan Katzav&lt;/strong&gt;&lt;/span&gt;.  (University of Jerusalem)&lt;br&gt;
@@ -34,7 +34,7 @@
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Pierfrancesco Urbani&lt;/strong&gt;&lt;/span&gt;.  (Université Paris-Saclay, CNRS, CEA, IPhT)&lt;br&gt;
 The KHGPS model and the spin glass transition in a field.&lt;/p&gt;
 &lt;h2 id=&#34;tuesday-september-12th-2023&#34;&gt;Tuesday September 12th, 2023&lt;/h2&gt;
-&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Luca Leuzzi&lt;/strong&gt;&lt;/span&gt;.  (Institute of Nanotechnology — CNR-NANOTEC)&lt;br&gt;
 &lt;a href=&#34;./leuzzi.pdf&#34;&gt;Random lasers as complex disordered systems: a spin-glass-like theory for amplified mode-locking waves in random media.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;François Huveneers&lt;/strong&gt;&lt;/span&gt;.  (King&amp;rsquo;s College London)&lt;br&gt;
@@ -50,33 +50,25 @@ The KHGPS model and the spin glass transition in a field.&lt;/p&gt;
     
     <item>
       <title>The Facets of Statistical Field Theory</title>
-      <link>https://dissyskcl.github.io/news/caracciolo2022/</link>
+      <link>https://gsicuro.github.io/news/caracciolo2022/</link>
       <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/caracciolo2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Random Matrices and Random Landscapes</title>
-      <link>https://dissyskcl.github.io/news/fyodorov2022/</link>
-      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/fyodorov2022/</guid>
+      <guid>https://gsicuro.github.io/news/caracciolo2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MECO47</title>
-      <link>https://dissyskcl.github.io/news/meco47/</link>
+      <link>https://gsicuro.github.io/news/meco47/</link>
       <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/meco47/</guid>
+      <guid>https://gsicuro.github.io/news/meco47/</guid>
       <description></description>
     </item>
     
     <item>
       <title>73rd British Mathematical Colloquium</title>
-      <link>https://dissyskcl.github.io/news/bmc2022/</link>
+      <link>https://gsicuro.github.io/news/bmc2022/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/bmc2022/</guid>
+      <guid>https://gsicuro.github.io/news/bmc2022/</guid>
       <description></description>
     </item>
     

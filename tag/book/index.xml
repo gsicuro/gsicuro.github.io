@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Book | KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/tag/book/</link>
-      <atom:link href="https://dissyskcl.github.io/tag/book/index.xml" rel="self" type="application/rss+xml" />
+    <title>Book | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/tag/book/</link>
+      <atom:link href="https://gsicuro.github.io/tag/book/index.xml" rel="self" type="application/rss+xml" />
     <description>Book</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>Book</title>
-      <link>https://dissyskcl.github.io/tag/book/</link>
+      <link>https://gsicuro.github.io/tag/book/</link>
     </image>
     
     <item>
       <title>Spin Glass Theory &amp; Far Beyond</title>
-      <link>https://dissyskcl.github.io/news/rsb40/</link>
+      <link>https://gsicuro.github.io/news/rsb40/</link>
       <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/rsb40/</guid>
+      <guid>https://gsicuro.github.io/news/rsb40/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;img src=&#34;featured.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
 &lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;

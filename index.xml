@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KCL Disordered Systems</title>
-    <link>https://dissyskcl.github.io/</link>
-      <atom:link href="https://dissyskcl.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>KCL Disordered Systems</description>
+    <title>Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/</link>
+      <atom:link href="https://gsicuro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gabriele Sicuro</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
-      <title>KCL Disordered Systems</title>
-      <link>https://dissyskcl.github.io/</link>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>Gabriele Sicuro</title>
+      <link>https://gsicuro.github.io/</link>
     </image>
     
     <item>
       <title>The Cross-Disciplinary Approaches to Non-Equilibrium Systems Centre</title>
-      <link>https://dissyskcl.github.io/education/canes/</link>
+      <link>https://gsicuro.github.io/education/canes/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/canes/</guid>
+      <guid>https://gsicuro.github.io/education/canes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Group Research</title>
-      <link>https://dissyskcl.github.io/talks/dstalks/</link>
+      <link>https://gsicuro.github.io/talks/dstalks/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/dstalks/</guid>
-      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+      <guid>https://gsicuro.github.io/talks/dstalks/</guid>
+      <description>&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nwaQxr3ymwQ&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 September 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;In every finite-range quantum spinchain linearised Euler hydrodynamic equations hold&lt;/em&gt;. Talk given at the &lt;a href=&#34;http://www.crm.umontreal.ca/2022/Conformal22/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Théorie des champs conforme et systèmes quantiques à plusieurs corps&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=vJdmK0Vqvpo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;31 August 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement Rényi entropies from Ballistic Fluctuations Theory: the free fermionic case&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.kitp.ucsb.edu/activities/integrable-c22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Talking Integrability: Spins, Fields, and Strings conference at KITP&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;A few results and conjectures on some product-ratio correlation functions of characteristic polynomials of β-Hermite ensembles&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/events/50yntrmt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;50 Years of Number Theory and Random Matrix Theory&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
@@ -44,18 +44,18 @@
     
     <item>
       <title>The King&#39;s Mathematical Colloquia</title>
-      <link>https://dissyskcl.github.io/talks/colloquia/</link>
+      <link>https://gsicuro.github.io/talks/colloquia/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/colloquia/</guid>
+      <guid>https://gsicuro.github.io/talks/colloquia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Disordered Systems Group Journal Club</title>
-      <link>https://dissyskcl.github.io/talks/dsjournalclub/</link>
+      <link>https://gsicuro.github.io/talks/dsjournalclub/</link>
       <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/dsjournalclub/</guid>
-      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+      <guid>https://gsicuro.github.io/talks/dsjournalclub/</guid>
+      <description>&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;10 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Friedrich Huebner&lt;/strong&gt; (KCL), &lt;em&gt;Existence/uniqueness of solutions and absence of shock formation in the generalized hydrodynamics equation of the Lieb-Liniger model&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt; (KCL), &lt;em&gt;Resonances in wave reflection from a disordered medium: nonlinear Sigma-model approach&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;26 April 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Rosalba Garcia-Millan&lt;/strong&gt; (Cambridge), &lt;em&gt;Active matter, non-reciprocal interactions and entropy production&lt;/em&gt;.&lt;/p&gt;
@@ -120,31 +120,60 @@
     
     <item>
       <title>The Statistics seminar series</title>
-      <link>https://dissyskcl.github.io/talks/statistics/</link>
+      <link>https://gsicuro.github.io/talks/statistics/</link>
       <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/talks/statistics/</guid>
+      <guid>https://gsicuro.github.io/talks/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantitative and Digital Law Lab</title>
-      <link>https://dissyskcl.github.io/project/ql/</link>
+      <link>https://gsicuro.github.io/project/ql/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ql/</guid>
+      <guid>https://gsicuro.github.io/project/ql/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Publications</title>
+      <link>https://gsicuro.github.io/publications/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publications/</guid>
+      <description>&lt;iframe type=&#34;text/html&#34; sandbox=&#34;allow-scripts allow-same-origin allow-popups&#34; width=&#34;336&#34; height=&#34;550&#34; frameborder=&#34;0&#34; allowfullscreen style=&#34;max-width:50%&#34; src=&#34;https://read.amazon.com/kp/card?asin=B01M4NFA51&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_NT1Y2ZQ2WYTV618DW936&#34; &gt;&lt;/iframe&gt;
+&lt;iframe type=&#34;text/html&#34; sandbox=&#34;allow-scripts allow-same-origin allow-popups&#34; width=&#34;336&#34; height=&#34;550&#34; frameborder=&#34;0&#34; allowfullscreen style=&#34;max-width:50%&#34; src=&#34;https://read.amazon.com/kp/card?asin=B0CFLFFSNH&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_2M07EK3QZZGHYBF6J6DK&#34; &gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+var arxiv_authorid = &#34;0000-0002-9258-2436&#34;;
+var arxiv_format=&#34;arxiv&#34;;
+var arxiv_includeSubjects=0;
+var arxiv_max_entries=0;
+&lt;/script&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+div.arxivfeed {margin-bottom: 5px; width:90%;}
+&lt;/style&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://arxiv.org/js/myarticles.js&#34;&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&#34;arxivfeed&#34;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Disordered Systems Days at King&#39;s College London</title>
-      <link>https://dissyskcl.github.io/news/kuhn2023/</link>
+      <link>https://gsicuro.github.io/news/kuhn2023/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/kuhn2023/</guid>
+      <guid>https://gsicuro.github.io/news/kuhn2023/</guid>
       <description>&lt;img src=&#34;headr.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
 &lt;p&gt;The Disordered Systems group organised a &lt;a href=&#34;https://disorderdayskcl.weebly.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;two-day event&lt;/a&gt; on the physics of disorder in both the classical and quantum setting, hosting a selection of international leading experts in the field. The first day of the event has been dedicated to our dear colleague &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, who retired in 2023. The Workshop has been an opportunity to thank Reimer for his invaluable contributions to the field and to the life of our research group.&lt;/p&gt;
 &lt;p&gt;You can find the program of the event, with some material, below.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;monday-september-11th-2023&#34;&gt;Monday September 11th, 2023&lt;/h2&gt;
-&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Peter Sollich&lt;/strong&gt;&lt;/span&gt;.  (University of Göttingen)&lt;br&gt;
 &lt;a href=&#34;./SOLLICH.pdf&#34;&gt;Glassy random walks: large deviations and aging.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Eytan Katzav&lt;/strong&gt;&lt;/span&gt;.  (University of Jerusalem)&lt;br&gt;
@@ -156,7 +185,7 @@
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Pierfrancesco Urbani&lt;/strong&gt;&lt;/span&gt;.  (Université Paris-Saclay, CNRS, CEA, IPhT)&lt;br&gt;
 The KHGPS model and the spin glass transition in a field.&lt;/p&gt;
 &lt;h2 id=&#34;tuesday-september-12th-2023&#34;&gt;Tuesday September 12th, 2023&lt;/h2&gt;
-&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Luca Leuzzi&lt;/strong&gt;&lt;/span&gt;.  (Institute of Nanotechnology — CNR-NANOTEC)&lt;br&gt;
 &lt;a href=&#34;./leuzzi.pdf&#34;&gt;Random lasers as complex disordered systems: a spin-glass-like theory for amplified mode-locking waves in random media.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;François Huveneers&lt;/strong&gt;&lt;/span&gt;.  (King&amp;rsquo;s College London)&lt;br&gt;
@@ -172,9 +201,9 @@ The KHGPS model and the spin glass transition in a field.&lt;/p&gt;
     
     <item>
       <title>Spin Glass Theory &amp; Far Beyond</title>
-      <link>https://dissyskcl.github.io/news/rsb40/</link>
+      <link>https://gsicuro.github.io/news/rsb40/</link>
       <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/rsb40/</guid>
+      <guid>https://gsicuro.github.io/news/rsb40/</guid>
       <description>&lt;div style=&#34;text-align: justify&#34;&gt;
 &lt;img src=&#34;featured.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
 &lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;
@@ -330,17 +359,17 @@ The Arcsine Law as a Universal Aging Scheme for Activated Dynamics of Random Ene
     
     <item>
       <title>The Facets of Statistical Field Theory</title>
-      <link>https://dissyskcl.github.io/news/caracciolo2022/</link>
+      <link>https://gsicuro.github.io/news/caracciolo2022/</link>
       <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/caracciolo2022/</guid>
+      <guid>https://gsicuro.github.io/news/caracciolo2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conformal field theory and quantum many-body physics</title>
-      <link>https://dissyskcl.github.io/lectures/ben092022/</link>
+      <link>https://gsicuro.github.io/lectures/ben092022/</link>
       <pubDate>Tue, 06 Sep 2022 11:30:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/ben092022/</guid>
+      <guid>https://gsicuro.github.io/lectures/ben092022/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 Finding general principles that go beyond the well developed thermodynamic theory of equilibrium is one of the most important challenges of current research. As thermodynamics is a theory for extensive quantities such as the energy, and its fluctuations in space, one looks for a parallel theory that asks about quantities that are spatially transported, say from left to right, over time: currents and their fluctuations. In this series of lectures, I will develop a number of topics to answer some of these questions. I will restrict to the context of two-dimensional spacetime for simplicity, going over the basic ideas and exact results in conformal field theory (CFT) and integrable systems. Topics covered will be: (1) Nonequilibrium steady states in many-body quantum systems that admit ballistic transport. (2) Fluctuations of transported quantities at large times using the largedeviation framework. (3) The relation between static and dynamic fluctuations, and the entanglement entropy and its growth after quenches. As time permits, I will overview hydrodynamic techniques, twist fields techniques, and, in CFT, conformal welding techniques for large-deviation functions.
 &lt;/div&gt;
@@ -371,34 +400,26 @@ Finding general principles that go beyond the well developed thermodynamic theor
     </item>
     
     <item>
-      <title>Random Matrices and Random Landscapes</title>
-      <link>https://dissyskcl.github.io/news/fyodorov2022/</link>
-      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/fyodorov2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MECO47</title>
-      <link>https://dissyskcl.github.io/news/meco47/</link>
+      <link>https://gsicuro.github.io/news/meco47/</link>
       <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/meco47/</guid>
+      <guid>https://gsicuro.github.io/news/meco47/</guid>
       <description></description>
     </item>
     
     <item>
       <title>73rd British Mathematical Colloquium</title>
-      <link>https://dissyskcl.github.io/news/bmc2022/</link>
+      <link>https://gsicuro.github.io/news/bmc2022/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/bmc2022/</guid>
+      <guid>https://gsicuro.github.io/news/bmc2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Least-square optimization on the sphere: lessons from RMT and replicas</title>
-      <link>https://dissyskcl.github.io/lectures/pier052022/</link>
+      <link>https://gsicuro.github.io/lectures/pier052022/</link>
       <pubDate>Tue, 17 May 2022 09:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/pier052022/</guid>
+      <guid>https://gsicuro.github.io/lectures/pier052022/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 A brief course on applications of random matrix theory given at ICTP Trieste, within the &lt;a href=&#34;https://indico.ictp.it/event/9797/&#34;&gt;Random Matrices, Random Graphs and Statistical Physics for Machine Learning and Inference&lt;/a&gt; school ad ICTP.
 &lt;/div&gt;
@@ -435,34 +456,18 @@ A brief course on applications of random matrix theory given at ICTP Trieste, wi
     </item>
     
     <item>
-      <title>Welcoming the 2021 Nobel Prize for Physics to Giorgio Parisi</title>
-      <link>https://dissyskcl.github.io/news/parisi2021/</link>
-      <pubDate>Tue, 05 Oct 2021 10:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/parisi2021/</guid>
-      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
-&lt;img src=&#34;featured0.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
-&lt;p&gt;Giorgio Parisi made several groundbreaking contributions to the Physics of Complex Systems. These are systems consisting of many interacting particles, and frequently, in the real world, this interaction is essentially random. He has provided deep insights, both physical and mathematical, into several paradigmatic models which serve as benchmarks in the field. These models, sometimes developed to understand very concrete physical systems, help to elucidate generic (or as physicists frequently call them, &amp;lsquo;&amp;lsquo;universal&amp;rsquo;&amp;rsquo;) properties, common to a very broad class of phenomena which look remote from the original model.&lt;/p&gt;
-&lt;img src=&#34;featured1.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
-&lt;p&gt;One of the models, now known as the Kardar-Parisi-Zhang (KPZ) model, addressed patterns which arise when some material is randomly deposited onto a surface (imagine snowfall on the floor), and in this way the height of the surface grows. It is intuitively clear that the resulting surface becomes rough over time, but to characterize the surface roughness in a precise quantitative way via a tractable mathematical formalism is a very challenging problem. The KPZ model, proposed in 1985, allows such a characterization, possesses beautiful mathematical properties which have been fully understood and utilized only in the last decade, and remains a very active field of research both in Physics and Mathematics.&lt;/p&gt;
-&lt;p&gt;Another beautiful discovery by Parisi (this time without collaborators) stemmed from solving the paradigmatic model of random magnetic materials. To begin with, one may think of standard magnetic substances like iron or steel as a collection of a huge number of elementary &amp;lsquo;&amp;lsquo;atomic magnets&amp;rsquo;&amp;rsquo;, known as &amp;lsquo;&amp;lsquo;spins&amp;rsquo;&amp;rsquo;. These can be usefully visualized as tiny arrows, and each taken alone may point in any direction. In standard magnets neighbouring atoms have a tendency to alligning their arrows along the same direction (one may say they &amp;lsquo;&amp;rsquo;like to look in the same direction&amp;rsquo;&amp;rsquo;), and as the result of such interaction all arrows in the substance will eventually look in the same direction. Such pattern of arrows is obviously highly ordered - one can think of it as a &amp;lsquo;&amp;lsquo;magnetic crystal&amp;rsquo;&amp;rsquo;. However, there exist substances where some pairs of atoms may have a tendency for their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; to look in the same direction, whereas other pairs of atoms may prefer to have their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; looking in exactly opposite directions. If the number of &amp;lsquo;&amp;lsquo;alligning&amp;rsquo;&amp;rsquo; and &amp;lsquo;&amp;lsquo;anti-alligning&amp;rsquo;&amp;rsquo; pairs are roughly the same the whole pattern of arrows will look at first glance highly irregular, seemingly without order. Such substances are called &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo; (akin to atoms in usual glasses being not ordered, but randomly positioned in space). A surprising and completely unexpected discovery by Parisi in 1979 was that actually such substances do have an unusual, well hidden order in the pattern of their &amp;lsquo;&amp;lsquo;spin arrows&amp;rsquo;&amp;rsquo;. But this order can not be seen by the naked eye, and can be revealed only by exploiting equally unusual mathematical machinery. To give a flavour of the striking features behind the &amp;lsquo;&amp;lsquo;Parisi solution&amp;rsquo;&amp;rsquo; one may mention that it required to consider geometry in &amp;lsquo;&amp;lsquo;zero spatial dimension&amp;rsquo;&amp;rsquo;! Recall that we live in three-dimensional world; structures in the plane are called two-dimensional, and on a single line one-dimensional. One might think of zero-dimensional object as a single point, and this naively has no structure. Parisi ingeniously suggested that in a certain sense such objects may have a rich hierarchic structure - which in the end helps to describe hidden order in &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo;. And this is not at all an academic oddity - by now &amp;lsquo;&amp;lsquo;zero dimensional&amp;rsquo;&amp;rsquo; hierarchic patterns discovered by Giorgio Parisi turned out to be relevant in many fields in Physics - ranging from Quantum Gravity to Machine Learning, and eventually in pure mathematical works aiming to understand patterns behind the main building blocks of Arithmetics - the prime numbers.&lt;/p&gt;
-&lt;p&gt;Parisi&amp;rsquo;s contributions are among the most important to the theory of complex systems, not only in physics but also in other areas such as mathematics, biology, neuroscience, to mention a few. His work gives an example of the power of interdisciplinary research to tackle, understand and solve challenging problems. An example to follow. Thanks Giorgio!&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Alumni</title>
-      <link>https://dissyskcl.github.io/alumni/</link>
+      <link>https://gsicuro.github.io/alumni/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/alumni/</guid>
+      <guid>https://gsicuro.github.io/alumni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MSc Complex System Modelling</title>
-      <link>https://dissyskcl.github.io/education/master/</link>
+      <link>https://gsicuro.github.io/education/master/</link>
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/master/</guid>
+      <guid>https://gsicuro.github.io/education/master/</guid>
       <description>&lt;div class=&#34;row&#34;&gt;
   &lt;div class=&#34;col-sm-5&#34;&gt;
       &lt;div class=&#34;card-body&#34;&gt;
@@ -544,42 +549,34 @@ You can also take up to two modules from other &lt;strong&gt;University of Londo
     </item>
     
     <item>
-      <title>Random Matrix Theory and Networks Workshop</title>
-      <link>https://dissyskcl.github.io/news/rmtn2021/</link>
-      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/news/rmtn2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Criticality and conformality in the random dimer model</title>
-      <link>https://dissyskcl.github.io/publication/caracciolo2021/</link>
+      <link>https://gsicuro.github.io/publication/caracciolo2021/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/caracciolo2021/</guid>
+      <guid>https://gsicuro.github.io/publication/caracciolo2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The planted $k$-factor problem</title>
-      <link>https://dissyskcl.github.io/publication/sicuro2021/</link>
+      <link>https://gsicuro.github.io/publication/sicuro2021/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/sicuro2021/</guid>
+      <guid>https://gsicuro.github.io/publication/sicuro2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A combined model of aggregation, fragmentation, and exchange processes: insights from analytical calculations</title>
-      <link>https://dissyskcl.github.io/publication/robson-2021/</link>
+      <link>https://gsicuro.github.io/publication/robson-2021/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/robson-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/robson-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apply to the KCL MPhil/PhD Mathematics Program</title>
-      <link>https://dissyskcl.github.io/education/mphilphd/</link>
+      <link>https://gsicuro.github.io/education/mphilphd/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/education/mphilphd/</guid>
+      <guid>https://gsicuro.github.io/education/mphilphd/</guid>
       <description>&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/f0N1muuhIV0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -642,65 +639,65 @@ You can also take up to two modules from other &lt;strong&gt;University of Londo
     
     <item>
       <title>How to study a persistent active glassy system</title>
-      <link>https://dissyskcl.github.io/publication/sollich-2021/</link>
+      <link>https://gsicuro.github.io/publication/sollich-2021/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/sollich-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/sollich-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling the effect of ribosome mobility on the rate of protein synthesis</title>
-      <link>https://dissyskcl.github.io/publication/dauloudet-2021/</link>
+      <link>https://gsicuro.github.io/publication/dauloudet-2021/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/dauloudet-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/dauloudet-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamical instantons and activated processes in mean-field glass models</title>
-      <link>https://dissyskcl.github.io/publication/ros-2021/</link>
+      <link>https://gsicuro.github.io/publication/ros-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/ros-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/ros-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Localization and Universality of Eigenvectors in Directed Random Graphs</title>
-      <link>https://dissyskcl.github.io/publication/metz-2021/</link>
+      <link>https://gsicuro.github.io/publication/metz-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/metz-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/metz-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opinion dynamics with emergent collective memory: The impact of a long and heterogeneous news history</title>
-      <link>https://dissyskcl.github.io/publication/boschi-2021/</link>
+      <link>https://gsicuro.github.io/publication/boschi-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/boschi-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/boschi-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Out-of-equilibrium phase diagram of the quantum random energy model</title>
-      <link>https://dissyskcl.github.io/publication/biroli-2021/</link>
+      <link>https://gsicuro.github.io/publication/biroli-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/biroli-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/biroli-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
-      <link>https://dissyskcl.github.io/publication/exelby-2021/</link>
+      <link>https://gsicuro.github.io/publication/exelby-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/publication/exelby-2021/</guid>
+      <guid>https://gsicuro.github.io/publication/exelby-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generalized hydrodynamics</title>
-      <link>https://dissyskcl.github.io/lectures/ben112019/</link>
+      <link>https://gsicuro.github.io/lectures/ben112019/</link>
       <pubDate>Thu, 21 Nov 2019 11:30:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/ben112019/</guid>
+      <guid>https://gsicuro.github.io/lectures/ben112019/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 Hydrodynamics is a powerful theory for describing the emergent dynamics, away from equilibrium, at large scales in space and time. In recent years, the theory adapting hydrodynamics to integrability, called &#34;generalised hydrodynamics&#34; (GHD), has been developed. It turns out to be extremely general, applicable to quantum and classical chains, field theories and gases. These lectures will cover the fundamental concepts of this theory. Starting from an overview of hydrodynamics, I will describe the most important aspects of integrability, from which I will derive the basic GHD equations. I will emphasise the universality of GHD and the physical interpretation of its various ingredients, and if time allows, explain some of its applications and more advanced concepts.  Only very basic knowledge of hydrodynamics and integrability is assumed, and I will keep everything as non-technical as possible.
 &lt;/div&gt;
@@ -720,9 +717,9 @@ Hydrodynamics is a powerful theory for describing the emergent dynamics, away fr
     
     <item>
       <title>Counting equilibria in complex systems via random matrices</title>
-      <link>https://dissyskcl.github.io/lectures/yan062017/</link>
+      <link>https://gsicuro.github.io/lectures/yan062017/</link>
       <pubDate>Tue, 27 Jun 2017 09:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/yan062017/</guid>
+      <guid>https://gsicuro.github.io/lectures/yan062017/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 How many equilibria will a large complex system, modeled by N randomly coupled autonomous nonlinear differential equations typically have? How many of those equilibria are stable, that is are local attractors of the nearby trajectories? These questions arise in many applications and can be partly answered by employing the methods of Random Matrix Theory.
 &lt;/div&gt;
@@ -784,9 +781,9 @@ How many equilibria will a large complex system, modeled by N randomly coupled a
     
     <item>
       <title>Random matrices: Theory and Practice</title>
-      <link>https://dissyskcl.github.io/lectures/pier122017/</link>
+      <link>https://gsicuro.github.io/lectures/pier122017/</link>
       <pubDate>Tue, 11 Apr 2017 09:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/lectures/pier122017/</guid>
+      <guid>https://gsicuro.github.io/lectures/pier122017/</guid>
       <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 A brief course on random matrix theory given at ICTP Trieste, from the theoretical foundations to applications to complex systems.
 &lt;/div&gt;
@@ -812,54 +809,54 @@ A brief course on random matrix theory given at ICTP Trieste, from the theoretic
     
     <item>
       <title>Disordered systems</title>
-      <link>https://dissyskcl.github.io/project/ds/</link>
+      <link>https://gsicuro.github.io/project/ds/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <guid>https://gsicuro.github.io/project/ds/</guid>
       <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Physical Systems</title>
-      <link>https://dissyskcl.github.io/project/ps/</link>
+      <link>https://gsicuro.github.io/project/ps/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ps/</guid>
+      <guid>https://gsicuro.github.io/project/ps/</guid>
       <description>&lt;p&gt;In the domain of physical systems, the question of how to pack spheres optimally is familiar from everyday examples such as a greengrocer&amp;rsquo;s stack of oranges. But what if the spheres have a range of sizes, as happens for example in colloidal suspensions? Controversy has surrounded this issue, with proposals that the optimal structure could be disordered. Sollich and co-workers have recently provided a definitive answer, combining mathematical theory (polydisperse phase equilibrium calculations) with specialized numerical simulation techniques. The optimal structures are ordered, i.e. crystalline solids, but depending on the density and the spread of particle sizes the system will fractionate: the particles are effectively sorted out into several solid phases, with each containing only a small range of particle sizes.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Protein interaction network</title>
-      <link>https://dissyskcl.github.io/project/pin/</link>
+      <link>https://gsicuro.github.io/project/pin/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/pin/</guid>
+      <guid>https://gsicuro.github.io/project/pin/</guid>
       <description>&lt;p&gt;The definition and generation of good null models to assess the statistical relevance of observed features in protein interaction networks (PIN) is a well known problem in systems biology, where the aim is to understand how the structure of PINs relates to their biological functionality. By using statistical mechanics techniques, Annibale and Coolen recently derived explicit formulae for complex network ensembles with built-in topologies beyond the degrees, as proxies for real networks; provided exact algorithms for generating random graphs from such ensembles; and derived information-theoretic tools to quantify distances between networks. The application of these tools has enabled them and their coworkers to quantify detection biases in PIN data sets and species consistency.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Sparse Symmetric Random Matrices</title>
-      <link>https://dissyskcl.github.io/project/rmt/</link>
+      <link>https://gsicuro.github.io/project/rmt/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/rmt/</guid>
+      <guid>https://gsicuro.github.io/project/rmt/</guid>
       <description>&lt;p&gt;A collaboration between group members prof. Reimer Kuehn and Dr. Perez Castillo and international collaborators also led to a breakthrough in the spectral problem for sparse symmetric random matrices, allowing to efficiently compute spectral densities of such systems in the limit of large matrix size to any desired accuracy &amp;ndash; more than 20 years after a solution to this problem was first attempted.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Universal Glassy Low-Temperature Anomalies</title>
-      <link>https://dissyskcl.github.io/project/ga/</link>
+      <link>https://gsicuro.github.io/project/ga/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/project/ga/</guid>
+      <guid>https://gsicuro.github.io/project/ga/</guid>
       <description>&lt;p&gt;Prof. Reimer Kühn has provided the first formulation of a microscopic model to describe the emergence of the universal glassy low-temperature anomalies, including an understanding of the origin of the mysterious so-called quantitative universality &amp;ndash; a problem that had been open since its formulation in the late 80s. He has also given the first proper formulation and analysis of the role of interactions (networks of functional dependencies) on operational and credit risk, including recently an analysis of the influence of credit derivatives on systemic risk.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://dissyskcl.github.io/admin/config.yml</link>
+      <link>https://gsicuro.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dissyskcl.github.io/admin/config.yml</guid>
+      <guid>https://gsicuro.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     
