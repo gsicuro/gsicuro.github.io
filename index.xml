@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/</link>
+      <atom:link href="https://dissyskcl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>KCL Disordered Systems</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>KCL Disordered Systems</title>
+      <link>https://dissyskcl.github.io/</link>
+    </image>
+    
+    <item>
+      <title>The Cross-Disciplinary Approaches to Non-Equilibrium Systems Centre</title>
+      <link>https://dissyskcl.github.io/education/canes/</link>
+      <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/education/canes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Group Research</title>
+      <link>https://dissyskcl.github.io/talks/dstalks/</link>
+      <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/talks/dstalks/</guid>
+      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nwaQxr3ymwQ&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 September 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;In every finite-range quantum spinchain linearised Euler hydrodynamic equations hold&lt;/em&gt;. Talk given at the &lt;a href=&#34;http://www.crm.umontreal.ca/2022/Conformal22/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Théorie des champs conforme et systèmes quantiques à plusieurs corps&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=vJdmK0Vqvpo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;31 August 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement Rényi entropies from Ballistic Fluctuations Theory: the free fermionic case&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.kitp.ucsb.edu/activities/integrable-c22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Talking Integrability: Spins, Fields, and Strings conference at KITP&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;A few results and conjectures on some product-ratio correlation functions of characteristic polynomials of β-Hermite ensembles&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/events/50yntrmt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;50 Years of Number Theory and Random Matrix Theory&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;14 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Izaak Neri&lt;/strong&gt;, &lt;em&gt;Thermodynamic Trade-off Relations Involving First-Passage Times&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.icts.res.in/discussion-meeting/strd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Stochastic thermodynamics: recent developments&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=zqc11XI7d2A&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;13 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement and disorder in many-body systems: a renormalisation group perspective&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://meco47.sciencesconf.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;47th Conference of the Middle European Cooperation in Statistical Physics&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=n3uysPHn3_0&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;11 November 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Recent advances in Integrable Quantum Many-body Systems Out-of-Equilibrium: Hydrodynamics and Quantum Corrections&lt;/em&gt;. Talk given at the &lt;em&gt;Italian Society of Statistical Physics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=etZI4oHAcLo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;15 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Izaak Neri&lt;/strong&gt;, &lt;em&gt;Dissipation bounds the moments of first-passage times of dissipative currents&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.esi.ac.at/events/e412/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Interdisciplinary Challenges in Nonequilibrium Physics&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=LH9JitDAhF4&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;1 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;Spectra of Large Random Stochastic Matrices and relaxation in complex systems&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/wrmrs/agenda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Workshop on Random Matrices and Random Systems&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=3OOK651z8jc&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;24 July 2020&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;On eigenvector statistics in non-normal random matrices&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://web-eur.cvent.com/event/44bdce4a-9414-4c7f-928f-4ea3e4985835/summary?rp=00000000-0000-0000-0000-000000000000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;CMI-HIMR Integrable Probability Online Summer School&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=AkK582eLwJ4&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;4 December 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;Gehirn und Gesellschaft - Eine Analogie&lt;/em&gt;. Talk in German given at the &lt;a href=&#34;https://www.uni-bielefeld.de/%28de%29/ZiF/OeV/2019/12-04-Kuehn.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Zentrum für interdisziplinäre Forschung&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=tCr0YekLvXg&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;5 November 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;Diffusion and superdiffusion from hydrodynamic projection&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.icts.res.in/program/hydrodynamics2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Thermalization, many body localization and hydrodynamics&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nRN080X85Ec&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;span style=&#34;color:Maroon&#34;&gt; &lt;strong&gt;13 May 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;Hydrodynamics of quantum and classical integrable systems, correlations and fluctuations&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://iip.ufrn.br/eventsdetail.php?inf=%3D%3DQTUFFM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Emergent hydrodynamics in low dimensional quantum systems&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=bcdm_it5yfM&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;span style=&#34;color:Maroon&#34;&gt; &lt;strong&gt;1 July 2014&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;A Random Walk Perspective of Search and Network Exploration&lt;/em&gt;. Talk given at the &lt;a href=&#34;cs.if.uj.edu.pl/matrix&#34;&gt;&lt;em&gt;Random matrix theory: Applications in the information era&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The King&#39;s Mathematical Colloquia</title>
+      <link>https://dissyskcl.github.io/talks/colloquia/</link>
+      <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/talks/colloquia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Disordered Systems Group Journal Club</title>
+      <link>https://dissyskcl.github.io/talks/dsjournalclub/</link>
+      <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/talks/dsjournalclub/</guid>
+      <description>&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;10 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Friedrich Huebner&lt;/strong&gt; (KCL), &lt;em&gt;Existence/uniqueness of solutions and absence of shock formation in the generalized hydrodynamics equation of the Lieb-Liniger model&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 May 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt; (KCL), &lt;em&gt;Resonances in wave reflection from a disordered medium: nonlinear Sigma-model approach&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;26 April 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Rosalba Garcia-Millan&lt;/strong&gt; (Cambridge), &lt;em&gt;Active matter, non-reciprocal interactions and entropy production&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;24 April 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Alvise Bastianello&lt;/strong&gt; (TU Münich), &lt;em&gt;Sine-Gordon quantum simulators: a hydrodynamic perspective&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;5 April 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Rafael Tapia Rojo&lt;/strong&gt; (KCL), &lt;em&gt;Probing the Stochastic Dynamics of Folding Proteins Using Single-Molecule Magnetic Tweezers&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;27 March 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Josef Mak&lt;/strong&gt; (KCL), &lt;em&gt;Statics and Dynamics of non-Hermitian Many-Body Localization&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;27 March 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;David Lacoste&lt;/strong&gt; (ESPCI Paris), &lt;em&gt;From gambling to growing in uncertain environments&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 March 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Alessandro Manacorda&lt;/strong&gt; (University of Luxembourg), &lt;em&gt;Dynamical mean-field theory of infinite-dimensional particle systems: from equilibrium to gradient descent dynamics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;6 March 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Chiara Paletta&lt;/strong&gt; (Trinity College Dublin), &lt;em&gt;A range three elliptic deformation of the Hubbard model&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;1 March 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Somrita Ray&lt;/strong&gt; (University of Edinburgh), &lt;em&gt;To reset or not to reset!&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;20 February 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Stefano Bo&lt;/strong&gt; (KCL), &lt;em&gt;Stochastic dynamics of single molecules across phase boundaries&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;13 February 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Luke Davis&lt;/strong&gt; (UCL), &lt;em&gt;Active matter under thermodynamic control: insights from response theory&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 February 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Jacopo de Nardis&lt;/strong&gt; (CY Cergy Paris Université), &lt;em&gt;Spin dynamics in isotropic spin chains, a surprising connection with drifting polymers&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;25 January 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Nina Javerzat&lt;/strong&gt; (SISSA), &lt;em&gt;Schramm-Loewner Evolution for Rigidity Percolation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;18 January 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Bruno Loureiro&lt;/strong&gt; (ENS Paris), &lt;em&gt;Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;11 January 2023&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Johannes Hofmann&lt;/strong&gt; (Gothenburg), &lt;em&gt;Surprises in Fermi liquid theory: Anomalously long lifetimes in 2D systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;14 December 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt; (KCL), &lt;em&gt;Ergodicity in many-body quantum systems II&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 December 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Fabio Deelan Cunden&lt;/strong&gt; (Bari), &lt;em&gt;The semiclassical limit of a quantum Zeno dynamics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;7 December 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Carmen Cabrera-Arnau&lt;/strong&gt; (Liverpool), &lt;em&gt;A journey through the complexity of cities at different spatial scales&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;30 November 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Francesco Mori&lt;/strong&gt; (Oxford), &lt;em&gt;The run-and-tumble particle: from universal properties to nonequilibrium phase transitions&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;28 November 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin De Bruyne&lt;/strong&gt; (Saclay), &lt;em&gt;Constrained stochastic processes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 November 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Mark Crumpton&lt;/strong&gt; (KCL), &lt;em&gt;On eigenvalues and singular values of low-rank random matrices with non-negative entries&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;16 November 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Alexandre Krajenbrink&lt;/strong&gt; (Cambridge), &lt;em&gt;The crossover from the Macroscopic Fluctuation Theory to the Kardar-Parisi-Zhang equation controls the large deviations of diffusive systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;2 November 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Sarah Loos&lt;/strong&gt; (Cambridge), &lt;em&gt;About time-reversal symmetry broken fluctuations in nonequilibrium many-body systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;26 October 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Izaak Neri&lt;/strong&gt; (KCL), &lt;em&gt;Thermodynamic trade-off relations involving first-passage times&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;12 October 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt; (KCL), &lt;em&gt;Escaping the crowds: extreme values and outliers in rank-1 non-normal deformations of GUE/CUE&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;5 October 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yasser Roudi&lt;/strong&gt; (KCL), &lt;em&gt;The unbearable lightness of single neuron non-linearities in neural networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;1 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Tony Jin&lt;/strong&gt; (UniGe), &lt;em&gt;KPZ universality, in a classical random walker under continuous measurement&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;25 May 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Ben Doyon&lt;/strong&gt; (KCL), &lt;em&gt;Ergodicity in many-body quantum systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;18 May 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Jerome Dubail&lt;/strong&gt; (CNRS), &lt;em&gt;Operator entanglement in 1D quantum systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;11 May 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Jan Meimbohm&lt;/strong&gt; (KCL), &lt;em&gt;Finite-time dynamical phase transition in non-equilibrium relaxation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;13 April 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Leticia Cugliandolo&lt;/strong&gt; (Sorbonne Université), &lt;em&gt;Generalised Gibbs Ensemble for spherically constrained harmonic models&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;6 April 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Carlo Campajola&lt;/strong&gt; (University of Zurich), &lt;em&gt;Modelling time-varying interactions in complex systems: the Score Driven Kinetic Ising Model&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;30 March 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Debraj Das&lt;/strong&gt; (University of Bristol), &lt;em&gt;Lattice random walks: Stochastic resetting and heterogeneous space&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 March 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Bertrand Lacroix A Chez Toine&lt;/strong&gt; (KCL), &lt;em&gt;Random landscape built by superposition of random plane waves&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;9 March 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Giuseppe Torrisi&lt;/strong&gt; (KCL), &lt;em&gt;Uncovering the non-equilibrium stationary properties in sparse Boolean networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;2 March 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Rashel Tublin&lt;/strong&gt; (KCL), &lt;em&gt;Compatibility of a System of Random Algebraic Equations. Combining the Least-Square Minimization with Statistical Mechanics Approach&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 February 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Tobias Galla&lt;/strong&gt; (University of Manchester), &lt;em&gt;Stability and diversity in random ecologies: the physicists&amp;rsquo; frustration&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;21 February 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Francesco Coghi&lt;/strong&gt; (Nordita), &lt;em&gt;Large deviation results for random walks on networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;16 February 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Michael Olesik&lt;/strong&gt; (Jagiellonian University), &lt;em&gt;Integration of features through space and time - The visual brain seen through the lens of a deep neural network&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 December 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt; (KCL), &lt;em&gt;The Fate of Articulation Points and Bredges in Percolation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 December 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Walter&lt;/strong&gt; (SISSA), &lt;em&gt;Non-equilibrium dynamics of a colloid diffusing in a fluctuating field&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;24 November 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Bertrand Lacroix A Chez Toine&lt;/strong&gt; (KCL), &lt;em&gt;Counting equilibria of complex dynamics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;10 November 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Stefano Sarao Mannelli&lt;/strong&gt; (UCL), &lt;em&gt;An Analytical Theory of Curriculum Learning in Teacher-Student Networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 November 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Uzy Smilansky&lt;/strong&gt; (Weizmann institute), &lt;em&gt;Time-delay distribution on quantum graphs&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;27 October 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Mohammed Osman&lt;/strong&gt; (KCL), &lt;em&gt;Scattering in chaotic cavities and the eigenvector overlaps of rank-one perturbations of the GOE/GUE&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 June 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Andrea De Luca&lt;/strong&gt; (University of Cergy-Pontoise), &lt;em&gt;Spectral statistics in the thermodynamic limit of extended many-body quantum systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 June 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Carmen Cabrera Arnau&lt;/strong&gt; (UCL), &lt;em&gt;Quantifying the impact of population size in urban areas&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;3 June 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Berislav Buča&lt;/strong&gt; (University of Oxford), &lt;em&gt;Complex dynamics of non-stationary quantum many-body systems&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;2 June 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Joseph Durnin&lt;/strong&gt; (KCL), &lt;em&gt;Free energy fluxes and the Kubo–Martin–Schwinger relation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;28 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Pierfrancesco Urbani&lt;/strong&gt; (IPhT, CNRS, Université Paris-Saclay).&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;14 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Fabian Aguirre Lopez&lt;/strong&gt; (KCL), &lt;em&gt;Imaginary replicas for random loopy graphs&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=H_GvgActloM&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;span style=&#34;color:Maroon&#34;&gt; &lt;strong&gt;31 March 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Francesco Zamponi&lt;/strong&gt; (ENS Paris), &lt;em&gt;Mean field model of interacting quasi-localized excitations in glasses&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;18 March 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Andrea Mambuca&lt;/strong&gt; (KCL), &lt;em&gt;New results on the stability of large antagonistic systems on complex networks: a random matrix approach&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 March 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Alexander Mozeika&lt;/strong&gt; (LIMS), &lt;em&gt;Exact results on high-dimensional linear regression via statistical physics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;1 March 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Jose Moran&lt;/strong&gt; (University of Oxford), &lt;em&gt;Memory and herding in agent based models&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;24 February 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Bruno Loureiro&lt;/strong&gt; (EPFL), &lt;em&gt;Exactly solvable models for high-dimensional machine learning problems&lt;/em&gt;. &lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://arxiv.org/abs/2102.08127&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fas fa-file&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://arxiv.org/abs/2006.14709.08127&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fas fa-file&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://arxiv.org/abs/2002.09339&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fas fa-file&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;17 February 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Nick Baskerville&lt;/strong&gt; (University of Bristol), &lt;em&gt;Random matrix theory and the loss surfaces of neural networks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;15 February 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt; (KCL), &lt;em&gt;Bounds on diffusion and superdiffusion from thermodynamics&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Statistics seminar series</title>
+      <link>https://dissyskcl.github.io/talks/statistics/</link>
+      <pubDate>Wed, 07 Apr 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/talks/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantitative and Digital Law Lab</title>
+      <link>https://dissyskcl.github.io/project/ql/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disordered Systems Days at King&#39;s College London</title>
+      <link>https://dissyskcl.github.io/news/kuhn2023/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/kuhn2023/</guid>
+      <description>&lt;img src=&#34;headr.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;The Disordered Systems group organised a &lt;a href=&#34;https://disorderdayskcl.weebly.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;two-day event&lt;/a&gt; on the physics of disorder in both the classical and quantum setting, hosting a selection of international leading experts in the field. The first day of the event has been dedicated to our dear colleague &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, who retired in 2023. The Workshop has been an opportunity to thank Reimer for his invaluable contributions to the field and to the life of our research group.&lt;/p&gt;
+&lt;p&gt;You can find the program of the event, with some material, below.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;monday-september-11th-2023&#34;&gt;Monday September 11th, 2023&lt;/h2&gt;
+&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Peter Sollich&lt;/strong&gt;&lt;/span&gt;.  (University of Göttingen)&lt;br&gt;
+&lt;a href=&#34;./SOLLICH.pdf&#34;&gt;Glassy random walks: large deviations and aging.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Eytan Katzav&lt;/strong&gt;&lt;/span&gt;.  (University of Jerusalem)&lt;br&gt;
+&lt;a href=&#34;./katav.pdf&#34;&gt;The distribution of shortest path lengths in random networks.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Ofer Biham&lt;/strong&gt;&lt;/span&gt;.  (University of Jerusalem)&lt;br&gt;
+&lt;a href=&#34;./biham.pdf&#34;&gt;The giant component, articulation points and bredges in configuration model networks.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Alessia Annibale&lt;/strong&gt;&lt;/span&gt;.  (King&amp;rsquo;s College London)&lt;br&gt;
+&lt;a href=&#34;./annibale.pdf&#34;&gt;Mathematicians against gene-regulatory networks.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Pierfrancesco Urbani&lt;/strong&gt;&lt;/span&gt;.  (Université Paris-Saclay, CNRS, CEA, IPhT)&lt;br&gt;
+The KHGPS model and the spin glass transition in a field.&lt;/p&gt;
+&lt;h2 id=&#34;tuesday-september-12th-2023&#34;&gt;Tuesday September 12th, 2023&lt;/h2&gt;
+&lt;script defer src=&#34;https://dissyskcl.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Luca Leuzzi&lt;/strong&gt;&lt;/span&gt;.  (Institute of Nanotechnology — CNR-NANOTEC)&lt;br&gt;
+&lt;a href=&#34;./leuzzi.pdf&#34;&gt;Random lasers as complex disordered systems: a spin-glass-like theory for amplified mode-locking waves in random media.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;François Huveneers&lt;/strong&gt;&lt;/span&gt;.  (King&amp;rsquo;s College London)&lt;br&gt;
+&lt;a href=&#34;./huveneers.pdf&#34;&gt;Spreading of a wave packet in a disordered anharmonic chain.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Valentina Ros&lt;/strong&gt;&lt;/span&gt;.  (LPTMS Paris-Saclay)&lt;br&gt;
+&lt;a href=&#34;./ROS.pdf&#34;&gt;Counting equilibria in high-D random systems: from Gaussian landscapes to simple ecosystems.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Chiara Cammarota&lt;/strong&gt;&lt;/span&gt;.  (Sapienza Università di Roma)&lt;br&gt;
+&lt;a href=&#34;./cammarota.pdf&#34;&gt;Glass dynamics and Signal reconstruction in rough landscapes..&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;Bertrand Lacroix-À-Chez-Toine&lt;/strong&gt;&lt;/span&gt;.  (King&amp;rsquo;s College London)&lt;br&gt;
+&lt;a href=&#34;./lact.pdf&#34;&gt;Fluctuations of the ground-state energy of spherical spin-glasses.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spin Glass Theory &amp; Far Beyond</title>
+      <link>https://dissyskcl.github.io/news/rsb40/</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/rsb40/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://www.worldscientific.com/worldscibooks/10.1142/13341#t=aboutBook&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Spin Glass Theory and Far Beyond&lt;/strong&gt;&lt;/a&gt;, more than 30 contributions are compiled from more than 100 leading
+researchers who contributed to these applications over the last few decades. This volume provides a detailed introduction and review of spin glass research. While the fundamentals are expounded, cutting-edge and state-ofthe-art applications are also featured in this encyclopedic overview for enthusiastic readers in the 21st century&lt;/p&gt;
+&lt;p&gt;The volume is edited by Patrick Charbonneau, Enzo Marinari, Marc Mézard, Giorgio Parisi, Federico Ricci-Tersenghi, Gabriele Sicuro, and Francesco Zamponi.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Sergio Caracciolo, Alexander K. Hartmann, Scott Kirkpatrick, Martin Weigel&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2301.00683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Simulated Annealing, Optimization, Searching for Ground States&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;David Sherrington, Jairo R.L. de Almeida&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Beyond the Ising Spin Glass I: $m$-vector, Potts, $p$-spin, spherical, induced moment, random graphs&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Michael K. Kosterlitz&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Beyond the Ising Spin Glass II: Spin glass without replicas&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Renormalization Group in Spin Glasses&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Tom Lubenski&lt;/em&gt;&lt;br&gt;
+Mean-Field and $\epsilon$-Expansion for Spin Glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tamás Temesvári, Imre Kondor&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2212.01654&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Field theory for the de Almeida-Thouless transition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Maria Chiara Angelini&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2302.05292&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Real-space renormalization group for spin glasses&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Victor Martin-Mayor, Juan J. Ruiz-Lorenzo, Beatriz Seoane, A. Peter Young&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.14089&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Numerical Simulations and Replica Symmetry Breaking&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Valentina Ros, Yan V. Fyodorov&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.07975&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The High-Dimensional Landscapes Paradigm: Spin-Glasses, and Beyond&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Theodore R. Kirkpatrick, Dave Thirumalai&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1401.2024&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Universal Aspects of the Structural Glass Transition from Density Functional Theory&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Non-Perturbative Processes in Glasses&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Peter Wolynes&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.00600&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Random First Order Transition Theory of Glasses in Real Space-Time: Instantons, Strings, Flames and Flows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tommaso Rizzo&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.09689&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stochastic equations and dynamics beyond mean-field theory&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamical Mean-Field Theory and the Aging Dynamics&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Andrea Crisanti&lt;/em&gt;&lt;br&gt;
+Equilibrium dynamics and Replica Symmetry Breaking in spin-glass systems&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Silvio Franz, Jorge Kurchan&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2207.05720&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The relation between Parisi scheme and multi-thermalized dynamics in finite dimensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Andrea Maiorano&lt;/em&gt;&lt;br&gt;
+Weak ergodicity breaking in mean-field spin glasses&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Giulio Biroli, Kunimasa Miyazaki, David R. Reichman&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.02825&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Dynamical Heterogeneity in Glass-Forming Liquids&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Chiara Cammarota, Misaki Ozawa, Gilles Tarjus&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.11049&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Kauzmann Transition to an Ideal Glass Phase&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Gardner Glass&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Pierfrancesco Urbani&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2212.11557&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Low temperature amorphous solids: mean field theory and beyond&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Yuliang Jin, Hajime Yoshino&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.07868&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computer simulations of the Gardner transition in structural glasses&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Francesco Arceri, Eric I. Corwin, Corey S. O&amp;rsquo;Hern&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.02829&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Jamming Transition and the Marginally Stable Solid&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;From Polymers to the KPZ Equation&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Victor Dotsenko, Pierre Le Doussal&lt;/em&gt;&lt;br&gt;
+Directed polymers and the Kardar-Parisi-Zhang equation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Henri Orland&lt;/em&gt;&lt;br&gt;
+Heteropolymers and Proteins&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Emergent Dynamics in Glasses and Disordered Systems: Correlations and Avalanches&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Annette Zippelius, Matthias Fuchs&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.00890&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;From viscous fluids to elastic solids: A perspective on the glass transition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Alberto Rosso, James P. Sethna, and Matthieu Wyart&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.04090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Avalanches and deformation in glasses and disordered systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Claudio Conti, Neda Ghofraniha, Luca Leuzzi, Giancarlo Ruocco&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.03781&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Replica Symmetry Breaking in Random Lasers: Experimental Measurement of the Overlap Distribution&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Saverio Pascazio, Antonello Scardicchio, Marco Tarzia&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Anderson Localization on the Bethe Lattice&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Leticia Cugliandolo, Markus Müller&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.05417&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Quantum Glasses ­— A review&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Alfredo Braunstein, Guilhem Semerjian&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.11499&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Cavity Method: From Exact Solutions to Algorithms&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Florent Krzakala, Manfred Opper, David Saad&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Message Passing and Its Applications&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Yoshiyuki Kabashima, Toshiyuki Tanaka&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Information and Communication&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Erik Aurell, Jean Barbier, Aurelien Decelle, Roberto Mulet&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.00750&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Mighty Force: Statistical Inference and High-Dimensional Statistics&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;David Gamarnik, Cristopher Moore, Lenka Zdeborová&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2210.08312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Disordered Systems Insights on Computational Hardness&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Marylou Gabrié, Surya Ganguli, Carlo Lucibello, Riccardo Zecchina&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2304.06636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Neural Networks: From the Perceptron to Deep Nets&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;From Statistical Physics of Disordered Systems to Neuroscience&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Nicolas Brunel, Rémi Monasson, Haim Sompolinsky&lt;/em&gt;&lt;br&gt;
+Statistical Physics and Neuroscience&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;J. Leo van Hemmen&lt;/em&gt;&lt;br&gt;
+Neuronal Network and Spin Glass: A Non-Existing Relationship&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Statistical Physics of Biological Molecules&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Simona Cocco, Andrea De Martino, Andrea Pagnani, Martin Weigt&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2207.13402&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statistical-physics approaches to RNA molecules, families and networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Felix Ritort&lt;/em&gt;&lt;br&gt;
+Molecular Replica Symmetry Breaking&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Jean-Philippe Bouchaud, Matteo Marsili, Jean-Pierre Nadal&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2306.16165&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Application of Spin Glass Ideas in Social Sciences, Economics and Finance&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complex Dynamics in Ecological Systems and Animal Behavior&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;M. Cristina Marchetti&lt;/em&gt;&lt;br&gt;
+Active Glasses and &amp;ldquo;Flying&amp;rdquo; Spin Glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Irene Giardina&lt;/em&gt;&lt;br&gt;
+Collective behavior in natural flocks: from data to models&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ada Altieri&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.14956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Glassy features and complex dynamics in ecological systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Antonio Auffinger, Andrea Montanari, Eliran Subag&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.10217&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Optimization of Random High-Dimensional Functions: Structure and Algorithms&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rigorous Results in the Sherrington-Kirkpatrick Model&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Wei-Kuo Chen&lt;/em&gt;&lt;br&gt;
+The Parisi formula&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dmitry Panchenko&lt;/em&gt;&lt;br&gt;
+Ultrametricity in spin glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Francesco Guerra&lt;/em&gt;&lt;br&gt;
+The replica trick in the frame of the interpolation perspective&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Random Energy Models: Broken Replica Symmetry and Activated Dynamics&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Bernard Derrida, Peter Mottishaw&lt;/em&gt;&lt;br&gt;
+The Random Energy Models and Replica Symmetry Breaking&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Véronique Gayrard&lt;/em&gt;&lt;br&gt;
+The Arcsine Law as a Universal Aging Scheme for Activated Dynamics of Random Energy Models&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Amin Coja-Oghlan, Allan Sly, Nike Sun&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Rigorous Results: Random Constraint Satisfaction Problems&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Charles M. Newman, Nicholas Read, Daniel L. Stein&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2204.10345&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Metastates and Replica Symmetry Breaking&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Facets of Statistical Field Theory</title>
+      <link>https://dissyskcl.github.io/news/caracciolo2022/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/caracciolo2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conformal field theory and quantum many-body physics</title>
+      <link>https://dissyskcl.github.io/lectures/ben092022/</link>
+      <pubDate>Tue, 06 Sep 2022 11:30:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/ben092022/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+Finding general principles that go beyond the well developed thermodynamic theory of equilibrium is one of the most important challenges of current research. As thermodynamics is a theory for extensive quantities such as the energy, and its fluctuations in space, one looks for a parallel theory that asks about quantities that are spatially transported, say from left to right, over time: currents and their fluctuations. In this series of lectures, I will develop a number of topics to answer some of these questions. I will restrict to the context of two-dimensional spacetime for simplicity, going over the basic ideas and exact results in conformal field theory (CFT) and integrable systems. Topics covered will be: (1) Nonequilibrium steady states in many-body quantum systems that admit ballistic transport. (2) Fluctuations of transported quantities at large times using the largedeviation framework. (3) The relation between static and dynamic fluctuations, and the entanglement entropy and its growth after quenches. As time permits, I will overview hydrodynamic techniques, twist fields techniques, and, in CFT, conformal welding techniques for large-deviation functions.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OYFsdxmcrSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M5482d0WZ8Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LDR9EsZSzio&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/USqrpUifJZA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Random Matrices and Random Landscapes</title>
+      <link>https://dissyskcl.github.io/news/fyodorov2022/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/fyodorov2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MECO47</title>
+      <link>https://dissyskcl.github.io/news/meco47/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/meco47/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>73rd British Mathematical Colloquium</title>
+      <link>https://dissyskcl.github.io/news/bmc2022/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/bmc2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Least-square optimization on the sphere: lessons from RMT and replicas</title>
+      <link>https://dissyskcl.github.io/lectures/pier052022/</link>
+      <pubDate>Tue, 17 May 2022 09:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/pier052022/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+A brief course on applications of random matrix theory given at ICTP Trieste, within the &lt;a href=&#34;https://indico.ictp.it/event/9797/&#34;&gt;Random Matrices, Random Graphs and Statistical Physics for Machine Learning and Inference&lt;/a&gt; school ad ICTP.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/i0u6hjcuvko&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Wx7MCZ_rJoU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-6fe6CkozlQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0oJl315csn4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0oJl315csn4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Welcoming the 2021 Nobel Prize for Physics to Giorgio Parisi</title>
+      <link>https://dissyskcl.github.io/news/parisi2021/</link>
+      <pubDate>Tue, 05 Oct 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/parisi2021/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;img src=&#34;featured0.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;Giorgio Parisi made several groundbreaking contributions to the Physics of Complex Systems. These are systems consisting of many interacting particles, and frequently, in the real world, this interaction is essentially random. He has provided deep insights, both physical and mathematical, into several paradigmatic models which serve as benchmarks in the field. These models, sometimes developed to understand very concrete physical systems, help to elucidate generic (or as physicists frequently call them, &amp;lsquo;&amp;lsquo;universal&amp;rsquo;&amp;rsquo;) properties, common to a very broad class of phenomena which look remote from the original model.&lt;/p&gt;
+&lt;img src=&#34;featured1.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;One of the models, now known as the Kardar-Parisi-Zhang (KPZ) model, addressed patterns which arise when some material is randomly deposited onto a surface (imagine snowfall on the floor), and in this way the height of the surface grows. It is intuitively clear that the resulting surface becomes rough over time, but to characterize the surface roughness in a precise quantitative way via a tractable mathematical formalism is a very challenging problem. The KPZ model, proposed in 1985, allows such a characterization, possesses beautiful mathematical properties which have been fully understood and utilized only in the last decade, and remains a very active field of research both in Physics and Mathematics.&lt;/p&gt;
+&lt;p&gt;Another beautiful discovery by Parisi (this time without collaborators) stemmed from solving the paradigmatic model of random magnetic materials. To begin with, one may think of standard magnetic substances like iron or steel as a collection of a huge number of elementary &amp;lsquo;&amp;lsquo;atomic magnets&amp;rsquo;&amp;rsquo;, known as &amp;lsquo;&amp;lsquo;spins&amp;rsquo;&amp;rsquo;. These can be usefully visualized as tiny arrows, and each taken alone may point in any direction. In standard magnets neighbouring atoms have a tendency to alligning their arrows along the same direction (one may say they &amp;lsquo;&amp;rsquo;like to look in the same direction&amp;rsquo;&amp;rsquo;), and as the result of such interaction all arrows in the substance will eventually look in the same direction. Such pattern of arrows is obviously highly ordered - one can think of it as a &amp;lsquo;&amp;lsquo;magnetic crystal&amp;rsquo;&amp;rsquo;. However, there exist substances where some pairs of atoms may have a tendency for their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; to look in the same direction, whereas other pairs of atoms may prefer to have their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; looking in exactly opposite directions. If the number of &amp;lsquo;&amp;lsquo;alligning&amp;rsquo;&amp;rsquo; and &amp;lsquo;&amp;lsquo;anti-alligning&amp;rsquo;&amp;rsquo; pairs are roughly the same the whole pattern of arrows will look at first glance highly irregular, seemingly without order. Such substances are called &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo; (akin to atoms in usual glasses being not ordered, but randomly positioned in space). A surprising and completely unexpected discovery by Parisi in 1979 was that actually such substances do have an unusual, well hidden order in the pattern of their &amp;lsquo;&amp;lsquo;spin arrows&amp;rsquo;&amp;rsquo;. But this order can not be seen by the naked eye, and can be revealed only by exploiting equally unusual mathematical machinery. To give a flavour of the striking features behind the &amp;lsquo;&amp;lsquo;Parisi solution&amp;rsquo;&amp;rsquo; one may mention that it required to consider geometry in &amp;lsquo;&amp;lsquo;zero spatial dimension&amp;rsquo;&amp;rsquo;! Recall that we live in three-dimensional world; structures in the plane are called two-dimensional, and on a single line one-dimensional. One might think of zero-dimensional object as a single point, and this naively has no structure. Parisi ingeniously suggested that in a certain sense such objects may have a rich hierarchic structure - which in the end helps to describe hidden order in &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo;. And this is not at all an academic oddity - by now &amp;lsquo;&amp;lsquo;zero dimensional&amp;rsquo;&amp;rsquo; hierarchic patterns discovered by Giorgio Parisi turned out to be relevant in many fields in Physics - ranging from Quantum Gravity to Machine Learning, and eventually in pure mathematical works aiming to understand patterns behind the main building blocks of Arithmetics - the prime numbers.&lt;/p&gt;
+&lt;p&gt;Parisi&amp;rsquo;s contributions are among the most important to the theory of complex systems, not only in physics but also in other areas such as mathematics, biology, neuroscience, to mention a few. His work gives an example of the power of interdisciplinary research to tackle, understand and solve challenging problems. An example to follow. Thanks Giorgio!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alumni</title>
+      <link>https://dissyskcl.github.io/alumni/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/alumni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSc Complex System Modelling</title>
+      <link>https://dissyskcl.github.io/education/master/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/education/master/</guid>
+      <description>&lt;div class=&#34;row&#34;&gt;
+  &lt;div class=&#34;col-sm-5&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h6 class=&#34;card-title&#34;&gt;Programme Director&lt;/h6&gt;
+        &lt;a href=&#34;mailto:benjamin.doyon@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; Prof. Benjamin Doyon&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-sm-7&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h6 class=&#34;card-title&#34;&gt;Assessment Sub Board Chair&lt;/h6&gt;
+        &lt;a href=&#34;mailto:yan.fyodorov@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; Prof. Yan Fyodorov&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The &lt;strong&gt;MSc Complex System Modelling&lt;/strong&gt; is run by the Disordered Systems group, one of the research groups in the Department of Mathematics at KCL, in collaboration with the &lt;a href=&#34;https://www.kcl.ac.uk/research/financial-maths&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Financial Mathematics group&lt;/a&gt; and the Departments of &lt;a href=&#34;https://www.kcl.ac.uk/informatics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Informatics&lt;/a&gt; and &lt;a href=&#34;https://www.kcl.ac.uk/physics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Physics&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fS5sHGW5PEw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+ &lt;/p&gt;
+&lt;p&gt;Read &lt;a href=&#34;https://blogs.kcl.ac.uk/nms/2020/01/27/why-i-chose-complex-systems-modelling/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; the experience of a student that studied with us.&lt;/p&gt;
+&lt;p&gt;Prospective students may also find useful our brochure and student testimonial. To apply for the programme click here.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kcl.ac.uk/study/postgraduate/taught-courses/complex-systems-modelling-msc&#34; class=&#34;btn btn-primary btn-lg btn-block active&#34; role=&#34;button&#34; aria-pressed=&#34;true&#34;&gt;&lt;strong&gt;Apply&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-danger&#34;&gt;
+  &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; Due to Covid19, students will be given the opportunity to take this programme entirely remotely in 2020/21, if they wish to do so. All the course material will be made available online and there will be regular live interactions with lecturers and tutors.
+&lt;/div&gt;
+&lt;h2 id=&#34;course-pre-requisites&#34;&gt;Course pre-requisites&lt;/h2&gt;
+&lt;p&gt;The course has as entry requirement first or upper second class in &lt;strong&gt;Mathematics&lt;/strong&gt; or &lt;strong&gt;Physics&lt;/strong&gt;. Outstanding candidates from other degrees in quantitative subjects may be considered, provided they have had sufficient exposure to mathematical and physical sciences. Please check whether your background is suitable for this programme, by answering our &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/CSM_Questionnaire-2021.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;admission questionnaire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have a few gaps in your background or need a refresher, we offer a non-examinable support course, &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=66816&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Foundations for CSM&lt;/a&gt;, which runs for 6 weeks in Semester I. You are encouraged to start reading the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Course_Book.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lecture notes&lt;/a&gt; prior to the start of the course.&lt;/p&gt;
+&lt;h1 id=&#34;general-information&#34;&gt;General Information&lt;/h1&gt;
+&lt;h2 id=&#34;course-structure&#34;&gt;Course Structure&lt;/h2&gt;
+&lt;p&gt;The course is &lt;strong&gt;one year&lt;/strong&gt; long if attended full-time, or two years long if attended Part-time, from September to September. It consists of &lt;strong&gt;8 modules&lt;/strong&gt; (15 credits each) plus a &lt;em&gt;Summer research project&lt;/em&gt; (60 credits, running from June to September) for a total of 180 credits.
+You can also take up to two modules from other &lt;strong&gt;University of London institutions&lt;/strong&gt;, such as UCL and QMUL, subject to the approval of the programme director. See the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/1920induction.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction slides&lt;/a&gt; and the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Modules1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction handouts&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;div class=&#34;card text-center&#34;&gt;
+  &lt;div class=&#34;card-header&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-body&#34;&gt;
+    &lt;p class=&#34;card-text&#34;&gt;Take a look to the detailed structure of the module on KEATS.&lt;/p&gt;
+    &lt;a href=&#34;https://keats.kcl.ac.uk/mod/book/view.php?id=3259805&amp;chapterid=276617&#34; class=&#34;btn btn-primary&#34;&gt;Go to KEATS!&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;card-footer text-muted&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;expected-workload&#34;&gt;Expected workload&lt;/h2&gt;
+&lt;p&gt;The workload is at least &lt;strong&gt;10 hours per module per week&lt;/strong&gt;, typically distributed as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 hours lecture (some modules may have 2 hours);&lt;/li&gt;
+&lt;li&gt;1 hour tutorial;&lt;/li&gt;
+&lt;li&gt;6 hours self-study and coursework (depending on your background, some modules may require more hours).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
+&lt;p&gt;Assessments are mostly two-hour written exams in May (very few modules have January exams). They consits in essays, oral presentations and dissertations. Practicals, class tests and assessed courseworks are possible, depending on the modules selected. Resits opportunities (for modules failed in May) are normally offered in August&lt;/p&gt;
+&lt;h1 id=&#34;additional-information-and-documents&#34;&gt;Additional information and documents&lt;/h1&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;For an &lt;strong&gt;overview&lt;/strong&gt; of the programme see the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/1920induction.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For detailed &lt;strong&gt;module information&lt;/strong&gt; see the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Modules1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Induction handouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;All the information about &lt;strong&gt;Summer projects&lt;/strong&gt; can be found on the &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=66817&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KEATS page&lt;/a&gt;. This will include the most recent version of the &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/CSM_and_CANES_Dissertation_Handbook-18-19.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dissertation handbook&lt;/a&gt; and a list of projects that were &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Projects-1920.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;offered in previous years&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;online-handbooks-and-timetables&#34;&gt;Online handbooks and timetables&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Online handbook for the &lt;a href=&#34;https://www.kcl.ac.uk/study/postgraduate/taught-courses/complex-systems-modelling-msc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSc CSM programme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Online handbook for the &lt;a href=&#34;https://keats.kcl.ac.uk/course/view.php?id=68787&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathematics Department&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kcl.ac.uk/aboutkings/Academic-Calendar&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Term dates&lt;/a&gt; and &lt;a href=&#34;https://timetables.kcl.ac.uk/KCLSWS/SDB1920RDB/login.aspx?ReturnUrl=%2fkclsws%2fSDB1920RDB%2fdefault.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KCL timetable&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;documents&#34;&gt;Documents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Module Amendment Form&lt;/li&gt;
+&lt;li&gt;Mitigating circumstances form&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;career-prospects&#34;&gt;Career prospects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A non-exhaustive &lt;a href=&#34;http://www.nms.kcl.ac.uk/CSMMSC/Career_prospect.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;list of potential employers&lt;/a&gt; in Complex Systems&lt;/li&gt;
+&lt;li&gt;Adverts of career and networking events for MSc students in Mathematics are regularly circulated by &lt;a href=&#34;mailto:pg-mathematics@kcl.ac.uk&#34;&gt;pg-mathematics@kcl.ac.uk&lt;/a&gt; through the CSM mailing list&lt;/li&gt;
+&lt;li&gt;Some of the events organised by &lt;a href=&#34;https://www.kcl.ac.uk/careers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KCL Careers&lt;/a&gt; may also be of interest&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Random Matrix Theory and Networks Workshop</title>
+      <link>https://dissyskcl.github.io/news/rmtn2021/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/rmtn2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Criticality and conformality in the random dimer model</title>
+      <link>https://dissyskcl.github.io/publication/caracciolo2021/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/caracciolo2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The planted $k$-factor problem</title>
+      <link>https://dissyskcl.github.io/publication/sicuro2021/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/sicuro2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A combined model of aggregation, fragmentation, and exchange processes: insights from analytical calculations</title>
+      <link>https://dissyskcl.github.io/publication/robson-2021/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/robson-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apply to the KCL MPhil/PhD Mathematics Program</title>
+      <link>https://dissyskcl.github.io/education/mphilphd/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/education/mphilphd/</guid>
+      <description>&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f0N1muuhIV0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+ &lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+  &lt;div class=&#34;col-sm-7&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h6 class=&#34;card-title&#34;&gt;PGR Admission Tutor&lt;/h6&gt;
+        &lt;a href=&#34;mailto:pierpaolo.vivo@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; Dr. Pierpaolo Vivo&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;col-sm-5&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h6 class=&#34;card-title&#34;&gt;Contacts&lt;/h6&gt;
+        &lt;a href=&#34;mailto:pgr-mathematics@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; PGR Office&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The Disordered Systems group is constantly engaged in the supervision of PhD candidates in Mathematics and Applied Mathematics within our Department. All applications are processed through the King&amp;rsquo;s appplication system, accessible from the link below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kcl.ac.uk/study-legacy/postgraduate/research-courses/applied-mathematics-research-mphil-phd&#34; class=&#34;btn btn-primary btn-lg btn-block active&#34; role=&#34;button&#34; aria-pressed=&#34;true&#34;&gt;&lt;strong&gt;King&amp;rsquo;s application system&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;phd-projects&#34;&gt;PhD projects&lt;/h2&gt;
+&lt;div class=&#34;alert alert-info&#34; id=&#34;#ivan&#34;&gt;
+&lt;a name=&#34;ivan&#34;&gt;&lt;/a&gt;
+  &lt;i class=&#34;fa-solid fa-diagram-project&#34;&gt;&lt;/i&gt;
+  &lt;h2 style=&#34;font-size:10;font-family:roboto&#34;&gt; The mathematics of adaptive, stable and robust Artificial Intelligence&lt;/h2&gt;
+ &lt;div style=&#34;text-align: justify&#34;&gt;
+ &lt;strong&gt; Supervisor: &lt;/strong&gt;
+ &lt;a href=&#34;mailto:ivan.tyukin@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; Prof Ivan Tyukin&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt; Status: &lt;/strong&gt; Open.&lt;/p&gt;
+&lt;p&gt;The studentship covers tuition fees for &lt;a href=&#34;https://www.ukcisa.org.uk/Information--Advice/Fees-and-Money/England-HE-fee-status#layer-6082&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Home/UK students&lt;/strong&gt;&lt;/a&gt; and a stipend of £19,668 per annum. The funding is available for 3.5 years. Overseas applicants will be considered but they must demonstrate the capability to fund the difference between International full-time fees (currently £28,260 per annum for 2023/2024 academic year) and Home/UK fees.&lt;/p&gt;
+&lt;hr class=&#34;rounded&#34;&gt;
+&lt;strong&gt; Description &amp;mdash; &lt;/strong&gt; Recent years have seen explosive growth in the applications of Artificial Intelligence (AI). Notwithstanding significant successes of the new technology, empirical evidence points to numerous examples of errors in the decisions of state-of-the-art AI systems. Current theoretical works confirm that modern design practices and classical mathematical frameworks supporting these could suffer from various fundamental shortcomings including the typicality of adversarial attacks, susceptibility to backdoors and stealth attacks, instabilities, and hallucinations. At the same time, there is a plethora of under-explored and seemingly controversial phenomena, such as learning from scarce yet high-dimensional information, which has been broadly observed experimentally in large-scale AI systems but whose complete mathematical understanding is yet to be developed. Other factors hindering the performance of current AI systems include the need to adapt to concept drifts and unforeseen changes in operational conditions.
+&lt;p&gt;The project aims to explore and systematically assess major causes of AI errors and instabilities and develop appropriate mathematical foundations enabling the creation of stable and robust Artificial Intelligence capable of dealing with errors and concept drifts. The successful candidate will work alongside a team of early career researchers funded by the UKRI Turing AI Acceleration Fellowship (EP/V025295/2) and will benefit from the team’s established relationships with industrial partners, academic networks (Turing AI Fellows, Trustworthy Autonomous Systems Node in Verifiability EP/V026801/2), and other collaborators in academia, healthcare, defence &amp;amp; security.&lt;/p&gt;
+&lt;hr class=&#34;rounded&#34;&gt;
+&lt;p&gt;&lt;strong&gt; How to apply — &lt;/strong&gt; To state your interest, please contact directly &lt;a href=&#34;mailto:ivan.tyukin@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;strong&gt;Prof Ivan Tyukin&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34; id=&#34;#paola&#34;&gt;
+&lt;a name=&#34;paola&#34;&gt;&lt;/a&gt;
+  &lt;i class=&#34;fa-solid fa-diagram-project&#34;&gt;&lt;/i&gt;
+  &lt;h2 style=&#34;font-size:10;font-family:roboto&#34;&gt; 
+  Entanglement and universality in inhomogeneous and out-of-equilibrium many body quantum systems &lt;/h2&gt;
+ &lt;div style=&#34;text-align: justify&#34;&gt;
+ &lt;strong&gt; Supervisors: &lt;/strong&gt;
+ &lt;a href=&#34;mailto:paola.ruggiero@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; Dr Paola Ruggiero&lt;/a&gt; and 
+ &lt;a href=&#34;mailto:benjamin.doyon@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; Prof Ben Doyon&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt; Status: &lt;/strong&gt; Open.&lt;/p&gt;
+&lt;p&gt;We would like to bring to your attention a &lt;a href=&#34;https://www.ukcisa.org.uk/Information--Advice/Fees-and-Money/England-HE-fee-status#layer-6082&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;funded home-student&lt;/strong&gt;&lt;/a&gt; PhD fellowship available in the Disordered System group at King’s College London. This is to be co-supervised by Dr Paola Ruggiero and Prof Benjamin Doyon, and to start in October 2023. The PhD project covers a broad range of topics in statistical physics and quantum many-body systems, and will be adapted to the interests of the candidate. A general description of the project can be found below.&lt;/p&gt;
+&lt;hr class=&#34;rounded&#34;&gt;
+&lt;strong&gt; Description &amp;mdash; &lt;/strong&gt; The project lies at the intersection of several different fields: from statistical physics to quantum information, from high energy to condensed matter physics. The common denominators are the phenomenon of quantum entanglement and the out-of-equilibrium behaviour of many-body quantum systems, particularly in low dimensional quantum many body systems. While the emergence of universality is rather well established for systems which are homogeneous and are at equilibrium, the same is not true for inhomogeneous systems, both in and out of equilibrium. Those, on the other hand, are the rule rather than the exception in the context of quantum experiments. Different new tools are currently under study to investigate what remains of the aforementioned universality in such more complicated situations, and the projects aims to gain a better understanding of this topic, especially through the “lenses” of entanglement.
+&lt;hr class=&#34;rounded&#34;&gt;
+&lt;p&gt;&lt;strong&gt; How to apply — &lt;/strong&gt; If you have home-fees student status, in order to express your interest, &lt;strong&gt;please submit first your CV and two reference letters to&lt;/strong&gt; &lt;a href=&#34;mailto:paola.ruggiero@kcl.ac.uk&#34; class=&#34;card-text&#34;&gt; &lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt; &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;&lt;/a&gt;. As a next step, apply for an Applied Mathematics Research Degree in the Mathematics Department via the King&amp;rsquo;s application system.
+&lt;a href=&#34;https://apply.kcl.ac.uk/&#34; class=&#34;btn btn-info btn-lg btn-block active&#34; role=&#34;button&#34; aria-pressed=&#34;true&#34;&gt;&lt;strong&gt;Direct link to the application page&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to study a persistent active glassy system</title>
+      <link>https://dissyskcl.github.io/publication/sollich-2021/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/sollich-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling the effect of ribosome mobility on the rate of protein synthesis</title>
+      <link>https://dissyskcl.github.io/publication/dauloudet-2021/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/dauloudet-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamical instantons and activated processes in mean-field glass models</title>
+      <link>https://dissyskcl.github.io/publication/ros-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/ros-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localization and Universality of Eigenvectors in Directed Random Graphs</title>
+      <link>https://dissyskcl.github.io/publication/metz-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/metz-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opinion dynamics with emergent collective memory: The impact of a long and heterogeneous news history</title>
+      <link>https://dissyskcl.github.io/publication/boschi-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/boschi-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Out-of-equilibrium phase diagram of the quantum random energy model</title>
+      <link>https://dissyskcl.github.io/publication/biroli-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/biroli-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
+      <link>https://dissyskcl.github.io/publication/exelby-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/publication/exelby-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generalized hydrodynamics</title>
+      <link>https://dissyskcl.github.io/lectures/ben112019/</link>
+      <pubDate>Thu, 21 Nov 2019 11:30:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/ben112019/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+Hydrodynamics is a powerful theory for describing the emergent dynamics, away from equilibrium, at large scales in space and time. In recent years, the theory adapting hydrodynamics to integrability, called &#34;generalised hydrodynamics&#34; (GHD), has been developed. It turns out to be extremely general, applicable to quantum and classical chains, field theories and gases. These lectures will cover the fundamental concepts of this theory. Starting from an overview of hydrodynamics, I will describe the most important aspects of integrability, from which I will derive the basic GHD equations. I will emphasise the universality of GHD and the physical interpretation of its various ingredients, and if time allows, explain some of its applications and more advanced concepts.  Only very basic knowledge of hydrodynamics and integrability is assumed, and I will keep everything as non-technical as possible.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/p0WnKXJhQ3o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f7LYDyqGpW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Counting equilibria in complex systems via random matrices</title>
+      <link>https://dissyskcl.github.io/lectures/yan062017/</link>
+      <pubDate>Tue, 27 Jun 2017 09:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/yan062017/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+How many equilibria will a large complex system, modeled by N randomly coupled autonomous nonlinear differential equations typically have? How many of those equilibria are stable, that is are local attractors of the nearby trajectories? These questions arise in many applications and can be partly answered by employing the methods of Random Matrix Theory.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KeKIO6Z1Mhw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NotrBgk-RbQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bwURE0o8UF8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kjpWN8ZCt8w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Zj5e0WcWPdQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zD24lV2l3kI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BCkeRDgoBSw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0J1lWkGJZvg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Bc0NY8iSvIk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Random matrices: Theory and Practice</title>
+      <link>https://dissyskcl.github.io/lectures/pier122017/</link>
+      <pubDate>Tue, 11 Apr 2017 09:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/lectures/pier122017/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+A brief course on random matrix theory given at ICTP Trieste, from the theoretical foundations to applications to complex systems.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Je4bU3g_QGk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Ods4H8gOJlY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/te6V9OvtGww&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Disordered systems</title>
+      <link>https://dissyskcl.github.io/project/ds/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Physical Systems</title>
+      <link>https://dissyskcl.github.io/project/ps/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ps/</guid>
+      <description>&lt;p&gt;In the domain of physical systems, the question of how to pack spheres optimally is familiar from everyday examples such as a greengrocer&amp;rsquo;s stack of oranges. But what if the spheres have a range of sizes, as happens for example in colloidal suspensions? Controversy has surrounded this issue, with proposals that the optimal structure could be disordered. Sollich and co-workers have recently provided a definitive answer, combining mathematical theory (polydisperse phase equilibrium calculations) with specialized numerical simulation techniques. The optimal structures are ordered, i.e. crystalline solids, but depending on the density and the spread of particle sizes the system will fractionate: the particles are effectively sorted out into several solid phases, with each containing only a small range of particle sizes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Protein interaction network</title>
+      <link>https://dissyskcl.github.io/project/pin/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/pin/</guid>
+      <description>&lt;p&gt;The definition and generation of good null models to assess the statistical relevance of observed features in protein interaction networks (PIN) is a well known problem in systems biology, where the aim is to understand how the structure of PINs relates to their biological functionality. By using statistical mechanics techniques, Annibale and Coolen recently derived explicit formulae for complex network ensembles with built-in topologies beyond the degrees, as proxies for real networks; provided exact algorithms for generating random graphs from such ensembles; and derived information-theoretic tools to quantify distances between networks. The application of these tools has enabled them and their coworkers to quantify detection biases in PIN data sets and species consistency.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sparse Symmetric Random Matrices</title>
+      <link>https://dissyskcl.github.io/project/rmt/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/rmt/</guid>
+      <description>&lt;p&gt;A collaboration between group members prof. Reimer Kuehn and Dr. Perez Castillo and international collaborators also led to a breakthrough in the spectral problem for sparse symmetric random matrices, allowing to efficiently compute spectral densities of such systems in the limit of large matrix size to any desired accuracy &amp;ndash; more than 20 years after a solution to this problem was first attempted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Universal Glassy Low-Temperature Anomalies</title>
+      <link>https://dissyskcl.github.io/project/ga/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ga/</guid>
+      <description>&lt;p&gt;Prof. Reimer Kühn has provided the first formulation of a microscopic model to describe the emergence of the universal glassy low-temperature anomalies, including an understanding of the origin of the mysterious so-called quantitative universality &amp;ndash; a problem that had been open since its formulation in the late 80s. He has also given the first proper formulation and analysis of the role of interactions (networks of functional dependencies) on operational and credit risk, including recently an analysis of the influence of credit derivatives on systemic risk.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dissyskcl.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

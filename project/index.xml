@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/project/</link>
+      <atom:link href="https://dissyskcl.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://dissyskcl.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Quantitative and Digital Law Lab</title>
+      <link>https://dissyskcl.github.io/project/ql/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disordered systems</title>
+      <link>https://dissyskcl.github.io/project/ds/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Physical Systems</title>
+      <link>https://dissyskcl.github.io/project/ps/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ps/</guid>
+      <description>&lt;p&gt;In the domain of physical systems, the question of how to pack spheres optimally is familiar from everyday examples such as a greengrocer&amp;rsquo;s stack of oranges. But what if the spheres have a range of sizes, as happens for example in colloidal suspensions? Controversy has surrounded this issue, with proposals that the optimal structure could be disordered. Sollich and co-workers have recently provided a definitive answer, combining mathematical theory (polydisperse phase equilibrium calculations) with specialized numerical simulation techniques. The optimal structures are ordered, i.e. crystalline solids, but depending on the density and the spread of particle sizes the system will fractionate: the particles are effectively sorted out into several solid phases, with each containing only a small range of particle sizes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Protein interaction network</title>
+      <link>https://dissyskcl.github.io/project/pin/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/pin/</guid>
+      <description>&lt;p&gt;The definition and generation of good null models to assess the statistical relevance of observed features in protein interaction networks (PIN) is a well known problem in systems biology, where the aim is to understand how the structure of PINs relates to their biological functionality. By using statistical mechanics techniques, Annibale and Coolen recently derived explicit formulae for complex network ensembles with built-in topologies beyond the degrees, as proxies for real networks; provided exact algorithms for generating random graphs from such ensembles; and derived information-theoretic tools to quantify distances between networks. The application of these tools has enabled them and their coworkers to quantify detection biases in PIN data sets and species consistency.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sparse Symmetric Random Matrices</title>
+      <link>https://dissyskcl.github.io/project/rmt/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/rmt/</guid>
+      <description>&lt;p&gt;A collaboration between group members prof. Reimer Kuehn and Dr. Perez Castillo and international collaborators also led to a breakthrough in the spectral problem for sparse symmetric random matrices, allowing to efficiently compute spectral densities of such systems in the limit of large matrix size to any desired accuracy &amp;ndash; more than 20 years after a solution to this problem was first attempted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Universal Glassy Low-Temperature Anomalies</title>
+      <link>https://dissyskcl.github.io/project/ga/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ga/</guid>
+      <description>&lt;p&gt;Prof. Reimer Kühn has provided the first formulation of a microscopic model to describe the emergence of the universal glassy low-temperature anomalies, including an understanding of the origin of the mysterious so-called quantitative universality &amp;ndash; a problem that had been open since its formulation in the late 80s. He has also given the first proper formulation and analysis of the role of interactions (networks of functional dependencies) on operational and credit risk, including recently an analysis of the influence of credit derivatives on systemic risk.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

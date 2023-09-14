@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disordered Systems | KCL Disordered Systems</title>
+    <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
+      <atom:link href="https://dissyskcl.github.io/tag/disordered-systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Disordered Systems</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 30 Jun 2023 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dissyskcl.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>Disordered Systems</title>
+      <link>https://dissyskcl.github.io/tag/disordered-systems/</link>
+    </image>
+    
+    <item>
+      <title>Spin Glass Theory &amp; Far Beyond</title>
+      <link>https://dissyskcl.github.io/news/rsb40/</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/rsb40/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://www.worldscientific.com/worldscibooks/10.1142/13341#t=aboutBook&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Spin Glass Theory and Far Beyond&lt;/strong&gt;&lt;/a&gt;, more than 30 contributions are compiled from more than 100 leading
+researchers who contributed to these applications over the last few decades. This volume provides a detailed introduction and review of spin glass research. While the fundamentals are expounded, cutting-edge and state-ofthe-art applications are also featured in this encyclopedic overview for enthusiastic readers in the 21st century&lt;/p&gt;
+&lt;p&gt;The volume is edited by Patrick Charbonneau, Enzo Marinari, Marc Mézard, Giorgio Parisi, Federico Ricci-Tersenghi, Gabriele Sicuro, and Francesco Zamponi.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Sergio Caracciolo, Alexander K. Hartmann, Scott Kirkpatrick, Martin Weigel&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2301.00683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Simulated Annealing, Optimization, Searching for Ground States&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;David Sherrington, Jairo R.L. de Almeida&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Beyond the Ising Spin Glass I: $m$-vector, Potts, $p$-spin, spherical, induced moment, random graphs&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Michael K. Kosterlitz&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Beyond the Ising Spin Glass II: Spin glass without replicas&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Renormalization Group in Spin Glasses&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Tom Lubenski&lt;/em&gt;&lt;br&gt;
+Mean-Field and $\epsilon$-Expansion for Spin Glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tamás Temesvári, Imre Kondor&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2212.01654&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Field theory for the de Almeida-Thouless transition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Maria Chiara Angelini&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2302.05292&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Real-space renormalization group for spin glasses&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Victor Martin-Mayor, Juan J. Ruiz-Lorenzo, Beatriz Seoane, A. Peter Young&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.14089&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Numerical Simulations and Replica Symmetry Breaking&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Valentina Ros, Yan V. Fyodorov&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.07975&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The High-Dimensional Landscapes Paradigm: Spin-Glasses, and Beyond&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Theodore R. Kirkpatrick, Dave Thirumalai&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1401.2024&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Universal Aspects of the Structural Glass Transition from Density Functional Theory&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Non-Perturbative Processes in Glasses&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Peter Wolynes&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.00600&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Random First Order Transition Theory of Glasses in Real Space-Time: Instantons, Strings, Flames and Flows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Tommaso Rizzo&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.09689&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stochastic equations and dynamics beyond mean-field theory&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamical Mean-Field Theory and the Aging Dynamics&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Andrea Crisanti&lt;/em&gt;&lt;br&gt;
+Equilibrium dynamics and Replica Symmetry Breaking in spin-glass systems&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Silvio Franz, Jorge Kurchan&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2207.05720&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The relation between Parisi scheme and multi-thermalized dynamics in finite dimensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Andrea Maiorano&lt;/em&gt;&lt;br&gt;
+Weak ergodicity breaking in mean-field spin glasses&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Giulio Biroli, Kunimasa Miyazaki, David R. Reichman&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.02825&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Dynamical Heterogeneity in Glass-Forming Liquids&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Chiara Cammarota, Misaki Ozawa, Gilles Tarjus&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.11049&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Kauzmann Transition to an Ideal Glass Phase&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Gardner Glass&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Pierfrancesco Urbani&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2212.11557&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Low temperature amorphous solids: mean field theory and beyond&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Yuliang Jin, Hajime Yoshino&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.07868&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computer simulations of the Gardner transition in structural glasses&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Francesco Arceri, Eric I. Corwin, Corey S. O&amp;rsquo;Hern&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.02829&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Jamming Transition and the Marginally Stable Solid&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;From Polymers to the KPZ Equation&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Victor Dotsenko, Pierre Le Doussal&lt;/em&gt;&lt;br&gt;
+Directed polymers and the Kardar-Parisi-Zhang equation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Henri Orland&lt;/em&gt;&lt;br&gt;
+Heteropolymers and Proteins&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Emergent Dynamics in Glasses and Disordered Systems: Correlations and Avalanches&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Annette Zippelius, Matthias Fuchs&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.00890&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;From viscous fluids to elastic solids: A perspective on the glass transition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Alberto Rosso, James P. Sethna, and Matthieu Wyart&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.04090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Avalanches and deformation in glasses and disordered systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Claudio Conti, Neda Ghofraniha, Luca Leuzzi, Giancarlo Ruocco&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.03781&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Replica Symmetry Breaking in Random Lasers: Experimental Measurement of the Overlap Distribution&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Saverio Pascazio, Antonello Scardicchio, Marco Tarzia&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Anderson Localization on the Bethe Lattice&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Leticia Cugliandolo, Markus Müller&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.05417&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Quantum Glasses ­— A review&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Alfredo Braunstein, Guilhem Semerjian&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2209.11499&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Cavity Method: From Exact Solutions to Algorithms&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Florent Krzakala, Manfred Opper, David Saad&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Message Passing and Its Applications&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Yoshiyuki Kabashima, Toshiyuki Tanaka&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Information and Communication&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Erik Aurell, Jean Barbier, Aurelien Decelle, Roberto Mulet&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2205.00750&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The Mighty Force: Statistical Inference and High-Dimensional Statistics&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;David Gamarnik, Cristopher Moore, Lenka Zdeborová&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2210.08312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Disordered Systems Insights on Computational Hardness&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Marylou Gabrié, Surya Ganguli, Carlo Lucibello, Riccardo Zecchina&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2304.06636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Neural Networks: From the Perceptron to Deep Nets&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;From Statistical Physics of Disordered Systems to Neuroscience&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Nicolas Brunel, Rémi Monasson, Haim Sompolinsky&lt;/em&gt;&lt;br&gt;
+Statistical Physics and Neuroscience&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;J. Leo van Hemmen&lt;/em&gt;&lt;br&gt;
+Neuronal Network and Spin Glass: A Non-Existing Relationship&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Statistical Physics of Biological Molecules&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Simona Cocco, Andrea De Martino, Andrea Pagnani, Martin Weigt&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2207.13402&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statistical-physics approaches to RNA molecules, families and networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Felix Ritort&lt;/em&gt;&lt;br&gt;
+Molecular Replica Symmetry Breaking&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Jean-Philippe Bouchaud, Matteo Marsili, Jean-Pierre Nadal&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2306.16165&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Application of Spin Glass Ideas in Social Sciences, Economics and Finance&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complex Dynamics in Ecological Systems and Animal Behavior&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;M. Cristina Marchetti&lt;/em&gt;&lt;br&gt;
+Active Glasses and &amp;ldquo;Flying&amp;rdquo; Spin Glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Irene Giardina&lt;/em&gt;&lt;br&gt;
+Collective behavior in natural flocks: from data to models&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ada Altieri&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2208.14956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Glassy features and complex dynamics in ecological systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Antonio Auffinger, Andrea Montanari, Eliran Subag&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2206.10217&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Optimization of Random High-Dimensional Functions: Structure and Algorithms&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rigorous Results in the Sherrington-Kirkpatrick Model&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Wei-Kuo Chen&lt;/em&gt;&lt;br&gt;
+The Parisi formula&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dmitry Panchenko&lt;/em&gt;&lt;br&gt;
+Ultrametricity in spin glasses&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Francesco Guerra&lt;/em&gt;&lt;br&gt;
+The replica trick in the frame of the interpolation perspective&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Random Energy Models: Broken Replica Symmetry and Activated Dynamics&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Bernard Derrida, Peter Mottishaw&lt;/em&gt;&lt;br&gt;
+The Random Energy Models and Replica Symmetry Breaking&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Véronique Gayrard&lt;/em&gt;&lt;br&gt;
+The Arcsine Law as a Universal Aging Scheme for Activated Dynamics of Random Energy Models&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Amin Coja-Oghlan, Allan Sly, Nike Sun&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Rigorous Results: Random Constraint Satisfaction Problems&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Charles M. Newman, Nicholas Read, Daniel L. Stein&lt;/em&gt;&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2204.10345&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Metastates and Replica Symmetry Breaking&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcoming the 2021 Nobel Prize for Physics to Giorgio Parisi</title>
+      <link>https://dissyskcl.github.io/news/parisi2021/</link>
+      <pubDate>Tue, 05 Oct 2021 10:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/news/parisi2021/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;
+&lt;img src=&#34;featured0.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;Giorgio Parisi made several groundbreaking contributions to the Physics of Complex Systems. These are systems consisting of many interacting particles, and frequently, in the real world, this interaction is essentially random. He has provided deep insights, both physical and mathematical, into several paradigmatic models which serve as benchmarks in the field. These models, sometimes developed to understand very concrete physical systems, help to elucidate generic (or as physicists frequently call them, &amp;lsquo;&amp;lsquo;universal&amp;rsquo;&amp;rsquo;) properties, common to a very broad class of phenomena which look remote from the original model.&lt;/p&gt;
+&lt;img src=&#34;featured1.jpg&#34; alt=&#34;drawing&#34; style=&#34;width:\textwidth;&#34;/&gt;
+&lt;p&gt;One of the models, now known as the Kardar-Parisi-Zhang (KPZ) model, addressed patterns which arise when some material is randomly deposited onto a surface (imagine snowfall on the floor), and in this way the height of the surface grows. It is intuitively clear that the resulting surface becomes rough over time, but to characterize the surface roughness in a precise quantitative way via a tractable mathematical formalism is a very challenging problem. The KPZ model, proposed in 1985, allows such a characterization, possesses beautiful mathematical properties which have been fully understood and utilized only in the last decade, and remains a very active field of research both in Physics and Mathematics.&lt;/p&gt;
+&lt;p&gt;Another beautiful discovery by Parisi (this time without collaborators) stemmed from solving the paradigmatic model of random magnetic materials. To begin with, one may think of standard magnetic substances like iron or steel as a collection of a huge number of elementary &amp;lsquo;&amp;lsquo;atomic magnets&amp;rsquo;&amp;rsquo;, known as &amp;lsquo;&amp;lsquo;spins&amp;rsquo;&amp;rsquo;. These can be usefully visualized as tiny arrows, and each taken alone may point in any direction. In standard magnets neighbouring atoms have a tendency to alligning their arrows along the same direction (one may say they &amp;lsquo;&amp;rsquo;like to look in the same direction&amp;rsquo;&amp;rsquo;), and as the result of such interaction all arrows in the substance will eventually look in the same direction. Such pattern of arrows is obviously highly ordered - one can think of it as a &amp;lsquo;&amp;lsquo;magnetic crystal&amp;rsquo;&amp;rsquo;. However, there exist substances where some pairs of atoms may have a tendency for their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; to look in the same direction, whereas other pairs of atoms may prefer to have their &amp;lsquo;&amp;lsquo;arrows&amp;rsquo;&amp;rsquo; looking in exactly opposite directions. If the number of &amp;lsquo;&amp;lsquo;alligning&amp;rsquo;&amp;rsquo; and &amp;lsquo;&amp;lsquo;anti-alligning&amp;rsquo;&amp;rsquo; pairs are roughly the same the whole pattern of arrows will look at first glance highly irregular, seemingly without order. Such substances are called &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo; (akin to atoms in usual glasses being not ordered, but randomly positioned in space). A surprising and completely unexpected discovery by Parisi in 1979 was that actually such substances do have an unusual, well hidden order in the pattern of their &amp;lsquo;&amp;lsquo;spin arrows&amp;rsquo;&amp;rsquo;. But this order can not be seen by the naked eye, and can be revealed only by exploiting equally unusual mathematical machinery. To give a flavour of the striking features behind the &amp;lsquo;&amp;lsquo;Parisi solution&amp;rsquo;&amp;rsquo; one may mention that it required to consider geometry in &amp;lsquo;&amp;lsquo;zero spatial dimension&amp;rsquo;&amp;rsquo;! Recall that we live in three-dimensional world; structures in the plane are called two-dimensional, and on a single line one-dimensional. One might think of zero-dimensional object as a single point, and this naively has no structure. Parisi ingeniously suggested that in a certain sense such objects may have a rich hierarchic structure - which in the end helps to describe hidden order in &amp;lsquo;&amp;lsquo;spin glasses&amp;rsquo;&amp;rsquo;. And this is not at all an academic oddity - by now &amp;lsquo;&amp;lsquo;zero dimensional&amp;rsquo;&amp;rsquo; hierarchic patterns discovered by Giorgio Parisi turned out to be relevant in many fields in Physics - ranging from Quantum Gravity to Machine Learning, and eventually in pure mathematical works aiming to understand patterns behind the main building blocks of Arithmetics - the prime numbers.&lt;/p&gt;
+&lt;p&gt;Parisi&amp;rsquo;s contributions are among the most important to the theory of complex systems, not only in physics but also in other areas such as mathematics, biology, neuroscience, to mention a few. His work gives an example of the power of interdisciplinary research to tackle, understand and solve challenging problems. An example to follow. Thanks Giorgio!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Disordered systems</title>
+      <link>https://dissyskcl.github.io/project/ds/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dissyskcl.github.io/project/ds/</guid>
+      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
