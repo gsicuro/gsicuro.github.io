@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bd | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/authors/bd/</link>
+      <atom:link href="https://gsicuro.github.io/authors/bd/index.xml" rel="self" type="application/rss+xml" />
+    <description>bd</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Sep 2022 11:30:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>bd</title>
+      <link>https://gsicuro.github.io/authors/bd/</link>
+    </image>
+    
+    <item>
+      <title>Conformal field theory and quantum many-body physics</title>
+      <link>https://gsicuro.github.io/lectures/ben092022/</link>
+      <pubDate>Tue, 06 Sep 2022 11:30:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/ben092022/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+Finding general principles that go beyond the well developed thermodynamic theory of equilibrium is one of the most important challenges of current research. As thermodynamics is a theory for extensive quantities such as the energy, and its fluctuations in space, one looks for a parallel theory that asks about quantities that are spatially transported, say from left to right, over time: currents and their fluctuations. In this series of lectures, I will develop a number of topics to answer some of these questions. I will restrict to the context of two-dimensional spacetime for simplicity, going over the basic ideas and exact results in conformal field theory (CFT) and integrable systems. Topics covered will be: (1) Nonequilibrium steady states in many-body quantum systems that admit ballistic transport. (2) Fluctuations of transported quantities at large times using the largedeviation framework. (3) The relation between static and dynamic fluctuations, and the entanglement entropy and its growth after quenches. As time permits, I will overview hydrodynamic techniques, twist fields techniques, and, in CFT, conformal welding techniques for large-deviation functions.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/OYFsdxmcrSY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M5482d0WZ8Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LDR9EsZSzio&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/USqrpUifJZA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Generalized hydrodynamics</title>
+      <link>https://gsicuro.github.io/lectures/ben112019/</link>
+      <pubDate>Thu, 21 Nov 2019 11:30:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/ben112019/</guid>
+      <description>&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+Hydrodynamics is a powerful theory for describing the emergent dynamics, away from equilibrium, at large scales in space and time. In recent years, the theory adapting hydrodynamics to integrability, called &#34;generalised hydrodynamics&#34; (GHD), has been developed. It turns out to be extremely general, applicable to quantum and classical chains, field theories and gases. These lectures will cover the fundamental concepts of this theory. Starting from an overview of hydrodynamics, I will describe the most important aspects of integrability, from which I will derive the basic GHD equations. I will emphasise the universality of GHD and the physical interpretation of its various ingredients, and if time allows, explain some of its applications and more advanced concepts.  Only very basic knowledge of hydrodynamics and integrability is assumed, and I will keep everything as non-technical as possible.
+&lt;/div&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/p0WnKXJhQ3o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&amp;nbsp;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f7LYDyqGpW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

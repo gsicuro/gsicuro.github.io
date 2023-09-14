@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peter Sollich | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/authors/peter-sollich/</link>
+      <atom:link href="https://gsicuro.github.io/authors/peter-sollich/index.xml" rel="self" type="application/rss+xml" />
+    <description>Peter Sollich</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>Peter Sollich</title>
+      <link>https://gsicuro.github.io/authors/peter-sollich/</link>
+    </image>
+    
+    <item>
+      <title>How to study a persistent active glassy system</title>
+      <link>https://gsicuro.github.io/publication/sollich-2021/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/sollich-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Precision of tissue patterning is controlled by dynamical properties of gene regulation networks</title>
+      <link>https://gsicuro.github.io/publication/exelby-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/exelby-2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sergio Caracciolo | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/authors/sergio-caracciolo/</link>
+      <atom:link href="https://gsicuro.github.io/authors/sergio-caracciolo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sergio Caracciolo</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
+      <title>Sergio Caracciolo</title>
+      <link>https://gsicuro.github.io/authors/sergio-caracciolo/</link>
+    </image>
+    
+    <item>
+      <title>Criticality and conformality in the random dimer model</title>
+      <link>https://gsicuro.github.io/publication/caracciolo2021/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/publication/caracciolo2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
