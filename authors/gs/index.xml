@@ -13,36 +13,6 @@
     </image>
     
     <item>
-      <title>The Group Research</title>
-      <link>https://gsicuro.github.io/talks/dstalks/</link>
-      <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/talks/dstalks/</guid>
-      <description>&lt;script defer src=&#34;https://gsicuro.github.io/static/fontawesome/fontawesome-all.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nwaQxr3ymwQ&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;8 September 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;In every finite-range quantum spinchain linearised Euler hydrodynamic equations hold&lt;/em&gt;. Talk given at the &lt;a href=&#34;http://www.crm.umontreal.ca/2022/Conformal22/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Théorie des champs conforme et systèmes quantiques à plusieurs corps&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=vJdmK0Vqvpo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;31 August 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement Rényi entropies from Ballistic Fluctuations Theory: the free fermionic case&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.kitp.ucsb.edu/activities/integrable-c22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Talking Integrability: Spins, Fields, and Strings conference at KITP&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;23 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;A few results and conjectures on some product-ratio correlation functions of characteristic polynomials of β-Hermite ensembles&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/events/50yntrmt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;50 Years of Number Theory and Random Matrix Theory&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=6E8pvgu8ICY&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;14 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Izaak Neri&lt;/strong&gt;, &lt;em&gt;Thermodynamic Trade-off Relations Involving First-Passage Times&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.icts.res.in/discussion-meeting/strd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Stochastic thermodynamics: recent developments&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=zqc11XI7d2A&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;13 June 2022&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Entanglement and disorder in many-body systems: a renormalisation group perspective&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://meco47.sciencesconf.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;47th Conference of the Middle European Cooperation in Statistical Physics&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=n3uysPHn3_0&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;11 November 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Paola Ruggiero&lt;/strong&gt;, &lt;em&gt;Recent advances in Integrable Quantum Many-body Systems Out-of-Equilibrium: Hydrodynamics and Quantum Corrections&lt;/em&gt;. Talk given at the &lt;em&gt;Italian Society of Statistical Physics&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=etZI4oHAcLo&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;15 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Izaak Neri&lt;/strong&gt;, &lt;em&gt;Dissipation bounds the moments of first-passage times of dissipative currents&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.esi.ac.at/events/e412/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Interdisciplinary Challenges in Nonequilibrium Physics&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=LH9JitDAhF4&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;1 April 2021&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;Spectra of Large Random Stochastic Matrices and relaxation in complex systems&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.ias.edu/math/wrmrs/agenda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Workshop on Random Matrices and Random Systems&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=3OOK651z8jc&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;24 July 2020&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;, &lt;em&gt;On eigenvector statistics in non-normal random matrices&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://web-eur.cvent.com/event/44bdce4a-9414-4c7f-928f-4ea3e4985835/summary?rp=00000000-0000-0000-0000-000000000000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;CMI-HIMR Integrable Probability Online Summer School&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=AkK582eLwJ4&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;4 December 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;Gehirn und Gesellschaft - Eine Analogie&lt;/em&gt;. Talk in German given at the &lt;a href=&#34;https://www.uni-bielefeld.de/%28de%29/ZiF/OeV/2019/12-04-Kuehn.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Zentrum für interdisziplinäre Forschung&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=tCr0YekLvXg&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt; &lt;span style=&#34;color:Maroon&#34;&gt;&lt;strong&gt;5 November 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;Diffusion and superdiffusion from hydrodynamic projection&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://www.icts.res.in/program/hydrodynamics2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Thermalization, many body localization and hydrodynamics&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=nRN080X85Ec&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;span style=&#34;color:Maroon&#34;&gt; &lt;strong&gt;13 May 2019&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Benjamin Doyon&lt;/strong&gt;, &lt;em&gt;Hydrodynamics of quantum and classical integrable systems, correlations and fluctuations&lt;/em&gt;. Talk given at the &lt;a href=&#34;https://iip.ufrn.br/eventsdetail.php?inf=%3D%3DQTUFFM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Emergent hydrodynamics in low dimensional quantum systems&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;btn btn-primary btn-sm&#34; href=&#34;https://www.youtube.com/watch?v=bcdm_it5yfM&#34; role=&#34;button&#34;&gt; &lt;i class=&#34;fab fa-youtube&#34;&gt;&lt;/i&gt; &lt;/a&gt;&lt;span style=&#34;color:Maroon&#34;&gt; &lt;strong&gt;1 July 2014&lt;/strong&gt;&lt;/span&gt;. &lt;strong&gt;Reimer Kühn&lt;/strong&gt;, &lt;em&gt;A Random Walk Perspective of Search and Network Exploration&lt;/em&gt;. Talk given at the &lt;a href=&#34;cs.if.uj.edu.pl/matrix&#34;&gt;&lt;em&gt;Random matrix theory: Applications in the information era&lt;/em&gt;&lt;/a&gt; conference.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The King&#39;s Mathematical Colloquia</title>
-      <link>https://gsicuro.github.io/talks/colloquia/</link>
-      <pubDate>Fri, 01 Jan 2021 10:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/talks/colloquia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Disordered Systems Days at King&#39;s College London</title>
       <link>https://gsicuro.github.io/news/kuhn2023/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
@@ -79,22 +49,6 @@
       <link>https://gsicuro.github.io/news/bmc2022/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/news/bmc2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Criticality and conformality in the random dimer model</title>
-      <link>https://gsicuro.github.io/publication/caracciolo2021/</link>
-      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/caracciolo2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The planted $k$-factor problem</title>
-      <link>https://gsicuro.github.io/publication/sicuro2021/</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publication/sicuro2021/</guid>
       <description></description>
     </item>
     

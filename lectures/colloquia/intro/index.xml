@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The King&#39;s Mathematical Colloquia | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/lectures/colloquia/intro/</link>
+      <atom:link href="https://gsicuro.github.io/lectures/colloquia/intro/index.xml" rel="self" type="application/rss+xml" />
+    <description>The King&#39;s Mathematical Colloquia</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gsicuro.github.io/lectures/colloquia/intro/featured.jpg</url>
+      <title>The King&#39;s Mathematical Colloquia</title>
+      <link>https://gsicuro.github.io/lectures/colloquia/intro/</link>
+    </image>
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>https://gsicuro.github.io/lectures/colloquia/intro/example/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/colloquia/intro/example/</guid>
+      <description>&lt;p&gt;Content&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
