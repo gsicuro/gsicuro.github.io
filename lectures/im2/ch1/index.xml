@@ -23,7 +23,7 @@ contesto più concreto e forse più semplice. Consideriamo due punti $A$ e
 $B$ nello spazio &lt;em&gt;ordinario&lt;/em&gt;. Un vettore &lt;em&gt;vettore applicato
 ${\boldsymbol v}=\overrightarrow{AB}$ in $A$ con punto finale $B$&lt;/em&gt; può
 essere immaginato come una freccia che collega $A$ e $B$,&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./main-0&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gsicuro.github.io/images/im2/vettore.png&#34; alt=&#34;Vettore&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Un vettore applicato è caratterizzato dal suo punto di applicazione,
 $A$, da una direzione, un verso e una lunghezza. Se $A=B$, allora il
 corrispondente vettore è detto &lt;em&gt;nullo&lt;/em&gt; e viene indicato con $\mathbf 0$.
@@ -47,11 +47,11 @@ a $B$ si ottiene il vettore $\overrightarrow{BC}$ con coda in $C$.
 Possiamo quindi &lt;em&gt;definire&lt;/em&gt; $\overrightarrow{AC}$ come rappresentante del
 vettore geometrico ${\boldsymbol v}+{\boldsymbol u}$. Pittorialmente
 questo può essere ottenuto utilizzando la &lt;em&gt;regola del parallelogramma&lt;/em&gt;,&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./main-1&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gsicuro.github.io/images/im2/parallelogramma.png&#34; alt=&#34;Parallelo&#34;&gt;&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;operazione di somma che abbiamo definito è &lt;em&gt;associativa&lt;/em&gt;. Se abbiamo
 tre vettori ${\boldsymbol v}$, ${\boldsymbol u}$ e ${\boldsymbol w}$,
 allora&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./somma.png&#34; alt=&#34;Associativity&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gsicuro.github.io/images/im2/somma.png&#34; alt=&#34;Associativity&#34;&gt;&lt;/p&gt;
 &lt;p&gt;È inoltre commutativa,
 ${\boldsymbol v}+{\boldsymbol u}={\boldsymbol u}+{\boldsymbol v}$, e
 tale per cui ${\boldsymbol v}+\mathbf 0={\boldsymbol v}$. Infine, dato
