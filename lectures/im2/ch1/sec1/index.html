@@ -1,0 +1,1360 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gabriele Sicuro" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Vettori applicati e vettori geometrici Per introdurre il concetto di spazio vettoriale iniziamo da un contesto più concreto e forse più semplice. Consideriamo due punti $A$ e $B$ nello spazio ordinario." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://gsicuro.github.io/lectures/im2/ch1/sec1/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.4e96e9bf5a85f434ab27014f229625db.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gsicuro.github.io/lectures/im2/ch1/sec1/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@https://twitter.com/KCLDisSyst" />
+    <meta property="twitter:creator" content="@https://twitter.com/KCLDisSyst" />
+  
+  <meta property="og:site_name" content="Gabriele Sicuro" />
+  <meta property="og:url" content="https://gsicuro.github.io/lectures/im2/ch1/sec1/" />
+  <meta property="og:title" content="Spazi vettoriali | Gabriele Sicuro" />
+  <meta property="og:description" content="Vettori applicati e vettori geometrici Per introdurre il concetto di spazio vettoriale iniziamo da un contesto più concreto e forse più semplice. Consideriamo due punti $A$ e $B$ nello spazio ordinario." /><meta property="og:image" content="https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2023-01-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2023-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Spazi vettoriali | Gabriele Sicuro</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9d15937e4ea3addd4bf584f3c7476aa5" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c4b90dff1cebe730b9c3b416b2576fc5.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Gabriele Sicuro</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Gabriele Sicuro</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#education"><span>Education</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#events"><span>Events</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/alumni/"><span>Students</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#lectures"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publications/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Elementi di algebra lineare
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/lectures/"><i class="fas fa-arrow-left pr-1"></i>Lectures</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/lectures/im2/">Istituzioni di Matematica II</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/lectures/im2/ch1/">Elementi di algebra lineare</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/lectures/im2/ch1/sec1/">Spazi vettoriali</a></li>
+
+
+
+  <li class=""><a href="/lectures/im2/ch1/sec2/">Matrici</a></li>
+
+
+
+  <li class=""><a href="/lectures/im2/ch1/sec3/">Sistemi di equazioni lineari</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#vettori-applicati-e-vettori-geometrici">Vettori applicati e vettori geometrici</a></li>
+        <li><a href="#somma">Somma</a></li>
+        <li><a href="#prodotto-per-scalare">Prodotto per scalare</a></li>
+        <li><a href="#spazi-vettoriali">Spazi vettoriali</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/">
+      
+        Lectures
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/im2/">
+      
+        Istituzioni di Matematica II
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/im2/ch1/">
+      
+        Elementi di algebra lineare
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Spazi vettoriali
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Spazi vettoriali</h1>
+
+          <div class="article-style">
+            <h3 id="vettori-applicati-e-vettori-geometrici">Vettori applicati e vettori geometrici</h3>
+<p>Per introdurre il concetto di <em>spazio vettoriale</em> iniziamo da un
+contesto più concreto e forse più semplice. Consideriamo due punti $A$ e
+$B$ nello spazio <em>ordinario</em>. Un vettore <em>vettore applicato
+${\boldsymbol v}=\overrightarrow{AB}$ in $A$ con punto finale $B$</em> può
+essere immaginato come una freccia che collega $A$ e $B$,</p>
+<p><img src="./main-0" alt="image"></p>
+<p>Un vettore applicato è caratterizzato dal suo punto di applicazione,
+$A$, da una direzione, un verso e una lunghezza. Se $A=B$, allora il
+corrispondente vettore è detto <em>nullo</em> e viene indicato con $\mathbf 0$.
+Due vettori ${\boldsymbol v}=\overrightarrow{AB}$ e
+${\boldsymbol u}=\overrightarrow{CD}$ sono <em>equipollenti</em> se hanno
+stessa direzione, stessa lunghezza e stesso verso. L&rsquo;equipollenza è una
+relazione di equivalenza e un <em>vettore geometrico</em> corrisponde ad una
+classe di equivalenza secondo equipollenza. Uno specifico vettore
+applicato è perciò un <em>rappresentante</em> di questa classe di equivalenza.
+In effetti è possibile introdurre una serie di operazioni tra <em>vettori
+geometrici</em>, ovvero classi di equivalenza, &ldquo;dimenticando&rdquo; il fatto che
+tali vettori sono da intendersi di volta in volta applicati in specifici
+punti.</p>
+<h3 id="somma">Somma</h3>
+<p>Dati due vettori geometrici ${\boldsymbol v}$ e ${\boldsymbol u}$, la
+loro somma ${\boldsymbol u}+{\boldsymbol v}$ può essere definita usando
+dei loro rappresentanti. In particolare, scelto un punto $A$, applicando
+${\boldsymbol v}$ ad $A$ si ottiene il vettore $\overrightarrow{AB}$ con
+coda in un punto $B$, e, consecutivamente, applicando ${\boldsymbol u}$
+a $B$ si ottiene il vettore $\overrightarrow{BC}$ con coda in $C$.
+Possiamo quindi <em>definire</em> $\overrightarrow{AC}$ come rappresentante del
+vettore geometrico ${\boldsymbol v}+{\boldsymbol u}$. Pittorialmente
+questo può essere ottenuto utilizzando la <em>regola del parallelogramma</em>,</p>
+<p><img src="./main-1" alt="image"></p>
+<p>L&rsquo;operazione di somma che abbiamo definito è <em>associativa</em>. Se abbiamo
+tre vettori ${\boldsymbol v}$, ${\boldsymbol u}$ e ${\boldsymbol w}$,
+allora</p>
+<p><img src="./somma.png" alt="Associativity"></p>
+<p>È inoltre commutativa,
+${\boldsymbol v}+{\boldsymbol u}={\boldsymbol u}+{\boldsymbol v}$, e
+tale per cui ${\boldsymbol v}+\mathbf 0={\boldsymbol v}$. Infine, dato
+un vettore applicato $\overrightarrow{AB}$, il vettore applicato
+$\overrightarrow{BA}$ è tale per cui
+$\overrightarrow{AB}+\overrightarrow{BA}=\mathbf 0$: se il vettore
+geometrico associato a $\overrightarrow{AB}$ è ${\boldsymbol v}$,
+denotiamo quindi $-{\boldsymbol v}$ il vettore geometrico associato a
+$\overrightarrow{BA}$ e scriviamo
+${\boldsymbol v}+(-{\boldsymbol v})=\mathbf 0$: $-{\boldsymbol v}$ è
+l&rsquo;<em>opposto</em> di ${\boldsymbol v}$.</p>
+<h3 id="prodotto-per-scalare">Prodotto per scalare</h3>
+<p>È possibile anche introdurre l&rsquo;operazione <em>moltiplicazione per uno
+scalare $c\in{\mathbb R}$</em>: il vettore $c{\boldsymbol v}$ ha stessa
+direzione di ${\boldsymbol v}$, stesso verso se $c&gt;0$ e verso opposto se
+$c&lt;0$, e lunghezza uguale a $|c|$ volte quella di ${\boldsymbol v}$. Se $c=0$, allora $c{\boldsymbol v}=\mathbf 0$. È facile verificare che,
+se $a,b\in{\mathbb R}$, allora $(a+b){\boldsymbol v}=a{\boldsymbol v}+b{\boldsymbol v}$,
+$(ab){\boldsymbol v}=a(b{\boldsymbol v})$ e, dati due vettori
+${\boldsymbol v}$ e ${\boldsymbol u}$,
+$a({\boldsymbol v}+{\boldsymbol u})=a{\boldsymbol v}+a{\boldsymbol u}$.</p>
+<h3 id="spazi-vettoriali">Spazi vettoriali</h3>
+<p>Abbiamo definito due essenziali operazioni tra vettori geometrici che
+hanno anche un significato geometrico piuttosto chiaro una volta
+interpretate in termini di rappresentanti di vettori geometrici. Per
+mezzo di queste operazioni, abbiamo introdotto uno <em>spazio vettoriale</em>,
+popolato da vettori geometrici che possono essere quindi combinati
+tramite somme e alterati in modulo e verso tramite moltiplicazioni per
+scalari. Abbiamo finora considerato questi scalari come numeri reali, ma
+più in generale la costruzione di uno spazio vettoriale richiede che
+questi provengano da un <em>campo</em> ${\mathbb K}$. Qui ci limitiamo ad
+assumere che essi siano elementi di ${\mathbb Q}$, ${\mathbb R}$ o
+${\mathbb C}$, e useremo ${\mathbb K}$ nel caso generico in in cui gli
+scalari appartengono ad uno di questi rilevanti campi numerici. Il
+concetto di spazio vettoriale è molto importante e generale e può essere
+formalizzato come segue.</p>
+<div class="alert alert-info" role="alert"> <b> Definizione </b>
+Uno spazio vettoriale su un campo ${\mathbb K}$ è un insieme non vuoto $\mathbb V$ tale per cui esistono
+due operazioni binarie, ovvero $+\colon\mathbb V\times\mathbb V\to\mathbb V$, detta "somma", e $\cdot \colon{\mathbb K}\times\mathbb V\to\mathbb V$, detta "prodotto per uno scalare", con le seguenti proprietà:
+<ul>
+<li>
+<p>la somma $+$ è commutativa e associativa; esiste un elemento neutro $\mathbf 0$, ovvero se ${\boldsymbol v}\in\mathbb V$, allora
+${\boldsymbol v}+\mathbf 0=\mathbf 0+{\boldsymbol v}={\boldsymbol v}$;
+esiste l&rsquo;elemento opposto, ovvero se ${\boldsymbol v}\in\mathbb V$
+esiste $-{\boldsymbol v}\in\mathbb V$ tale per cui
+${\boldsymbol v}+(-{\boldsymbol v})=\mathbf 0$;</p>
+</li>
+<li>
+<p>il prodotto $\cdot$ è distributivo sulla somma di vettori (ovvero
+$a({\boldsymbol v}+{\boldsymbol u})=a{\boldsymbol v}+a{\boldsymbol u}$
+per $a\in{\mathbb K}$ e
+${\boldsymbol v},{\boldsymbol u}\in\mathbb V$) e sulla somma di
+scalari (ovvero
+$(a+b){\boldsymbol v}=a{\boldsymbol v}+b{\boldsymbol v}$ per
+$a,b\in{\mathbb K}$ e ${\boldsymbol v}\mathbb V$); infine l&rsquo;elemento
+neutro $1$ di ${\mathbb K}$ è tale per cui
+$1{\boldsymbol v}={\boldsymbol v}$.</p>
+</li>
+</ul>
+</div>
+<p>Se ${\boldsymbol v}_1,\dots,{\boldsymbol v}_k\in\mathbb V$ e
+$c_1,\dots,c_k\in{\mathbb K}$, il vettore ${\boldsymbol v}=c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k$  si dice essere una combinazione lineare di ${\boldsymbol v}_1, \dots, {\boldsymbol v}_k$ a coefficienti
+$c_1,\dots,c_k$. Chiamiamo l&rsquo;insieme di tutte le combinazioni lineari
+dei vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ lo <em>span</em> di
+$\{{\boldsymbol v}_i\}_{i=1}^k$ e scriviamo
+$\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.</p>
+<p>I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
+esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui</p>
+<p>$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$</p>
+<p>diversamente si dicono linearmente indipendenti.</p>
+<p>Useremo d&rsquo;ora in poi la notazione
+$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\sum_{i=1}^kc_i{\boldsymbol v}_i$
+per brevità. Per definizione, un singolo vettore ${\boldsymbol v}$ è
+linearmente dipendente se uguale al vettor nullo. Viceversa, se
+${\boldsymbol v}_2=c{\boldsymbol v}_1$, ${\boldsymbol v}_1$ e
+${\boldsymbol v}_2$ sono linearmente dipendenti. La definizione implica
+anche che se un set di vettori è linearmente dipendente, uno di essi può
+esprimersi come combinazione lineare degli altri. Infine, vale la
+seguente proposizione.</p>
+<div class="alert alert-danger" role="alert">
+<b> Proposizione </b> Se $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente indipendenti,
+allora, dati due set di $k$ scalari $\{a_i\}_{i=1}^k$ e
+$\{b_i\}_{i=1}^k$ in ${\mathbb K}$
+$$\sum_{i=1}^ka_i{\boldsymbol v}_i=\sum_{i=1}^kb_i{\boldsymbol v}_i\Rightarrow a_i=b_i\ \forall i=1,\dots,k.$$
+</div>
+<p>Infine, possiamo introdurre il concetto di <em>base</em>.</p>
+<div class="alert alert-info" role="alert"> <b> Definizione </b>
+Il set $\{{\boldsymbol v}_i\}_{i=1}^k$ di vettori di $\mathbb V$ è una base se essi sono linearmente indipendenti e se $\mathbb V=\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.
+</div>
+<p>Questo significa che ogni vettore ${\boldsymbol v}\in\mathbb V$ può
+scriversi <em>in maniera unica</em> come ${\boldsymbol v}=\sum_{i=1}^k c_i{\boldsymbol v}_i$, con coefficienti
+$c_i$ che sono detti <em>coordinate</em> di ${\boldsymbol v}$ secondo la base
+$\{{\boldsymbol v}_i\}_{i=1}^k$. Ciò comporta anche che non è possibile
+avere un set di vettori indipendenti con più di $k$ elementi. Vale
+infatti il seguente</p>
+<div class="alert alert-danger" role="alert"> <b> Teorema </b>
+Sia $\{{\boldsymbol v}_i\}_{i=1}^k$ una base di $\mathbb V$. Allora ogni set $\{{\boldsymbol u}_i\}_{i=1}^m$ di $m>k$ vettori di $\mathbb V$ è costituito da elementi linearmente dipendenti. Di conseguenza, ogni base di $\mathbb V$ ha $k$ elementi: il numero $k$ prende il nome di dimensione di $\mathbb V$.
+</div>
+<h4 id="sottospazi-vettoriali">Sottospazi vettoriali</h4>
+<p>Dato uno spazio vettoriale $\mathbb V$, è possibile identificare in
+alcuni casi un <em>sottospazio</em> vettoriale ${\mathbb W}$, ovvero un
+sottoinsieme di $\mathbb V$ che è chiuso sotto le operazioni di somma e
+prodotto per uno scalare, ovvero</p>
+<p>Dato uno ${\mathbb K}$-spazio vettoriale $\mathbb V$, un sottoinsieme
+non vuoto $\mathbb W\subset\mathbb V$ è un sottospazio vettoriale di
+$\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}&rsquo;\in\mathbb W$,
+${\boldsymbol w}+{\boldsymbol w}&rsquo;\in\mathbb W$, e per ogni
+$c\in{\mathbb K}$, se ${\boldsymbol w}\in\mathbb W$ allora
+$c{\boldsymbol w}\in\mathbb W$.</p>
+<p>Per esempio, se $\{{\boldsymbol v}_i\}_{i=1}^k\subset\mathbb V$,
+$\mathrm{span}[{{\boldsymbol v}_i}_{i=1}^k]$ è un sottospazio di
+$\mathbb V$ (in particolare, lo è anche per $k=1$). Inoltre la
+dimensione di un sottospazio è sempre limitata superiormente dalla
+dimensione dello spazio in cui vive. È interessante notare che se
+$\mathbb U$ e $\mathbb W$ sono sottospazi vettoriali di $\mathbb V$,
+allora $\mathbb U\cap\mathbb W$ è anche sottospazio vettoriale di
+$\mathbb V$ (mentre la loro unione, in generale, non lo è).</p>
+<p>Dati due sottospazi vettoriali $\mathbb U$ e $\mathbb W$, se
+$\mathbb U\cap\mathbb W={\mathbf 0}$ è possibile costruire un nuovo
+spazio, detto <em>somma diretta di $\mathbb U$ e $\mathbb W$</em> e indicato
+con $\mathbb U\oplus\mathbb W$. Questo spazio consiste di tutti i
+vettori ${\boldsymbol v}$ nella forma
+${\boldsymbol v}={\boldsymbol u}+{\boldsymbol w}$ con
+${\boldsymbol u}\in\mathbb U$, ${\boldsymbol w}\in\mathbb W$. Inoltre
+questa decomposizione è unica: se infatti assumessimo che esiste
+un&rsquo;altra coppia tale per cui
+${\boldsymbol v}={\boldsymbol u}&rsquo;+{\boldsymbol w}&rsquo;$, con
+${\boldsymbol u}&rsquo;\in\mathbb U$, ${\boldsymbol w}&rsquo;\in\mathbb W$, allora
+dovremmo avere
+${\boldsymbol u}+{\boldsymbol w}={\boldsymbol u}&rsquo;+{\boldsymbol w}&rsquo;$ e
+quindi
+${\boldsymbol u}-{\boldsymbol u}&rsquo;={\boldsymbol w}-{\boldsymbol w}&rsquo;$. Ma
+questa quantità può essere solo $\mathbf 0$, unico elemento
+nell&rsquo;intersezione dei due spazi.</p>
+<p>Un esempio fondamentale della discussione teorica data sopra è lo spazio
+${\mathbb R}^n$, i cui elementi sono vettori $n$-dimensionali,
+rappresentabili come vettori colonna,
+$${\boldsymbol x}=
+\begin{pmatrix}
+x_1\\
+\vdots\\
+x_n
+\end{pmatrix}
+$$
+e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una <em>base canonica</em> di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che</p>
+<p>$${\boldsymbol x}=x_1
+\begin{pmatrix} 1 \\
+0 \\
+\vdots \\
+0\end{pmatrix}+\dots+x_n
+\begin{pmatrix}
+0 \\
+0 \\
+\vdots \\
+1 \\
+\end{pmatrix}. $$</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/lectures/im2/ch1/sec2/" rel="prev">Matrici</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 1, 2023</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.1ef9914ab40e943e2eaa592a77444183.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
