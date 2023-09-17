@@ -1040,10 +1040,12 @@ $c_1,\dots,c_k$. Chiamiamo l&rsquo;insieme di tutte le combinazioni lineari
 dei vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ lo <em>span</em> di
 $\{{\boldsymbol v}_i\}_{i=1}^k$ e scriviamo
 $\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.</p>
-<p>I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
-esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui</p>
-<p>$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$</p>
-<p>diversamente si dicono linearmente indipendenti.</p>
+<div class="alert alert-info" role="alert"> <b> Definizione </b>
+I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
+esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui
+$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$
+diversamente si dicono linearmente indipendenti.
+</div>
 <p>Useremo d&rsquo;ora in poi la notazione
 $c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\sum_{i=1}^kc_i{\boldsymbol v}_i$
 per brevità. Per definizione, un singolo vettore ${\boldsymbol v}$ è
@@ -1077,12 +1079,14 @@ Sia $\{{\boldsymbol v}_i\}_{i=1}^k$ una base di $\mathbb V$. Allora ogni set $\{
 alcuni casi un <em>sottospazio</em> vettoriale ${\mathbb W}$, ovvero un
 sottoinsieme di $\mathbb V$ che è chiuso sotto le operazioni di somma e
 prodotto per uno scalare, ovvero</p>
-<p>Dato uno ${\mathbb K}$-spazio vettoriale $\mathbb V$, un sottoinsieme
+<div class="alert alert-info" role="alert"> <b> Definizione </b>
+Dato uno ${\mathbb K}$-spazio vettoriale $\mathbb V$, un sottoinsieme
 non vuoto $\mathbb W\subset\mathbb V$ è un sottospazio vettoriale di
-$\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}&rsquo;\in\mathbb W$,
-${\boldsymbol w}+{\boldsymbol w}&rsquo;\in\mathbb W$, e per ogni
+$\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}'\in\mathbb W$,
+${\boldsymbol w}+{\boldsymbol w}'\in\mathbb W$, e per ogni
 $c\in{\mathbb K}$, se ${\boldsymbol w}\in\mathbb W$ allora
-$c{\boldsymbol w}\in\mathbb W$.</p>
+$c{\boldsymbol w}\in\mathbb W$. 
+</div>
 <p>Per esempio, se $\{{\boldsymbol v}_i\}_{i=1}^k\subset\mathbb V$,
 $\mathrm{span}[{{\boldsymbol v}_i}_{i=1}^k]$ è un sottospazio di
 $\mathbb V$ (in particolare, lo è anche per $k=1$). Inoltre la
@@ -1108,20 +1112,25 @@ quindi
 ${\boldsymbol u}-{\boldsymbol u}&rsquo;={\boldsymbol w}-{\boldsymbol w}&rsquo;$. Ma
 questa quantità può essere solo $\mathbf 0$, unico elemento
 nell&rsquo;intersezione dei due spazi.</p>
-<p>Un esempio fondamentale della discussione teorica data sopra è lo spazio
+<div class="alert alert-dark" role="alert"> 
+Un esempio fondamentale della discussione teorica data sopra è lo spazio
 ${\mathbb R}^n$, i cui elementi sono vettori $n$-dimensionali,
-rappresentabili come vettori colonna,
+rappresentabili come vettori colonna ad $n$ componenti reali,
 $${\boldsymbol x}=
 \begin{pmatrix}
 x_1\\
 \vdots\\
 x_n
 \end{pmatrix}
-$$
-e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una <em>base canonica</em> di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che</p>
+$$ 
+e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una <i>base canonica</i> di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che
 <p>$${\boldsymbol x}=x_1
 \begin{pmatrix} 1 \\
 0 \\
+\vdots \\
+0\end{pmatrix}+x_2
+\begin{pmatrix} 0 \\
+1 \\
 \vdots \\
 0\end{pmatrix}+\dots+x_n
 \begin{pmatrix}
@@ -1130,6 +1139,7 @@ e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente id
 \vdots \\
 1 \\
 \end{pmatrix}. $$</p>
+</div>
 
           </div>
 

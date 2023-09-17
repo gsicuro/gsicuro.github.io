@@ -117,10 +117,12 @@ $c_1,\dots,c_k$. Chiamiamo l&amp;rsquo;insieme di tutte le combinazioni lineari
 dei vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ lo &lt;em&gt;span&lt;/em&gt; di
 $\{{\boldsymbol v}_i\}_{i=1}^k$ e scriviamo
 $\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.&lt;/p&gt;
-&lt;p&gt;I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
-esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui&lt;/p&gt;
-&lt;p&gt;$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$&lt;/p&gt;
-&lt;p&gt;diversamente si dicono linearmente indipendenti.&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt; &lt;b&gt; Definizione &lt;/b&gt;
+I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
+esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui
+$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$
+diversamente si dicono linearmente indipendenti.
+&lt;/div&gt;
 &lt;p&gt;Useremo d&amp;rsquo;ora in poi la notazione
 $c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\sum_{i=1}^kc_i{\boldsymbol v}_i$
 per brevità. Per definizione, un singolo vettore ${\boldsymbol v}$ è
@@ -154,12 +156,14 @@ Sia $\{{\boldsymbol v}_i\}_{i=1}^k$ una base di $\mathbb V$. Allora ogni set $\{
 alcuni casi un &lt;em&gt;sottospazio&lt;/em&gt; vettoriale ${\mathbb W}$, ovvero un
 sottoinsieme di $\mathbb V$ che è chiuso sotto le operazioni di somma e
 prodotto per uno scalare, ovvero&lt;/p&gt;
-&lt;p&gt;Dato uno ${\mathbb K}$-spazio vettoriale $\mathbb V$, un sottoinsieme
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt; &lt;b&gt; Definizione &lt;/b&gt;
+Dato uno ${\mathbb K}$-spazio vettoriale $\mathbb V$, un sottoinsieme
 non vuoto $\mathbb W\subset\mathbb V$ è un sottospazio vettoriale di
-$\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}&amp;rsquo;\in\mathbb W$,
-${\boldsymbol w}+{\boldsymbol w}&amp;rsquo;\in\mathbb W$, e per ogni
+$\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}&#39;\in\mathbb W$,
+${\boldsymbol w}+{\boldsymbol w}&#39;\in\mathbb W$, e per ogni
 $c\in{\mathbb K}$, se ${\boldsymbol w}\in\mathbb W$ allora
-$c{\boldsymbol w}\in\mathbb W$.&lt;/p&gt;
+$c{\boldsymbol w}\in\mathbb W$. 
+&lt;/div&gt;
 &lt;p&gt;Per esempio, se $\{{\boldsymbol v}_i\}_{i=1}^k\subset\mathbb V$,
 $\mathrm{span}[{{\boldsymbol v}_i}_{i=1}^k]$ è un sottospazio di
 $\mathbb V$ (in particolare, lo è anche per $k=1$). Inoltre la
@@ -185,20 +189,25 @@ quindi
 ${\boldsymbol u}-{\boldsymbol u}&amp;rsquo;={\boldsymbol w}-{\boldsymbol w}&amp;rsquo;$. Ma
 questa quantità può essere solo $\mathbf 0$, unico elemento
 nell&amp;rsquo;intersezione dei due spazi.&lt;/p&gt;
-&lt;p&gt;Un esempio fondamentale della discussione teorica data sopra è lo spazio
+&lt;div class=&#34;alert alert-dark&#34; role=&#34;alert&#34;&gt; 
+Un esempio fondamentale della discussione teorica data sopra è lo spazio
 ${\mathbb R}^n$, i cui elementi sono vettori $n$-dimensionali,
-rappresentabili come vettori colonna,
+rappresentabili come vettori colonna ad $n$ componenti reali,
 $${\boldsymbol x}=
 \begin{pmatrix}
 x_1\\
 \vdots\\
 x_n
 \end{pmatrix}
-$$
-e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una &lt;em&gt;base canonica&lt;/em&gt; di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che&lt;/p&gt;
+$$ 
+e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una &lt;i&gt;base canonica&lt;/i&gt; di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che
 &lt;p&gt;$${\boldsymbol x}=x_1
 \begin{pmatrix} 1 \\
 0 \\
+\vdots \\
+0\end{pmatrix}+x_2
+\begin{pmatrix} 0 \\
+1 \\
 \vdots \\
 0\end{pmatrix}+\dots+x_n
 \begin{pmatrix}
@@ -207,6 +216,7 @@ e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente id
 \vdots \\
 1 \\
 \end{pmatrix}. $$&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
