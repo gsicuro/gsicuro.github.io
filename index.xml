@@ -108,9 +108,9 @@ segue.&lt;/p&gt;
 Uno spazio vettoriale su un campo
 ${\mathbb K}$ è un insieme non vuoto $\mathbb V$ tale per cui esistono
 due operazioni binarie, ovvero
-$+\colon\mathbb V\times\mathbb V\to\mathbb V$, detta *somma*, e
-$\cdot \colon{\mathbb K}\times\mathbb V\to\mathbb V$, detta *prodotto
-per uno scalare*, con le seguenti proprietà:
+$+\colon\mathbb V\times\mathbb V\to\mathbb V$, detta &lt;i&gt;somma&lt;/i&gt;, e
+$\cdot \colon{\mathbb K}\times\mathbb V\to\mathbb V$, detta &lt;i&gt;prodotto
+per uno scalare&lt;/i&gt;, con le seguenti proprietà:
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;la somma $+$ è commutativa e associativa; esiste un elemento neutro
@@ -967,6 +967,15 @@ $n-r({\boldsymbol A})$.&lt;/p&gt;
       <link>https://gsicuro.github.io/lectures/im2/ch1/sec3/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/lectures/im2/ch1/sec3/</guid>
+      <description>&lt;p&gt;Content&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Operatori lineari e spettri</title>
+      <link>https://gsicuro.github.io/lectures/im2/ch1/sec4/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/im2/ch1/sec4/</guid>
       <description>&lt;p&gt;Content&amp;hellip;&lt;/p&gt;
 </description>
     </item>
