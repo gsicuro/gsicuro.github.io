@@ -865,8 +865,6 @@
     <li>
       <ul>
         <li><a href="#vettori-applicati-e-vettori-geometrici">Vettori applicati e vettori geometrici</a></li>
-        <li><a href="#somma">Somma</a></li>
-        <li><a href="#prodotto-per-scalare">Prodotto per scalare</a></li>
         <li><a href="#spazi-vettoriali">Spazi vettoriali</a></li>
       </ul>
     </li>
@@ -943,79 +941,93 @@
             <h3 id="vettori-applicati-e-vettori-geometrici">Vettori applicati e vettori geometrici</h3>
 <p>Per introdurre il concetto di <em>spazio vettoriale</em> iniziamo da un
 contesto più concreto e forse più semplice. Consideriamo due punti $A$ e
-$B$ nello spazio <em>ordinario</em>. Un vettore <em>vettore applicato
+$B$ nello spazio <em>ordinario</em>. Un <em>vettore applicato
 ${\boldsymbol v}=\overrightarrow{AB}$ in $A$ con punto finale $B$</em> può
 essere immaginato come una freccia che collega $A$ e $B$,</p>
-<p><img src="/images/im2/vettore.png" alt="Vettore"></p>
+<img src="/images/im2/main-0.jpg" alt="vettore" style="width:20%;"/> 
 <p>Un vettore applicato è caratterizzato dal suo punto di applicazione,
 $A$, da una direzione, un verso e una lunghezza. Se $A=B$, allora il
-corrispondente vettore è detto <em>nullo</em> e viene indicato con $\mathbf 0$.
-Due vettori ${\boldsymbol v}=\overrightarrow{AB}$ e
+corrispondente vettore è detto <em>nullo</em> e viene indicato con $\mathbf 0$:
+la sua lunghezza è zero e la sua direzione e il suo verso non sono
+definiti. Due vettori ${\boldsymbol v}=\overrightarrow{AB}$ e
 ${\boldsymbol u}=\overrightarrow{CD}$ sono <em>equipollenti</em> se hanno
 stessa direzione, stessa lunghezza e stesso verso. L&rsquo;equipollenza è una
 relazione di equivalenza e un <em>vettore geometrico</em> corrisponde ad una
 classe di equivalenza secondo equipollenza. Uno specifico vettore
-applicato è perciò un <em>rappresentante</em> di questa classe di equivalenza.
-In effetti è possibile introdurre una serie di operazioni tra <em>vettori
-geometrici</em>, ovvero classi di equivalenza, &ldquo;dimenticando&rdquo; il fatto che
-tali vettori sono da intendersi di volta in volta applicati in specifici
-punti.</p>
-<h3 id="somma">Somma</h3>
+applicato è perciò un <em>rappresentante</em> di questa classe di equivalenza,
+mentre tutti i vettori con stessa direzione, stessa lunghezza e stesso
+verso corrispondono allo stesso oggetto di tipo &ldquo;vettore geometrico&rdquo;.</p>
+<h4 id="operazioni-tra-vettori-geometrici">Operazioni tra vettori geometrici</h4>
+<p>I vettori geometrici sono oggetti molto diversi dai numeri usuali, ma è
+ugualmente possibile introdurre una serie di operazioni tra di essi.</p>
 <p>Dati due vettori geometrici ${\boldsymbol v}$ e ${\boldsymbol u}$, la
-loro somma ${\boldsymbol u}+{\boldsymbol v}$ può essere definita usando
-dei loro rappresentanti. In particolare, scelto un punto $A$, applicando
-${\boldsymbol v}$ ad $A$ si ottiene il vettore $\overrightarrow{AB}$ con
-coda in un punto $B$, e, consecutivamente, applicando ${\boldsymbol u}$
-a $B$ si ottiene il vettore $\overrightarrow{BC}$ con coda in $C$.
-Possiamo quindi <em>definire</em> $\overrightarrow{AC}$ come rappresentante del
-vettore geometrico ${\boldsymbol v}+{\boldsymbol u}$. Pittorialmente
-questo può essere ottenuto utilizzando la <em>regola del parallelogramma</em>,</p>
-<p><img src="/images/im2/parallelogramma.png" alt="Parallelo"></p>
-<p>L&rsquo;operazione di somma che abbiamo definito è <em>associativa</em>. Se abbiamo
-tre vettori ${\boldsymbol v}$, ${\boldsymbol u}$ e ${\boldsymbol w}$,
-allora</p>
-<p><img src="/images/im2/somma.png" alt="Associativity"></p>
-<p>È inoltre commutativa,
+loro <em>somma</em> ${\boldsymbol u}+{\boldsymbol v}$ può essere definita
+concatenando due loro rappresentanti. Per esempio, scelto un punto $A$,
+si applica prima ${\boldsymbol v}$ ad $A$ si ottiene il vettore
+$\overrightarrow{AB}$ con coda in un punto $B$, e, consecutivamente,
+applicando ${\boldsymbol u}$ a $B$ si ottiene il vettore
+$\overrightarrow{BC}$ con coda in $C$. Possiamo quindi <em>definire</em>
+$\overrightarrow{AC}$ come rappresentante del vettore geometrico somma
+${\boldsymbol v}+{\boldsymbol u}$. La costruzione ora descritta
+corrisponde ala cosiddetta <em>regola del parallelogramma</em>, ed è
+equivalente a considerare ${\boldsymbol u}$ e ${\boldsymbol v}$
+applicati allo stesso punto $A$ e costrure su di essi un
+parallelogramma, considerando quindi come somma la diagonale del
+quadrilatero ottenuto:</p>
+<img src="/images/im2/main-1.jpg" alt="Regola del parallelogramma" style="width:40%;"/> 
+<p>È evidente dalla costruzione stessa che l&rsquo;operazione è commutativa,
+ovvero
 ${\boldsymbol v}+{\boldsymbol u}={\boldsymbol u}+{\boldsymbol v}$, e
-tale per cui ${\boldsymbol v}+\mathbf 0={\boldsymbol v}$. Infine, dato
-un vettore applicato $\overrightarrow{AB}$, il vettore applicato
-$\overrightarrow{BA}$ è tale per cui
+tale per cui ${\boldsymbol v}+\mathbf 0={\boldsymbol v}$. L&rsquo;operazione
+di somma che abbiamo definito è anche <em>associativa</em>. Se abbiamo tre
+vettori ${\boldsymbol v}$, ${\boldsymbol u}$ e ${\boldsymbol w}$, allora</p>
+<img src="/images/im2/somma.png" alt="Associatività" style="width:80%;"/> 
+<p>Infine, dato un vettore applicato $\overrightarrow{AB}$, il vettore
+applicato $\overrightarrow{BA}$ è tale per cui
 $\overrightarrow{AB}+\overrightarrow{BA}=\mathbf 0$: se il vettore
 geometrico associato a $\overrightarrow{AB}$ è ${\boldsymbol v}$,
 denotiamo quindi $-{\boldsymbol v}$ il vettore geometrico associato a
 $\overrightarrow{BA}$ e scriviamo
 ${\boldsymbol v}+(-{\boldsymbol v})=\mathbf 0$: $-{\boldsymbol v}$ è
 l&rsquo;<em>opposto</em> di ${\boldsymbol v}$.</p>
-<h3 id="prodotto-per-scalare">Prodotto per scalare</h3>
 <p>È possibile anche introdurre l&rsquo;operazione <em>moltiplicazione per uno
 scalare $c\in{\mathbb R}$</em>: il vettore $c{\boldsymbol v}$ ha stessa
 direzione di ${\boldsymbol v}$, stesso verso se $c&gt;0$ e verso opposto se
-$c&lt;0$, e lunghezza uguale a $|c|$ volte quella di ${\boldsymbol v}$. Se $c=0$, allora $c{\boldsymbol v}=\mathbf 0$. È facile verificare che,
-se $a,b\in{\mathbb R}$, allora $(a+b){\boldsymbol v}=a{\boldsymbol v}+b{\boldsymbol v}$,
+$c&lt;0$, e lunghezza uguale a $|c|$ volte quella di ${\boldsymbol v}$.</p>
+<p>Se $c=0$, allora $c{\boldsymbol v}=\mathbf 0$. È facile verificare che,
+se $a,b\in{\mathbb R}$, allora
+$(a+b){\boldsymbol v}=a{\boldsymbol v}+b{\boldsymbol v}$,
 $(ab){\boldsymbol v}=a(b{\boldsymbol v})$ e, dati due vettori
 ${\boldsymbol v}$ e ${\boldsymbol u}$,
 $a({\boldsymbol v}+{\boldsymbol u})=a{\boldsymbol v}+a{\boldsymbol u}$.</p>
 <h3 id="spazi-vettoriali">Spazi vettoriali</h3>
-<p>Abbiamo definito due essenziali operazioni tra vettori geometrici che
-hanno anche un significato geometrico piuttosto chiaro una volta
-interpretate in termini di rappresentanti di vettori geometrici. Per
-mezzo di queste operazioni, abbiamo introdotto uno <em>spazio vettoriale</em>,
-popolato da vettori geometrici che possono essere quindi combinati
-tramite somme e alterati in modulo e verso tramite moltiplicazioni per
-scalari. Abbiamo finora considerato questi scalari come numeri reali, ma
-più in generale la costruzione di uno spazio vettoriale richiede che
-questi provengano da un <em>campo</em> ${\mathbb K}$. Qui ci limitiamo ad
-assumere che essi siano elementi di ${\mathbb Q}$, ${\mathbb R}$ o
-${\mathbb C}$, e useremo ${\mathbb K}$ nel caso generico in in cui gli
-scalari appartengono ad uno di questi rilevanti campi numerici. Il
-concetto di spazio vettoriale è molto importante e generale e può essere
-formalizzato come segue.</p>
+<p>Lo spazio dei vettori geometrici può avere una interpretazione intuitiva
+abbastanza semplice. Può rappresentare, per esempio, lo spazio degli
+<em>spostamenti</em> nel piano. Tuttavia la sua struttura può essere
+generalizzata in forma astratta: essa è caratterizzata dalla presenza di
+due operazioni binarie (somma tra vettori e prodotto per scalare) e lo
+<em>spazio vettoriale</em> dei vettori geometrici è stato introdotto proprio
+per mezzo di queste operazioni.</p>
+<p>L&rsquo;idea ora è tentare di caratterizzare cosa sia uno spazio vettoriale
+senza necessariamente avere in mente una rappresentazione pittorica. In
+generale, la costruzione di uno spazio vettoriale richiede l&rsquo;esistenza
+di un insieme $\mathbb V$ di &ldquo;vettori&rdquo; e di un altro insieme di
+&ldquo;scalari&rdquo;, ${\mathbb K}$. Ci limiteremo ad assumere che ${\mathbb K}$
+sia, a seconda dei casi ${\mathbb Q}$, ${\mathbb R}$ o ${\mathbb C}$, ma
+utilizzeremo ${\mathbb K}$ per lavorare in maggiore generalità.</p>
+<p>Il concetto di spazio vettoriale può quindi essere formalizzato come
+segue.</p>
 <div class="alert alert-info" role="alert"> <b> Definizione </b>
-Uno spazio vettoriale su un campo ${\mathbb K}$ è un insieme non vuoto $\mathbb V$ tale per cui esistono
-due operazioni binarie, ovvero $+\colon\mathbb V\times\mathbb V\to\mathbb V$, detta "somma", e $\cdot \colon{\mathbb K}\times\mathbb V\to\mathbb V$, detta "prodotto per uno scalare", con le seguenti proprietà:
+Uno spazio vettoriale su un campo
+${\mathbb K}$ è un insieme non vuoto $\mathbb V$ tale per cui esistono
+due operazioni binarie, ovvero
+$+\colon\mathbb V\times\mathbb V\to\mathbb V$, detta *somma*, e
+$\cdot \colon{\mathbb K}\times\mathbb V\to\mathbb V$, detta *prodotto
+per uno scalare*, con le seguenti proprietà:
 <ul>
 <li>
-<p>la somma $+$ è commutativa e associativa; esiste un elemento neutro $\mathbf 0$, ovvero se ${\boldsymbol v}\in\mathbb V$, allora
+<p>la somma $+$ è commutativa e associativa; esiste un elemento neutro
+$\mathbf 0$, ovvero se ${\boldsymbol v}\in\mathbb V$, allora
 ${\boldsymbol v}+\mathbf 0=\mathbf 0+{\boldsymbol v}={\boldsymbol v}$;
 esiste l&rsquo;elemento opposto, ovvero se ${\boldsymbol v}\in\mathbb V$
 esiste $-{\boldsymbol v}\in\mathbb V$ tale per cui
@@ -1034,45 +1046,112 @@ $1{\boldsymbol v}={\boldsymbol v}$.</p>
 </li>
 </ul>
 </div>
+<p>La definizione precedente si applica in effetti ai vettori geometrici,
+ed è anzi ispirata da essi. Come potete notare, è richiesto che
+${\mathbb K}$ sia un <em>campo</em>: come anticipato, per semplicità assumeremo
+che ${\mathbb K}$ sia un campo numerico come ${\mathbb R}$,
+${\mathbb Q}$ e ${\mathbb C}$.</p>
+<div class="alert alert-success" role="alert">
+Un esempio di spazio vettoriale è dato dai vettori nel piano
+$\mathbb V={\mathbb R}^2$. Un vettore nel piano ${\boldsymbol x}$ è
+rappresentato da una freccia applicata nell'origine che punta in una
+posizione del piano
+<img src="/images/im2/main-5.jpg" alt="Vettore nel piano" style="width:50%;"/> 
+<p>e può rappresentarsi come una coppia di numeri come
+$${\boldsymbol x}=
+\begin{pmatrix}
+x_1\\ x_2
+\end{pmatrix}
+\in{\mathbb R}^2,$$
+corrispondenti alle sue coordinate. Dati due vettori ${\boldsymbol x}_1$
+e ${\boldsymbol x}_2$, una loro combinazione lineare con coefficienti
+reali $c_1$ e $c_2$ si ottiene come
+$${\boldsymbol x}_1=
+\begin{pmatrix}
+x_{11}\\x_{12}
+\end{pmatrix}
+,\quad  {\boldsymbol x}_2=
+\begin{pmatrix}
+x_{21}\\x_{22}
+\end{pmatrix}
+\Rightarrow c_1{\boldsymbol x}_1+c_2{\boldsymbol x}_2=
+\begin{pmatrix}
+c_1x_{11}+c_2x_{21}\\c_1x_{12}+c_2x_{22}
+\end{pmatrix}.$$
+Per esempio, nella figura sotto ${\boldsymbol x}_1=\binom{3}{1}$ e
+${\boldsymbol x}_2=\binom{1}{4}$, ed in rosso è rappresentata la loro
+somma $2{\boldsymbol x}_1+{\boldsymbol x}_2=\binom{7}{6}$.</p>
+<img src="/images/im2/main-6.jpg" alt="Somma di vettori nel piano" style="width:50%;"/> 
+</div>
 <p>Se ${\boldsymbol v}_1,\dots,{\boldsymbol v}_k\in\mathbb V$ e
-$c_1,\dots,c_k\in{\mathbb K}$, il vettore ${\boldsymbol v}=c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k$  si dice essere una combinazione lineare di ${\boldsymbol v}_1, \dots, {\boldsymbol v}_k$ a coefficienti
-$c_1,\dots,c_k$. Chiamiamo l&rsquo;insieme di tutte le combinazioni lineari
-dei vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ lo <em>span</em> di
-$\{{\boldsymbol v}_i\}_{i=1}^k$ e scriviamo
-$\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.</p>
+$c_1,\dots,c_k\in{\mathbb K}$, il vettore
+${\boldsymbol v}=c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k\in\mathbb V$
+si dice essere una combinazione lineare di
+${\boldsymbol v}_1,\dots,{\boldsymbol v}_k$ a coefficienti
+$c_1,\dots,c_k$. Il concetto di combinazione lineare è cruciale e
+caratterizza le proprietà di uno spazio vettoriale. Con un leggero
+abuso, utilizzeremo la notazione</p>
+<p>$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k\equiv \sum_{i=1}^kc_i{\boldsymbol v}_i.$$</p>
+<p>Chiamiamo l&rsquo;insieme di tutte le combinazioni lineari dei vettori
+$\mathcal V\equiv \{{\boldsymbol v}_i\}_{i=1}^k$ lo <em>span</em> di
+$\{{\boldsymbol v}_i\}_{i=1}^k$ e scriviamo $\mathrm{span}(\mathcal V)$.</p>
 <div class="alert alert-info" role="alert"> <b> Definizione </b>
 I vettori $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente dipendenti se
 esistono degli scalari $\{c_i\}_{i=1}^k$ non tutti nulli tali per cui
-$$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\mathbf 0;$$
-diversamente si dicono linearmente indipendenti.
+<p>$$\sum_{i=1}^kc_i{\boldsymbol v}_i=\mathbf 0;$$</p>
+<p>diversamente si dicono linearmente indipendenti.</p>
 </div>
-<p>Useremo d&rsquo;ora in poi la notazione
-$c_1{\boldsymbol v}_1+\dots+c_k{\boldsymbol v}_k=\sum_{i=1}^kc_i{\boldsymbol v}_i$
-per brevità. Per definizione, un singolo vettore ${\boldsymbol v}$ è
-linearmente dipendente se uguale al vettor nullo. Viceversa, se
+<p>Per definizione, il singolo vettore ${\boldsymbol v}$ è linearmente
+dipendente se e solo se uguale al vettor nullo. Viceversa, se
 ${\boldsymbol v}_2=c{\boldsymbol v}_1$, ${\boldsymbol v}_1$ e
 ${\boldsymbol v}_2$ sono linearmente dipendenti. La definizione implica
-anche che se un set di vettori è linearmente dipendente, uno di essi può
-esprimersi come combinazione lineare degli altri. Infine, vale la
-seguente proposizione.</p>
-<div class="alert alert-danger" role="alert">
-<b> Proposizione </b> Se $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente indipendenti,
-allora, dati due set di $k$ scalari $\{a_i\}_{i=1}^k$ e
-$\{b_i\}_{i=1}^k$ in ${\mathbb K}$
+che in un insieme di vettori linearmente dipendenti, almeno uno di essi
+può sempre esprimersi come combinazione lineare degli altri. Infine,
+vale la seguente proposizione.</p>
+<div class="alert alert-danger" role="alert"> <b> Proposizione </b>
+Se $\{{\boldsymbol v}_i\}_{i=1}^k$ sono linearmente indipendenti,
+allora, dati due set di scalari in ${\mathbb K}$ $\{a_i\}_{i=1}^k$ e
+$\{b_i\}_{i=1}^k$
 $$\sum_{i=1}^ka_i{\boldsymbol v}_i=\sum_{i=1}^kb_i{\boldsymbol v}_i\Rightarrow a_i=b_i\ \forall i=1,\dots,k.$$
 </div>
-<p>Infine, possiamo introdurre il concetto di <em>base</em>.</p>
+<p>Infine, possiamo introdurre il concetto di <em>base</em></p>
 <div class="alert alert-info" role="alert"> <b> Definizione </b>
-Il set $\{{\boldsymbol v}_i\}_{i=1}^k$ di vettori di $\mathbb V$ è una base se essi sono linearmente indipendenti e se $\mathbb V=\mathrm{span}[\{{\boldsymbol v}_i\}_{i=1}^k]$.
+Il set $\mathcal B\equiv \{{\boldsymbol v}_i\}_{i=1}^n$ di vettori di
+$\mathbb V$ è una base se essi sono linearmente indipendenti e se
+$\mathbb V=\mathrm{span}[\mathcal B]$.
 </div>
 <p>Questo significa che ogni vettore ${\boldsymbol v}\in\mathbb V$ può
-scriversi <em>in maniera unica</em> come ${\boldsymbol v}=\sum_{i=1}^k c_i{\boldsymbol v}_i$, con coefficienti
+scriversi <em>in maniera unica</em> come
+${\boldsymbol v}=\sum_{i=1}^n c_i{\boldsymbol v}_i$, con coefficienti
 $c_i$ che sono detti <em>coordinate</em> di ${\boldsymbol v}$ secondo la base
-$\{{\boldsymbol v}_i\}_{i=1}^k$. Ciò comporta anche che non è possibile
-avere un set di vettori indipendenti con più di $k$ elementi. Vale
-infatti il seguente</p>
+$\mathcal B$. Ciò comporta anche che non è possibile avere un set di
+vettori indipendenti con più di $n$ elementi. Vale infatti il seguente</p>
 <div class="alert alert-danger" role="alert"> <b> Teorema </b>
-Sia $\{{\boldsymbol v}_i\}_{i=1}^k$ una base di $\mathbb V$. Allora ogni set $\{{\boldsymbol u}_i\}_{i=1}^m$ di $m>k$ vettori di $\mathbb V$ è costituito da elementi linearmente dipendenti. Di conseguenza, ogni base di $\mathbb V$ ha $k$ elementi: il numero $k$ prende il nome di dimensione di $\mathbb V$.
+Sia $\mathcal B\equiv  \{{\boldsymbol v}_i\}_{i=1}^n$ una base di
+$\mathbb V$. Allora ogni set $\{{\boldsymbol u}_i\}_{i=1}^m$ di $m>n$
+vettori di $\mathbb V$ è costituito da elementi linearmente dipendenti.
+Di conseguenza, ogni base di $\mathbb V$ ha $n$ elementi: il numero $n$
+prende il nome di dimensione di $\mathbb V$.
+</div>
+<div class="alert alert-success" role="alert">
+Lo spazio vettoriale ${\mathbb R}^n$ su ${\mathbb R}$ è costituito da
+vettori $n$-dimensionali, rappresentabili come vettori colonna,
+<p>$${\boldsymbol x}=\begin{pmatrix}x_1\\ \vdots\\x_n\end{pmatrix}.$$</p>
+<p>In questo caso è facilmente identificata una <em>base canonica</em>
+$\mathcal B=\{{\boldsymbol e}_i\}_{i=1}^n$ di $n$ vettori</p>
+<p>$${\boldsymbol e}_1\equiv
+\begin{pmatrix}1\\0\\ \vdots\\0\end{pmatrix}
+\quad{\boldsymbol e}_2\equiv
+\begin{pmatrix}0\\1\\ \vdots\\0\end{pmatrix}
+\quad\dots
+\quad{\boldsymbol e}_n\equiv
+\begin{pmatrix}0\\0\\ \vdots\\1\end{pmatrix}
+$$</p>
+<p>che permette di scrivere in maniera univoca qualunque vettore
+${\boldsymbol x}\in{\mathbb R}^n$ come</p>
+<p>$${\boldsymbol x}=x_1
+{\boldsymbol e}_1+\dots+
+x_n{\boldsymbol e}_n.$$</p>
 </div>
 <h4 id="sottospazi-vettoriali">Sottospazi vettoriali</h4>
 <p>Dato uno spazio vettoriale $\mathbb V$, è possibile identificare in
@@ -1085,16 +1164,17 @@ non vuoto $\mathbb W\subset\mathbb V$ è un sottospazio vettoriale di
 $\mathbb V$ se, per ogni ${\boldsymbol w},{\boldsymbol w}'\in\mathbb W$,
 ${\boldsymbol w}+{\boldsymbol w}'\in\mathbb W$, e per ogni
 $c\in{\mathbb K}$, se ${\boldsymbol w}\in\mathbb W$ allora
-$c{\boldsymbol w}\in\mathbb W$. 
+$c{\boldsymbol w}\in\mathbb W$.
 </div>
-<p>Per esempio, se $\{{\boldsymbol v}_i\}_{i=1}^k\subset\mathbb V$,
-$\mathrm{span}[{{\boldsymbol v}_i}_{i=1}^k]$ è un sottospazio di
-$\mathbb V$ (in particolare, lo è anche per $k=1$). Inoltre la
-dimensione di un sottospazio è sempre limitata superiormente dalla
-dimensione dello spazio in cui vive. È interessante notare che se
-$\mathbb U$ e $\mathbb W$ sono sottospazi vettoriali di $\mathbb V$,
-allora $\mathbb U\cap\mathbb W$ è anche sottospazio vettoriale di
-$\mathbb V$ (mentre la loro unione, in generale, non lo è).</p>
+<p>Per esempio, se
+$\mathcal V\equiv \subset\mathbb V$ è un sottoinsieme finito di $\mathbb V$,
+$\mathrm{span}[\mathcal V]$ è un sottospazio di $\mathbb V$ (in
+particolare, lo è anche per $\mathcal V$ ha cardinalità 1). Inoltre la dimensione di un
+sottospazio è sempre limitata superiormente dalla dimensione dello
+spazio in cui vive. È interessante notare che se $\mathbb U$ e
+$\mathbb W$ sono sottospazi vettoriali di $\mathbb V$, allora
+$\mathbb U\cap\mathbb W$ è anche sottospazio vettoriale di $\mathbb V$
+(mentre la loro unione, in generale, non lo è).</p>
 <p>Dati due sottospazi vettoriali $\mathbb U$ e $\mathbb W$, se
 $\mathbb U\cap\mathbb W={\mathbf 0}$ è possibile costruire un nuovo
 spazio, detto <em>somma diretta di $\mathbb U$ e $\mathbb W$</em> e indicato
@@ -1112,34 +1192,6 @@ quindi
 ${\boldsymbol u}-{\boldsymbol u}&rsquo;={\boldsymbol w}-{\boldsymbol w}&rsquo;$. Ma
 questa quantità può essere solo $\mathbf 0$, unico elemento
 nell&rsquo;intersezione dei due spazi.</p>
-<div class="alert alert-dark" role="alert"> 
-Un esempio fondamentale della discussione teorica data sopra è lo spazio
-${\mathbb R}^n$, i cui elementi sono vettori $n$-dimensionali,
-rappresentabili come vettori colonna ad $n$ componenti reali,
-$${\boldsymbol x}=
-\begin{pmatrix}
-x_1\\
-\vdots\\
-x_n
-\end{pmatrix}
-$$ 
-e che è uno spazio vettoriale su ${\mathbb R}$. In questo caso è facilmente identificata una <i>base canonica</i> di vettori ${\boldsymbol e}_{i} = (\delta_{i\nu})_\nu$, in modo che
-<p>$${\boldsymbol x}=x_1
-\begin{pmatrix} 1 \\
-0 \\
-\vdots \\
-0\end{pmatrix}+x_2
-\begin{pmatrix} 0 \\
-1 \\
-\vdots \\
-0\end{pmatrix}+\dots+x_n
-\begin{pmatrix}
-0 \\
-0 \\
-\vdots \\
-1 \\
-\end{pmatrix}. $$</p>
-</div>
 
           </div>
 
