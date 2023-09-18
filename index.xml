@@ -135,7 +135,7 @@ $1{\boldsymbol v}={\boldsymbol v}$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;La definizione precedente si applica in effetti ai vettori geometrici,
 ed è anzi ispirata da essi. Come potete notare, è richiesto che
-${\mathbb K}$ sia un &lt;a href=&#34;https://it.wikipedia.org/wiki/Campo_%28matematica%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;campo&lt;/em&gt;&lt;/a&gt;: come anticipato, per semplicità assumeremo
+${\mathbb K}$ sia un &lt;a href=&#34;https://it.wikipedia.org/wiki/Campo_%28matematica%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;campo&lt;/a&gt;: come anticipato, per semplicità assumeremo
 che ${\mathbb K}$ sia un campo numerico come ${\mathbb R}$,
 ${\mathbb Q}$ e ${\mathbb C}$.&lt;/p&gt;
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
@@ -254,7 +254,7 @@ $c\in{\mathbb K}$, se ${\boldsymbol w}\in\mathbb W$ allora
 $c{\boldsymbol w}\in\mathbb W$.
 &lt;/div&gt;
 &lt;p&gt;Per esempio, se
-$\mathcal V\equiv \subset\mathbb V$ è un sottoinsieme finito di $\mathbb V$,
+$\mathcal V\subset\mathbb V$ è un sottoinsieme finito di $\mathbb V$,
 $\mathrm{span}[\mathcal V]$ è un sottospazio di $\mathbb V$ (in
 particolare, lo è anche per $\mathcal V$ ha cardinalità 1). Inoltre la dimensione di un
 sottospazio è sempre limitata superiormente dalla dimensione dello
@@ -262,6 +262,9 @@ spazio in cui vive. È interessante notare che se $\mathbb U$ e
 $\mathbb W$ sono sottospazi vettoriali di $\mathbb V$, allora
 $\mathbb U\cap\mathbb W$ è anche sottospazio vettoriale di $\mathbb V$
 (mentre la loro unione, in generale, non lo è).&lt;/p&gt;
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+Se $\mathbb V=\mathbb R^2$, per esempio, dato un vettore non nullo $\boldsymbol v\in\mathbb R^2$, un sottospazio vettoriale può costruirsi semplicemente considerando $\mathbb W=\{\boldsymbol w\in\mathbb V\colon \boldsymbol w=c\boldsymbol v,\ c\in\mathbb R\}$. Esso corrisponde ad una retta lungo la direzione di $\boldsymbol v$.
+&lt;/div&gt;
 &lt;p&gt;Dati due sottospazi vettoriali $\mathbb U$ e $\mathbb W$, se
 $\mathbb U\cap\mathbb W={\mathbf 0}$ è possibile costruire un nuovo
 spazio, detto &lt;em&gt;somma diretta di $\mathbb U$ e $\mathbb W$&lt;/em&gt; e indicato
@@ -978,6 +981,14 @@ $n-r({\boldsymbol A})$.&lt;/p&gt;
       <guid>https://gsicuro.github.io/lectures/im2/ch1/sec4/</guid>
       <description>&lt;p&gt;Content&amp;hellip;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Analytical Approaches ​for Neural Network Dynamics</title>
+      <link>https://gsicuro.github.io/news/dynparis2023/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/news/dynparis2023/</guid>
+      <description></description>
     </item>
     
     <item>
