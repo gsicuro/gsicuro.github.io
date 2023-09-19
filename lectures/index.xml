@@ -5,12 +5,35 @@
     <link>https://gsicuro.github.io/lectures/</link>
       <atom:link href="https://gsicuro.github.io/lectures/index.xml" rel="self" type="application/rss+xml" />
     <description>Lectures</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
       <title>Lectures</title>
       <link>https://gsicuro.github.io/lectures/</link>
     </image>
+    
+    <item>
+      <title>Istituzioni di Matematica 2</title>
+      <link>https://gsicuro.github.io/lectures/im2/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/im2/</guid>
+      <description>&lt;div class=&#34;alert alert-danger&#34;&gt;
+  &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; La pagina è ancora in costruzione.
+&lt;/div&gt;
+&lt;h2 id=&#34;pre-requisiti&#34;&gt;Pre-requisiti&lt;/h2&gt;
+&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
+&lt;h1 id=&#34;struttura-del-corso&#34;&gt;Struttura del corso&lt;/h1&gt;
+&lt;p&gt;Il corso si articola in 60 ore comprensive di 20 ore di esercitazioni in classe. Il programma e gli appunti delle lezioni disponibili sono dati nell&amp;rsquo;elenco che segue.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;./ch1.pdf&#34;&gt;&lt;strong&gt;Elementi di algebra lineare&lt;/strong&gt;&lt;/a&gt;: Spazi vettoriali; matrici e operazioni matriciali; sistemi di equazioni lineari e metodo di Gauss&amp;ndash;Jordan; applicazioni lineari in spazi vettoriali e loro proprietà spettrali.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;./ch2.pdf&#34;&gt;&lt;strong&gt;Elementi di analisi complessa&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

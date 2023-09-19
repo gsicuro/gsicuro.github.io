@@ -1,0 +1,1821 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gabriele Sicuro" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Matrici Un esempio particolarmente importante e prototipico di spazio vettoriale è costituito dallo spazio delle matrici di elementi in ${\mathbb K}$. Consideriamo ora due interi positivi $m$ e $n$. Una matrice di $m\times n$ elementi in ${\mathbb K}$ è una tabella del tipo" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://gsicuro.github.io/lectures/im2on/ch1/sec2/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.4e96e9bf5a85f434ab27014f229625db.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gsicuro.github.io/lectures/im2on/ch1/sec2/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@https://twitter.com/KCLDisSyst" />
+    <meta property="twitter:creator" content="@https://twitter.com/KCLDisSyst" />
+  
+  <meta property="og:site_name" content="Gabriele Sicuro" />
+  <meta property="og:url" content="https://gsicuro.github.io/lectures/im2on/ch1/sec2/" />
+  <meta property="og:title" content="Matrici | Gabriele Sicuro" />
+  <meta property="og:description" content="Matrici Un esempio particolarmente importante e prototipico di spazio vettoriale è costituito dallo spazio delle matrici di elementi in ${\mathbb K}$. Consideriamo ora due interi positivi $m$ e $n$. Una matrice di $m\times n$ elementi in ${\mathbb K}$ è una tabella del tipo" /><meta property="og:image" content="https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2023-01-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2023-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Matrici | Gabriele Sicuro</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="4a23eaf42fd45fdff6ff78eb205d5d73" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c4b90dff1cebe730b9c3b416b2576fc5.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Gabriele Sicuro</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Gabriele Sicuro</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#events"><span>Events</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/alumni/"><span>Students</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#lectures"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publications/"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Elementi di algebra lineare
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/lectures/"><i class="fas fa-arrow-left pr-1"></i>Lectures</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/lectures/im2on/">Istituzioni di Matematica II</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/lectures/im2on/ch1/">Elementi di algebra lineare</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/lectures/im2on/ch1/sec1/">Spazi vettoriali</a></li>
+
+
+
+  <li class="active"><a href="/lectures/im2on/ch1/sec2/">Matrici</a></li>
+
+
+
+  <li class=""><a href="/lectures/im2on/ch1/sec3/">Sistemi di equazioni lineari</a></li>
+
+
+
+  <li class=""><a href="/lectures/im2on/ch1/sec4/">Operatori lineari e spettri</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#matrici">Matrici</a>
+      <ul>
+        <li><a href="#prodotto-tra-matrici">Prodotto tra matrici</a></li>
+        <li><a href="#matrici-quadrate">Matrici quadrate</a></li>
+      </ul>
+    </li>
+    <li><a href="#sistemi-di-equazioni-lineari">Sistemi di equazioni lineari</a>
+      <ul>
+        <li><a href="#metodo-di-eliminazione-di-gauss">Metodo di eliminazione di Gauss</a></li>
+        <li><a href="#metodo-di-gauss--jordan-per-linversa">Metodo di Gauss&ndash;Jordan per l&rsquo;inversa</a></li>
+        <li><a href="#rango">Rango</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/">
+      
+        Lectures
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/im2on/">
+      
+        Istituzioni di Matematica II
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/lectures/im2on/ch1/">
+      
+        Elementi di algebra lineare
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Matrici
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>Matrici</h1>
+
+          <div class="article-style">
+            <h2 id="matrici">Matrici</h2>
+<p>Un esempio particolarmente importante e prototipico di spazio vettoriale
+è costituito dallo spazio delle matrici di elementi in ${\mathbb K}$.
+Consideriamo ora due interi positivi $m$ e $n$. Una <em>matrice</em> di
+$m\times n$ elementi in ${\mathbb K}$ è una tabella del tipo</p>
+<p>$${\boldsymbol A}=
+\begin{pmatrix}a_{11}&amp;a_{12}&amp;\dots&amp;a_{1n}\\
+a_{21}&amp;a_{22}&amp;\dots&amp;a_{2n}\\
+\cdots&amp;\cdots&amp;\ddots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\dots&amp;a_{mn}
+\end{pmatrix}
+$$</p>
+<p>dove, $\forall \mu,\nu$, $a_{\mu\nu}\in{\mathbb K}$: il primo indice
+denota la riga dell&rsquo;elemento nella tabella, il secondo la sua colonna.
+Scriveremo ${\boldsymbol A}=(a_{\mu\nu})_{\mu\nu}\in\mathcal M_{m,n}({\mathbb K})$.
+A volte si denota</p>
+<p>$${\boldsymbol a}_\mu=(a_{\mu 1},\dots, a_{\mu n})$$</p>
+<p>la $\mu$-esima riga e</p>
+<p>$${\boldsymbol a}^\nu=\begin{pmatrix}a_{1\nu}\\ \dots\\a_{m\nu}
+\end{pmatrix}
+$$</p>
+<p>la $\nu$-esima colonna. Ogni matrice
+${\boldsymbol A}$ può essere associata ad una matrice
+${\boldsymbol A}^\intercal\in\mathcal M_{n,m}({\mathbb K})$ detta
+<em>trasposta</em> ottenuta invertendo righe con colonne:</p>
+<p>$${\boldsymbol A}=
+\begin{pmatrix}a_{11}&amp;a_{12}&amp;\dots&amp;a_{1n}\\
+a_{21}&amp;a_{22}&amp;\dots&amp;a_{2n}\\
+\cdots&amp;\cdots&amp;\ddots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\dots&amp;a_{mn}
+\end{pmatrix}
+\Rightarrow {\boldsymbol A}^\intercal=
+\begin{pmatrix}a_{11}&amp;a_{21}&amp;\dots&amp;a_{m1}\\
+a_{12}&amp;a_{22}&amp;\dots&amp;a_{m2}\\
+\cdots&amp;\cdots&amp;\ddots&amp;\vdots\\
+a_{1n}&amp;a_{2n}&amp;\dots&amp;a_{mn}
+\end{pmatrix}
+$$</p>
+<p>L&rsquo;operazione di trasposizione è quindi tale che
+$\intercal\colon\mathcal M_{n,m}({\mathbb K})\to \mathcal M_{m,n}({\mathbb K})$.
+Matrici con $n=1$ sono in particolare dette <em>vettori colonna</em>, e viene
+tipicamente usata la notazione
+$\mathcal M_{m,1}({\mathbb K})\equiv {\mathbb K}^m$. Lo spazio delle
+matrici su $\mathcal M_{m,n}({\mathbb K})$ costituisce uno spazio
+vettoriale se introduciamo le seguenti operazioni. Date due matrici
+${\boldsymbol A}=(a_{\mu\nu})<em>{\mu\nu},{\boldsymbol B}=(b</em>{\mu\nu})<em>{\mu\nu}\in \mathcal M</em>{m,n}({\mathbb K})$,
+e uno scalare $c\in{\mathbb K}$, allora definiamo</p>
+<p>$${\boldsymbol A}+{\boldsymbol B}\equiv  (a_{\mu\nu}+b_{\mu\nu})<em>{\mu\nu}\in \mathcal M</em>{m,n}({\mathbb K}),\qquad c{\boldsymbol A}\equiv  (ca_{\mu\nu})<em>{\mu\nu}\in\mathcal M</em>{m,n}({\mathbb K}).$$</p>
+<p>Queste operazioni soddisfano le proprietà richieste per rendere
+$\mathcal M_{m,n}({\mathbb K})$ uno spazio vettoriale secondo la
+Definizione
+<a href="#def:spaziovettoriale">[def:spaziovettoriale]</a>{reference-type=&ldquo;ref&rdquo;
+reference=&ldquo;def:spaziovettoriale&rdquo;}. Questo spazio ha dimensione $mn$. Una
+base è costuita dalle matrici
+${\boldsymbol E}<em>{ij}=(\delta</em>{i\mu}\delta_{j\nu})_{\mu\nu}$.</p>
+<h3 id="prodotto-tra-matrici">Prodotto tra matrici</h3>
+<p>È possibile definire ora una nuova operazione, quella di <em>prodotto tra
+matrici</em>. Consideriamo una matrice
+${\boldsymbol A}\in\mathcal M_{n,k}({\mathbb K})$ e una matrice
+${\boldsymbol B}\in\mathcal M_{k,m}({\mathbb K})$. Allora è possibile
+introdurre una matrice
+${\boldsymbol C}=(c_{\mu\nu})<em>{\mu\nu}={\boldsymbol A}{\boldsymbol B}\in\mathcal M</em>{n,m}({\mathbb K})$
+tale che</p>
+<p>$$c_{\mu\nu}=\sum_{\rho=1}^ka_{\mu\rho}b_{\rho\nu}.$$</p>
+<p>In particolare, se ${\boldsymbol u}$ è un $n$-vettore riga</p>
+<p>$${\boldsymbol u}=
+\begin{pmatrix}
+u_1&amp;\dots&amp; u_n
+\end{pmatrix}
+$$</p>
+<p>e ${\boldsymbol v}$ un $n$-vettore colonna,</p>
+<p>$${\boldsymbol v}=
+\begin{pmatrix}
+v_1\\dots\ v_n
+\end{pmatrix}
+$$</p>
+<p>è possibile definire il <em>prodotto scalare</em> tra i due come</p>
+<p>$${\boldsymbol u}{\boldsymbol v}=\sum_{\nu=1}^n u_\nu v_\nu.$$</p>
+<p>Nel caso dei vettori colonna, in particolare, si indica con
+$|{\boldsymbol v}|^2\equiv {\boldsymbol v}^\intercal{\boldsymbol v}=\sum_{\nu=1}^nv_\nu^2$
+la loro <em>norma</em>.</p>
+<p>Notare che l&rsquo;operazione di prodotto tra matrici <em>non è abeliana</em> e anzi
+se $n\neq m$ il prodotto ${\boldsymbol B}{\boldsymbol A}$ è non
+definito. Anche qualora l&rsquo;operazione fosse possibile, per esempio se
+$n=m$,
+${\boldsymbol A}{\boldsymbol B}\neq {\boldsymbol B}{\boldsymbol A}$ in
+generale.</p>
+<p>Le proprietà del prodotto tra matrici sono date dalla seguente
+Proposizione, la cui dimostrazione avviene controllando esplicitamente
+la validità di ogni affermazione.</p>
+<p>Siano ${\boldsymbol A},{\boldsymbol B}\in\mathcal M_{m,n}({\mathbb K})$
+e ${\boldsymbol C},{\boldsymbol D}\in\mathcal M_{n,p}({\mathbb K})$, e
+sia $c\in{\mathbb K}$. Allora</p>
+<ul>
+<li>
+<p>$({\boldsymbol A}+{\boldsymbol B}){\boldsymbol C}={\boldsymbol A}{\boldsymbol C}+{\boldsymbol B}{\boldsymbol C}$;</p>
+</li>
+<li>
+<p>${\boldsymbol A}({\boldsymbol C}+{\boldsymbol D})={\boldsymbol A}{\boldsymbol C}+{\boldsymbol A}{\boldsymbol D}$;</p>
+</li>
+<li>
+<p>${\boldsymbol A}(c{\boldsymbol C})=c({\boldsymbol A}{\boldsymbol C})=(c{\boldsymbol A}){\boldsymbol C}$;</p>
+</li>
+<li>
+<p>${\boldsymbol A}{\boldsymbol I}_n={\boldsymbol A}={\boldsymbol I}_m{\boldsymbol A}$;</p>
+</li>
+<li>
+<p>$({\boldsymbol A}{\boldsymbol C})^\intercal={\boldsymbol C}^\intercal{\boldsymbol A}^\intercal$;</p>
+</li>
+<li>
+<p>$({\boldsymbol A}+{\boldsymbol B})^\intercal={\boldsymbol A}^\intercal+{\boldsymbol B}^\intercal$;</p>
+</li>
+<li>
+<p>$({\boldsymbol A}{\boldsymbol C}){\boldsymbol Q}={\boldsymbol A}({\boldsymbol C}{\boldsymbol Q})$
+se ${\boldsymbol Q}\in{\mathbb K}^{p\times q}$.</p>
+</li>
+</ul>
+<h3 id="matrici-quadrate">Matrici quadrate</h3>
+<p>Data una matrice ${\boldsymbol A}\in\mathcal M_{m,n}({\mathbb K})$, se
+$m=n$ la matrice ${\boldsymbol A}$ è detta <em>quadrata</em> di dimensione $n$.
+Una matrice quadrata è diagonale se ha la forma
+${\boldsymbol A}=(a_{\mu}\delta_{\mu\nu})<em>{\mu\nu}$, dove
+$\delta</em>{\mu\nu}$ è il simbolo di Kronecker. Tra le matrici diagonali la
+<em>matrice unità</em> ${\boldsymbol I}<em>n\equiv (\delta</em>{\mu\nu})_{\mu\nu}$
+ha un ruolo speciale dato che si comporta come l&rsquo;identità rispetto al
+prodotto tra matrici, come vedremo. Infine, una matrice quadrata
+${\boldsymbol A}\in{\mathbb K}$ è <em>simmetrica</em> se
+${\boldsymbol A}={\boldsymbol A}^\intercal$ e <em>antisimmetrica</em> se
+${\boldsymbol A}=-{\boldsymbol A}^\intercal$. Elenchiamo ora alcune
+proprietà delle matrici quadrate.</p>
+<p>Una matrice quadrata ${\boldsymbol A}\in\mathcal M_{n,n}({\mathbb K})$
+si dice invertibile se esiste una matrice quadrata $n\times n$, che
+denotiamo con ${\boldsymbol A}^{-1}$, tale che
+${\boldsymbol A}{\boldsymbol A}^{-1}={\boldsymbol A}^{-1}{\boldsymbol A}={\boldsymbol I}_n$.</p>
+<p>Sia ${\boldsymbol A}\in\mathcal M_{n,n}({\mathbb K})$. La sua matrice
+inversa ${\boldsymbol A}^{-1}$ se esiste è unica.</p>
+<p>Supponiamo che la tesi non sia vera e procediamo per assurdo, ovvero
+ammettiamo che esista una matrice
+$\hat{\boldsymbol A}^{-1}\neq{\boldsymbol A}^{-1}$ tale che
+$\hat{\boldsymbol A}^{-1}{\boldsymbol A}={\boldsymbol I}_n$. Allora
+${\boldsymbol A}^{-1}={\boldsymbol A}^{-1}{\boldsymbol A}\hat{\boldsymbol A}^{-1}=\hat{\boldsymbol A}^{-1}$
+che è l&rsquo;assurdo cercato.</p>
+<p>Dalla definizione, $({\boldsymbol A}^{-1})^{-1}={\boldsymbol A}$ e
+inoltre ${\boldsymbol I}^{-1}_n={\boldsymbol I}_n$. Infine, vale la
+seguente</p>
+<p>Siano ${\boldsymbol A}\in\mathcal M_{n,p}({\mathbb K})$ e
+${\boldsymbol B}\in{\mathbb K}^{p\times m}$ entrambe dotate di inversa.
+Allora
+$({\boldsymbol A}{\boldsymbol B})^{-1}={\boldsymbol B}^{-1}{\boldsymbol A}^{-1}\in\mathcal M_{m,n}({\mathbb K})$.</p>
+<p>Il sottoinsieme di $\mathcal M_{n,n}({\mathbb K})$ dato dalle matrici
+invertibili si denota $\mathsf{GL}_{n}({\mathbb K})$ ed ha la struttura
+di <em>gruppo</em>. Se ${\mathbb K}={\mathbb R}$, all&rsquo;interno di tale
+sottinsieme si trova il sottinsieme $\mathsf O_n({\mathbb R})$ delle
+matrici <em>ortogonali</em>, ovvero delle matrici ${\boldsymbol A}$ tali per
+cui ${\boldsymbol A}^{-1}={\boldsymbol A}^\intercal$.</p>
+<p>Concludiamo questa sezione sulle matrici quadrate introducendo un&rsquo;ultima
+importante quantità, ovvero il <em>determinante</em> di una matrice quadrata.</p>
+<p>Data una matrice quadrata
+${\boldsymbol A}\in\mathcal M_{n,n}({\mathbb K})$, il determinante di
+${\boldsymbol A}$ è uno scalare in ${\mathbb K}$ definito ricorsivamente
+come</p>
+<p>$$\det{\boldsymbol A}=\sum_{\mu\nu}(-1)^{\mu+\nu} a_{\mu\nu}\det({\boldsymbol A}_{\mu\nu})$$</p>
+<p>dove ${\boldsymbol A}_{\mu\nu}\in{\mathbb K}^{(n-1)\times(n-1)}$ è la
+matrice $(n-1)\times (n-1)$ ottenuta da ${\boldsymbol A}$ rimuovendo la
+$\mu$ riga e la $\nu$ colonna. Inoltre, dato uno scalare
+$c\in{\mathbb K}$, $\det(c)=c$.</p>
+<p>La definizione sopra, dovuta a Laplace, è ricorsiva ma permette di
+ottenere l&rsquo;espressione del determinante in tutti i casi. Per esempio,
+per $n=2$</p>
+<p>$$\det
+\begin{pmatrix}
+a_{11}&amp;a_{12}\
+a_{21}&amp;a_{22}
+\end{pmatrix}</p>
+<p>=a_{11}a_{22}-a_{12}a_{21}.$$</p>
+<p>Nonostante la sua definizione apparentemente esotica, il determinante è,
+come espresso dal nome, cruciale per comprendere molte proprietà delle
+matrici quadrate. Esso stesso gode di alcune proprietà riassunte nel
+seguente</p>
+<p>[[t:LinAlg:det]]{#t:LinAlg:det label=&ldquo;t:LinAlg:det&rdquo;} Sia
+${\boldsymbol A}\in\mathcal M_{n\times n}({\mathbb K})$. Allora</p>
+<ul>
+<li>
+<p>se ${\boldsymbol A}$ è una matrice diagonale, allora
+$\det{\boldsymbol A}=\prod_{i=1}^n a_{ii}$.</p>
+</li>
+<li>
+<p>$\det{\boldsymbol A}=\det{\boldsymbol A}^\intercal$ (e di
+conseguenza proprietà riferite alle colonne si applicano anche alle
+righe).</p>
+</li>
+<li>
+<p>Dato uno scalare $c\in{\mathbb K}$,
+$\det (c{\boldsymbol A}) = c^n \det{\boldsymbol A}$.</p>
+</li>
+<li>
+<p>Sia una colonna di ${\boldsymbol A}$ tale che
+${\boldsymbol a}^\nu=\lambda{\boldsymbol v}+{\boldsymbol u}$, i.e.,
+$a_{\mu\nu}=\lambda v_\nu+u_\nu$. Allora</p>
+<p>$$\begin{gathered}
+\det{\boldsymbol A}=\det
+\left(
+\begin{array}{cc&gt;{\columncolor{gray!40}}ccc}
+a_{11} &amp; \dots &amp; a_{1\nu} &amp; \dots &amp; a_{1n} \
+\vdots &amp;\vdots &amp;\vdots&amp;\vdots &amp; \vdots\
+a_{n1}&amp;\cdots &amp;a_{n\nu} &amp;\cdots &amp;a_{nn}
+\end{array}</p>
+<p>\right)\=\lambda\det
+\left(
+\begin{array}{cc&gt;{\columncolor{gray!40}}ccc}
+a_{11} &amp; \dots &amp; v_{1} &amp; \cdots &amp; a_{1n} \
+\vdots &amp;\vdots &amp;\vdots&amp;\vdots &amp; \vdots\
+a_{n1}&amp;\cdots &amp;v_{n} &amp;\cdots &amp;a_{nn}
+\end{array}</p>
+<p>\right)+\det
+\left(
+\begin{array}{cc&gt;{\columncolor{gray!40}}ccc}
+a_{11} &amp; \dots &amp; u_{1} &amp; \dots &amp; a_{1n} \
+\vdots &amp;\vdots &amp;\vdots&amp;\vdots &amp; \vdots\
+a_{n1}&amp;\cdots &amp;u_{n} &amp;\cdots &amp;a_{nn}
+\end{array}</p>
+<p>\right)\end{gathered}
+$$</p>
+<p>Si dice che di conseguenza il determinante è <em>multilineare</em>.</p>
+</li>
+<li>
+<p>Se ${\boldsymbol A}$ ha due colonne identiche,
+$\det{\boldsymbol A}=0$.</p>
+</li>
+<li>
+<p>Sia ${\boldsymbol B}\in\mathcal M_{n\times n}({\mathbb K})$; allora
+$\det {\boldsymbol A}{\boldsymbol B}=\det{\boldsymbol A}\det {\boldsymbol B}$.</p>
+</li>
+</ul>
+<p>Una delle conseguenze delle proprietà suddette è che il determinante è
+<em>alternante</em>, ovvero guadagna un segno se due colonne vengono scambiate:</p>
+<p>$$\begin{gathered}
+\det
+\left(
+\begin{array}{cc&gt;{\columncolor{gray!20}}cc&gt;{\columncolor{gray!60}}ccc}
+a_{11} &amp; \dots &amp; a_{1k} &amp;\dots &amp; a_{1k&rsquo;} &amp; \dots &amp; a_{1n} \
+\vdots &amp;\vdots &amp;\vdots&amp;\vdots &amp; \vdots&amp;\vdots &amp; \vdots\
+a_{n1}&amp;\cdots &amp;a_{nk} &amp;\cdots &amp;a_{nk&rsquo;}&amp;\cdots &amp; a_{nn}
+\end{array}</p>
+<p>\right)\=-\det
+\left(
+\begin{array}{cc&gt;{\columncolor{gray!60}}cc&gt;{\columncolor{gray!20}}ccc}
+a_{11} &amp; \dots &amp; a_{1k&rsquo;} &amp;\dots &amp; a_{1k} &amp; \dots &amp; a_{1n} \
+\vdots &amp;\vdots &amp;\vdots&amp;\vdots &amp; \vdots&amp;\vdots &amp; \vdots\
+a_{n1}&amp;\cdots &amp;a_{nk&rsquo;} &amp;\cdots &amp;a_{nk}&amp;\cdots &amp; a_{nn}
+\end{array}</p>
+<p>\right)\end{gathered}
+$$</p>
+<p>Il ruolo cruciale del determinante è legato anche al seguente lemma che
+caratterizza l&rsquo;invertibilità delle matrici quadrate.</p>
+<p>[[l:LinAlg1:inv]]{#l:LinAlg1:inv label=&ldquo;l:LinAlg1:inv&rdquo;} Sia
+${\boldsymbol A}\in\mathcal M_{n\times n}({\mathbb K})$; sia
+${\boldsymbol C}$ la matrice dei suoi <em>cofattori</em>, ovvero la matrice
+$n\times n$ con elementi</p>
+<p>$$c_{\mu\nu} = (-1)^{\mu\nu}\det{\boldsymbol A}_{\mu\nu}.$$ Allora, se
+$\det{\boldsymbol A}\neq 0$, l&rsquo;inversa di ${\boldsymbol A}$ esiste ed è
+data da</p>
+<p>$${\boldsymbol A}^{-1} = \frac{1}{\det{\boldsymbol A}} {\boldsymbol C}^\intercal.$$</p>
+<h2 id="sistemi-di-equazioni-lineari">Sistemi di equazioni lineari</h2>
+<p>Le definizioni date finora sono funzionali ad una serie di importanti
+applicazioni. La prima che andremo a considerare è la soluzione di
+<em>sistemi lineari di equazioni</em>, ovvero sistemi nella forma</p>
+<p>$$\label{eq:linsyst}</p>
+<p>\begin{cases}
+a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n=b_1\
+a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n=b_2\
+\vdots\
+a_{m1}x_1+a_{m2}x_2+\dots+a_{mn}x_n=b_m
+\end{cases}
+$$</p>
+<p>in cui si assume che i coefficienti $a_{\mu\nu}\in{\mathbb K}$ e
+$b_\nu\in{\mathbb K}$ siano noti e l&rsquo;obiettivo è ottenere
+$x_\nu\in{\mathbb K}$. Indicando con
+${\boldsymbol A}=(a_{\mu\nu})<em>{\mu\nu}\in\mathcal M</em>{m,n}({\mathbb K})$,
+${\boldsymbol b}=(b_\nu)<em>\nu\in{\mathbb K}^m$,
+${\boldsymbol x}=(x</em>\nu)_{\nu}\in{\mathbb K}^n$, possiamo scrivere il
+sistema sopra in una forma molto più compatta come</p>
+<p>$${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}.$$</p>
+<p>Il sistema di equazioni è detto <em>omogeneo</em> se
+${\boldsymbol b}=\mathbf 0$, mentre diversamente è detto <em>non omogeneo</em>.
+Ogni sistema è detto <em>compatibile</em> se ha almeno una soluzione: notare
+che un sistema omogeneo ha sempre la soluzione <em>banale</em>
+${\boldsymbol x}=\mathbf 0$. Se è dato un sistema non omogeneo
+${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}$,
+${\boldsymbol b}\neq\mathbf 0$, allora il sistema omogeneo ad esso
+associato è ${\boldsymbol A}{\boldsymbol x}=\mathbf 0$.</p>
+<h3 id="metodo-di-eliminazione-di-gauss">Metodo di eliminazione di Gauss</h3>
+<p>Risolvere un sistema tipo
+${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}$ è il problema centrale
+dell&rsquo;algebra lineare. L&rsquo;idea generale è utilizzare operazioni matriciali
+per poter infine ottenere una espressione per la soluzione
+${\boldsymbol x}$, se essa esiste. Un primo approccio che possiamo
+tentare è il cosiddetto metodo di eliminazione di Gauss. Supponiamo di
+avere un sistema come in
+Eq. <a href="#eq:linsyst">[eq:linsyst]</a>{reference-type=&ldquo;eqref&rdquo;
+reference=&ldquo;eq:linsyst&rdquo;}. Questo può essere associato alla seguente
+matrice</p>
+<p>$$\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\dots&amp;a_{1n}&amp;b_1\\
+a_{21}&amp;a_{22}&amp;\dots&amp;a_{2n}&amp;b_2\\
+\cdots&amp;\cdots&amp;\ddots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\dots&amp;a_{mn}&amp;b_m
+\end{pmatrix}
+$$</p>
+<p>ottenuta concatenando la matrice ${\boldsymbol A}$ e la colonna
+${\boldsymbol b}$ e talvolta detta <em>matrice orlata</em>. Ogni matrice
+siffatta corrisponde ad un sistema come in
+Eq. <a href="#eq:linsyst">[eq:linsyst]</a>{reference-type=&ldquo;eqref&rdquo;
+reference=&ldquo;eq:linsyst&rdquo;}. Possiamo eseguire una serie di operazioni di
+riga su questa matrice che lasciano inalterato il problema. In
+particolare</p>
+<ul>
+<li>
+<p>possiamo moltiplicare una riga per una costante $c\in{\mathbb K}$
+che sia non nulla;</p>
+</li>
+<li>
+<p>possiamo scambiare due righe;</p>
+</li>
+<li>
+<p>possiamo aggiungere ad una riga un multiplo di un&rsquo;altra riga.</p>
+</li>
+</ul>
+<p>Questo tipo di operazioni può essere utilizzato per risolvere il sistema
+di equazioni lineari. Vediamo come con un esempio.</p>
+<p>Cerchiamo di risolvere il sistema</p>
+<p>$$\begin{cases}
+2x_1+4x_2-2x_3=2\
+4x_1+9x_2-3x_3=8\
+-2x_1-3x_2+7x_3=10
+\end{cases}</p>
+<p>\Leftrightarrow</p>
+<p>\begin{pmatrix}
+2&amp;4&amp;-2\
+4&amp;9&amp;-3\
+-2&amp;-3&amp;7
+\end{pmatrix}</p>
+<p>\begin{pmatrix}
+x_1\x_2\x_3
+\end{pmatrix}</p>
+<p>=
+\begin{pmatrix}2\8\10
+\end{pmatrix}
+$$</p>
+<p>così che la matrice orlata è</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+4&amp;9&amp;-3&amp;8\
+-2&amp;-3&amp;7&amp;10
+\end{pmatrix}
+$$</p>
+<p>Proviamo ora a eseguire una operazione tale per cui la variabile $x_1$
+venga rimossa da tutte le equazioni eccetto la prima. Ciò equivale a
+dire che gli elementi sotto $a_{11}$ devono essere trasformati in zero
+eseguendo una delle operazioni di riga indicate sopra. Per esempio,
+sostituiamo la $i$-esima riga con
+$(\text{$i$ riga})-\frac{a_{i1}}{a_{11}}(\text{prima riga})$. L&rsquo;elemento
+$a_{11}$ è detto <em>primo pivot</em> ed è cruciale che non sia zero. Se
+dovesse esserlo, basta scambiare le righe in maniera tale che compaia
+come prima una riga con $a_{11}\neq 0$. Si ottiene quindi</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+0&amp;1&amp;1&amp;4\
+0&amp;1&amp;5&amp;12
+\end{pmatrix}
+$$</p>
+<p>Ripetiamo la procedura partendo dalla <em>seconda</em> riga verso il basso.
+Questa volta il pivot è $a_{22}=1$ e si procede come sopra per le righe
+$i&gt;2$: $(\text{$i$ riga})-\frac{a_{i2}}{a_{22}}(\text{prima riga})$,
+ottenendo</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+0&amp;1&amp;1&amp;4\
+0&amp;0&amp;4&amp;8
+\end{pmatrix}
+$$</p>
+<p>Questa matrice è a gradini e siamo arrivati alla forma desiderata.
+Perché questo è utile? Se scriviamo il sistema associato, esso è</p>
+<p>$$\begin{cases}
+2x_1+4x_2-2x_3=2\
+x_2+x_3=4\
+4x_3=8
+\end{cases}
+$$</p>
+<p>che può essere risolto all&rsquo;indietro, ovvero risolvendo prima per $x_3$,
+ottenendo $x_3=2$, la cui soluzione può essere sostituita nella seconda
+riga che dà $x_2=2$ e infine inserendo entrambe queste soluzioni nella
+prima, che fornisce $x_1=-1$.</p>
+<p>L&rsquo;idea del <em>metodo di eliminazione di Gauss</em> consiste quindi nel
+trasformare la matrice orlata in una <em>matrice a gradini</em> che ammetta più
+facilmente una soluzione. Se $m\leq n$, tale matrice finale avrà la
+forma</p>
+<p>$$\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\dots&amp;a_{1m}&amp;\dots&amp;a_{1n}&amp;b_1\
+0&amp;a_{22}&amp;\dots&amp;a_{2m}&amp;\dots&amp;a_{2n}&amp;b_2\
+\vdots&amp;\vdots&amp;\ddots&amp;\cdots&amp;\cdots&amp;\vdots&amp;\vdots\
+0&amp;0&amp;\dots&amp;a_{mm}&amp;\dots&amp;a_{mn}&amp;b_m
+\end{pmatrix}</p>
+<p>.$$</p>
+<p>Una matrice a gradini è tale per cui, per ogni riga, il primo elemento
+non-nullo si trova a destra del primo elemento non-nullo della riga
+precedente. Supponiamo ora che $\prod_{i=1}^ma_{ii}\neq 0$. L&rsquo;esempio
+mostra che, se $m=n$ e il nostro algoritmo ci fornisce la matrice orlata
+a gradini, allora il sistema è risolubile: l&rsquo;ultima riga fornisce
+l&rsquo;equazione per $x_n$, la penultima per $x_{n-1}$ e così via: in questo
+caso la soluzione del sistema è <em>unica</em>. Se invece $m&lt;n$, l&rsquo;ultima
+equazione è semplicemente</p>
+<p>$$a_{mm}x_m+\dots+a_{mn}x_n=b_m$$ ovvero ci dice che la variabile $x_m$
+può essere espressa in termini delle variabili $x_{m+1},\dots,x_{n}$
+come $x_m=\frac{1}{a_{mm}}\left(b_m-\sum_{i=m+1}^na_{mi}x_i\right)$. Non
+abbiamo sufficiente informazione per fissare le variabili $x_i$ con
+$m+1\leq i\leq n$ che peranto rimangono <em>parametri arbitrari</em> fissati i
+quali tutte le altre variabili possono essere fissate univocamente.
+Questo vuol dire che le soluzioni del nostro sistema vivono in uno
+spazio $n-m$ dimensionale.</p>
+<p>Tuttavia il metodo <em>può fallire</em> se la matrice a gradini ottenuta ha
+$\prod_{i=1}^ma_{ii}=0$ o se $m&gt;n$.</p>
+<p>Cerchiamo di risolvere il sistema</p>
+<p>$$\begin{cases}
+2x_1+4x_2-2x_3=2\
+4x_1+8x_2-3x_3=8\
+-2x_1-4x_2+7x_3=10
+\end{cases}</p>
+<p>\Leftrightarrow</p>
+<p>\begin{pmatrix}
+2&amp;4&amp;-2\
+4&amp;8&amp;-3\
+-2&amp;-4&amp;7
+\end{pmatrix}</p>
+<p>\begin{pmatrix}
+x_1\x_2\x_3
+\end{pmatrix}</p>
+<p>=
+\begin{pmatrix}2\8\10
+\end{pmatrix}
+$$</p>
+<p>così che la matrice orlata è</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+4&amp;8&amp;-3&amp;8\
+-2&amp;-4&amp;7&amp;10
+\end{pmatrix}
+$$</p>
+<p>Seguiamo la procedura di Gauss. Al primo step otteniamo</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+0&amp;0&amp;1&amp;4\
+0&amp;0&amp;5&amp;12
+\end{pmatrix}
+$$</p>
+<p>mentre al secondo</p>
+<p>$$\begin{pmatrix}
+2&amp;4&amp;-2&amp;2\
+0&amp;0&amp;1&amp;4\
+0&amp;0&amp;0&amp;-8
+\end{pmatrix}
+$$</p>
+<p>L&rsquo;ultima riga in particolare corrisponde ad una equazione <em>falsa</em>,
+ovvero $0=-8$. Questo significa che il sistema è <em>incompatibile</em>.</p>
+<p>Se $m&gt;n$ la matrice orlata a gradini finale avrà una forma tipo</p>
+<p>$$\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\dots&amp;a_{1m}&amp;\dots&amp;a_{1n}&amp;b_1\
+0&amp;a_{22}&amp;\dots&amp;a_{2m}&amp;\dots&amp;a_{2n}&amp;b_2\
+\vdots&amp;\vdots&amp;\ddots&amp;\cdots&amp;\cdots&amp;\vdots&amp;\vdots\
+0&amp;0&amp;\dots&amp;0&amp;\dots&amp;a_{n,n}&amp;b_{n}\
+0&amp;0&amp;\dots&amp;0&amp;\dots&amp;0&amp;b_{n+1}\
+0&amp;0&amp;\dots&amp;0&amp;\dots&amp;0&amp;\vdots\
+0&amp;0&amp;\dots&amp;0&amp;\dots&amp;0&amp;b_{m}\
+\end{pmatrix}</p>
+<p>.$$</p>
+<p>Se, per via della procedura, $b_{n+1}=\dots=b_m=0$, allora possiamo
+trascurare tutte le righe dalla $(n+1)$esima in poi, dato che non sono
+informative, e ci riduciamo ad un caso in cui di fatto $m=n$.
+Diversamente, se uno dei valori $b_i\neq0$ per $n+1\leq i\leq m$, allora
+la procedura è risultata in una condizione falsa, che vuol dire che il
+nostro sistema è incompatibile e non esistono soluzioni.</p>
+<p>In conclusione, per $m\leq n$, <em>il sistema è compatibile se la matrice
+orlata può essere messa in una forma a gradini con
+$\prod_{i=1}^ma_{ii}\neq 0$.</em> Se $n=m$ questa condizione è sufficiente a
+garantire che la soluzione è unica. In tutti gli altri casi, il sistema
+è incompatibile se la procedura genera equazioni nella forma $0=b_i$ con
+$b_i\neq 0$.</p>
+<h3 id="metodo-di-gauss--jordan-per-linversa">Metodo di Gauss&ndash;Jordan per l&rsquo;inversa</h3>
+<p>Intuitivamente, il metodo di Gauss descritto sopra, quando ha successo,
+permette di &ldquo;invertire&rdquo; la matrice ${\boldsymbol A}$ nell&rsquo;equazione
+${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}$ e, in particolare, ci
+aspettiamo che, se ${\boldsymbol A}$ è una matrice quadrata invertibile,
+allora in effetti ${\boldsymbol x}={\boldsymbol A}^{-1}{\boldsymbol b}$.
+In qualche modo, in questo caso, il metodo produce esattamente il
+risultato di questa operazione applicando l&rsquo;inversa di ${\boldsymbol A}$
+a ${\boldsymbol b}$, quando questa esiste.</p>
+<p>In effetti, supponiamo che la matrice
+${\boldsymbol A}\in\mathcal M_{n,n}({\mathbb K})$. La matrice inversa
+${\boldsymbol A}^{-1}$ è tale per cui
+${\boldsymbol A}{\boldsymbol A}^{-1}={\boldsymbol I}_n$. Se denoto con
+${\boldsymbol x}_i$ la $i$-esima colonna di ${\boldsymbol A}^{-1}$</p>
+<p>$${\boldsymbol A}{\boldsymbol x}_i={\boldsymbol e}<em>i,\qquad \text{dove}\quad {\boldsymbol e}<em>i=(\delta</em>{\nu i})</em>{\nu}\quad \text{per }i=1,\dots, n.$$</p>
+<p>In sostanza trovare l&rsquo;inversa equivale a risolvere contemporaneamente
+$n$ sistemi di equazioni lineari, problema per il quale possiamo
+applicare il metodo di Gauss. Per meglio esemplificare questo fatto,
+ricorriamo ad un esempio.</p>
+<p>Consideriamo la matrice quadrata</p>
+<p>$${\boldsymbol A}=
+\begin{pmatrix}
+2&amp;-1&amp;0\
+-1&amp;2&amp;-1\
+0&amp;-1&amp;2\
+\end{pmatrix}</p>
+<p>.$$ Per trovare l&rsquo;inversa</p>
+<p>$${\boldsymbol A}^{-1}=
+\begin{pmatrix}
+x_{11}&amp;x_{12}&amp;x_{13}\
+x_{21}&amp;x_{22}&amp;x_{23}\
+x_{31}&amp;x_{22}&amp;x_{33}\
+\end{pmatrix}
+$$ occorre risolvere le equazioni</p>
+<p>$$\medmuskip=0mu
+\thinmuskip=0mu
+\thickmuskip=0mu
+\begin{pmatrix}
+2&amp;-1&amp;0\
+-1&amp;2&amp;-1\
+0&amp;-1&amp;2\
+\end{pmatrix}</p>
+<p>\begin{pmatrix}
+x_{11}\x_{21}\x_{31}
+\end{pmatrix}</p>
+<p>=
+\begin{pmatrix}
+1\0\0
+\end{pmatrix}</p>
+<p>,\qquad
+\begin{pmatrix}
+2&amp;-1&amp;0\
+-1&amp;2&amp;-1\
+0&amp;-1&amp;2\
+\end{pmatrix}</p>
+<p>\begin{pmatrix}
+x_{11}\x_{21}\x_{31}
+\end{pmatrix}</p>
+<p>=
+\begin{pmatrix}
+0\1\0
+\end{pmatrix}</p>
+<p>,\qquad
+\begin{pmatrix}
+2&amp;-1&amp;0\
+-1&amp;2&amp;-1\
+0&amp;-1&amp;2\
+\end{pmatrix}</p>
+<p>\begin{pmatrix}
+x_{11}\x_{21}\x_{31}
+\end{pmatrix}</p>
+<p>=
+\begin{pmatrix}
+0\0\1
+\end{pmatrix}</p>
+<p>.$$ Possiamo immaginare di procedere parallelamente su tutti i sistemi
+usando una matrice orlata</p>
+<p>$$\begin{pmatrix}
+2&amp;-1&amp;0&amp;1&amp;0&amp;0\
+-1&amp;2&amp;-1&amp;0&amp;1&amp;0\
+0&amp;-1&amp;2&amp;0&amp;0&amp;1\
+\end{pmatrix}
+$$ Questa matrice orlata ha la forma</p>
+<p>$$\begin{pmatrix}
+{\boldsymbol A}&amp;{\boldsymbol I}
+\end{pmatrix}
+$$ Usando la procedura di Gauss per mettere la matrice in
+forma a gradini si ottiene</p>
+<p>$$\begin{pmatrix}
+2&amp;-1&amp;0&amp;1&amp;0&amp;0\
+0&amp;\sfrac{3}{2}&amp;-1&amp;\sfrac{1}{2}&amp;1&amp;0\
+0&amp;0&amp;\sfrac{4}{3}&amp;\sfrac{2}{3}&amp;\sfrac{2}{3}&amp;1\
+\end{pmatrix}
+$$ A questo punto vorremmo mettere il sistema nella forma</p>
+<p>$$\begin{pmatrix}
+{\boldsymbol I}&amp;{\boldsymbol B}
+\end{pmatrix}
+$$ perché in questo caso
+${\boldsymbol B}={\boldsymbol A}^{-1}$! La matrice orlata ottenuta
+infatti corrisponderebbe al set di sistemi $x_{\mu\nu}=b_{\mu\nu}$
+fornendoci la soluzione che cerchiamo. Dobbiamo quindi lavorare per
+rimuovere gli zeri <em>sopra</em> la diagonale procedendo stavolta dal basso
+verso l&rsquo;alto.</p>
+<p>$$\begin{pmatrix}
+2&amp;-1&amp;0&amp;1&amp;0&amp;0\
+0&amp;\sfrac{3}{2}&amp;-1&amp;\sfrac{3}{4}&amp;\sfrac{3}{2}&amp;\sfrac{3}{4}\
+0&amp;0&amp;\sfrac{4}{3}&amp;\sfrac{2}{3}&amp;\sfrac{2}{3}&amp;1
+\end{pmatrix}</p>
+<p>\Rightarrow
+\begin{pmatrix}
+2&amp;-1&amp;0&amp;1&amp;0&amp;0\
+0&amp;\sfrac{3}{2}&amp;0&amp;\sfrac{3}{4}&amp;\sfrac{3}{2}&amp;\sfrac{3}{4}\
+0&amp;0&amp;\sfrac{4}{3}&amp;\sfrac{2}{3}&amp;\sfrac{2}{3}&amp;1
+\end{pmatrix}</p>
+<p>\Rightarrow
+\begin{pmatrix}
+2&amp;0&amp;0&amp;\sfrac{3}{2}&amp;1&amp;\sfrac{1}{2}\
+0&amp;\sfrac{3}{2}&amp;0&amp;\sfrac{3}{4}&amp;\sfrac{3}{2}&amp;\sfrac{3}{4}\
+0&amp;0&amp;\sfrac{4}{3}&amp;\sfrac{1}{3}&amp;\sfrac{2}{3}&amp;1
+\end{pmatrix}</p>
+<p>.$$ Dividendo opportunamente ogni riga otteniamo</p>
+<p>$$\begin{pmatrix}
+1&amp;0&amp;0&amp;\sfrac{3}{4}&amp;\sfrac{1}{2}&amp;\sfrac{1}{4}\
+0&amp;1&amp;0&amp;\sfrac{1}{2}&amp;1&amp;\sfrac{1}{2}\
+0&amp;0&amp;1&amp;\sfrac{1}{4}&amp;\sfrac{1}{2}&amp;\sfrac{3}{4}
+\end{pmatrix}
+$$ per cui</p>
+<p>$${\boldsymbol A}^{-1}=
+\begin{pmatrix}
+\sfrac{3}{4}&amp;\sfrac{1}{2}&amp;\sfrac{1}{4}\
+\sfrac{1}{2}&amp;1&amp;\sfrac{1}{2}\
+\sfrac{1}{4}&amp;\sfrac{1}{2}&amp;\sfrac{3}{4}
+\end{pmatrix}</p>
+<p>.$$</p>
+<p>Il metodo descritto è detto <em>di Gauss&ndash;Jordan</em>. La procedura fallisce se
+l&rsquo;inversa cercata non esiste. Questo è il caso, per esempio, se <em>dopo</em>
+aver ottenuto la forma a gradini $\prod_{i=1}^na_{ii}=0$. Questa
+condizione ha un significato preciso che specificheremo.</p>
+<h3 id="rango">Rango</h3>
+<p>Il metodo di eliminazione di Gauss permette di risolvere un sistema di
+equazioni lineari, o determinarne l&rsquo;incompatibilità. Non fornisce però
+(almeno direttamente) un <em>criterio</em> di risolubilità né è chiaro perché
+in alcuni casi dovrebbe funzionare e in altri fallire. A questo scopo
+introduciamo il concetto di <em>rango</em>.</p>
+<p>Dato un insieme finito di vettori ${{\boldsymbol v}<em>i}</em>{i=1}^k$ di uno
+spazio vettoriale $\mathbb V$, il rango dell&rsquo;insieme è la dimensione di
+$\mathrm{span}[{{\boldsymbol v}<em>i}</em>{i=1}^k]$.</p>
+<p>Data una matrice ${\boldsymbol A}$ possiamo quindi assegnarle, in linea
+di principio, un rango per righe, ovvero il numero massimo di sue righe
+linearmenti indipendenti, e un rango per colonne, ovvero il numero
+massimo di sue colonne linearmenti indipendenti. Tuttavia, vale il
+seguente</p>
+<p>Il rango per righe e il rango per colonne di una matrice
+${\boldsymbol A}\in{\mathbb R}^{m\times n}$ coincidono.</p>
+<p>Denotiamo d&rsquo;ora in poi $r({\boldsymbol A})$ il rango di
+${\boldsymbol A}$: naturalmente $r({\boldsymbol A})\leq \min{n,m}$. Il
+rango di una matrice ha numerose proprietà, che non elencheremo,
+eccezion fatta per la seguente</p>
+<p>Una matrice quadrata ${\boldsymbol A}\in\mathcal M_{n,n}({\mathbb K})$ è
+invertibile se e solo se il suo rango è $n$.</p>
+<p>Di conseguenza, il rango di una matrice è massimo se e solo se il suo
+determinante è non nullo.</p>
+<p>Il rango di una matrice rimane inalterato eseguendo le opreazioni
+lineari del metodo di Gauss, ed è uguale al numero di righe non-nulle
+ottenute alla fine dell&rsquo;esecuazione all&rsquo;interno della matrice
+${\boldsymbol A}$ trasformata. Il fatto che il rango di una matrice sia
+legato alla risolubilità di un sistema lineare è suggerito dal seguente
+fatto. Consideriamo il problema
+${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}$: se indichiamo con
+${\boldsymbol a}^\nu$ la $\mu$-esima colonna di ${\boldsymbol A}$,
+questo problema può scriversi come</p>
+<p>$$\sum_{\nu=1}^n x_\nu{\boldsymbol a}^\nu={\boldsymbol b},$$</p>
+<p>che esprime il fatto che stiamo cercando di scrivere ${\boldsymbol b}$
+come sovrapposizione lineare dei vettori colonna di ${\boldsymbol A}$,
+${{\boldsymbol a}^\nu}<em>{\nu=1}^n$. Ciò sarà possibile se
+${\boldsymbol b}$ vive nello spazio generato dalle colonne di
+${\boldsymbol A}$, $\mathrm{span}[{{\boldsymbol a}^\nu}</em>{\nu=1}^n]$,
+la cui dimensione è $r({\boldsymbol A})$. Questa intuizione è espressa
+in termini rigorosi da un teorema fondamentale dell&rsquo;algebra lineare, che
+diamo senza dimostrazione.</p>
+<p>Un sistema lineare di $m$ equazioni in $n$ incognite
+${\boldsymbol A}{\boldsymbol x}={\boldsymbol b}$ è compatibile se e solo
+se la matrice orlata ha lo stesso rango della matrice ${\boldsymbol A}$.
+In tal caso, lo spazio delle soluzioni ha dimensione
+$n-r({\boldsymbol A})$.</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/lectures/im2on/ch1/sec1/" rel="next">Spazi vettoriali</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/lectures/im2on/ch1/sec3/" rel="prev">Sistemi di equazioni lineari</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 1, 2023</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.1ef9914ab40e943e2eaa592a77444183.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

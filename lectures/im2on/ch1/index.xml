@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gabriele Sicuro</title>
-    <link>https://gsicuro.github.io/</link>
-      <atom:link href="https://gsicuro.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Gabriele Sicuro</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <title>Elementi di algebra lineare | Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/lectures/im2on/ch1/</link>
+      <atom:link href="https://gsicuro.github.io/lectures/im2on/ch1/index.xml" rel="self" type="application/rss+xml" />
+    <description>Elementi di algebra lineare</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gsicuro.github.io/media/icon_hu7f2426718c726843532e5bf53de698ef_1775364_512x512_fill_lanczos_center_3.png</url>
-      <title>Gabriele Sicuro</title>
-      <link>https://gsicuro.github.io/</link>
+      <url>https://gsicuro.github.io/lectures/im2on/ch1/featured.jpg</url>
+      <title>Elementi di algebra lineare</title>
+      <link>https://gsicuro.github.io/lectures/im2on/ch1/</link>
     </image>
     
     <item>
@@ -973,172 +973,6 @@ $n-r({\boldsymbol A})$.&lt;/p&gt;
       <guid>https://gsicuro.github.io/lectures/im2on/ch1/sec4/</guid>
       <description>&lt;p&gt;Content&amp;hellip;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Istituzioni di Matematica 2</title>
-      <link>https://gsicuro.github.io/lectures/im2/</link>
-      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/lectures/im2/</guid>
-      <description>&lt;div class=&#34;alert alert-danger&#34;&gt;
-  &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; La pagina è ancora in costruzione.
-&lt;/div&gt;
-&lt;h2 id=&#34;pre-requisiti&#34;&gt;Pre-requisiti&lt;/h2&gt;
-&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
-&lt;h1 id=&#34;struttura-del-corso&#34;&gt;Struttura del corso&lt;/h1&gt;
-&lt;p&gt;Il corso si articola in 60 ore comprensive di 20 ore di esercitazioni in classe. Il programma e gli appunti delle lezioni disponibili sono dati nell&amp;rsquo;elenco che segue.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./ch1.pdf&#34;&gt;&lt;strong&gt;Elementi di algebra lineare&lt;/strong&gt;&lt;/a&gt;: Spazi vettoriali; matrici e operazioni matriciali; sistemi di equazioni lineari e metodo di Gauss&amp;ndash;Jordan; applicazioni lineari in spazi vettoriali e loro proprietà spettrali.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./ch2.pdf&#34;&gt;&lt;strong&gt;Elementi di analisi complessa&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Analytical Approaches ​for Neural Network Dynamics</title>
-      <link>https://gsicuro.github.io/news/dynparis2023/</link>
-      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/dynparis2023/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://gsicuro.github.io/publications/</link>
-      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/publications/</guid>
-      <description>&lt;iframe type=&#34;text/html&#34; sandbox=&#34;allow-scripts allow-same-origin allow-popups&#34; width=&#34;336&#34; height=&#34;550&#34; frameborder=&#34;0&#34; allowfullscreen style=&#34;max-width:45&#34; src=&#34;https://read.amazon.com/kp/card?asin=B01M4NFA51&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_NT1Y2ZQ2WYTV618DW936&#34; &gt;&lt;/iframe&gt;
-&lt;iframe type=&#34;text/html&#34; sandbox=&#34;allow-scripts allow-same-origin allow-popups&#34; width=&#34;336&#34; height=&#34;550&#34; frameborder=&#34;0&#34; allowfullscreen style=&#34;max-width:45%&#34; src=&#34;https://read.amazon.com/kp/card?asin=B0CFLFFSNH&amp;preview=inline&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_2M07EK3QZZGHYBF6J6DK&#34; &gt;&lt;/iframe&gt;
-&lt;hr&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-var arxiv_authorid = &#34;0000-0002-9258-2436&#34;;
-var arxiv_format=&#34;arxiv&#34;;
-var arxiv_includeSubjects=0;
-var arxiv_max_entries=0;
-&lt;/script&gt;
-&lt;style type=&#34;text/css&#34;&gt;
-div.arxivfeed {margin-bottom: 5px; width:90%;}
-&lt;/style&gt;
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://arxiv.org/js/myarticles.js&#34;&gt;
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&#34;arxivfeed&#34;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Disordered Systems Days at King&#39;s College London</title>
-      <link>https://gsicuro.github.io/news/kuhn2023/</link>
-      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/kuhn2023/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spin Glass Theory &amp; Far Beyond</title>
-      <link>https://gsicuro.github.io/news/rsb40/</link>
-      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/rsb40/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Facets of Statistical Field Theory</title>
-      <link>https://gsicuro.github.io/news/caracciolo2022/</link>
-      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/caracciolo2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MECO47</title>
-      <link>https://gsicuro.github.io/news/meco47/</link>
-      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/meco47/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>73rd British Mathematical Colloquium</title>
-      <link>https://gsicuro.github.io/news/bmc2022/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/bmc2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Past students</title>
-      <link>https://gsicuro.github.io/alumni/</link>
-      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/alumni/</guid>
-      <description>&lt;h2 id=&#34;phd-students&#34;&gt;PhD students&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;2025, &lt;strong&gt;Urte Adomaityte&lt;/strong&gt;. King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;master-students&#34;&gt;Master students&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;2016, &lt;strong&gt;Matteo P. D&amp;rsquo;Achille&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/dachille.pdf&#34;&gt;&lt;em&gt;On two assignment problems&lt;/em&gt;&lt;/a&gt;, co-supervised with Sergio Caracciolo, University of Milan.&lt;/li&gt;
-&lt;li&gt;2018, &lt;strong&gt;Gianmarco Perrupato&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/perrupato.pdf&#34;&gt;&lt;em&gt;Study of matching on the Bethe lattice&lt;/em&gt;&lt;/a&gt;, co-supervised with Giorgio Parisi, Sapienza University of Rome.&lt;/li&gt;
-&lt;li&gt;2021, &lt;strong&gt;Anshul Toshniwal&lt;/strong&gt;. Thesis: &lt;em&gt;The planted multi-index matching problem&lt;/em&gt;, co-supervised with Lenka Zdeborová, EPFL.&lt;/li&gt;
-&lt;li&gt;2021, &lt;strong&gt;Claudia De Sousa Miranda Perez&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/desousa.pdf&#34;&gt;&lt;em&gt;The random dimer covering problem on the weighted Aztec graph&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;li&gt;2021, &lt;strong&gt;Daniel Reti&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/reti.pdf&#34;&gt;&lt;em&gt;Robustness of excitations in the random dimer model&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;li&gt;2021, &lt;strong&gt;Hugo Ryder&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/ryder.pdf&#34;&gt;&lt;em&gt;Matching recovery&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;li&gt;2021, &lt;strong&gt;Leonardo Scialo&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/scialo.pdf&#34;&gt;&lt;em&gt;Arctic region in the weighted random dimer covering&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;li&gt;2022, &lt;strong&gt;Guoyu Chang&lt;/strong&gt;. Thesis: &lt;em&gt;The mixed multi-index matching problem&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;li&gt;2022, &lt;strong&gt;Xiaoying Zhou&lt;/strong&gt;. Thesis: &lt;em&gt;Statistical physics of community detection&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>40 years of Replica Symmetry Breaking</title>
-      <link>https://gsicuro.github.io/news/confrsb40/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/confrsb40/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Disordered serendipity</title>
-      <link>https://gsicuro.github.io/news/parisi70/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/parisi70/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Beyond mean field theory</title>
-      <link>https://gsicuro.github.io/news/bmft/</link>
-      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/news/bmft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Disordered systems</title>
-      <link>https://gsicuro.github.io/project/ds/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/project/ds/</guid>
-      <description>&lt;p&gt;The research activities of the group concentrate on the analysis and development of mathematical theories and models with which to describe the statics and dynamics of disordered (or &amp;ldquo;complex&amp;rdquo;) systems in physics, biology, financial markets, and computer science. Such systems are characterized by microscopic (usually stochastic) dynamic elements with mutual interactions without global regularity but with a significant degree of built-in competition and incompatibility, resulting in the existence of many locally stable states for the system as a whole and a highly non-ergodic &amp;ldquo;glassy&amp;rdquo; type of dynamics.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gsicuro.github.io/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/admin/config.yml</guid>
-      <description></description>
     </item>
     
   </channel>
