@@ -992,31 +992,36 @@ $n-r({\boldsymbol A})$.&lt;/p&gt;
       <description>&lt;div class=&#34;alert alert-danger&#34;&gt;
   &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; La pagina è ancora in costruzione.
 &lt;/div&gt;
-&lt;h2 id=&#34;pre-requisiti&#34;&gt;Pre-requisiti&lt;/h2&gt;
+&lt;h2 id=&#34;dispense&#34;&gt;Dispense&lt;/h2&gt;
+&lt;p&gt;Il corso consiste di due parti. La prima si focalizza su elementi dell&amp;rsquo;algebra lineare, mentre la seconda tratta i fondamenti del calcolo in molte variabili. Verranno utilizzate come guida delle &lt;a href=&#34;./note.pdf&#34;&gt;&lt;strong&gt;dispense&lt;/strong&gt;&lt;/a&gt;: si noti che queste possono contenere errori.&lt;/p&gt;
 &lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
 &lt;p&gt;Prova scritta e successiva prova orale; l&amp;rsquo;ammissione all&amp;rsquo;orale è subordinata al raggiungimento di un punteggio non inferiore a 15/30 nella prova scritta.&lt;/p&gt;
-&lt;h1 id=&#34;struttura-del-corso&#34;&gt;Struttura del corso&lt;/h1&gt;
-&lt;p&gt;Il corso si articola in 60 ore comprensive di 20 ore di esercitazioni in classe. Il programma e gli appunti delle lezioni disponibili sono dati nell&amp;rsquo;elenco che segue.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch1.pdf&#34;&gt;&lt;strong&gt;Il campo dei numeri complessi&lt;/strong&gt;&lt;/a&gt;: Operazioni aritmetiche; radici quadrate; coniugazione e modulo; disuguaglianze; somma e moltiplicazione geometrica; formula di de Moivre.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch2.pdf&#34;&gt;&lt;strong&gt;Elementi di algebra lineare&lt;/strong&gt;&lt;/a&gt;: Spazi vettoriali; matrici e operazioni matriciali; sistemi di equazioni lineari e metodo di Gauss&amp;ndash;Jordan; applicazioni lineari in spazi vettoriali e loro proprietà spettrali.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch3.pdf&#34;&gt;&lt;strong&gt;Calcolo in molte variabili&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch4.pdf&#34;&gt;&lt;strong&gt;Integrali curvilinei&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch5.pdf&#34;&gt;&lt;strong&gt;Estremanti&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;./Ch6.pdf&#34;&gt;&lt;strong&gt;Equazioni differenziali ordinarie&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;prove-assegnate-finora&#34;&gt;Prove assegnate finora&lt;/h3&gt;
+&lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./20240115.pdf&#34;&gt;&lt;strong&gt;15 gennaio 2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Meccanica Razionale</title>
+      <link>https://gsicuro.github.io/lectures/mr/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/mr/</guid>
+      <description>&lt;div class=&#34;alert alert-danger&#34;&gt;
+  &lt;i class=&#34;fas fa-exclamation-triangle&#34;&gt;&lt;/i&gt; &lt;strong&gt;Note:&lt;/strong&gt; La pagina è ancora in costruzione.
+&lt;/div&gt;
+&lt;h2 id=&#34;testo-di-riferimento&#34;&gt;Testo di riferimento&lt;/h2&gt;
+&lt;p&gt;Il testo di riferimento sarà il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello &lt;a href=&#34;https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica Razionale&lt;/strong&gt;&lt;/a&gt;, edito da Springer. Un utile manuale di esercizi è la raccolta di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia &lt;a href=&#34;https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Esercizi e Temi d&amp;rsquo;Esame di Meccanica Razionale&lt;/strong&gt;&lt;/a&gt; edito da Esculapio.&lt;/p&gt;
+&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
+&lt;p&gt;Prova scritta e successiva prova orale; l&amp;rsquo;ammissione all&amp;rsquo;orale è subordinata al raggiungimento di un punteggio non inferiore a 15/30 nella prova scritta.&lt;/p&gt;
+&lt;h3 id=&#34;prove-assegnate-finora&#34;&gt;Prove assegnate finora&lt;/h3&gt;
+&lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./20240117.pdf&#34;&gt;&lt;strong&gt;17 gennaio 2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20231201.pdf&#34;&gt;&lt;strong&gt;01 dicembre 2023&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
