@@ -1069,7 +1069,7 @@ var arxiv_max_entries=0;
 &lt;style type=&#34;text/css&#34;&gt;
 div.arxivfeed {margin-bottom: 5px; width:90%;}
 &lt;/style&gt;
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://arxiv.org/js/myarticles.js&#34;&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;arxiv.js&#34;&gt;
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
