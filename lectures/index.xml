@@ -5,71 +5,12 @@
     <link>https://gsicuro.github.io/lectures/</link>
       <atom:link href="https://gsicuro.github.io/lectures/index.xml" rel="self" type="application/rss+xml" />
     <description>Lectures</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gsicuro.github.io/media/icon_hu4c465b94eb6b23f2c7fc783ea01b5261_1018239_512x512_fill_lanczos_center_3.png</url>
       <title>Lectures</title>
       <link>https://gsicuro.github.io/lectures/</link>
     </image>
-    
-    <item>
-      <title>Meccanica Razionale</title>
-      <link>https://gsicuro.github.io/lectures/mr/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/lectures/mr/</guid>
-      <description>&lt;h2 id=&#34;materiale-di-riferimento&#34;&gt;Materiale di riferimento&lt;/h2&gt;
-&lt;p&gt;Il testo di riferimento sarà il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello &lt;a href=&#34;https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica Razionale&lt;/strong&gt;&lt;/a&gt;, edito da Springer. Un utile manuale di esercizi è la raccolta di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia &lt;a href=&#34;https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Esercizi e Temi d&amp;rsquo;Esame di Meccanica Razionale&lt;/strong&gt;&lt;/a&gt; pubblicato da Esculapio.&lt;/p&gt;
-&lt;div class=&#34;alert alert-primary&#34;&gt;
-  &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;strong&gt; &lt;a href=&#34;./note.pdf&#34;&gt;Note del corso.&lt;/a&gt;&lt;/strong&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-&lt;video autoplay loop  &gt;
-  &lt;source src=&#34;https://gsicuro.github.io/lectures/mr/rulletta3.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
-&lt;p&gt;L&amp;rsquo;appello d&amp;rsquo;esame ordinario consiste di una prova scritta di due ore e una successiva prova orale opzionale.&lt;/p&gt;
-&lt;figure class=&#34;image&#34;&gt;
-  &lt;img src=&#34;voti.png&#34; alt=&#34;Voti all&#39;esame&#34;&gt;
-  &lt;figcaption&gt;Istogramma dei voti dell&#39;esame del modulo &lt;i&gt;Meccanica Razionale&lt;/i&gt; del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;div class=&#34;alert alert-danger&#34; style=&#34;font-size:18px;text-align: justify;&#34;&gt;
-&lt;p&gt;La data della &lt;strong&gt;prova orale&lt;/strong&gt; viene annunciata contestualmente all&#39;annuncio dei risultati della prova scritta (tipicamente entro 15 giorni dalla stessa). L&#39;ammissione all&#39;orale è subordinata al raggiungimento di un punteggio non inferiore a 15/30 nella prova scritta.  L&#39;intenzione di partecipare alla prova orale va comunicata al più entro tre giorni dalla pubblicazione dei risultati della prova scritta.&lt;/p&gt;
-&lt;p&gt;Tutti gli studenti interessati a &lt;strong&gt;visionare la correzione&lt;/strong&gt; della loro prova scritta possono presentarsi nella sede della prova orale dell&#39;appello corrispondente, indipendentemente dal fatto che vogliano o meno sostenere l&#39;orale. &lt;/p&gt;
-&lt;p&gt;L&#39;iscrizione ad ogni appello ordinario si apre due mesi prima della sua pubblicazione e si chiude &lt;strong&gt;categoricamente&lt;/strong&gt; una settimana prima dello stesso: non sono ammesse iscrizioni oltre la scadenza.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;prove-passate&#34;&gt;Prove passate&lt;/h3&gt;
-&lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./provatest.pdf&#34;&gt;&lt;strong&gt;Prova esempio&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;2024&#34;&gt;2024&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;09-09-2024&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240715.pdf&#34;&gt;&lt;strong&gt;15-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240701.pdf&#34;&gt;&lt;strong&gt;01-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240617.pdf&#34;&gt;&lt;strong&gt;17-06-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240322.pdf&#34;&gt;&lt;strong&gt;22-03-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240207.pdf&#34;&gt;&lt;strong&gt;07-02-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./20240117.pdf&#34;&gt;&lt;strong&gt;17-01-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;2023&#34;&gt;2023&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./20231201.pdf&#34;&gt;&lt;strong&gt;01-12-2023&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Istituzioni di Matematica 2</title>
@@ -106,6 +47,65 @@ Si noti che le note possono contenere errori.
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/lectures/ps/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gsicuro.github.io/uploads/7CCMCS04.pdf&#34;&gt;&lt;strong&gt;These lecture notes&lt;/strong&gt;&lt;/a&gt; are largely based on a previous version prepared by A. Annibale, for the &lt;em&gt;Dynamical analysis of complex systems&lt;/em&gt;, later named &lt;em&gt;Stochastic processes and applications&lt;/em&gt;, module at King&amp;rsquo;s College London. The module is part of the &lt;em&gt;Complex Systems Modelling&lt;/em&gt; master and I taught it from 2021 to 2023.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Meccanica Razionale</title>
+      <link>https://gsicuro.github.io/lectures/mr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/mr/</guid>
+      <description>&lt;h2 id=&#34;materiale-di-riferimento&#34;&gt;Materiale di riferimento&lt;/h2&gt;
+&lt;p&gt;Il testo di riferimento sarà il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello &lt;a href=&#34;https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica Razionale&lt;/strong&gt;&lt;/a&gt;, edito da Springer. Un utile manuale di esercizi è la raccolta di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia &lt;a href=&#34;https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Esercizi e Temi d&amp;rsquo;Esame di Meccanica Razionale&lt;/strong&gt;&lt;/a&gt; pubblicato da Esculapio.&lt;/p&gt;
+&lt;div class=&#34;alert alert-primary&#34;&gt;
+  &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;strong&gt; &lt;a href=&#34;./note.pdf&#34;&gt;Note del corso.&lt;/a&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video autoplay loop  &gt;
+  &lt;source src=&#34;https://gsicuro.github.io/lectures/mr/rulletta3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;appello d&amp;rsquo;esame ordinario consiste di una prova scritta di due ore e una successiva prova orale opzionale.&lt;/p&gt;
+&lt;figure class=&#34;image&#34;&gt;
+  &lt;img src=&#34;voti.png&#34; alt=&#34;Voti all&#39;esame&#34;&gt;
+  &lt;figcaption&gt;Istogramma normalizzato dei voti dell&#39;esame del modulo &lt;i&gt;Meccanica Razionale&lt;/i&gt; del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div class=&#34;alert alert-danger&#34; style=&#34;font-size:18px;text-align: justify;&#34;&gt;
+&lt;p&gt;La data della &lt;strong&gt;prova orale&lt;/strong&gt; viene annunciata contestualmente all&#39;annuncio dei risultati della prova scritta (tipicamente entro 15 giorni dalla stessa). L&#39;ammissione all&#39;orale è subordinata al raggiungimento di un punteggio non inferiore a 15/30 nella prova scritta.  L&#39;intenzione di partecipare alla prova orale va comunicata al più entro tre giorni dalla pubblicazione dei risultati della prova scritta.&lt;/p&gt;
+&lt;p&gt;Tutti gli studenti interessati a &lt;strong&gt;visionare la correzione&lt;/strong&gt; della loro prova scritta possono presentarsi nella sede della prova orale dell&#39;appello corrispondente, indipendentemente dal fatto che vogliano o meno sostenere l&#39;orale. &lt;/p&gt;
+&lt;p&gt;L&#39;iscrizione ad ogni appello ordinario si apre due mesi prima della sua pubblicazione e si chiude &lt;strong&gt;categoricamente&lt;/strong&gt; una settimana prima dello stesso: non sono ammesse iscrizioni oltre la scadenza.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;prove-passate&#34;&gt;Prove passate&lt;/h3&gt;
+&lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./provatest.pdf&#34;&gt;&lt;strong&gt;Prova esempio&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2024&#34;&gt;2024&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;09-09-2024&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240715.pdf&#34;&gt;&lt;strong&gt;15-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240701.pdf&#34;&gt;&lt;strong&gt;01-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240617.pdf&#34;&gt;&lt;strong&gt;17-06-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240322.pdf&#34;&gt;&lt;strong&gt;22-03-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240207.pdf&#34;&gt;&lt;strong&gt;07-02-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240117.pdf&#34;&gt;&lt;strong&gt;17-01-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2023&#34;&gt;2023&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./20231201.pdf&#34;&gt;&lt;strong&gt;01-12-2023&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
