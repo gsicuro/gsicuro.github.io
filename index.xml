@@ -976,6 +976,52 @@ $n-r({\boldsymbol A})$.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Fisica Matematica 2</title>
+      <link>https://gsicuro.github.io/lectures/fm2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/lectures/fm2/</guid>
+      <description>&lt;h2 id=&#34;materiale-di-riferimento&#34;&gt;Materiale di riferimento&lt;/h2&gt;
+&lt;p&gt;Il testo di riferimento sarà il volume di Antonio Fasano e Stefano Marmi &lt;a href=&#34;https://www.amazon.it/Meccanica-analitica-Antonio-Fasano/dp/8833956814&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica Analitica&lt;/strong&gt;&lt;/a&gt;, edito da Bollati Boringhieri, disponibile anche &lt;a href=&#34;https://homepage.sns.it/marmi/papers/Fasano,%20A.%20&amp;amp;%20Marmi,%20S.%20-%20Analytical%20mechanics%20%28Oxford,%202006%29.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;online in inglese&lt;/a&gt;. Ulteriori testi di supporto sono i seguenti.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.it/Metodi-matematici-della-meccanica-classica/dp/8864732047&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Metodi matematici della meccanica classica&lt;/strong&gt;&lt;/a&gt;, di &lt;a href=&#34;https://en.wikipedia.org/wiki/Vladimir_Arnold&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;V. I. Arnold&lt;/a&gt;&lt;br&gt;
+Editori Riuniti University Press, 2010.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.it/Meccanica-classica-Herbert-Goldstein/dp/8808234002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica classica&lt;/strong&gt;&lt;/a&gt;, di H. Goldstein, C. Poole, J. Safko&lt;br&gt;
+Zanichelli, 2005.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ipparco.roma1.infn.it/pagine/deposito/2007/elements.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;The elements of mechanics&lt;/strong&gt;&lt;/a&gt;, di &lt;a href=&#34;https://en.wikipedia.org/wiki/Giovanni_Gallavotti&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;G. Gallavotti&lt;/a&gt;&lt;br&gt;
+Ipparco, 2007.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.it/Fisica-Teorica-Meccanica-Lev-Landau/dp/8864732020&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Fisica teorica 1. Meccanica&lt;/strong&gt;&lt;/a&gt;, di &lt;a href=&#34;https://en.wikipedia.org/wiki/Lev_Landau&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;L.D. Landau&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Evgeny_Lifshitz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;E.M. Lifšits&lt;/a&gt;&lt;br&gt;
+Editori Riuniti University Press, 2010.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video autoplay loop  &gt;
+  &lt;source src=&#34;https://gsicuro.github.io/lectures/fm2/rulletta2.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
+&lt;p&gt;Prova scritta di 3h e prova orale complementare facoltativa.&lt;/p&gt;
+&lt;h3 id=&#34;prove-passate&#34;&gt;Prove passate&lt;/h3&gt;
+&lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
+&lt;h4 id=&#34;2025&#34;&gt;2025&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TBA&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Istituzioni di Matematica 2</title>
       <link>https://gsicuro.github.io/lectures/im2/</link>
       <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
@@ -1097,7 +1143,7 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
       <guid>https://gsicuro.github.io/alumni/</guid>
       <description>&lt;h2 id=&#34;phd-students&#34;&gt;PhD students&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;From 2021, &lt;strong&gt;Urte Adomaityte&lt;/strong&gt;. King&amp;rsquo;s College London.&lt;/li&gt;
+&lt;li&gt;From 2021, &lt;a href=&#34;https://urteado.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Urte Adomaityte&lt;/strong&gt;&lt;/a&gt;. King&amp;rsquo;s College London.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;master-students&#34;&gt;Master students&lt;/h2&gt;
@@ -1112,6 +1158,11 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
 &lt;li&gt;2022, &lt;strong&gt;Guoyu Chang&lt;/strong&gt;. Thesis: &lt;em&gt;The mixed multi-index matching problem&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
 &lt;li&gt;2022, &lt;strong&gt;Xiaoying Zhou&lt;/strong&gt;. Thesis: &lt;em&gt;Statistical physics of community detection&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
 &lt;li&gt;2023, &lt;strong&gt;Wenjuan Li&lt;/strong&gt;. Thesis: &lt;em&gt;Stable Marriage Problems: Perturbations and Correlations&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;bachelor-students&#34;&gt;Bachelor students&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2024, &lt;strong&gt;Sara Tramontano&lt;/strong&gt;. Thesis: &lt;em&gt;Inferenza nel modello spiked Wigner in alta dimensione&lt;/em&gt;, University of Bologna.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1192,7 +1243,7 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
 &lt;p&gt;&lt;a href=&#34;./provatest.pdf&#34;&gt;&lt;strong&gt;Prova esempio&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2024&#34;&gt;2024&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;09-09-2024&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./20240909.pdf&#34;&gt;&lt;strong&gt;09-09-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./20240715.pdf&#34;&gt;&lt;strong&gt;15-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./20240701.pdf&#34;&gt;&lt;strong&gt;01-07-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./20240617.pdf&#34;&gt;&lt;strong&gt;17-06-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
