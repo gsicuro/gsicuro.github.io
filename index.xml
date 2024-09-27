@@ -1241,6 +1241,11 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
 &lt;h3 id=&#34;prove-passate&#34;&gt;Prove passate&lt;/h3&gt;
 &lt;p&gt;Le prove sono riportate con relativa soluzione.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;./provatest.pdf&#34;&gt;&lt;strong&gt;Prova esempio&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2025&#34;&gt;2025&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;27-01-2025&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;13-01-2025&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;2024&#34;&gt;2024&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;./20240909.pdf&#34;&gt;&lt;strong&gt;09-09-2024&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
