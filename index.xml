@@ -1192,6 +1192,22 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
     </item>
     
     <item>
+      <title>Fat tails in simple machine-learning architectures</title>
+      <link>https://gsicuro.github.io/project/fattails/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/project/fattails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random matching problems</title>
+      <link>https://gsicuro.github.io/project/matching/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/project/matching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://gsicuro.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
