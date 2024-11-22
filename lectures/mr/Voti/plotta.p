@@ -1,5 +1,5 @@
 stats "tuttiMR.dat" using 0:1 name "dati" nooutput
-set term png size 1500,927 font "Helvetica,30"
+set term pngcairo size 1500,927 font "Helvetica,30"
 set output 'voti.png'
 set parametric
 hmax=0.08
@@ -10,5 +10,5 @@ set object 1 rectangle from 0,0 to 18,hmax behind fillcolor rgb "#FFD1DC" fillst
 binwidth=1
 bin(x,width)=width*floor(x/width)
 set style fill solid 0.5 # fill style
-p 18,t lc rgb 'red' lw 3 notitle, dati_median_y,t lc rgb 'orange' lw 3 notitle, "<sort -n tuttiMR.dat" u (bin($1,binwidth)):(1.0/dati_max_x) smooth freq w boxes lc rgb "blue" notitle
+p 18,t lc rgb 'red' lw 3 notitle, dati_median_y,t lc rgb 'orange' lw 2 dt ".-" notitle, "<sort -n tuttiMR.dat" u (bin($1,binwidth)):(1.0/dati_max_x) smooth freq w boxes lc rgb "blue" notitle
 ! mv voti.png ..
