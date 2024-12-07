@@ -101,7 +101,8 @@ Si noti che le note possono contenere errori.
       <link>https://gsicuro.github.io/lectures/mr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/lectures/mr/</guid>
-      <description>&lt;h2 id=&#34;materiale-di-riferimento&#34;&gt;Materiale di riferimento&lt;/h2&gt;
+      <description>&lt;p&gt;\LRCornerWallPaper{0.99}{divorzio.jpg}&lt;/p&gt;
+&lt;h2 id=&#34;materiale-di-riferimento&#34;&gt;Materiale di riferimento&lt;/h2&gt;
 &lt;p&gt;Un utile testo di riferimento è il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello &lt;a href=&#34;https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Meccanica Razionale&lt;/strong&gt;&lt;/a&gt;, edito da Springer, da affiancare alla raccolta di esercizi di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia &lt;a href=&#34;https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Esercizi e Temi d&amp;rsquo;Esame di Meccanica Razionale&lt;/strong&gt;&lt;/a&gt; pubblicato da Esculapio.&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34;&gt;
   &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;strong&gt; &lt;a href=&#34;./note.pdf&#34;&gt;Note del corso.&lt;/a&gt;&lt;/strong&gt;
@@ -127,8 +128,8 @@ Si noti che le note possono contenere errori.
 &lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
 &lt;p&gt;L&amp;rsquo;appello d&amp;rsquo;esame ordinario consiste di una prova scritta di due ore.&lt;/p&gt;
 &lt;figure class=&#34;image&#34;&gt;
-  &lt;img src=&#34;voti.png&#34; alt=&#34;Voti all&#39;esame&#34;&gt;
-  &lt;figcaption&gt;Istogramma normalizzato dei voti dell&#39;esame del modulo &lt;i&gt;Meccanica Razionale&lt;/i&gt; del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza. &lt;/figcaption&gt;
+  &lt;img src=&#34;voti.png&#34; alt=&#34; Distribuzione dei voti del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza.&#34;&gt;
+  &lt;figcaption&gt;Istogramma normalizzato di i tutti i voti d&#39;esame dal 2023.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;div class=&#34;alert alert-danger&#34; style=&#34;font-size:18px;text-align: justify;&#34;&gt;
 &lt;p&gt;Tutti gli studenti interessati a &lt;strong&gt;visionare la correzione&lt;/strong&gt; della loro prova scritta possono contattarmi per un appuntamento nel mio ufficio. &lt;/p&gt;
@@ -140,8 +141,8 @@ Si noti che le note possono contenere errori.
 &lt;h4 id=&#34;2025&#34;&gt;2025&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;21-07-2025&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;04-07-2025&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;20-06-2025&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;07-07-2025&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;23-06-2025&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;27-01-2025&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;13-01-2025&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
