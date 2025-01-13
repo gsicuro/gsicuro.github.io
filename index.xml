@@ -1248,10 +1248,10 @@ div.arxivfeed {margin-bottom: 5px; width:90%;}
 &lt;/video&gt;
 &lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
 &lt;p&gt;L&amp;rsquo;appello d&amp;rsquo;esame ordinario consiste di una prova scritta di due ore.&lt;/p&gt;
-&lt;figure class=&#34;image&#34;&gt;
-  &lt;img src=&#34;voti.png&#34; onmouseover=&#34; Distribuzione dei voti del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza.&#34;&gt;
-  &lt;figcaption&gt;Istogramma normalizzato di i tutti i voti d&#39;esame dal 2023. In linea tratteggiata è indicato il voto mediano.&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;#&lt;figure class=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;img-srcvotipng-onmouseover-distribuzione-dei-voti-del-corso-di-laurea-in-architettura--ingegneria-delluniversità-di-bologna-in-tutti-gli-esami-dallautunno-2023-in-poi-la-linea-verticale-arancione-corrisponde-al-voto-mediano-approssimativamente-il-40-degli-studenti-raggiunge-la-sufficienza&#34;&gt;&lt;img src=&#34;voti.png&#34; onmouseover=&#34; Distribuzione dei voti del corso di laurea in Architettura--Ingegneria dell&#39;Università di Bologna in tutti gli esami dall&#39;autunno 2023 in poi. La linea verticale arancione corrisponde al voto mediano. Approssimativamente il 40% degli studenti raggiunge la sufficienza.&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;figcaptionistogramma-normalizzato-di-i-tutti-i-voti-desame-dal-2023-in-linea-tratteggiata-è-indicato-il-voto-medianofigcaption&#34;&gt;&lt;figcaption&gt;Istogramma normalizzato di i tutti i voti d&amp;rsquo;esame dal 2023. In linea tratteggiata è indicato il voto mediano.&lt;/figcaption&gt;&lt;/h1&gt;
+&lt;p&gt;#&lt;/figure&gt;&lt;/p&gt;
 &lt;div class=&#34;alert alert-danger&#34; style=&#34;font-size:18px;text-align: justify;&#34;&gt;
 &lt;p&gt;Tutti gli studenti interessati a &lt;strong&gt;visionare la correzione&lt;/strong&gt; della loro prova scritta possono contattarmi per un appuntamento nel mio ufficio. &lt;/p&gt;
 &lt;p&gt;L&#39;iscrizione ad ogni appello ordinario si apre due mesi prima dell&#39;appello stesso, e si chiude &lt;strong&gt;categoricamente&lt;/strong&gt; una settimana prima della data d&#39;esame: non sono ammesse iscrizioni oltre la scadenza.&lt;/p&gt;
