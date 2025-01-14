@@ -69,12 +69,12 @@ Editori Riuniti University Press, 2010.&lt;/li&gt;
       <description>&lt;div class=&#34;alert alert-secondary&#34;&gt;
 &lt;small&gt; Materiale per il modulo di &lt;i&gt;Istituzioni di Matematica 2&lt;/i&gt; del corso di laurea in Architettura-Ingegneria dell&#39;Università di Bologna durante l&#39;anno accademico 2023-2024.&lt;/small&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;dispense&#34;&gt;Dispense&lt;/h2&gt;
-&lt;p&gt;Il corso consiste di due parti. La prima si focalizza su elementi dell&amp;rsquo;algebra lineare, mentre la seconda tratta i fondamenti del calcolo in molte variabili.&lt;/p&gt;
+&lt;p&gt;[//]: # ( ## Dispense
+Il corso consiste di due parti. La prima si focalizza su elementi dell&amp;rsquo;algebra lineare, mentre la seconda tratta i fondamenti del calcolo in molte variabili.&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34;&gt;
   &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;strong&gt; &lt;a href=&#34;./note.pdf&#34;&gt;Note del corso.&lt;/a&gt;&lt;/strong&gt;
 &lt;/div&gt;
-Si noti che le note possono contenere errori.
+Si noti che le note possono contenere errori.)
 &lt;h2 id=&#34;esame&#34;&gt;Esame&lt;/h2&gt;
 &lt;p&gt;Prova scritta e successiva prova orale; l&amp;rsquo;ammissione all&amp;rsquo;orale è subordinata al raggiungimento di un punteggio non inferiore a 15/30 nella prova scritta.&lt;/p&gt;
 &lt;h3 id=&#34;prove-passate&#34;&gt;Prove passate&lt;/h3&gt;
