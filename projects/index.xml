@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Gabriele Sicuro</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Gabriele Sicuro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Gabriele Sicuro ©</copyright>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theme Documentation</title>
+      <link>http://localhost:1313/projects/project2/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project2/</guid>
+      <description>Details on how to create and update content on your site</description>
+    </item>
+    <item>
+      <title>Markdown Syntax</title>
+      <link>http://localhost:1313/projects/project1/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project1/</guid>
+      <description>Example of markdown syntax you can use to edit your content</description>
+    </item>
+    <item>
+      <title>Another Project</title>
+      <link>http://localhost:1313/projects/project3/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project3/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

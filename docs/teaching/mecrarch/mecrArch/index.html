@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modulo per il corso di laurea triennale in Architettura&ndash;Ingegneria">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://gsicuro.github.io/docs/teaching/mecrarch/mecrArch/">
+  <meta property="og:site_name" content="Gabriele Sicuro">
+  <meta property="og:title" content="Meccanica razionale">
+  <meta property="og:description" content="Modulo per il corso di laurea triennale in Architettura–Ingegneria">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-30T00:00:00+00:00">
+<title>Meccanica razionale | Gabriele Sicuro</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://gsicuro.github.io/docs/teaching/mecrarch/mecrArch/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.dd2c57b35752c35a0b770217bc225f22a58ace9c5b319e32970771bd77572124.js" integrity="sha256-3SxXs1dSw1oLdwIXvCJfIqWKzpxbMZ4ylwdxvXdXISQ=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/icon.png" alt="Logo" class="book-icon" /><span>Gabriele Sicuro</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/events/" class="">Conferences and talks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Teaching</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/fmath2/fismat2/" class="">Fisica Matematica 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/mecrarch/mecrArch/" class="active">Meccanica razionale</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/imarch/imArch/" class="">Istituzioni di Matematica 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/students/" class="">Former and current students</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Meccanica razionale</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#meccanica-razionale">Meccanica razionale</a>
+      <ul>
+        <li><a href="#materiale-di-riferimento">Materiale di riferimento</a></li>
+        <li><a href="#prova-desame">Prova d&rsquo;esame</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+        
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="meccanica-razionale">
+  Meccanica razionale
+  <a class="anchor" href="#meccanica-razionale">#</a>
+</h1>
+<p>Modulo per il corso di laurea triennale in Architettura&ndash;Ingegneria</p>
+<hr>
+<h2 id="materiale-di-riferimento">
+  Materiale di riferimento
+  <a class="anchor" href="#materiale-di-riferimento">#</a>
+</h2>
+<p><video class="video-shortcode" preload="auto" controls loop="true" autoplay muted 
+    style="width: 35%; float: right; margin: 10px;">
+    <source src="../video/rulletta2.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+
+Un utile testo di riferimento è il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello <a href="https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/"><em>Meccanica Razionale</em></a>, edito da Springer, da affiancare alla raccolta di esercizi di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia <a href="https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/"><em>Esercizi e Temi d&rsquo;Esame di Meccanica Razionale</em></a> pubblicato da Esculapio.</p>
+<h2 id="prova-desame">
+  Prova d&rsquo;esame
+  <a class="anchor" href="#prova-desame">#</a>
+</h2>
+<p>L&rsquo;appello d&rsquo;esame ordinario consiste di una prova scritta di due ore.</p>
+<p>Tutti gli studenti interessati a <strong>visionare la correzione</strong> della loro prova scritta possono contattarmi per un appuntamento nel mio ufficio. L&rsquo;iscrizione ad ogni appello ordinario si apre due mesi prima dell&rsquo;appello stesso, e si chiude <strong>categoricamente</strong> una settimana prima della data d&rsquo;esame: non sono ammesse iscrizioni oltre la scadenza.</p>
+<p>Di seguito sono riportate le prove d&rsquo;esame proposte finora, con soluzione. Una addizionale prova esempio può essere trovata <a href="../exams/provatest.pdf">qui</a>.</p>
+<video class="video-shortcode" preload="auto" controls loop="true" autoplay muted 
+    style="width: 25%; float: right; margin: 10px;">
+    <source src="../video/rulletta3.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+
+<table>
+  <thead>
+      <tr>
+          <th><strong>2023</strong></th>
+          <th><strong>2024</strong></th>
+          <th><strong>2025</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="../exams/20231201.pdf">01-12</a></td>
+          <td><a href="../exams/20240117.pdf">17-01</a></td>
+          <td><a href="../exams/20250113.pdf">13-01</a></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240207.pdf">07-02</a></td>
+          <td><a href="../exams/20250127.pdf">27-01</a></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240322.pdf">22-03</a></td>
+          <td>23-06</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240617.pdf">17-06</a></td>
+          <td>07-07</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240701.pdf">01-07</a></td>
+          <td>24-07</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240715.pdf">15-07</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><a href="../exams/20240909.pdf">09-09</a></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#meccanica-razionale">Meccanica razionale</a>
+      <ul>
+        <li><a href="#materiale-di-riferimento">Materiale di riferimento</a></li>
+        <li><a href="#prova-desame">Prova d&rsquo;esame</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

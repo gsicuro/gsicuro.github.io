@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching on Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/docs/teaching/</link>
+    <description>Recent content in Teaching on Gabriele Sicuro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gsicuro.github.io/docs/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fisica Matematica 2</title>
+      <link>https://gsicuro.github.io/docs/teaching/fmath2/fismat2/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/teaching/fmath2/fismat2/</guid>
+      <description>Modulo per il corso di laurea triennale in Architettura&amp;ndash;Ingegneria</description>
+    </item>
+    <item>
+      <title>Meccanica razionale</title>
+      <link>https://gsicuro.github.io/docs/teaching/mecrarch/mecrArch/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/teaching/mecrarch/mecrArch/</guid>
+      <description>Modulo per il corso di laurea triennale in Architettura&amp;ndash;Ingegneria</description>
+    </item>
+    <item>
+      <title>Istituzioni di Matematica 2</title>
+      <link>https://gsicuro.github.io/docs/teaching/imarch/imArch/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/teaching/imarch/imArch/</guid>
+      <description>Modulo per il corso di laurea triennale in Architettura&amp;ndash;Ingegneria</description>
+    </item>
+  </channel>
+</rss>

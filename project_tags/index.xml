@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project_tags on Gabriele Sicuro</title>
+    <link>http://localhost:1313/project_tags/</link>
+    <description>Recent content in Project_tags on Gabriele Sicuro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Gabriele Sicuro ©</copyright>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/project_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/project_tags/markdown/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>http://localhost:1313/project_tags/docs/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/docs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How-To</title>
+      <link>http://localhost:1313/project_tags/how-to/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webapp</title>
+      <link>http://localhost:1313/project_tags/webapp/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project_tags/webapp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
