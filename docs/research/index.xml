@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Gabriele Sicuro</title>
+    <link>https://gsicuro.github.io/docs/research/</link>
+    <description>Recent content in Research on Gabriele Sicuro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gsicuro.github.io/docs/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matching problems</title>
+      <link>https://gsicuro.github.io/docs/research/matching/matching/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/matching/matching/</guid>
+      <description>&lt;h1 id=&#34;random-matching-problems&#34;&gt;&#xA;  Random matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;em&gt;to be written&lt;/em&gt; summary of results on matching problems in various flavours&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;mean-field-models&#34;&gt;&#xA;  Mean field models&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;random-euclidean-matching-problems&#34;&gt;&#xA;  Random Euclidean matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-euclidean-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;inference-of-matchings&#34;&gt;&#xA;  Inference of matchings&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#inference-of-matchings&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Machine learning</title>
+      <link>https://gsicuro.github.io/docs/research/mlearning/mlearning/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/mlearning/mlearning/</guid>
+      <description>&lt;h1 id=&#34;mean-field-models-for-machine-learning&#34;&gt;&#xA;  Mean-field models for machine learning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models-for-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;TBA&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
