@@ -1,0 +1,5 @@
+
+
+![image](../exams/luna.jpg "Galilei, Sidereus Nuncius, 1610")
+
+> <div style="text-align: justify; font-size: .75rem"> Vedendo inoltre in te [Eratostene], come ho detto, uno studioso diligente, un eminente filosofo e un estimatore [dell'indagine matematica], ho ritenuto opportuno scrivere per te e spiegare in dettaglio, in questo stesso libro, la particolarità di un certo metodo, grazie al quale ti sarà possibile iniziare a investigare alcuni problemi di matematica per mezzo della meccanica. Sono convinto che questa procedura non sia meno utile per la dimostrazione stessa dei teoremi; infatti, alcune cose mi sono apparse chiare per la prima volta grazie a un metodo meccanico, anche se successivamente hanno dovuto essere dimostrate geometricamente, poiché l’indagine condotta con il suddetto metodo non forniva una dimostrazione vera e propria. Tuttavia, è certamente più facile, una volta acquisita una certa conoscenza preliminare delle questioni grazie a questo metodo, fornirne una dimostrazione, piuttosto che trovarla senza conoscenza precedente alcuna. </div><div style="text-align: right; font-size: .75rem">Archimede</div>
