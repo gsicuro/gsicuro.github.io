@@ -3,3 +3,52 @@
 ![image](../exams/luna.jpg "Galilei, Sidereus Nuncius, 1610")
 
 > <div style="text-align: justify; font-size: .75rem"> Vedendo inoltre in te [Eratostene], come ho detto, uno studioso diligente, un eminente filosofo e un estimatore [dell'indagine matematica], ho ritenuto opportuno scrivere per te e spiegare in dettaglio, in questo stesso libro, la particolarità di un certo metodo, grazie al quale ti sarà possibile iniziare a investigare alcuni problemi di matematica per mezzo della meccanica. Sono convinto che questa procedura non sia meno utile per la dimostrazione stessa dei teoremi; infatti, alcune cose mi sono apparse chiare per la prima volta grazie a un metodo meccanico, anche se successivamente hanno dovuto essere dimostrate geometricamente, poiché l’indagine condotta con il suddetto metodo non forniva una dimostrazione vera e propria. Tuttavia, è certamente più facile, una volta acquisita una certa conoscenza preliminare delle questioni grazie a questo metodo, fornirne una dimostrazione, piuttosto che trovarla senza conoscenza precedente alcuna. </div><div style="text-align: right; font-size: .75rem">Archimede</div>
+
+
+
+|**Data**|**Argomento**|
+| :---- | ---- |
+| 17 febbraio |Curve in $\mathbb R^n$: generalità, vettore tangente, parametrizzazione naturale.|
+| 18 febbraio |TBA|
+| 21 febbraio |TBA|
+| 24 febbraio |TBA|
+| 25 febbraio |TBA|
+| 28 febbraio |TBA|
+| 3 marzo |TBA|
+| 4 marzo |TBA|
+| <span style="color:Crimson">7 marzo</span> |Esercizi|
+| 10 marzo |TBA|
+| 11 marzo |TBA|
+| <span style="color:Crimson">14 marzo</span> |Esercizi|
+| 17 marzo |TBA|
+| 18 marzo |TBA|
+| <span style="color:Crimson">21 marzo</span> |Esercizi|
+| 31 marzo |TBA|
+| 1 aprile |TBA|
+| <span style="color:Crimson">4 aprile</span>|Esercizi|
+| 7 aprile |TBA|
+| 8 aprile |TBA|
+| <span style="color:Crimson">11 aprile</span>|Esercizi|
+| 14 aprile |TBA|
+| 15 aprile |TBA|
+| <span style="color:Crimson">22 aprile</span> |<span style="color:Crimson">**No lezione**</span>|
+| 28 aprile |TBA|
+| 29 aprile |TBA|
+| <span style="color:Crimson">2 maggio</span>|Esercizi|
+| 5 maggio |TBA|
+| 6 maggio |TBA|
+| <span style="color:Crimson">9 maggio</span>|Esercizi|
+| 12 maggio |TBA|
+| 13 maggio |TBA|
+| <span style="color:Crimson">16 maggio</span>|Esercizi|
+| 19 maggio |TBA|
+| 20 maggio |TBA|
+| <span style="color:Crimson">23 maggio</span>|Esercizi|
+| 26 maggio |TBA|
+| 27 maggio |TBA|
+| <span style="color:Crimson">30 maggio</span>|Esercizi|
+| 3 giugno |TBA|
+| <span style="color:Crimson">6 giugno</span>|Esercizi|
+| 9 giugno |TBA|
+| 10 giugno |TBA|
+| <span style="color:Crimson">13 giugno</span>|Esercizi|
