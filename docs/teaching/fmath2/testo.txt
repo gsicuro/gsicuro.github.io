@@ -52,3 +52,51 @@
 | 9 giugno |TBA|
 | 10 giugno |TBA|
 | <span style="color:Crimson">13 giugno</span>|Esercizi|
+
+<table>
+  <colgroup>
+    <col style="width:20%">
+    <col style="width:70%">
+    <col style="width:10%">
+  </colgroup>
+  <tbody>
+ <tr> <td><strong>Data</strong></td> <td><strong>Argomento</strong> </td><td><strong>Note</strong> </td></tr>
+ <tr> <td>17 febbraio </td> <td>Curve in $\mathbb R^n$: generalità, vettore tangente, parametrizzazione naturale, integrali di linea. Esempio: spirale di Archimede.</td><td rowspan="3" style="text-align: center; vertical-align: middle;"> <a href="../note/00-MR.pdf">P</a> </td> </tr>
+ <tr> <td>18 febbraio </td> <td>Esempio: spirale logaritmica. Lunghezza di grafici. Curve in $\mathbb R^3$: trinomio di Frenet, piano osculatore e cerchio osculatore.</td></tr>
+ <tr> <td>21 febbraio </td> <td>Teorema di Frenet.</td></tr>
+ <tr> <td>24 febbraio </td> <td>TBA</td></td><td rowspan="4" style="text-align: center; vertical-align: middle;"> N1 </td> </tr>
+ <tr> <td>25 febbraio </td> <td>TBA</td></tr>
+ <tr> <td>28 febbraio </td> <td>TBA</td></tr>
+ <tr> <td>3 marzo </td> <td>TBA</td></tr>
+ <tr> <td>4 marzo </td> <td>TBA</td></tr>
+ <tr> <td><span style="color:Crimson">7 marzo</span> </td> <td>Esercitazione — Aula Cremona, 12:00-13:00</td></tr>
+ <tr> <td>10 marzo </td> <td>TBA</td></tr>
+ <tr> <td>11 marzo </td> <td>TBA</td></tr>
+ <tr> <td>14 marzo </td> <td>TBA</td></tr>
+ <tr> <td>17 marzo </td> <td>TBA</td></tr>
+ <tr> <td>18 marzo </td> <td>TBA</td></tr>
+ <tr> <td>21 marzo </td> <td>Esercitazione — Aula Cremona, 12:00-13:00</td></tr>
+ <tr> <td>31 marzo </td> <td>TBA</td></tr>
+ <tr> <td>1 aprile </td> <td>TBA</td></tr>
+ <tr> <td><span style="color:Crimson">4 aprile</span></td> <td>Esercitazione — Aula Cremona, 12:00-13:00</td></tr>
+ <tr> <td>7 aprile </td> <td>TBA</td></tr>
+ <tr> <td>8 aprile </td> <td>TBA</td></tr>
+ <tr> <td><span style="color:Crimson">11 aprile</span></td> <td>Esercitazione — Aula Cremona, 12:00-13:00</td></tr>
+ <tr> <td>14 aprile </td> <td>TBA</td></tr>
+ <tr> <td>15 aprile </td> <td>TBA</td></tr>
+ <tr> <td>28 aprile </td> <td>TBA</td></tr>
+ <tr> <td>29 aprile </td> <td>TBA</td></tr>
+ <tr> <td>5 maggio </td> <td>TBA</td></tr>
+ <tr> <td>6 maggio </td> <td>TBA</td></tr>
+ <tr> <td>9 maggio </td> <td>TBA</td></tr>
+ <tr> <td>12 maggio </td> <td>TBA</td></tr>
+ <tr> <td>13 maggio </td> <td>TBA</td></tr>
+ <tr> <td>16 maggio </td> <td>TBA</td></tr>
+ <tr> <td>19 maggio </td> <td>TBA</td></tr>
+ <tr> <td>20 maggio </td> <td>TBA</td></tr>
+ <tr> <td><span style="color:Crimson">23 maggio</span></td> <td>Esercitazione — Aula Cremona, 12:00-13:00</td></tr>
+ <tr> <td>26 maggio </td> <td>TBA</td></tr>
+ <tr> <td>27 maggio </td> <td>TBA</td></tr>
+ <tr> <td>30 maggio </td> <td>TBA</td></tr>
+ </tbody>
+ </table>
