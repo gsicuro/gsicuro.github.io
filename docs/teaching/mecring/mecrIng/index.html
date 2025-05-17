@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modulo per il corso di laurea triennale in Architettura&ndash;Ingegneria">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://gsicuro.github.io/docs/teaching/mecring/mecrIng/">
+  <meta property="og:site_name" content="Gabriele Sicuro">
+  <meta property="og:title" content="Meccanica razionale per l&#39;Ingegneria">
+  <meta property="og:description" content="Modulo per il corso di laurea triennale in Architettura–Ingegneria">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-30T00:00:00+00:00">
+<title>Meccanica razionale per l&#39;Ingegneria | Gabriele Sicuro</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://gsicuro.github.io/docs/teaching/mecring/mecrIng/">
+<link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.608b6c9b93ff062e3abfefdb31501fc06aa797d3e84a47484c1aab3a60f20e67.js" integrity="sha256-YItsm5P/Bi46v&#43;/bMVAfwGqnl9PoSkdITBqrOmDyDmc=" crossorigin="anonymous"></script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MTWPR605P3');
+        }
+      </script><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/icon.png" alt="Logo" class="book-icon" /><span>Gabriele Sicuro</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/matching/matching/" class="">Matching problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/mlearning/mlearning/" class="">Machine learning</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/events/" class="">Conferences and talks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/" class="">Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/fmath2/fismat2/" class="">Fisica Matematica 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/mecring/mecrIng/" class="active">Meccanica razionale per l&#39;Ingegneria</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/old/oldmodules/" class="">Previously taught</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/students/" class="">Former and current students</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.unibo.it/sitoweb/gabriele.sicuro"  target="_blank" rel="noopener">
+        Institutional website and contacts
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Meccanica razionale per l&#39;Ingegneria</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#meccanica-razionale">Meccanica razionale</a>
+      <ul>
+        <li><a href="#materiale-di-riferimento">Materiale di riferimento</a></li>
+        <li><a href="#calendario">Calendario</a>
+          <ul>
+            <li><a href="#esercitazioni">Esercitazioni</a></li>
+          </ul>
+        </li>
+        <li><a href="#prova-desame">Prova d&rsquo;esame</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+        
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="meccanica-razionale">
+  Meccanica razionale
+  <a class="anchor" href="#meccanica-razionale">#</a>
+</h1>
+<p>Modulo per il corso di laurea triennale in Architettura&ndash;Ingegneria</p>
+<hr>
+<h2 id="materiale-di-riferimento">
+  Materiale di riferimento
+  <a class="anchor" href="#materiale-di-riferimento">#</a>
+</h2>
+<p><video class="video-shortcode" preload="auto" controls loop="true" autoplay muted 
+    style="width: 35%; float: right; margin: 10px;">
+    <source src="../video/rulletta2.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+
+Un utile testo di riferimento è il volume di Paolo Biscari, Tommaso Ruggeri, Giuseppe Saccomandi e Maurizio Vianello <a href="https://www.amazon.it/Meccanica-razionale-138-Paolo-Biscari/dp/8847040175/"><em>Meccanica Razionale</em></a>, edito da Springer, da affiancare alla raccolta di esercizi di Francesca Brini, Augusto Muracchini, Tommaso Ruggeri e Leonardo Seccia <a href="https://www.amazon.it/Esercizi-desame-meccanica-razionale-espansione/dp/8893851180/"><em>Esercizi e Temi d&rsquo;Esame di Meccanica Razionale</em></a> pubblicato da Esculapio. Sono infine disponibili delle <a href="../exams/ArchitettiNote.pdf"><strong>note</strong></a> delle lezioni.</p>
+<h2 id="calendario">
+  Calendario
+  <a class="anchor" href="#calendario">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Data</strong></th>
+          <th><strong>Argomento</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">19 febbraio</td>
+          <td><strong>No lezione</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">20 febbraio</td>
+          <td>Richiami: spazi vettoriali, basi e basi ortonormali, cambio di base, prodotto scalare e vettoriale, prodotti misti.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">26 febbraio</td>
+          <td>Richiami: spazi affini. Spazi euclidei, riferimenti di coordinate, punto materiale e sua traiettoria, parametrizzazione intrinseca, versore tangente.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">27 febbraio</td>
+          <td>Versori normale e binormale di una curva. Cambi di riferimento. Angoli di Eulero.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5 marzo</td>
+          <td>Teorema di Poisson. Derivate temporali di vettori in riferimenti in moto relativo. Legge di composizione delle velocità.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6 marzo</td>
+          <td>Trasformazioni di grandezze cinematiche, composizione di velocità angolari. Esempio: sistema di riferimento rotante e coordinate polari.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">12 marzo</td>
+          <td>Cinematica del corpo rigido: sistema di riferimento solidale, legge fondamentale del moto rigido, moto traslatorio e rototraslatorio.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">13 marzo</td>
+          <td>Moto elicoidale, moto piano, moto polare e precessionale. Teorema di Mozzi-Chasles. Applicazione ai moti piani: base e rulletta.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">19 marzo</td>
+          <td>Sistema biella-manovella. Rotolamento.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">20 marzo</td>
+          <td>Rotolamento e rotolamento puro. Base e rulletta come traiettorie in un rotolamento puro. Massa, densità di massa e centro di massa. Quantità di moto e quantità di moto del centro di massa.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">27 marzo</td>
+          <td>Forze. Forze posizionali e forze conservative. Forza peso, forza elastica, forza gravitazionale.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2 aprile</td>
+          <td><strong>No lezione</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3 aprile</td>
+          <td>Potenziale di una sfera omogenea. Momento di una forza.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">9 aprile</td>
+          <td>Sistemi di forze. Risultante, momento totale, asse centrale. Sistemi di forze a trinomio invariante nullo.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">10 aprile</td>
+          <td>Sistemi di forze parallele, baricentro; equivalenza tra sistemi di forze. Principi della meccanica, principio di sovrapposizione e determinismo newtoniano.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">16 aprile</td>
+          <td>Moto dei gravi. Forze interne ed esterne.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">30 aprile</td>
+          <td><strong>No lezione</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">7 maggio</td>
+          <td><strong>No lezione</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">8 maggio</td>
+          <td>Forze apparenti. Sistemi a due corpi. Vincoli e loro classificazione. Coordinate lagrangiane.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">14 maggio</td>
+          <td>Forze generalizzate, spostamenti virtuali. Classificazione dinamica dei vincoli: vincoli ideali e dissipativi.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">15 maggio</td>
+          <td>Equilibrio. Teorema dei lavori virtuali. Equilibrio nei sistemi con vincoli olonomi.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">21 maggio</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">22 maggio</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">28 maggio</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">29 maggio</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4 giugno</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5 giugno</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">11 giugno</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">12 giugno</td>
+          <td>TBA</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="esercitazioni">
+  Esercitazioni
+  <a class="anchor" href="#esercitazioni">#</a>
+</h3>
+<p>Le <span style="color:black">esercitazioni</span> sono opzionali (ma fortemente raccomandate) e saranno tenute dal tutor.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Data</strong></th>
+          <th><strong>Argomento</strong></th>
+          <th><strong>Aula</strong></th>
+          <th><strong>Ora</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><span style="color:black">3 marzo</span></td>
+          <td>Richiami di analisi e calcolo vettoriale</td>
+          <td>Aula 5.5</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">31 marzo</span></td>
+          <td>Esercizi sulla cinematica</td>
+          <td>Aula 0.1</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">5 maggio</span></td>
+          <td>Esercizi sui sistemi di forze</td>
+          <td>Aula 5.5</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">12 maggio</span></td>
+          <td>Esercizi su parametri lagrangiani</td>
+          <td>Aula 0.1</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">19 maggio</span></td>
+          <td>Esercizi di statica</td>
+          <td>Aula 0.1</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">26 maggio</span></td>
+          <td>Esercizi di statica</td>
+          <td>Aula 5.5</td>
+          <td>10:00-12:00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><span style="color:black">9 giugno</span></td>
+          <td>Esercizi sulla geometria delle masse</td>
+          <td>Aula 5.5</td>
+          <td>10:00-12:00</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="prova-desame">
+  Prova d&rsquo;esame
+  <a class="anchor" href="#prova-desame">#</a>
+</h2>
+<p><video class="video-shortcode" preload="auto" controls loop="true" autoplay muted 
+     style="width: 35%; float: left; margin: 10px;">
+     <source src="../video/rulletta3.mp4" type="video/mp4">
+     There should have been a video here but your browser does not seem
+     to support it.
+ </video>
+ 
+ L&rsquo;appello d&rsquo;esame ordinario consiste di una prova scritta di due ore.</p>
+<p>Tutti gli studenti interessati a <strong>visionare la correzione</strong> della loro prova scritta possono contattarmi per un appuntamento nel mio ufficio. L&rsquo;iscrizione ad ogni appello ordinario si apre due mesi prima dell&rsquo;appello stesso, e si chiude <strong>categoricamente</strong> una settimana prima della data d&rsquo;esame: non sono ammesse iscrizioni oltre la scadenza.</p>
+<p>Sono fissati <em>sei</em> appelli durante l&rsquo;anno: due durante la sessione invernale (W), tre durante la sessione estiva (S), uno durante la sessione autunnale (A). Di seguito sono riportate le prove d&rsquo;esame proposte finora, con soluzione. Una addizionale prova esempio può essere trovata <a href="../exams/provatest.pdf">qui</a>.</p>
+<br>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th>W1</th>
+          <th>W2</th>
+          <th>S1</th>
+          <th>S2</th>
+          <th>S3</th>
+          <th>A</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>2023</strong></td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td><a href="../exams/20231201.pdf">01-12</a>*</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>2024</strong></td>
+          <td><a href="../exams/20240117.pdf">17-01</a></td>
+          <td><a href="../exams/20240207.pdf">07-02</a><br> <a href="../exams/20240322.pdf">22-03</a>*</td>
+          <td><a href="../exams/20240617.pdf">17-06</a></td>
+          <td><a href="../exams/20240701.pdf">01-07</a></td>
+          <td><a href="../exams/20240715.pdf">15-07</a></td>
+          <td><a href="../exams/20240909.pdf">09-09</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>2025</strong></td>
+          <td><a href="../exams/20250113.pdf">13-01</a></td>
+          <td><a href="../exams/20250127.pdf">27-01</a></td>
+          <td>20-06</td>
+          <td>07-07</td>
+          <td>24-07</td>
+          <td>TBA</td>
+      </tr>
+  </tbody>
+</table>
+<p>*Appelli straordinari per agevolare il cambio di titolarità del corso.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#meccanica-razionale">Meccanica razionale</a>
+      <ul>
+        <li><a href="#materiale-di-riferimento">Materiale di riferimento</a></li>
+        <li><a href="#calendario">Calendario</a>
+          <ul>
+            <li><a href="#esercitazioni">Esercitazioni</a></li>
+          </ul>
+        </li>
+        <li><a href="#prova-desame">Prova d&rsquo;esame</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
