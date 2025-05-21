@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Gabriele Sicuro</title>
+    <link>http://localhost:1313/tags/Book/</link>
+    <description>Recent content in Book on Gabriele Sicuro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jun 2023 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spin Glass Theory &amp; Far Beyond</title>
+      <link>http://localhost:1313/docs/research/</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/research/</guid>
+      <description>An encyclopaedic overview of the broad range of the applications stemming from the discovery of the replica symmetry breaking solution of the Sherrington-Kirkpatrick model by Giorgio Parisi. &lt;strong&gt;Gabriele Sicuro&lt;/strong&gt; participated to the editing of this publication, which includes a contribution by &lt;strong&gt;Yan Fyodorov&lt;/strong&gt;.</description>
+    </item>
+  </channel>
+</rss>

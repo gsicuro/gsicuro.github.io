@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+
+  The Project
+  #
+
+The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for &ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://gsicuro.github.io/docs/research/rsb40/">
+  <meta property="og:site_name" content="Gabriele Sicuro">
+  <meta property="og:title" content="Spin Glass Theory & Far Beyond">
+  <meta property="og:description" content="The Project # The far-reaching implications of the theory of spin glasses were highlighted further by the 2021 Nobel Prize in Physics, of which half was awarded to Giorgio Parisi for “the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.” Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2023-06-30T10:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-30T10:00:00+00:00">
+<title>Spin Glass Theory &amp; Far Beyond | Gabriele Sicuro</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://gsicuro.github.io/docs/research/rsb40/">
+<link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.041da0093747890c2f749417cab4ab46230a25bafa520c0818fe1717859d5ee2.js" integrity="sha256-BB2gCTdHiQwvdJQXyrSrRiMKJbr6UgwIGP4XF4WdXuI=" crossorigin="anonymous"></script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MTWPR605P3');
+        }
+      </script><!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/icon.png" alt="Logo" class="book-icon" /><span>Gabriele Sicuro</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href=""  target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/" class="">Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/matching/matching/" class="">Matching problems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/mlearning/mlearning/" class="">Machine learning</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/events/" class="">Conferences and talks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/" class="">Teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/fmath2/fismat2/" class="">Fisica Matematica 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/mecring/mecrIng/" class="">Meccanica razionale per l&#39;Ingegneria</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/old/oldmodules/" class="">Previously taught</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/students/" class="">Former and current students</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.unibo.it/sitoweb/gabriele.sicuro"  target="_blank" rel="noopener">
+        Institutional website and contacts
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Spin Glass Theory &amp; Far Beyond</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-project">The Project</a></li>
+        <li><a href="#table-of-contents-of-the-collection">Table of contents of the Collection</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+        
+      </header>
+
+      
+      
+  <article class="markdown book-article"><div style="text-align: justify">
+<h2 id="the-project">
+  The Project
+  <a class="anchor" href="#the-project">#</a>
+</h2>
+<p>The far-reaching implications of the theory of spin glasses were highlighted further by the <a href="https://www.nobelprize.org/prizes/physics/2021/summary/">2021 Nobel Prize in Physics</a>, of which half was awarded to Giorgio Parisi for &ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.</p>
+<p>In <a href="https://www.worldscientific.com/worldscibooks/10.1142/13341#t=aboutBook"><strong>Spin Glass Theory and Far Beyond</strong></a>, more than 30 contributions are compiled from more than 100 leading
+researchers who contributed to these applications over the last few decades. This volume provides a detailed introduction and review of spin glass research. While the fundamentals are expounded, cutting-edge and state-ofthe-art applications are also featured in this encyclopedic overview for enthusiastic readers in the 21st century</p>
+<p>I had the great pleasure and honor to edit this historical volume in collaboration with Patrick Charbonneau, Enzo Marinari, Marc Mézard, Giorgio Parisi, Federico Ricci-Tersenghi, and Francesco Zamponi.</p>
+</div>
+<p><img src="../featured.png" alt="image" title="Spin Glass Theory and Far Beyond: Cover of the collection"/></p>
+<h2 id="table-of-contents-of-the-collection">
+  Table of contents of the Collection
+  <a class="anchor" href="#table-of-contents-of-the-collection">#</a>
+</h2>
+<ol>
+<li>Sergio Caracciolo, Alexander K. Hartmann, Scott Kirkpatrick, Martin Weigel<br>
+<a href="https://arxiv.org/abs/2301.00683"><strong>Simulated Annealing, Optimization, Searching for Ground States</strong></a></li>
+<li>David Sherrington, Jairo R.L. de Almeida<br>
+<strong>Beyond the Ising Spin Glass I: $m$-vector, Potts, $p$-spin, spherical, induced moment, random graphs</strong></li>
+<li>Michael K. Kosterlitz<br>
+<strong>Beyond the Ising Spin Glass II: Spin glass without replicas</strong></li>
+<li><strong>Renormalization Group in Spin Glasses</strong>
+<ol>
+<li>Tom Lubenski<br>
+Mean-Field and $\epsilon$-Expansion for Spin Glasses</li>
+<li>Tamás Temesvári, Imre Kondor<br>
+<a href="https://arxiv.org/abs/2212.01654"><strong>Field theory for the de Almeida-Thouless transition</strong></a></li>
+<li>Maria Chiara Angelini<br>
+<a href="https://arxiv.org/abs/2302.05292"><strong>Real-space renormalization group for spin glasses</strong></a></li>
+</ol>
+</li>
+<li>Victor Martin-Mayor, Juan J. Ruiz-Lorenzo, Beatriz Seoane, A. Peter Young<br>
+<a href="https://arxiv.org/abs/2205.14089"><strong>Numerical Simulations and Replica Symmetry Breaking</strong></a></li>
+<li>Valentina Ros, Yan V. Fyodorov<br>
+<a href="https://arxiv.org/abs/2209.07975"><strong>The High-Dimensional Landscapes Paradigm: Spin-Glasses, and Beyond</strong></a></li>
+<li>Theodore R. Kirkpatrick, Dave Thirumalai<br>
+<a href="https://arxiv.org/abs/1401.2024"><strong>Universal Aspects of the Structural Glass Transition from Density Functional Theory</strong></a></li>
+<li><strong>Non-Perturbative Processes in Glasses</strong>
+<ol>
+<li>Peter Wolynes<br>
+<a href="https://arxiv.org/abs/2206.00600"><strong>The Random First Order Transition Theory of Glasses in Real Space-Time: Instantons, Strings, Flames and Flows</strong></a></li>
+<li>Tommaso Rizzo<br>
+<a href="https://arxiv.org/abs/2209.09689"><strong>Stochastic equations and dynamics beyond mean-field theory</strong></a></li>
+</ol>
+</li>
+<li><strong>Dynamical Mean-Field Theory and the Aging Dynamics</strong>
+<ol>
+<li>Andrea Crisanti<br>
+Equilibrium dynamics and Replica Symmetry Breaking in spin-glass systems</li>
+<li>Silvio Franz, Jorge Kurchan<br>
+<a href="https://arxiv.org/abs/2207.05720"><strong>The relation between Parisi scheme and multi-thermalized dynamics in finite dimensions</strong></a></li>
+<li>Andrea Maiorano<br>
+Weak ergodicity breaking in mean-field spin glasses</li>
+</ol>
+</li>
+<li>Giulio Biroli, Kunimasa Miyazaki, David R. Reichman<br>
+<a href="https://arxiv.org/abs/2209.02825"><strong>Dynamical Heterogeneity in Glass-Forming Liquids</strong></a></li>
+<li>Chiara Cammarota, Misaki Ozawa, Gilles Tarjus<br>
+<a href="https://arxiv.org/abs/2209.11049"><strong>The Kauzmann Transition to an Ideal Glass Phase</strong></a></li>
+<li><strong>The Gardner Glass</strong>
+<ol>
+<li>Pierfrancesco Urbani<br>
+<a href="https://arxiv.org/abs/2212.11557"><strong>Low temperature amorphous solids: mean field theory and beyond</strong></a></li>
+<li>Yuliang Jin, Hajime Yoshino<br>
+<a href="https://arxiv.org/abs/2206.07868"><strong>Computer simulations of the Gardner transition in structural glasses</strong></a></li>
+</ol>
+</li>
+<li><em>Francesco Arceri, Eric I. Corwin, Corey S. O&rsquo;Hern</em><br>
+<a href="https://arxiv.org/abs/2209.02829"><strong>The Jamming Transition and the Marginally Stable Solid</strong></a></li>
+<li><strong>From Polymers to the KPZ Equation</strong>
+<ol>
+<li>Victor Dotsenko, Pierre Le Doussal<br>
+Directed polymers and the Kardar-Parisi-Zhang equation</li>
+<li>Henri Orland<br>
+Heteropolymers and Proteins</li>
+</ol>
+</li>
+<li><strong>Emergent Dynamics in Glasses and Disordered Systems: Correlations and Avalanches</strong>
+<ol>
+<li>Annette Zippelius, Matthias Fuchs<br>
+<a href="https://arxiv.org/abs/2205.00890"><strong>From viscous fluids to elastic solids: A perspective on the glass transition</strong></a></li>
+<li>Alberto Rosso, James P. Sethna, and Matthieu Wyart<br>
+<a href="https://arxiv.org/abs/2208.04090"><strong>Avalanches and deformation in glasses and disordered systems</strong></a></li>
+</ol>
+</li>
+<li>Claudio Conti, Neda Ghofraniha, Luca Leuzzi, Giancarlo Ruocco<br>
+<a href="https://arxiv.org/abs/2209.03781"><strong>Replica Symmetry Breaking in Random Lasers: Experimental Measurement of the Overlap Distribution</strong></a></li>
+<li>Saverio Pascazio, Antonello Scardicchio, Marco Tarzia<br>
+<strong>Anderson Localization on the Bethe Lattice</strong></li>
+<li>Leticia Cugliandolo, Markus Müller<br>
+<a href="https://arxiv.org/abs/2208.05417"><strong>Quantum Glasses ­— A review</strong></a></li>
+<li>Alfredo Braunstein, Guilhem Semerjian<br>
+<a href="https://arxiv.org/abs/2209.11499"><strong>The Cavity Method: From Exact Solutions to Algorithms</strong></a></li>
+<li>Florent Krzakala, Manfred Opper, David Saad<br>
+<strong>Message Passing and Its Applications</strong></li>
+<li>Yoshiyuki Kabashima, Toshiyuki Tanaka<br>
+<strong>Information and Communication</strong></li>
+<li>Erik Aurell, Jean Barbier, Aurelien Decelle, Roberto Mulet<br>
+<a href="https://arxiv.org/abs/2205.00750"><strong>The Mighty Force: Statistical Inference and High-Dimensional Statistics</strong></a></li>
+<li>David Gamarnik, Cristopher Moore, Lenka Zdeborová<br>
+<a href="https://arxiv.org/abs/2210.08312"><strong>Disordered Systems Insights on Computational Hardness</strong></a></li>
+<li>Marylou Gabrié, Surya Ganguli, Carlo Lucibello, Riccardo Zecchina<br>
+<a href="https://arxiv.org/abs/2304.06636"><strong>Neural Networks: From the Perceptron to Deep Nets</strong></a></li>
+<li><strong>From Statistical Physics of Disordered Systems to Neuroscience</strong>
+<ol>
+<li>Nicolas Brunel, Rémi Monasson, Haim Sompolinsky<br>
+Statistical Physics and Neuroscience</li>
+<li>J. Leo van Hemmen<br>
+Neuronal Network and Spin Glass: A Non-Existing Relationship</li>
+</ol>
+</li>
+<li><strong>Statistical Physics of Biological Molecules</strong>
+<ol>
+<li>Simona Cocco, Andrea De Martino, Andrea Pagnani, Martin Weigt<br>
+<a href="https://arxiv.org/abs/2207.13402"><strong>Statistical-physics approaches to RNA molecules, families and networks</strong></a></li>
+<li>Felix Ritort<br>
+Molecular Replica Symmetry Breaking</li>
+</ol>
+</li>
+<li>Jean-Philippe Bouchaud, Matteo Marsili, Jean-Pierre Nadal<br>
+<a href="https://arxiv.org/abs/2306.16165"><strong>Application of Spin Glass Ideas in Social Sciences, Economics and Finance</strong></a></li>
+<li><strong>Complex Dynamics in Ecological Systems and Animal Behavior</strong>
+<ol>
+<li>M. Cristina Marchetti<br>
+Active Glasses and &ldquo;Flying&rdquo; Spin Glasses</li>
+<li>Irene Giardina<br>
+Collective behavior in natural flocks: from data to models</li>
+<li>Ada Altieri<br>
+<a href="https://arxiv.org/abs/2208.14956"><strong>Glassy features and complex dynamics in ecological systems</strong></a></li>
+</ol>
+</li>
+<li>Antonio Auffinger, Andrea Montanari, Eliran Subag<br>
+<a href="https://arxiv.org/abs/2206.10217"><strong>Optimization of Random High-Dimensional Functions: Structure and Algorithms</strong></a></li>
+<li><strong>Rigorous Results in the Sherrington-Kirkpatrick Model</strong>
+<ol>
+<li>Wei-Kuo Chen<br>
+The Parisi formula</li>
+<li>Dmitry Panchenko<br>
+Ultrametricity in spin glasses</li>
+<li>Francesco Guerra<br>
+The replica trick in the frame of the interpolation perspective</li>
+</ol>
+</li>
+<li><strong>Random Energy Models: Broken Replica Symmetry and Activated Dynamics</strong>
+<ol>
+<li>Bernard Derrida, Peter Mottishaw<br>
+The Random Energy Models and Replica Symmetry Breaking</li>
+<li>Véronique Gayrard<br>
+The Arcsine Law as a Universal Aging Scheme for Activated Dynamics of Random Energy Models</li>
+</ol>
+</li>
+<li>Amin Coja-Oghlan, Allan Sly, Nike Sun<br>
+<strong>Rigorous Results: Random Constraint Satisfaction Problems</strong></li>
+<li>Charles M. Newman, Nicholas Read, Daniel L. Stein<br>
+<a href="https://arxiv.org/abs/2204.10345"><strong>Metastates and Replica Symmetry Breaking</strong></a></li>
+<li>Giorgio Parisi<br>
+<a href="https://www.worldscientific.com/doi/epdf/10.1142/9789811273926_0034"><strong>Future perspectives</strong></a></li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-project">The Project</a></li>
+        <li><a href="#table-of-contents-of-the-collection">Table of contents of the Collection</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
