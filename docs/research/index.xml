@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gsicuro.github.io/docs/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Machine learning</title>
+      <link>https://gsicuro.github.io/docs/research/mlearning/mlearning/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/mlearning/mlearning/</guid>
+      <description>&lt;h1 id=&#34;mean-field-models-for-machine-learning&#34;&gt;&#xA;  Mean-field models for machine learning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models-for-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;TBA&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Matching problems</title>
       <link>https://gsicuro.github.io/docs/research/matching/matching/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -16,11 +23,11 @@
       <description>&lt;h1 id=&#34;random-matching-problems&#34;&gt;&#xA;  Random matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;em&gt;to be written&lt;/em&gt; summary of results on matching problems in various flavours&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;mean-field-models&#34;&gt;&#xA;  Mean field models&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;random-euclidean-matching-problems&#34;&gt;&#xA;  Random Euclidean matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-euclidean-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;inference-of-matchings&#34;&gt;&#xA;  Inference of matchings&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#inference-of-matchings&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
-      <title>Machine learning</title>
-      <link>https://gsicuro.github.io/docs/research/mlearning/mlearning/</link>
-      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/docs/research/mlearning/mlearning/</guid>
-      <description>&lt;h1 id=&#34;mean-field-models-for-machine-learning&#34;&gt;&#xA;  Mean-field models for machine learning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models-for-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;TBA&lt;/p&gt;</description>
+      <title>The RSB40 Book</title>
+      <link>https://gsicuro.github.io/docs/research/rsb40/</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/rsb40/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;&#xA;&lt;h2 id=&#34;the-project&#34;&gt;&#xA;  The Project&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#the-project&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the &lt;a href=&#34;https://www.nobelprize.org/prizes/physics/2021/summary/&#34;&gt;2021 Nobel Prize in Physics&lt;/a&gt;, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

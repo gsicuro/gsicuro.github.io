@@ -9,11 +9,25 @@
     <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gsicuro.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Machine learning</title>
+      <link>https://gsicuro.github.io/docs/research/mlearning/mlearning/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/mlearning/mlearning/</guid>
+      <description>&lt;h1 id=&#34;mean-field-models-for-machine-learning&#34;&gt;&#xA;  Mean-field models for machine learning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models-for-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;TBA&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Conferences and talks</title>
       <link>https://gsicuro.github.io/docs/events/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/docs/events/</guid>
       <description>Events organized</description>
+    </item>
+    <item>
+      <title>Matching problems</title>
+      <link>https://gsicuro.github.io/docs/research/matching/matching/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/matching/matching/</guid>
+      <description>&lt;h1 id=&#34;random-matching-problems&#34;&gt;&#xA;  Random matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;em&gt;to be written&lt;/em&gt; summary of results on matching problems in various flavours&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;mean-field-models&#34;&gt;&#xA;  Mean field models&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;random-euclidean-matching-problems&#34;&gt;&#xA;  Random Euclidean matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-euclidean-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;inference-of-matchings&#34;&gt;&#xA;  Inference of matchings&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#inference-of-matchings&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Former and current students</title>
@@ -23,18 +37,18 @@
       <description>&lt;h3 id=&#34;phd-students&#34;&gt;&#xA;  PhD students&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#phd-students&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;From 2021, &lt;a href=&#34;https://urteado.github.io/&#34;&gt;&lt;strong&gt;Urte Adomaityte&lt;/strong&gt;&lt;/a&gt;. King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;master-students&#34;&gt;&#xA;  Master students&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#master-students&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2016, &lt;strong&gt;Matteo P. D&amp;rsquo;Achille&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/dachille.pdf&#34;&gt;&lt;em&gt;On two assignment problems&lt;/em&gt;&lt;/a&gt;, co-supervised with Sergio Caracciolo, University of Milan.&lt;/li&gt;&#xA;&lt;li&gt;2018, &lt;strong&gt;Gianmarco Perrupato&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/perrupato.pdf&#34;&gt;&lt;em&gt;Study of matching on the Bethe lattice&lt;/em&gt;&lt;/a&gt;, co-supervised with Giorgio Parisi, Sapienza University of Rome.&lt;/li&gt;&#xA;&lt;li&gt;2021, &lt;strong&gt;Anshul Toshniwal&lt;/strong&gt;. Thesis: &lt;em&gt;The planted multi-index matching problem&lt;/em&gt;, co-supervised with Lenka Zdeborová, EPFL.&lt;/li&gt;&#xA;&lt;li&gt;2021, &lt;strong&gt;Claudia De Sousa Miranda Perez&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/desousa.pdf&#34;&gt;&lt;em&gt;The random dimer covering problem on the weighted Aztec graph&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2021, &lt;strong&gt;Daniel Reti&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/reti.pdf&#34;&gt;&lt;em&gt;Robustness of excitations in the random dimer model&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2021, &lt;strong&gt;Hugo Ryder&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/ryder.pdf&#34;&gt;&lt;em&gt;Matching recovery&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2021, &lt;strong&gt;Leonardo Scialo&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/scialo.pdf&#34;&gt;&lt;em&gt;Arctic region in the weighted random dimer covering&lt;/em&gt;&lt;/a&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2022, &lt;strong&gt;Guoyu Chang&lt;/strong&gt;. Thesis: &lt;em&gt;The mixed multi-index matching problem&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2022, &lt;strong&gt;Xiaoying Zhou&lt;/strong&gt;. Thesis: &lt;em&gt;Statistical physics of community detection&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;li&gt;2023, &lt;strong&gt;Wenjuan Li&lt;/strong&gt;. Thesis: &lt;em&gt;Stable Marriage Problems: Perturbations and Correlations&lt;/em&gt;, King&amp;rsquo;s College London.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;bachelor-students&#34;&gt;&#xA;  Bachelor students&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#bachelor-students&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2024, &lt;strong&gt;Sara Tramontano&lt;/strong&gt;. Thesis: &lt;a href=&#34;https://gsicuro.github.io/uploads/tramontano.pdf&#34;&gt;&lt;em&gt;Inferenza nel modello spiked Wigner in alta dimensione&lt;/em&gt;&lt;/a&gt;, University of Bologna.&lt;/li&gt;&#xA;&lt;li&gt;2025, &lt;strong&gt;Nora Riccobelli Carletti&lt;/strong&gt;. Thesis: TBA, University of Bologna.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>The RSB40 Book</title>
+      <link>https://gsicuro.github.io/docs/research/rsb40/</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:00 +0000</pubDate>
+      <guid>https://gsicuro.github.io/docs/research/rsb40/</guid>
+      <description>&lt;div style=&#34;text-align: justify&#34;&gt;&#xA;&lt;h2 id=&#34;the-project&#34;&gt;&#xA;  The Project&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#the-project&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The far-reaching implications of the theory of spin glasses were highlighted further by the &lt;a href=&#34;https://www.nobelprize.org/prizes/physics/2021/summary/&#34;&gt;2021 Nobel Prize in Physics&lt;/a&gt;, of which half was awarded to Giorgio Parisi for &amp;ldquo;the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales.&amp;rdquo; Since the first observation in the 1960s, the theory of spin glasses has unexpectedly found applications in a wide array of scientific problems. This ranges from amorphous solids to movements of birds as they fly in a flock.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Fisica Matematica 2</title>
       <link>https://gsicuro.github.io/docs/teaching/fmath2/fismat2/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/docs/teaching/fmath2/fismat2/</guid>
       <description>Modulo per il corso di laurea triennale in Architettura&amp;ndash;Ingegneria</description>
-    </item>
-    <item>
-      <title>Matching problems</title>
-      <link>https://gsicuro.github.io/docs/research/matching/matching/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/docs/research/matching/matching/</guid>
-      <description>&lt;h1 id=&#34;random-matching-problems&#34;&gt;&#xA;  Random matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;em&gt;to be written&lt;/em&gt; summary of results on matching problems in various flavours&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;mean-field-models&#34;&gt;&#xA;  Mean field models&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;random-euclidean-matching-problems&#34;&gt;&#xA;  Random Euclidean matching problems&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#random-euclidean-matching-problems&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;inference-of-matchings&#34;&gt;&#xA;  Inference of matchings&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#inference-of-matchings&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Meccanica razionale per l&#39;Ingegneria</title>
@@ -49,13 +63,6 @@
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://gsicuro.github.io/docs/teaching/old/oldmodules/</guid>
       <description>Other modules taught in the past</description>
-    </item>
-    <item>
-      <title>Machine learning</title>
-      <link>https://gsicuro.github.io/docs/research/mlearning/mlearning/</link>
-      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>https://gsicuro.github.io/docs/research/mlearning/mlearning/</guid>
-      <description>&lt;h1 id=&#34;mean-field-models-for-machine-learning&#34;&gt;&#xA;  Mean-field models for machine learning&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#mean-field-models-for-machine-learning&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;TBA&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
