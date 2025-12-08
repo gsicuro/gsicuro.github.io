@@ -25,3 +25,144 @@ Le <span style="color:black">sessioni di esercitazione</span> (opzionali ma fort
  
  </tbody>
  </table>
+ 
+ 
+ 
+## Simulatore di moto Kepleriano
+
+Piccolo snippet. Prende in input la velocità iniziale $\dot{\boldsymbol x}(0)=(\dot x_1(0),\dot x_2(0))$ di un punto materiale di massa unitaria che si muove nel piano con un potenziale Kepleriano $V(\boldsymbol{x})=-\\|\boldsymbol x\\|^{-1}$. Il punto inizia il suo moto da ${\boldsymbol x}(0)=(0,1)$.
+<div>
+  <label>$\dot x_1(0)=$ <input type="number" id="vx0" value="0.04" style="width: 80px;"/></label>&nbsp;&nbsp;&nbsp;
+  <label>$\dot x_2(0)=$ <input type="number" id="vy0" value="0" style="width: 80px;"/></label>&nbsp;&nbsp;&nbsp;
+  <br>
+<button onclick="resetOrbit()"style="width: 80px;">Start</button>
+<button onclick="zoomIn()" style="width: 100px;">Zoom In</button>
+<button onclick="zoomOut()" style="width: 100px;">Zoom Out</button>
+<button onclick="resetView()" style="width: 120px;">Reset View</button>
+<button id="restartBtn" onclick="restartSimulation()" style="display: none; width: 120px; margin-top: 10px;">Restart</button>
+</div>
+<p id="sumDisplay">Energia totale: </p>
+
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+canvas {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+}w: 0 0 0px rgba(0,0,0,0.1);
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script>
+let x, y, vx, vy;
+let zoomFactor = 10;
+let autoView = true;
+let minX = -10, maxX = 10;
+let minY = -10, maxY = 10;
+let path = [];
+
+
+
+function setup() {
+  createCanvas(windowWidth/2,windowWidth/2).parent(document.body);
+  resetOrbit();
+}
+
+function resetOrbit() {
+  x = 0;
+  y = 10;
+  vx = parseFloat(document.getElementById("vx0").value)*10;
+  vy = parseFloat(document.getElementById("vy0").value)*10;
+  let ene = 0.5*(vx*vx + vy*vx)/100-10/Math.sqrt(x * x + y * y);
+  let lz = (x*vy-y*vx)/100;
+  let enec = -0.5/(lz*lz);
+  let ec = Math.sqrt(1-ene/enec);
+  // Update the content of the sumDisplay element with the sum
+  document.getElementById("sumDisplay").innerText = "Momento angolare: " + lz +"; Eccentricità: " + ec +".";
+  path = [];
+}
+
+function zoomIn() {
+  zoomFactor *= 1.2;
+  autoView = false;
+}
+
+function zoomOut() {
+  zoomFactor /= 1.2;
+  autoView = false;
+}
+
+function resetView() {
+  autoView = true;
+}
+
+function draw() {
+  translate(width/2, width/4);
+  if (autoView) {
+    zoomFactor = 10;
+  }
+  scale(zoomFactor, -zoomFactor);
+  background(255);
+
+  let r = Math.sqrt(x * x + y * y);
+  if (Math.abs(r) < 1e-4) {
+  noLoop(); // Stop the simulation
+  alert("Collisione con il centro di attrazione.");
+  document.getElementById("restartBtn").style.display = "inline-block"; // Show restart button
+  return;
+}
+  let Fx = -x / (r * r * r);
+  let Fy = -y / (r * r * r);
+  let dt = 0.2;
+
+  vx += Fx * dt;
+  vy += Fy * dt;
+  x += vx * dt;
+  y += vy * dt;
+  let Lz = (x * vy - y * vx) / 100;
+  let ddx = x * (x-vx * dt);
+  let ddy = y * (y-vy * dt);
+  if (Math.abs(Lz) < 1e-4 && ddx <= 0 && ddy <= 0 ) {
+  noLoop(); // Stop the simulation
+  alert("Collisione con il centro di attrazione.");
+  document.getElementById("restartBtn").style.display = "inline-block"; // Show restart button
+  return;
+}
+  minX = Math.min(minX, x);
+  maxX = Math.max(maxX, x);
+  minY = Math.min(minY, y);
+  maxY = Math.max(maxY, y);
+
+  path.push([x, y]);
+  if (path.length > 4000) path.shift();
+  
+  strokeWeight(0.5);
+  stroke(0, 0, 255);
+  noFill();
+  beginShape();
+  for (let pt of path) {
+    vertex(pt[0], pt[1]);
+  }
+  endShape();
+
+  fill(255, 0, 0);
+  noStroke();
+  ellipse(x, y, 1, 1);
+
+  fill(0);
+  ellipse(0, 0, 2.0, 2.0);
+}
+function restartSimulation() {
+  document.getElementById("restartBtn").style.display = "none"; // Hide button again
+  resetOrbit();
+  loop(); // Resume the simulation
+}
+</script>
