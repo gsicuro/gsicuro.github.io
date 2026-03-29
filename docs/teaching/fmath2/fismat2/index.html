@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.1f242a225a393f59b1cd4e79045ad3a5560f09b589cc8f722256bb4ddced0e90.css" integrity="sha256-HyQqIlo5P1mxzU55BFrTpVYPCbWJzI9yIla7TdztDpA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.69db8a773eb18ec3ad371cafd8a8590e2f8b33bf75c7fac2bb3b8c6bc9362fab.js" integrity="sha256-aduKdz6xjsOtNxyv2KhZDi&#43;LM791x/rCuzuMa8k2L6s=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.05cecb75572d9aa2ed490d046bdf025aebdc29c3054c7a66fcc90257f80e660d.js" integrity="sha256-Bc7LdVctmqLtSQ0Ea98CWuvcKcMFTHpm/MkCV/gOZg0=" crossorigin="anonymous"></script>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
       <script>
@@ -679,88 +679,200 @@ Editori Riuniti University Press, 2010.</li>
 <hr>
 <style>
   #fp-widget * { box-sizing: border-box; margin: 0; padding: 0; }
+  
   #fp-widget {
     font-family: sans-serif;
-    background: #1a1a2e;
-    color: #e0e0e0;
+    /* Colore "Carta Bianca" leggermente calda */
+    background: #fdfdfb; 
+    color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 16px;
-    border-radius: 12px;
+    padding: 32px 20px;
+    border-radius: 4px; /* Angoli meno arrotondati per un look più serio */
+    /* Ombra morbida per dare profondità tipo foglio appoggiato */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 1px solid #e8e8e1;
   }
-  #fp-widget h2 { font-size: 20px; font-weight: 500; margin-bottom: 4px; color: #ffffff; }
-  #fp-widget .fp-subtitle { font-size: 13px; color: #888; margin-bottom: 20px; }
+
+  #fp-widget h2 { 
+    font-size: 22px; 
+    font-weight: 600; 
+    margin-bottom: 6px; 
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+  }
+
+  #fp-widget .fp-subtitle { 
+    font-size: 14px; 
+    color: #777; 
+    margin-bottom: 24px; 
+    font-style: italic;
+  }
+
   #fp-widget .fp-section-label {
-    font-size: 11px; color: #555; text-transform: uppercase;
-    letter-spacing: 0.08em; width: 100%; max-width: 800px;
-    margin-bottom: 8px; margin-top: 4px; padding-left: 2px;
+    font-size: 11px; 
+    color: #999; 
+    text-transform: uppercase;
+    letter-spacing: 0.12em; 
+    width: 100%; 
+    max-width: 800px;
+    margin-bottom: 10px; 
+    margin-top: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
   }
+
   #fp-widget .fp-controls {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px; width: 100%; max-width: 800px; margin-bottom: 8px;
+    gap: 16px; 
+    width: 100%; 
+    max-width: 800px; 
+    margin-bottom: 12px;
   }
+
   #fp-widget .fp-group {
-    background: #16213e; border: 0.5px solid #2a2a4a;
-    border-radius: 10px; padding: 12px 14px;
+    /* Sfondo neutro che stacca appena dalla carta principale */
+    background: #f8f8f5; 
+    border: 1px solid #eef0e8;
+    border-radius: 6px; 
+    padding: 14px;
   }
+
   #fp-widget .fp-group label {
-    font-size: 12px; color: #888; display: block; margin-bottom: 6px;
-    text-transform: uppercase; letter-spacing: 0.05em;
+    font-size: 11px; 
+    color: #666; 
+    display: block; 
+    margin-bottom: 8px;
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+    font-weight: 600;
   }
-  #fp-widget .fp-row { display: flex; align-items: center; gap: 10px; }
-  #fp-widget input[type="range"] { flex: 1; accent-color: #7b8cf8; cursor: pointer; }
+
+  #fp-widget .fp-row { display: flex; align-items: center; gap: 12px; }
+
+  #fp-widget input[type="range"] { 
+    flex: 1; 
+    accent-color: #444; /* Colore scuro, simile all'inchiostro */
+    cursor: pointer; 
+  }
+
   #fp-widget .fp-val {
-    font-size: 14px; font-weight: 500; color: #a0aaff;
-    min-width: 64px; text-align: right;
+    font-size: 14px; 
+    font-weight: 600; 
+    color: #222;
+    min-width: 64px; 
+    text-align: right;
   }
+
   #fp-widget .fp-info {
-    display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
-    margin-bottom: 14px; font-size: 13px; color: #888;
+    display: flex; 
+    gap: 24px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-bottom: 18px; 
+    font-size: 13px; 
+    color: #666;
   }
-  #fp-widget .fp-info span { color: #a0aaff; font-weight: 500; }
+
+  #fp-widget .fp-info span { 
+    color: #000; 
+    font-weight: 600; 
+  }
+
   #fp-widget .fp-canvas-wrap {
-    position: relative; width: 640px; max-width: 100%;
-    /* height set by JS */
+    position: relative; 
+    width: 640px; 
+    max-width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
   }
+
   #fp-widget .fp-canvas-wrap canvas {
-    position: absolute; top: 0; left: 0;
-    width: 100%; border-radius: 12px;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    border-radius: 4px;
   }
+
   #fp-widget #fp-trail {
-    background: #0f0f1a;
-    border: 0.5px solid #2a2a4a;
+    background: #ffffff; /* Fondo bianco puro per il grafico */
+    border: 1px solid #ddd;
   }
+
   #fp-widget #fp-dot { background: transparent; border: none; }
+
   #fp-widget .fp-time-label {
-    position: absolute; top: 10px; right: 14px;
-    font-size: 12px; color: #4a4a7a; pointer-events: none; z-index: 2;
+    position: absolute; 
+    top: 12px; 
+    right: 16px;
+    font-size: 11px; 
+    color: #aaa; 
+    text-transform: uppercase;
+    pointer-events: none; 
+    z-index: 2;
   }
+
   #fp-widget .fp-btns {
-    display: flex; gap: 12px; margin-top: 14px;
-    flex-wrap: wrap; justify-content: center;
+    display: flex; 
+    gap: 12px; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
   }
+
   #fp-widget button {
-    padding: 8px 22px; border-radius: 8px;
-    border: 0.5px solid #3a3a6a; background: #16213e;
-    color: #a0aaff; font-size: 14px; cursor: pointer;
-    transition: background 0.15s;
+    padding: 10px 24px; 
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    background: #fff;
+    color: #333; 
+    font-size: 13px; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
   }
-  #fp-widget button:hover { background: #1e2a5a; }
-  #fp-widget button.fp-primary { background: #3a3a8a; border-color: #5a5aaa; }
-  #fp-widget button.fp-primary:hover { background: #4a4a9a; }
+
+  #fp-widget button:hover { 
+    background: #f0f0eb; 
+    border-color: #999;
+  }
+
+  #fp-widget button.fp-primary { 
+    background: #333; 
+    color: #fff;
+    border-color: #222; 
+  }
+
+  #fp-widget button.fp-primary:hover { 
+    background: #000; 
+  }
+
   #fp-widget .fp-progress {
-    width: 100%; max-width: 640px; height: 3px;
-    background: #1e1e3a; border-radius: 2px; margin-top: 10px; overflow: hidden;
+    width: 100%; 
+    max-width: 640px; 
+    height: 2px;
+    background: #eee; 
+    margin-top: 15px; 
+    overflow: hidden;
   }
+
   #fp-widget .fp-progress-bar {
-    height: 100%; width: 0%;
-    background: linear-gradient(90deg, #3a6aaa, #7a3a9a); border-radius: 2px;
+    height: 100%; 
+    width: 0%;
+    background: #444; /* Progressione sobria, tipo linea d'inchiostro */
   }
+
   #fp-widget .fp-note {
-    margin-top: 14px; font-size: 12px; color: #555;
-    text-align: center; max-width: 600px; line-height: 1.6;
+    margin-top: 20px; 
+    font-size: 12px; 
+    color: #888;
+    text-align: center; 
+    max-width: 600px; 
+    line-height: 1.6;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 12px;
   }
 </style>
 <div id="fp-widget">
@@ -817,7 +929,7 @@ Editori Riuniti University Press, 2010.</li>
   <p class="fp-section-label">Animazione</p>
   <div class="fp-controls" style="grid-template-columns: 1fr;">
     <div class="fp-group">
-      <label>Accelerazione</label>
+      <label>Velocità della simulazione</label>
       <div class="fp-row">
         <input type="range" id="fp-speed" min="1" max="500" step="1" value="250">
         <span class="fp-val" id="fp-speedVal">250×</span>
@@ -897,7 +1009,7 @@ Fatto con Opus 4.6.
     tc.clearRect(0, 0, W, H);
 
     /* fill */
-    tc.fillStyle = '#0f0f1a';
+    tc.fillStyle = '#f6eee3';
     tc.beginPath();
     tc.roundRect(0, 0, W, H, 12);
     tc.fill();
@@ -946,7 +1058,7 @@ Fatto con Opus 4.6.
     const p0 = toCanvas(x0, y0, scale);
     const p1 = toCanvas(x1, y1, scale);
     tc.save();
-    tc.strokeStyle = '#7a4aaa';
+    tc.strokeStyle = '#ba732d';
     tc.lineWidth = 1.2;
     tc.lineJoin = 'round';
     tc.beginPath();
@@ -962,7 +1074,7 @@ Fatto con Opus 4.6.
     dc.clearRect(0, 0, W, H);
     const p = toCanvas(x, y, scale);
     dc.save();
-    dc.fillStyle = '#e0e0ff';
+    dc.fillStyle = '#bf6200';
     dc.shadowColor = '#a0aaff';
     dc.shadowBlur = 12;
     dc.beginPath();
