@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.485f55c9e9adce44caf232430dd6a69be3c9359a8c19cf089569fc8b8ea3e95a.js" integrity="sha256-SF9VyemtzkTK8jJDDdamm&#43;PJNZqMGc8IlWn8i46j6Vo=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.6cb3793898e4e8f5a5a979bf2181057a3b6116561ef4639fd948b537285b78d6.js" integrity="sha256-bLN5OJjk6PWlqXm/IYEFejthFlYe9GOf2Ui1NyhbeNY=" crossorigin="anonymous"></script>
 
   
     
@@ -504,7 +504,7 @@ Editori Riuniti University Press, 2010.</li>
 </tr>
 <tr>
 <td style="text-align:left">01-04</td>
-<td style="text-align:left"><em>TBA</em></td>
+<td style="text-align:left">Caratteristiche del moto unidimensionale: punti di inversione e periodo. Spazio delle fasi e flusso di fase.</td>
 </tr>
 <tr>
 <td style="text-align:left">08-04</td>
@@ -884,7 +884,7 @@ Editori Riuniti University Press, 2010.</li>
 </style>
 <div id="fp-widget">
   <h2>Pendolo di Foucault — Traiettoria orizzontale</h2>
-  <p class="fp-subtitle">Percorso apparente nel riferimento del pianeta.</p>
+  <p class="fp-subtitle">Percorso apparente nel riferimento di un pianeta di raggio uguale a quello terrestre.</p>
   <p class="fp-section-label">Pendolo</p>
   <div class="fp-controls">
     <div class="fp-group">
@@ -986,28 +986,33 @@ Fatto con Opus 4.6.
     const rotH  = parseFloat(document.getElementById('fp-rot').value);
     const grav  = parseFloat(document.getElementById('fp-grav').value);
     const speed = parseFloat(document.getElementById('fp-speed').value);
-    const omega_p = Math.sqrt(grav / L);
-    const Omega_z = (2 * Math.PI / (rotH * 3600)) * Math.sin(lat);
+    const RT = 6372507
+    const omega = (2 * Math.PI / (rotH * 3600)) 
+    const Omalpha = omega * Math.sin(lat);
+    const hatg = grav - omega* omega * Math.cos(lat) * Math.cos(lat) * RT
+    const hatomega = Math.sqrt(hatg/L+Omalpha*Omalpha);
+    const q0 = omega * L * RT * Math.sin(2*lat)/( 2 * hatg)
     const scale   = (W / 2 - 40) / (A * 1.15);
-    return { lat, L, A, dur, omega_p, Omega_z, speed, scale };
+    return { lat, L, A, dur, hatomega, Omalpha, speed, scale };
   }
 
   function updateInfo() {
-    const { omega_p, Omega_z } = getParams();
-    const T_p = 2 * Math.PI / omega_p;
-    const T_f = Math.abs(Omega_z) > 1e-10 ? Math.PI / Math.abs(Omega_z) / 3600 : Infinity;
+    const { hatomega, Omalpha } = getParams();
+    const T_p = 2 * Math.PI / hatomega;
+    const T_f = Math.abs(Omalpha) > 1e-10 ? Math.PI / Math.abs(Omalpha) / 3600 : Infinity;
     document.getElementById('fp-infoT').textContent     = T_p.toFixed(2) + ' s';
     document.getElementById('fp-infoF').textContent     = isFinite(T_f) ? T_f.toFixed(2) + ' h' : '∞ (equator)';
-    document.getElementById('fp-infoOmega').textContent = (Omega_z * 180 / Math.PI * 3600).toFixed(4) + ' °/h';
+    document.getElementById('fp-infoOmega').textContent = (Omalpha * 180 / Math.PI * 3600).toFixed(4) + ' °/h';
   }
 
   /* ── analytic position ── */
-  function pos(t, A, omega_p, Omega_z) {
-    const r = A * Math.cos(omega_p * t);
-    return { x: r * Math.cos(Omega_z * t), y: -r * Math.sin(Omega_z * t) };
+  function pos(t, A, hatomega, Omalpha) {
+    //const r = A * Math.cos(hatomega * t);
+    //return { x: r * Math.cos(Omalpha * t), y: -r * Math.sin(Omalpha * t) };
+    return { x: A * Math.cos(Omalpha * t) * Math.cos(hatomega * t) - A* Omalpha * Math.sin(Omalpha * t) * Math.sin(hatomega * t)/hatomega, y: A * Math.sin(Omalpha * t) * Math.cos(hatomega * t) + A* Omalpha * Math.cos(Omalpha * t) * Math.sin(hatomega * t)/hatomega };
   }
   function toCanvas(x, y, scale) {
-    return { px: cx + x * scale, py: cy - y * scale };
+    return { px: cx + x * scale, py: cy + y * scale };
   }
 
   /* ── draw static background onto trail canvas ── */
@@ -1103,15 +1108,15 @@ Fatto con Opus 4.6.
   /* ── Draw Full Path (static) ── */
   function drawFull() {
     stopAnim();
-    const { A, dur, omega_p, Omega_z } = getParams();
+    const { A, dur, hatomega, Omalpha } = getParams();
     drawBackground();
     clearDot();
 
     const N = 20000;
     const dt = dur / N;
-    let prev = pos(0, A, omega_p, Omega_z);
+    let prev = pos(0, A, hatomega, Omalpha);
     for (let i = 1; i <= N; i++) {
-      const cur = pos(i * dt, A, omega_p, Omega_z);
+      const cur = pos(i * dt, A, hatomega, Omalpha);
       appendSegment(prev.x, prev.y, cur.x, cur.y);
       prev = cur;
     }
@@ -1122,7 +1127,7 @@ Fatto con Opus 4.6.
   /* ── Animation ── */
   function startAnim() {
     stopAnim();
-    const { A, dur, omega_p, Omega_z, speed } = getParams();
+    const { A, dur, hatomega, Omalpha, speed } = getParams();
     drawBackground();
     clearDot();
     setProgress(0);
@@ -1130,11 +1135,11 @@ Fatto con Opus 4.6.
 
     /* We sample the trail at ~60 pts per pendulum period so the line looks smooth,
        but we only draw NEW segments each frame — no full redraw ever. */
-    const T_pend = 2 * Math.PI / omega_p;
+    const T_pend = 2 * Math.PI / hatomega;
     const trailDt = T_pend / 60; // sim seconds between trail samples
 
     let lastSimTime = 0;
-    let lastPos = pos(0, A, omega_p, Omega_z);
+    let lastPos = pos(0, A, hatomega, Omalpha);
     let startRealTs = null;
 
     isAnimating = true;
@@ -1147,7 +1152,7 @@ Fatto con Opus 4.6.
       /* append only the NEW trail segments since last frame */
       let t = lastSimTime + trailDt;
       while (t <= simTime) {
-        const cur = pos(t, A, omega_p, Omega_z);
+        const cur = pos(t, A, hatomega, Omalpha);
         appendSegment(lastPos.x, lastPos.y, cur.x, cur.y);
         lastPos = cur;
         lastSimTime = t;
@@ -1155,7 +1160,7 @@ Fatto con Opus 4.6.
       }
 
       /* dot at exact current position */
-      const cur = pos(simTime, A, omega_p, Omega_z);
+      const cur = pos(simTime, A, hatomega, Omalpha);
       drawDot(cur.x, cur.y);
       setProgress(simTime / dur);
       setTimeLabel(simTime);
