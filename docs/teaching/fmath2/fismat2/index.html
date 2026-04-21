@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.a89b294d3150751c25a7c2e4f45fd34d96f3023a8b9ceaaf521a2d5accd73880.js" integrity="sha256-qJspTTFQdRwlp8Lk9F/TTZbzAjqLnOqvUhotWszXOIA=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.4d0b525afd086b1b4de9a4d055605957fc7517cf13645018b5503b8d8d5872ae.js" integrity="sha256-TQtSWv0IaxtN6aTQVWBZV/x1F88TZFAYtVA7jY1Ycq4=" crossorigin="anonymous"></script>
 
   
     
@@ -335,7 +335,12 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#esercizi">Esercizi</a></li>
         <li><a href="#prova-desame-passate">Prova d&rsquo;esame passate</a></li>
-        <li><a href="#miscellanea">Miscellanea</a></li>
+        <li><a href="#miscellanea">Miscellanea</a>
+          <ul>
+            <li><a href="#pendolo-di-foucault">Pendolo di Foucault</a></li>
+            <li><a href="#pendoli-accoppiati">Pendoli accoppiati</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -684,6 +689,10 @@ Editori Riuniti University Press, 2010.</li>
   Miscellanea
   <a class="anchor" href="#miscellanea">#</a>
 </h2>
+<h3 id="pendolo-di-foucault">
+  Pendolo di Foucault
+  <a class="anchor" href="#pendolo-di-foucault">#</a>
+</h3>
 <style>
   #fp-widget * { box-sizing: border-box; margin: 0; padding: 0; }
   
@@ -881,9 +890,29 @@ Editori Riuniti University Press, 2010.</li>
     border-top: 1px solid #f0f0f0;
     padding-top: 12px;
   }
+  
+  #fp-widget .canvases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+  #fp-widget .panel {
+  flex: 1; /* Distribuisce lo spazio equamente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  #fp-widget .panel canvas {
+  width: 100%; /* Il canvas riempie il suo contenitore */
+  height: auto;
+}
 </style>
 <div id="fp-widget">
-  <h2>Pendolo di Foucault — Traiettoria orizzontale</h2>
   <p class="fp-subtitle">Percorso apparente nel riferimento di un pianeta di raggio uguale a quello terrestre.</p>
   <p class="fp-section-label">Pendolo</p>
   <div class="fp-controls">
@@ -1220,6 +1249,393 @@ Fatto con Opus 4.6.
   drawFull();
 })();
 </script>
+<h3 id="pendoli-accoppiati">
+  Pendoli accoppiati
+  <a class="anchor" href="#pendoli-accoppiati">#</a>
+</h3>
+<p><strong>Nota</strong>: La simulazione usa unità tali che $g=1$, come nell&rsquo;esercizio discusso in classe, in modo che, detti $q_1$ e $q_2$ gli angoli rispetto alla verticale dei due pendoli, in approssimazione di piccole oscillazioni
+$$q_1(t)=\frac{z_1(t)+z_2(t)}{\sqrt 2},\qquad q_2(t)=\frac{z_2(t)-z_1(t)}{\sqrt 2}$$
+ove sono dati i modi normali, per $a=1,2$,
+$$z_a(t)=z_a(0)\cos(\omega_a t)+\frac{\dot z_2(0)}{\omega_a}\sin(\omega_at),\qquad \omega_a^2=\begin{cases}1&amp;a=1\\ 1+2k&amp;a=2\end{cases}$$
+$k$ costante elastica della molla. Nel diagramma di destra sono raffigurati i valori delle variabili
+$$u_a(t)=\frac{z_a(t)}{\sqrt{2 E_a}},\qquad E_a=\frac{1}{2}\dot z_a^2(0)+\frac{1}{2}\omega_a z_a^2(0)$$
+che producono una <a href="https://it.wikipedia.org/wiki/Figura_di_Lissajous">figura di Lissajous</a> sul quadrato $[-1,1]^2$.</p>
+<br>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.btn-row { display: flex; gap: 10px; margin-bottom: 1rem; }
+button { font-size: 13px; padding: 6px 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-primary); cursor: pointer; }
+button:hover { background: var(--color-background-secondary); }
+.canvases { display: flex; gap: 0; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+.panel { display: flex; flex-direction: column; align-items: center; }
+.panel-title { font-size: 14px; color: var(--color-text-secondary); padding: 6px 0 2px; letter-spacing: 0.03em; }
+</style>
+<div id="fp-widget">
+<div class="outer">
+<h2 class="sr-only" style="position:absolute;left:-9999px">Coupled pendula simulation</h2>
+<div class="fp-controls">
+  <div class="fp-group">
+    <label>q₁(0) (rad)</label>
+    <div class="fp-row"><input type="range" id="q1" min="-1" max="1" step="0.01" value="0.0"><span class="fp-val" id="q1v">0.00</span></div>
+    <label>q₂(0) (rad)</span>
+    <div class="fp-row"><input type="range" id="q2" min="-1" max="1" step="0.01" value="-0.5"><span class="fp-val" id="q2v">−0.50</span></div>
+  </div>
+  <div class="fp-group">
+    <label>q̇₁(0) (rad/s)</label>
+    <div class="fp-row"><input type="range" id="dq1" min="-1" max="1" step="0.05" value="0"><span class="fp-val" id="dq1v">0.00</span></div>
+    <label>q̇₂(0) (rad/s)</label>
+    <div class="fp-row"><input type="range" id="dq2" min="-1" max="1" step="0.05" value="0"><span class="fp-val" id="dq2v">0.00</span></div>
+  </div>
+</div>
+<div class="fp-controls">
+  <div class="fp-group">
+    <label>Costante elastica</label>
+    <div class="fp-row"><input type="range" id="kval" min="0.05" max="5" step="0.05" value="1.5"><span class="fp-val" id="kv">1.50</span></div>
+  </div>
+</div>
+<div class="fp-btns">
+  <button id="restartBtn">Restart</button>
+  <button id="pauseBtn">Pausa</button>
+  <button id="mode1Btn">Pendoli in fase</button>
+  <button id="mode2Btn">Pendoli in opposizione di fase</button>
+</div>
+<div class="canvases">
+  <div class="panel" style="flex:1.1">
+    <span class="panel-title">Pendoli</span>
+    <canvas id="cPend"></canvas>
+  </div>
+  <div class="panel" style="flex:1.2; border-left:0.5px solid var(--color-border-tertiary); border-right:0.5px solid var(--color-border-tertiary);">
+    <span class="panel-title"> Traiettoria nel piano (q₁,q₂)</span>
+    <canvas id="cTime"></canvas>
+  </div>
+  <div class="panel" style="flex:1.1">
+    <span class="panel-title">Figura di Lissajous</span>
+    <canvas id="cMode"></canvas>
+  </div>
+</div>
+</div>
+<script>
+const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+const COL = {
+  q1:     '#378ADD',
+  q2:     '#D85A30',
+  trail:  '#7F77DD',
+  spring: isDark ? '#B4B2A9' : '#888780',
+  pivot:  isDark ? '#D3D1C7' : '#444441',
+  axis:   isDark ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.09)',
+  text:   isDark ? '#B4B2A9' : '#5F5E5A',
+  dot:    isDark ? '#D3D1C7' : '#2C2C2A',
+};
+
+const cPend = document.getElementById('cPend');
+const cTime = document.getElementById('cTime');
+const cMode = document.getElementById('cMode');
+const ctxP  = cPend.getContext('2d');
+const ctxT  = cTime.getContext('2d');
+const ctxM  = cMode.getContext('2d');
+
+function resize() {
+  const W = document.querySelector('.canvases').offsetWidth;
+  const H = Math.max(260, Math.round(W * 0.31));
+  const p1 = Math.round(W * 1.1 / 3.4);
+  const p2 = Math.round(W * 1.2 / 3.4);
+  const p3 = W - p1 - p2;
+  cPend.width = p1; cPend.height = H;
+  cTime.width = p2; cTime.height = H;
+  cMode.width = p3; cMode.height = H;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const g = 1, L = 1, m = 1;
+let k = 1;
+let state = { q1: 0.5, q2: -0.5, dq1: 0, dq2: 0 };
+let history = [];
+let running = true;
+let lastT = null;
+
+function getK() { k = parseFloat(document.getElementById('kval').value); }
+
+function getIC() {
+  return {
+    q1:  parseFloat(document.getElementById('q1').value),
+    q2:  parseFloat(document.getElementById('q2').value),
+    dq1: parseFloat(document.getElementById('dq1').value),
+    dq2: parseFloat(document.getElementById('dq2').value),
+  };
+}
+
+function derivs(s) {
+  return {
+    dq1:  s.dq1,
+    dq2:  s.dq2,
+    ddq1: -(g/L)*s.q1 - (k/m)*(s.q1 - s.q2),
+    ddq2: -(g/L)*s.q2 + (k/m)*(s.q1 - s.q2),
+  };
+}
+
+function rk4(s, dt) {
+  function add(s, d, f) {
+    return { q1: s.q1+f*d.dq1, q2: s.q2+f*d.dq2, dq1: s.dq1+f*d.ddq1, dq2: s.dq2+f*d.ddq2 };
+  }
+  const k1 = derivs(s);
+  const k2 = derivs(add(s, k1, dt/2));
+  const k3 = derivs(add(s, k2, dt/2));
+  const k4 = derivs(add(s, k3, dt));
+  return {
+    q1:  s.q1  + dt/6*(k1.dq1  + 2*k2.dq1  + 2*k3.dq1  + k4.dq1),
+    q2:  s.q2  + dt/6*(k1.dq2  + 2*k2.dq2  + 2*k3.dq2  + k4.dq2),
+    dq1: s.dq1 + dt/6*(k1.ddq1 + 2*k2.ddq1 + 2*k3.ddq1 + k4.ddq1),
+    dq2: s.dq2 + dt/6*(k1.ddq2 + 2*k2.ddq2 + 2*k3.ddq2 + k4.ddq2),
+  };
+}
+
+/* ── PENDULA PANEL ── */
+function drawPendula() {
+  const W = cPend.width, H = cPend.height;
+  ctxP.clearRect(0, 0, W, H);
+
+  const pivX = W / 2, pivY = H * 0.15;
+  const sc   = H * 0.68;
+
+  const b1x = pivX + sc * Math.sin(state.q1);
+  const b1y = pivY + sc * Math.cos(state.q1);
+  const b2x = pivX + sc * Math.sin(state.q2);
+  const b2y = pivY + sc * Math.cos(state.q2);
+
+  /* vertical equilibrium guides */
+  ctxP.strokeStyle = COL.axis; ctxP.lineWidth = 1; ctxP.setLineDash([4,4]);
+  ctxP.beginPath(); ctxP.moveTo(pivX, pivY); ctxP.lineTo(pivX, pivY + sc*1.08); ctxP.stroke();
+  ctxP.setLineDash([]);
+
+  /* spring between bob endpoints */
+  function zigzag(x1, y1, x2, y2, n, amp) {
+    const dx = x2-x1, dy = y2-y1, len = Math.hypot(dx,dy);
+    const nx = -dy/len, ny = dx/len;
+    ctxP.beginPath(); ctxP.moveTo(x1, y1);
+    for (let i = 1; i <= n; i++) {
+      const t = i/(n+1), sign = (i%2===0)?1:-1;
+      ctxP.lineTo(x1+dx*t+sign*amp*nx, y1+dy*t+sign*amp*ny);
+    }
+    ctxP.lineTo(x2, y2); ctxP.stroke();
+  }
+  ctxP.strokeStyle = COL.spring; ctxP.lineWidth = 1.5;
+  zigzag(b1x, b1y, b2x, b2y, 12, 5);
+
+  /* rods & bobs */
+  function drawRod(bx, by, col) {
+    ctxP.strokeStyle = col; ctxP.lineWidth = 2;
+    ctxP.beginPath(); ctxP.moveTo(pivX, pivY); ctxP.lineTo(bx, by); ctxP.stroke();
+    ctxP.fillStyle = col;
+    ctxP.beginPath(); ctxP.arc(bx, by, 7, 0, 2*Math.PI); ctxP.fill();
+  }
+  drawRod(b1x, b1y, COL.q1);
+  drawRod(b2x, b2y, COL.q2);
+
+  /* shared pivot */
+  ctxP.fillStyle = COL.pivot;
+  ctxP.beginPath(); ctxP.arc(pivX, pivY, 5, 0, 2*Math.PI); ctxP.fill();
+
+  /* labels */
+  ctxP.font = '11px var(--font-sans)';
+  ctxP.fillStyle = COL.q1; ctxP.fillText('q₁='+state.q1.toFixed(3), 6, H-8);
+  ctxP.fillStyle = COL.q2; ctxP.fillText('q₂='+state.q2.toFixed(3), W/2+4, H-8);
+}
+
+/* ── (q1,q2) PLANE ── */
+function drawPhase() {
+  const W = cTime.width, H = cTime.height;
+  ctxT.clearRect(0, 0, W, H);
+  const pad = { l:36, r:14, t:20, b:32 };
+  const pw = W-pad.l-pad.r, ph = H-pad.t-pad.b;
+  const qmax = 1;
+  const cx = pad.l + pw/2, cy = pad.t + ph/2;
+
+  function toX(q) { return cx + q/qmax * pw/2; }
+  function toY(q) { return cy - q/qmax * ph/2; }
+
+  /* axes */
+  ctxT.strokeStyle = COL.axis; ctxT.lineWidth = 1;
+  ctxT.beginPath(); ctxT.moveTo(pad.l, pad.t); ctxT.lineTo(pad.l, pad.t+ph); ctxT.lineTo(pad.l+pw, pad.t+ph); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(cx, pad.t); ctxT.lineTo(cx, pad.t+ph); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(pad.l, cy); ctxT.lineTo(pad.l+pw, cy); ctxT.stroke();
+
+  /* tick labels */
+  ctxT.fillStyle = COL.text; ctxT.font = '12px var(--font-sans)';
+  [-1, -0.5, 0.5, 1].forEach(v => {
+    ctxT.fillText(v.toFixed(1), 2, toY(v)+3);
+    ctxT.fillText(v.toFixed(1), toX(v)-8, pad.t+ph+14);
+  });
+
+  /* axis labels */
+  ctxT.font = '14px var(--font-sans)';
+  ctxT.fillStyle = COL.q1; ctxT.fillText('q₁', pad.l+pw-14, pad.t+ph+28);
+  ctxT.save(); ctxT.translate(10, pad.t+14); ctxT.rotate(-Math.PI/2);
+  ctxT.fillStyle = COL.q2; ctxT.fillText('q₂', 0, 0); ctxT.restore();
+
+  /* normal mode diagonals (faint guides) */
+  ctxT.strokeStyle = isDark ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.07)';
+  ctxT.lineWidth = 1; ctxT.setLineDash([4,4]);
+  ctxT.beginPath(); ctxT.moveTo(toX(-qmax), toY(-qmax)); ctxT.lineTo(toX(qmax), toY(qmax)); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(toX(-qmax), toY(qmax));  ctxT.lineTo(toX(qmax), toY(-qmax)); ctxT.stroke();
+  ctxT.setLineDash([]);
+
+  /* trail */
+  const trail = history.slice(-600);
+  if (trail.length > 1) {
+    for (let i = 1; i < trail.length; i++) {
+      const alpha = i / trail.length;
+      const p = trail[i-1], q = trail[i];
+      ctxT.strokeStyle = `rgba(127,119,221,${alpha*0.85})`;
+      ctxT.lineWidth = 1.4;
+      ctxT.beginPath();
+      ctxT.moveTo(toX(p.q1), toY(p.q2));
+      ctxT.lineTo(toX(q.q1), toY(q.q2));
+      ctxT.stroke();
+    }
+  }
+
+  /* current dot */
+  if (history.length) {
+    const cur = history[history.length-1];
+    ctxT.fillStyle = COL.dot;
+    ctxT.beginPath(); ctxT.arc(toX(cur.q1), toY(cur.q2), 4, 0, 2*Math.PI); ctxT.fill();
+  }
+}
+
+/* ── NORMAL MODE PLANE ── */
+function drawMode() {
+  const W = cMode.width, H = cMode.height;
+  ctxM.clearRect(0, 0, W, H);
+  const pad = { l:36, r:14, t:20, b:32 };
+  const pw = W-pad.l-pad.r, ph = H-pad.t-pad.b;
+  const qmax = 1;
+  const cx = pad.l + pw/2, cy = pad.t + ph/2;
+
+  function toX(q) { return cx + q/qmax * pw/2; }
+  function toY(q) { return cy - q/qmax * ph/2; }
+
+  ctxM.strokeStyle = COL.axis; ctxM.lineWidth = 1;
+  ctxM.beginPath(); ctxM.moveTo(pad.l, pad.t); ctxM.lineTo(pad.l, pad.t+ph); ctxM.lineTo(pad.l+pw, pad.t+ph); ctxM.stroke();
+  ctxM.beginPath(); ctxM.moveTo(cx, pad.t); ctxM.lineTo(cx, pad.t+ph); ctxM.stroke();
+  ctxM.beginPath(); ctxM.moveTo(pad.l, cy); ctxM.lineTo(pad.l+pw, cy); ctxM.stroke();
+
+// 1. Increase Tick labels (the numbers: -1, 0, 1)
+  ctxM.fillStyle = COL.text; 
+  ctxM.font = '14px var(--font-sans)'; // Increased from 12px
+  [-1,-0.5,0.5,1].forEach(v => {
+    ctxM.fillText(v.toFixed(1), 2, toY(v)+3);
+    ctxM.fillText(v.toFixed(1), toX(v)-8, pad.t+ph+14);
+  });
+
+  // 2. Increase Axis Titles (u₊ and u₋)
+  ctxM.font = 'bold 18px var(--font-sans)'; // Increased from 11px and made bold
+  ctxM.fillStyle = '#1D9E75'; 
+  
+  // Horizontal Label (u₊) - Adjusted Y from +28 to +32 to give it space
+  ctxM.fillText('u₊', pad.l+pw-14, pad.t+ph+32);
+
+  // Vertical Label (u₋)
+  ctxM.save(); 
+  // Adjusted X from 10 to 12 so it doesn't touch the left edge
+  ctxM.translate(12, pad.t+18); 
+  ctxM.rotate(-Math.PI/2);
+  ctxM.fillText('u₋', 0, 0); 
+  ctxM.restore();
+  
+ 
+
+  const trail = history.slice(-600);
+  if (trail.length > 1) {
+    for (let i = 1; i < trail.length; i++) {
+      const alpha = i / trail.length;
+      const p = trail[i-1], q = trail[i];
+      ctxM.strokeStyle = `rgba(127,119,221,${alpha*0.85})`;
+      ctxM.lineWidth = 1.4;
+      ctxM.beginPath();
+      ctxM.moveTo(toX(p.up), toY(p.um));
+      ctxM.lineTo(toX(q.up), toY(q.um));
+      ctxM.stroke();
+    }
+  }
+
+  if (history.length) {
+    const cur = history[history.length-1];
+    ctxM.fillStyle = COL.dot;
+    ctxM.beginPath(); ctxM.arc(toX(cur.Qp), toY(cur.Qm), 4, 0, 2*Math.PI); ctxM.fill();
+  }
+}
+
+let t = 0;
+
+function step(ts) {
+  if (!running) { requestAnimationFrame(step); return; }
+  if (lastT === null) lastT = ts;
+  let dt = Math.min((ts - lastT)/1000, 0.05);
+  lastT = ts;
+
+  getK();
+  const sub = 10;
+  for (let i = 0; i < sub; i++) state = rk4(state, dt/sub);
+  t += dt;
+  
+  const w1 = Math.sqrt(g/L);
+  const w2 = Math.sqrt(g/L + 2*k/m);
+  const dQp = (state.dq1 + state.dq2) / (Math.SQRT2);
+  const dQm = (-state.dq1 + state.dq2) / (Math.SQRT2);
+  const Qp = (state.q1 + state.q2) / (Math.SQRT2);
+  const Qm = (-state.q1 + state.q2) / (Math.SQRT2);
+  const Ep = 0.5 * dQp * dQp + 0.5 * w1 * w1 * Qp * Qp;
+  const Em = 0.5 * dQm * dQm + 0.5 * w2 * w2 * Qm * Qm;
+  const up = (Ep > 1e-6) ? (Qp * w1) / Math.sqrt(2 * Ep) : 0;
+  const um = (Em > 1e-6) ? (Qm * w2) / Math.sqrt(2 * Em) : 0;
+  history.push({ t, q1: state.q1, q2: state.q2, up, um });
+  if (history.length > 8000) history.splice(0, 500);
+
+  drawPendula(); drawPhase(); drawMode();
+  requestAnimationFrame(step);
+}
+
+function restart() {
+  getK(); state = getIC(); history = []; t = 0; lastT = null;
+}
+
+document.getElementById('restartBtn').addEventListener('click', () => {
+  restart(); running = true; document.getElementById('pauseBtn').textContent = 'Pause';
+});
+document.getElementById('pauseBtn').addEventListener('click', () => {
+  running = !running;
+  document.getElementById('pauseBtn').textContent = running ? 'Pause' : 'Resume';
+  if (running) lastT = null;
+});
+document.getElementById('mode1Btn').addEventListener('click', () => {
+  const a = 0.5;
+  ['q1','q2'].forEach(id => { document.getElementById(id).value = a; document.getElementById(id+'v').textContent = a.toFixed(2); });
+  ['dq1','dq2'].forEach(id => { document.getElementById(id).value = 0; document.getElementById(id+'v').textContent = '0.00'; });
+  restart(); running = true; document.getElementById('pauseBtn').textContent = 'Pause';
+});
+document.getElementById('mode2Btn').addEventListener('click', () => {
+  document.getElementById('q1').value = 0.5;  document.getElementById('q1v').textContent = '0.50';
+  document.getElementById('q2').value = -0.5; document.getElementById('q2v').textContent = '-0.50';
+  ['dq1','dq2'].forEach(id => { document.getElementById(id).value = 0; document.getElementById(id+'v').textContent = '0.00'; });
+  restart(); running = true; document.getElementById('pauseBtn').textContent = 'Pause';
+});
+
+function bindSlider(id, outId, fmt) {
+  document.getElementById(id).addEventListener('input', function() {
+    document.getElementById(outId).textContent = fmt(parseFloat(this.value));
+  });
+}
+bindSlider('q1',  'q1v',  v => v.toFixed(2));
+bindSlider('q2',  'q2v',  v => v.toFixed(2));
+bindSlider('dq1', 'dq1v', v => v.toFixed(2));
+bindSlider('dq2', 'dq2v', v => v.toFixed(2));
+bindSlider('kval','kv',   v => v.toFixed(2));
+
+restart();
+requestAnimationFrame(step);
+</script></div>
+<br>
 <hr>
 <div style="text-align: justify; font-size: .75rem"> Vedendo inoltre in te [Eratostene], come ho detto, uno studioso diligente, un eminente filosofo e un estimatore [dell'indagine matematica], ho ritenuto opportuno scrivere per te e spiegare in dettaglio, in questo stesso libro, la particolarità di un certo metodo, grazie al quale ti sarà possibile iniziare a investigare alcuni problemi di matematica per mezzo della meccanica. Sono convinto che questa procedura non sia meno utile per la dimostrazione stessa dei teoremi; infatti, alcune cose mi sono apparse chiare per la prima volta grazie a un metodo meccanico, anche se successivamente hanno dovuto essere dimostrate geometricamente, poiché l’indagine condotta con il suddetto metodo non forniva una dimostrazione vera e propria. Tuttavia, è certamente più facile, una volta acquisita una certa conoscenza preliminare delle questioni grazie a questo metodo, fornirne una dimostrazione, piuttosto che trovarla senza conoscenza precedente alcuna. </div><div style="text-align: right; font-size: .75rem">Archimede, <i>Metodo</i> </div>
 <div style="text-align: justify; font-size: .75rem"> Una possibile spiegazione del fatto che il fisico usi la matematica per formulare le leggi di natura è che sia una persona un po’ irresponsabile. Infatti, quando scopre un rapporto tra due quantità che somiglia a un rapporto ben noto in matematica, il fisico salta subito alla conclusione che il rapporto trovato è quello discusso in matematica, semplicemente perché non ne conosce di simili. Non è nostra intenzione difendere il fisico dall’accusa di essere un irresponsabile. Forse lo è. Tuttavia, è importante segnalare che la formulazione matematica dell’esperienza spesso grossolana del fisico lo conduce, in un gran numero di casi, a una descrizione straordinariamente accurata di una vasta classe di fenomeni. Ciò dimostra che il linguaggio della matematica è esemplare non solo per il fatto di essere l’unico che parliamo, ma anche per il fatto di essere, nel vero senso della parola, il linguaggio corretto. </div><div style="text-align: right; font-size: .75rem">Eugene Wigner, <i>L’irragionevole efficacia della matematica nelle scienze naturali</i> </div>
@@ -1274,7 +1690,12 @@ Fatto con Opus 4.6.
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#esercizi">Esercizi</a></li>
         <li><a href="#prova-desame-passate">Prova d&rsquo;esame passate</a></li>
-        <li><a href="#miscellanea">Miscellanea</a></li>
+        <li><a href="#miscellanea">Miscellanea</a>
+          <ul>
+            <li><a href="#pendolo-di-foucault">Pendolo di Foucault</a></li>
+            <li><a href="#pendoli-accoppiati">Pendoli accoppiati</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
