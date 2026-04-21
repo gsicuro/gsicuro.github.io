@@ -1380,176 +1380,142 @@ function rk4(s, dt) {
   };
 }
 
-/* ── PENDULA PANEL ── */
 function drawPendula() {
   const W = cPend.width, H = cPend.height;
   ctxP.clearRect(0, 0, W, H);
+  const pivX = W/2, pivY = H*0.15;
+  const sc   = H*0.68;
 
-  const pivX = W / 2, pivY = H * 0.15;
-  const sc   = H * 0.68;
+  const b1x = pivX + sc*Math.sin(state.q1), b1y = pivY + sc*Math.cos(state.q1);
+  const b2x = pivX + sc*Math.sin(state.q2), b2y = pivY + sc*Math.cos(state.q2);
 
-  const b1x = pivX + sc * Math.sin(state.q1);
-  const b1y = pivY + sc * Math.cos(state.q1);
-  const b2x = pivX + sc * Math.sin(state.q2);
-  const b2y = pivY + sc * Math.cos(state.q2);
-
-  /* vertical equilibrium guides */
   ctxP.strokeStyle = COL.axis; ctxP.lineWidth = 1; ctxP.setLineDash([4,4]);
-  ctxP.beginPath(); ctxP.moveTo(pivX, pivY); ctxP.lineTo(pivX, pivY + sc*1.08); ctxP.stroke();
+  ctxP.beginPath(); ctxP.moveTo(pivX, pivY); ctxP.lineTo(pivX, pivY+sc*1.08); ctxP.stroke();
   ctxP.setLineDash([]);
 
-  /* spring between bob endpoints */
-  function zigzag(x1, y1, x2, y2, n, amp) {
-    const dx = x2-x1, dy = y2-y1, len = Math.hypot(dx,dy);
-    const nx = -dy/len, ny = dx/len;
-    ctxP.beginPath(); ctxP.moveTo(x1, y1);
-    for (let i = 1; i <= n; i++) {
-      const t = i/(n+1), sign = (i%2===0)?1:-1;
+  function zigzag(x1,y1,x2,y2,n,amp) {
+    const dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy);
+    const nx=-dy/len, ny=dx/len;
+    ctxP.beginPath(); ctxP.moveTo(x1,y1);
+    for (let i=1;i<=n;i++) {
+      const t=i/(n+1), sign=(i%2===0)?1:-1;
       ctxP.lineTo(x1+dx*t+sign*amp*nx, y1+dy*t+sign*amp*ny);
     }
-    ctxP.lineTo(x2, y2); ctxP.stroke();
+    ctxP.lineTo(x2,y2); ctxP.stroke();
   }
   ctxP.strokeStyle = COL.spring; ctxP.lineWidth = 1.5;
-  zigzag(b1x, b1y, b2x, b2y, 12, 5);
+  zigzag(b1x,b1y,b2x,b2y,12,5);
 
-  /* rods & bobs */
-  function drawRod(bx, by, col) {
-    ctxP.strokeStyle = col; ctxP.lineWidth = 2;
-    ctxP.beginPath(); ctxP.moveTo(pivX, pivY); ctxP.lineTo(bx, by); ctxP.stroke();
-    ctxP.fillStyle = col;
-    ctxP.beginPath(); ctxP.arc(bx, by, 7, 0, 2*Math.PI); ctxP.fill();
+  function drawRod(bx,by,col) {
+    ctxP.strokeStyle=col; ctxP.lineWidth=2;
+    ctxP.beginPath(); ctxP.moveTo(pivX,pivY); ctxP.lineTo(bx,by); ctxP.stroke();
+    ctxP.fillStyle=col;
+    ctxP.beginPath(); ctxP.arc(bx,by,7,0,2*Math.PI); ctxP.fill();
   }
-  drawRod(b1x, b1y, COL.q1);
-  drawRod(b2x, b2y, COL.q2);
+  drawRod(b1x,b1y,COL.q1);
+  drawRod(b2x,b2y,COL.q2);
 
-  /* shared pivot */
   ctxP.fillStyle = COL.pivot;
-  ctxP.beginPath(); ctxP.arc(pivX, pivY, 5, 0, 2*Math.PI); ctxP.fill();
+  ctxP.beginPath(); ctxP.arc(pivX,pivY,5,0,2*Math.PI); ctxP.fill();
 
-  /* labels */
-  ctxP.font = '11px var(--font-sans)';
+  ctxP.font = '17px sans-serif';
   ctxP.fillStyle = COL.q1; ctxP.fillText('q₁='+state.q1.toFixed(3), 6, H-8);
   ctxP.fillStyle = COL.q2; ctxP.fillText('q₂='+state.q2.toFixed(3), W/2+4, H-8);
 }
 
-/* ── (q1,q2) PLANE ── */
 function drawPhase() {
-  const W = cTime.width, H = cTime.height;
-  ctxT.clearRect(0, 0, W, H);
-  const pad = { l:36, r:14, t:20, b:32 };
-  const pw = W-pad.l-pad.r, ph = H-pad.t-pad.b;
-  const qmax = 1;
-  const cx = pad.l + pw/2, cy = pad.t + ph/2;
-
-  function toX(q) { return cx + q/qmax * pw/2; }
-  function toY(q) { return cy - q/qmax * ph/2; }
-
-  /* axes */
-  ctxT.strokeStyle = COL.axis; ctxT.lineWidth = 1;
-  ctxT.beginPath(); ctxT.moveTo(pad.l, pad.t); ctxT.lineTo(pad.l, pad.t+ph); ctxT.lineTo(pad.l+pw, pad.t+ph); ctxT.stroke();
-  ctxT.beginPath(); ctxT.moveTo(cx, pad.t); ctxT.lineTo(cx, pad.t+ph); ctxT.stroke();
-  ctxT.beginPath(); ctxT.moveTo(pad.l, cy); ctxT.lineTo(pad.l+pw, cy); ctxT.stroke();
-
-  /* tick labels */
-  ctxT.fillStyle = COL.text; ctxT.font = '12px var(--font-sans)';
-  [-1, -0.5, 0.5, 1].forEach(v => {
-    ctxT.fillText(v.toFixed(1), 2, toY(v)+3);
-    ctxT.fillText(v.toFixed(1), toX(v)-8, pad.t+ph+14);
+  const W=cTime.width, H=cTime.height;
+  ctxT.clearRect(0,0,W,H);
+  const pad={l:36,r:14,t:20,b:32};
+  const pw=W-pad.l-pad.r, ph=H-pad.t-pad.b;
+  const qmax=1.5;
+  const cx=pad.l+pw/2, cy=pad.t+ph/2;
+ 
+  function toX(q){return cx+q/qmax*pw/2;}
+  function toY(q){return cy-q/qmax*ph/2;}
+ 
+  ctxT.strokeStyle=COL.axis; ctxT.lineWidth=1;
+  ctxT.beginPath(); ctxT.moveTo(pad.l,pad.t); ctxT.lineTo(pad.l,pad.t+ph); ctxT.lineTo(pad.l+pw,pad.t+ph); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(cx,pad.t); ctxT.lineTo(cx,pad.t+ph); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(pad.l,cy); ctxT.lineTo(pad.l+pw,cy); ctxT.stroke();
+ 
+  ctxT.fillStyle=COL.text; ctxT.font='13px sans-serif';
+  [-1,-0.5,0.5,1].forEach(v=>{
+    ctxT.fillText(v.toFixed(1),2,toY(v)+3);
+    ctxT.fillText(v.toFixed(1),toX(v)-8,pad.t+ph+14);
   });
-
-  /* axis labels */
-  ctxT.font = '14px var(--font-sans)';
-  ctxT.fillStyle = COL.q1; ctxT.fillText('q₁', pad.l+pw-14, pad.t+ph+28);
-  ctxT.save(); ctxT.translate(10, pad.t+14); ctxT.rotate(-Math.PI/2);
-  ctxT.fillStyle = COL.q2; ctxT.fillText('q₂', 0, 0); ctxT.restore();
-
-  /* normal mode diagonals (faint guides) */
-  ctxT.strokeStyle = isDark ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.07)';
-  ctxT.lineWidth = 1; ctxT.setLineDash([4,4]);
-  ctxT.beginPath(); ctxT.moveTo(toX(-qmax), toY(-qmax)); ctxT.lineTo(toX(qmax), toY(qmax)); ctxT.stroke();
-  ctxT.beginPath(); ctxT.moveTo(toX(-qmax), toY(qmax));  ctxT.lineTo(toX(qmax), toY(-qmax)); ctxT.stroke();
+ 
+  ctxT.font='17px sans-serif';
+  ctxT.fillStyle=COL.q1; ctxT.fillText('q₁',pad.l+pw-14,pad.t+ph+28);
+  ctxT.save(); ctxT.translate(10,pad.t+14); ctxT.rotate(-Math.PI/2);
+  ctxT.fillStyle=COL.q2; ctxT.fillText('q₂',0,0); ctxT.restore();
+ 
+  ctxT.strokeStyle=isDark?'rgba(255,255,255,0.07)':'rgba(0,0,0,0.07)';
+  ctxT.lineWidth=1; ctxT.setLineDash([4,4]);
+  ctxT.beginPath(); ctxT.moveTo(toX(-qmax),toY(-qmax)); ctxT.lineTo(toX(qmax),toY(qmax)); ctxT.stroke();
+  ctxT.beginPath(); ctxT.moveTo(toX(-qmax),toY(qmax));  ctxT.lineTo(toX(qmax),toY(-qmax)); ctxT.stroke();
   ctxT.setLineDash([]);
-
-  /* trail */
-  const trail = history.slice(-600);
-  if (trail.length > 1) {
-    for (let i = 1; i < trail.length; i++) {
-      const alpha = i / trail.length;
-      const p = trail[i-1], q = trail[i];
-      ctxT.strokeStyle = `rgba(127,119,221,${alpha*0.85})`;
-      ctxT.lineWidth = 1.4;
-      ctxT.beginPath();
-      ctxT.moveTo(toX(p.q1), toY(p.q2));
-      ctxT.lineTo(toX(q.q1), toY(q.q2));
-      ctxT.stroke();
+ 
+  const trail=history.slice(-600);
+  if (trail.length>1) {
+    for (let i=1;i<trail.length;i++) {
+      const alpha=i/trail.length;
+      const p=trail[i-1],q=trail[i];
+      ctxT.strokeStyle=`rgba(127,119,221,${alpha*0.85})`;
+      ctxT.lineWidth=1.4;
+      ctxT.beginPath(); ctxT.moveTo(toX(p.q1),toY(p.q2)); ctxT.lineTo(toX(q.q1),toY(q.q2)); ctxT.stroke();
     }
   }
-
-  /* current dot */
+ 
   if (history.length) {
-    const cur = history[history.length-1];
-    ctxT.fillStyle = COL.dot;
-    ctxT.beginPath(); ctxT.arc(toX(cur.q1), toY(cur.q2), 4, 0, 2*Math.PI); ctxT.fill();
+    const cur=history[history.length-1];
+    ctxT.fillStyle=COL.dot;
+    ctxT.beginPath(); ctxT.arc(toX(cur.q1),toY(cur.q2),4,0,2*Math.PI); ctxT.fill();
   }
 }
 
-/* ── NORMAL MODE PLANE ── */
 function drawMode() {
-  const W = cMode.width, H = cMode.height;
-  ctxM.clearRect(0, 0, W, H);
-  const pad = { l:36, r:14, t:20, b:32 };
-  const pw = W-pad.l-pad.r, ph = H-pad.t-pad.b;
-  const qmax = 1;
-  const cx = pad.l + pw/2, cy = pad.t + ph/2;
-
-  function toX(q) { return cx + q/qmax * pw/2; }
-  function toY(q) { return cy - q/qmax * ph/2; }
-
-  ctxM.strokeStyle = COL.axis; ctxM.lineWidth = 1;
-  ctxM.beginPath(); ctxM.moveTo(pad.l, pad.t); ctxM.lineTo(pad.l, pad.t+ph); ctxM.lineTo(pad.l+pw, pad.t+ph); ctxM.stroke();
-  ctxM.beginPath(); ctxM.moveTo(cx, pad.t); ctxM.lineTo(cx, pad.t+ph); ctxM.stroke();
-  ctxM.beginPath(); ctxM.moveTo(pad.l, cy); ctxM.lineTo(pad.l+pw, cy); ctxM.stroke();
-
-// 1. Increase Tick labels (the numbers: -1, 0, 1)
-  ctxM.fillStyle = COL.text; 
-  ctxM.font = '14px var(--font-sans)'; // Increased from 12px
-  [-1,-0.5,0.5,1].forEach(v => {
-    ctxM.fillText(v.toFixed(1), 2, toY(v)+3);
-    ctxM.fillText(v.toFixed(1), toX(v)-8, pad.t+ph+14);
-  });
-
-  // 2. Increase Axis Titles
-  ctxM.font = 'bold 18px var(--font-sans)'; // Increased from 11px and made bold
-  ctxM.fillStyle = '#1D9E75'; 
-    ctxM.fillText('u₁', pad.l+pw-14, pad.t+ph+32);
-
-  ctxM.save(); 
-  // Adjusted X from 10 to 12 so it doesn't touch the left edge
-  ctxM.translate(12, pad.t+18); 
-  ctxM.rotate(-Math.PI/2);
-  ctxM.fillText('u₂', 0, 0); 
-  ctxM.restore();
-  
+  const W=cMode.width, H=cMode.height;
+  ctxM.clearRect(0,0,W,H);
+  const pad={l:36,r:14,t:20,b:32};
+  const pw=W-pad.l-pad.r, ph=H-pad.t-pad.b;
+  const qmax=1.1;
+  const cx=pad.l+pw/2, cy=pad.t+ph/2;
  
-
-  const trail = history.slice(-600);
-  if (trail.length > 1) {
-    for (let i = 1; i < trail.length; i++) {
-      const alpha = i / trail.length;
-      const p = trail[i-1], q = trail[i];
-      ctxM.strokeStyle = `rgba(127,119,221,${alpha*0.85})`;
-      ctxM.lineWidth = 1.4;
-      ctxM.beginPath();
-      ctxM.moveTo(toX(p.up), toY(p.um));
-      ctxM.lineTo(toX(q.up), toY(q.um));
-      ctxM.stroke();
+  function toX(q){return cx+q/qmax*pw/2;}
+  function toY(q){return cy-q/qmax*ph/2;}
+ 
+  ctxM.strokeStyle=COL.axis; ctxM.lineWidth=1;
+  ctxM.beginPath(); ctxM.moveTo(pad.l,pad.t); ctxM.lineTo(pad.l,pad.t+ph); ctxM.lineTo(pad.l+pw,pad.t+ph); ctxM.stroke();
+  ctxM.beginPath(); ctxM.moveTo(cx,pad.t); ctxM.lineTo(cx,pad.t+ph); ctxM.stroke();
+  ctxM.beginPath(); ctxM.moveTo(pad.l,cy); ctxM.lineTo(pad.l+pw,cy); ctxM.stroke();
+ 
+  ctxM.fillStyle=COL.text; ctxM.font='13px sans-serif';
+  [-1,-0.5,0.5,1].forEach(v=>{
+    ctxM.fillText(v.toFixed(1),2,toY(v)+3);
+    ctxM.fillText(v.toFixed(1),toX(v)-8,pad.t+ph+14);
+  });
+ 
+  ctxM.font='17px sans-serif';
+  ctxM.fillStyle='#1D9E75'; ctxM.fillText('u₁',pad.l+pw-14,pad.t+ph+28);
+  ctxM.save(); ctxM.translate(10,pad.t+18); ctxM.rotate(-Math.PI/2);
+  ctxM.fillStyle='#D85A30'; ctxM.fillText('u₂',0,0); ctxM.restore();
+ 
+  const trail=history.slice(-600);
+  if (trail.length>1) {
+    for (let i=1;i<trail.length;i++) {
+      const alpha=i/trail.length;
+      const p=trail[i-1],q=trail[i];
+      ctxM.strokeStyle=`rgba(127,119,221,${alpha*0.85})`;
+      ctxM.lineWidth=1.4;
+      ctxM.beginPath(); ctxM.moveTo(toX(p.up),toY(p.um)); ctxM.lineTo(toX(q.up),toY(q.um)); ctxM.stroke();
     }
   }
-
+ 
   if (history.length) {
-    const cur = history[history.length-1];
-    ctxM.fillStyle = COL.dot;
-    ctxM.beginPath(); ctxM.arc(toX(cur.Qp), toY(cur.Qm), 4, 0, 2*Math.PI); ctxM.fill();
+    const cur=history[history.length-1];
+    ctxM.fillStyle=COL.dot;
+    ctxM.beginPath(); ctxM.arc(toX(cur.up),toY(cur.um),4,0,2*Math.PI); ctxM.fill();
   }
 }
 
