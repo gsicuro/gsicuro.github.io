@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.5177b6c3f27956e9ed16028b33ea499ee9b50a28373cf1260b7f4f359c6118d3.js" integrity="sha256-UXe2w/J5VuntFgKLM&#43;pJnum1Cig3PPEmC39PNZxhGNM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.34b3ca892345b8d44bce09cad36b4f2409a5dc6d58eb0674707d307b178e02c0.js" integrity="sha256-NLPKiSNFuNRLzgnK02tPJAml3G1Y6wZ0cH0wexeOAsA=" crossorigin="anonymous"></script>
 
   
     
@@ -716,6 +716,44 @@ Editori Riuniti University Press, 2010.</li>
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     border: 1px solid #e8e8e1;
   }
+  
+  #fp-widget .fp-scene-wrap {
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+  height: 380px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+#fp-widget .fp-scene-wrap canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#fp-widget #fp-3d-trail {
+  background: #ffffff;
+  border: 1px solid #ddd;
+}
+
+#fp-widget #fp-3d-dot {
+  background: transparent;
+  border: none;
+}
+
+#fp-widget .fp-view-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 2;
+}
 
   #fp-widget h2 { 
     font-size: 22px; 
@@ -729,7 +767,6 @@ Editori Riuniti University Press, 2010.</li>
     font-size: 14px; 
     color: #777; 
     margin-bottom: 24px; 
-    font-style: italic;
   }
 
   #fp-widget .fp-section-label {
@@ -919,34 +956,34 @@ Editori Riuniti University Press, 2010.</li>
 }
 </style>
 <div id="fp-widget">
-  <p class="fp-subtitle">Percorso apparente nel riferimento di un pianeta di raggio uguale a quello terrestre.</p>
+<p class="fp-subtitle">Percorso apparente nel riferimento di un pianeta di raggio uguale a quello terrestre.</p>
   <p class="fp-section-label">Pendolo</p>
   <div class="fp-controls">
     <div class="fp-group">
       <label>Latitudine (°)</label>
       <div class="fp-row">
-        <input type="range" id="fp-lat" min="-90" max="90" step="1" value="45">
+<input type="range" id="fp-lat"   min="-90" max="90"  step="1"   value="90">
         <span class="fp-val" id="fp-latVal">45°N</span>
       </div>
     </div>
     <div class="fp-group">
       <label>Lunghezza (m)</label>
       <div class="fp-row">
-        <input type="range" id="fp-len" min="1" max="100" step="1" value="20">
+<input type="range" id="fp-len"   min="1"   max="100" step="1"   value="10">
         <span class="fp-val" id="fp-lenVal">20 m</span>
       </div>
     </div>
     <div class="fp-group">
       <label>Ampiezza (m)</label>
       <div class="fp-row">
-        <input type="range" id="fp-amp" min="0.1" max="3" step="0.1" value="1">
+<input type="range" id="fp-amp"   min="0.1" max="3"   step="0.1" value="3">
         <span class="fp-val" id="fp-ampVal">1.0 m</span>
       </div>
     </div>
     <div class="fp-group">
       <label>Durata dell'osservazione (ore)</label>
       <div class="fp-row">
-        <input type="range" id="fp-dur" min="1" max="48" step="1" value="12">
+<input type="range" id="fp-dur"   min="1"   max="48"  step="1"   value="4">
         <span class="fp-val" id="fp-durVal">12 h</span>
       </div>
     </div>
@@ -956,14 +993,14 @@ Editori Riuniti University Press, 2010.</li>
     <div class="fp-group">
       <label>Periodo di rotazione (ore)</label>
       <div class="fp-row">
-        <input type="range" id="fp-rot" min="1" max="200" step="1" value="24">
+<input type="range" id="fp-rot"   min="1"   max="200" step="1"   value="4">
         <span class="fp-val" id="fp-rotVal">24 h</span>
       </div>
     </div>
     <div class="fp-group">
       <label>Accelerazione di gravità (m/s²)</label>
       <div class="fp-row">
-        <input type="range" id="fp-grav" min="0.5" max="30" step="0.1" value="9.8">
+<input type="range" id="fp-grav"  min="0.01" max="10"  step="0.1" value="0.01">
         <span class="fp-val" id="fp-gravVal">9.8 m/s²</span>
       </div>
     </div>
@@ -973,7 +1010,7 @@ Editori Riuniti University Press, 2010.</li>
     <div class="fp-group">
       <label>Velocità della simulazione</label>
       <div class="fp-row">
-        <input type="range" id="fp-speed" min="1" max="500" step="1" value="1">
+<input type="range" id="fp-speed" min="1"   max="500" step="1"   value="20">
         <span class="fp-val" id="fp-speedVal">1×</span>
       </div>
     </div>
@@ -983,6 +1020,11 @@ Editori Riuniti University Press, 2010.</li>
     <div>Foucault period: <span id="fp-infoF">—</span></div>
     <div>Precession rate: <span id="fp-infoOmega">—</span></div>
   </div>
+<div class="fp-scene-wrap" id="fp-scene-wrap">
+  <canvas id="fp-3d-trail" width="640" height="380"></canvas>
+  <canvas id="fp-3d-dot" width="640" height="380"></canvas>
+  <span class="fp-view-label">Vista 3D (non in scala)</span>
+</div>
   <div class="fp-canvas-wrap" id="fp-wrap">
     <canvas id="fp-trail" width="640" height="640"></canvas>
     <canvas id="fp-dot"   width="640" height="640"></canvas>
@@ -1001,15 +1043,24 @@ Fatto con Opus 4.6.
 <script>
 (function () {
   const SIZE = 640;
-  const trailCanvas = document.getElementById('fp-trail');
-  const dotCanvas   = document.getElementById('fp-dot');
+  const SCENE_H = 380;
+
+  const sceneTrailCanvas = document.getElementById('fp-3d-trail');
+  const sceneDotCanvas   = document.getElementById('fp-3d-dot');
+  const trailCanvas      = document.getElementById('fp-trail');
+  const dotCanvas        = document.getElementById('fp-dot');
+
+  const sc = sceneTrailCanvas.getContext('2d');
+  const sd = sceneDotCanvas.getContext('2d');
   const tc = trailCanvas.getContext('2d');
   const dc = dotCanvas.getContext('2d');
 
-  /* fix wrapper height so absolute children don't collapse it */
+  document.getElementById('fp-scene-wrap').style.height = SCENE_H + 'px';
   document.getElementById('fp-wrap').style.height = SIZE + 'px';
 
   const W = SIZE, H = SIZE, cx = W / 2, cy = H / 2;
+  const SW = SIZE, SH = SCENE_H, scx = SW / 2;
+
   let animId = null, isAnimating = false;
 
   /* ── params ── */
@@ -1021,70 +1072,353 @@ Fatto con Opus 4.6.
     const rotH  = parseFloat(document.getElementById('fp-rot').value);
     const grav  = parseFloat(document.getElementById('fp-grav').value);
     const speed = parseFloat(document.getElementById('fp-speed').value);
-    const RT = 6372507
-    const omega = (2 * Math.PI / (rotH * 3600)) 
+
+    const RT = 6372507;
+    const omega = 2 * Math.PI / (rotH * 3600);
     const Omalpha = omega * Math.sin(lat);
-    const hatg = grav - omega* omega * Math.cos(lat) * Math.cos(lat) * RT
-    const hatomega = Math.sqrt(hatg/L+Omalpha*Omalpha);
-    const q0 = omega * L * RT * Math.sin(2*lat)/( 2 * hatg)
-    const scale   = (W / 2 - 40) / (A * 1.15);
+    const hatg = grav - omega * omega * Math.cos(lat) * Math.cos(lat) * RT;
+    const hatomega = Math.sqrt(hatg / L + Omalpha * Omalpha);
+
+    const scale = (W / 2 - 40) / (A * 1.15);
+
     return { lat, L, A, dur, hatomega, Omalpha, speed, scale };
   }
 
   function updateInfo() {
     const { hatomega, Omalpha } = getParams();
+
     const T_p = 2 * Math.PI / hatomega;
     const T_f = Math.abs(Omalpha) > 1e-10 ? Math.PI / Math.abs(Omalpha) / 3600 : Infinity;
-    document.getElementById('fp-infoT').textContent     = T_p.toFixed(2) + ' s';
-    document.getElementById('fp-infoF').textContent     = isFinite(T_f) ? T_f.toFixed(2) + ' h' : '∞ (equator)';
-    document.getElementById('fp-infoOmega').textContent = (Omalpha * 180 / Math.PI * 3600).toFixed(4) + ' °/h';
+
+    document.getElementById('fp-infoT').textContent =
+      isFinite(T_p) ? T_p.toFixed(2) + ' s' : '—';
+
+    document.getElementById('fp-infoF').textContent =
+      isFinite(T_f) ? T_f.toFixed(2) + ' h' : '∞ (equator)';
+
+    document.getElementById('fp-infoOmega').textContent =
+      isFinite(Omalpha) ? (Omalpha * 180 / Math.PI * 3600).toFixed(4) + ' °/h' : '—';
   }
 
-  /* ── analytic position ── */
+  /* ── analytic 2D position: used by BOTH the 2D plot and the 3D projection ── */
   function pos(t, A, hatomega, Omalpha) {
-    //const r = A * Math.cos(hatomega * t);
-    //return { x: r * Math.cos(Omalpha * t), y: -r * Math.sin(Omalpha * t) };
-    return { x: A * Math.cos(Omalpha * t) * Math.cos(hatomega * t) - A* Omalpha * Math.sin(Omalpha * t) * Math.sin(hatomega * t)/hatomega, y: A * Math.sin(Omalpha * t) * Math.cos(hatomega * t) + A* Omalpha * Math.cos(Omalpha * t) * Math.sin(hatomega * t)/hatomega };
+    return {
+      x:
+        A * Math.cos(Omalpha * t) * Math.cos(hatomega * t)
+        - A * Omalpha * Math.sin(Omalpha * t) * Math.sin(hatomega * t) / hatomega,
+
+      y:
+        A * Math.sin(Omalpha * t) * Math.cos(hatomega * t)
+        + A * Omalpha * Math.cos(Omalpha * t) * Math.sin(hatomega * t) / hatomega
+    };
   }
+
   function toCanvas(x, y, scale) {
     return { px: cx + x * scale, py: cy + y * scale };
   }
 
-  /* ── draw static background onto trail canvas ── */
-  function drawBackground() {
-    const { A, scale } = getParams();
+  /* ─────────────────────────────────────────────
+     3D scene helpers
+
+     La proiezione a terra usa esattamente x,y = pos(...).
+     La coordinata z è ricostruita come pendolo sospeso sopra il piano.
+     ───────────────────────────────────────────── */
+
+  function getSceneMetrics(params = getParams()) {
+    const A = Math.max(params.A, 0.1);
+
+    /*
+      Lvis evita configurazioni geometricamente impossibili quando A > L.
+      La dinamica resta quella scelta dall'utente: cambia solo la resa grafica
+      della corda nella finestra 3D.
+    */
+    const Lvis = Math.max(params.L, params.A * 1.08);
+
+    const xyScale = Math.min(240, (SW / 2 - 70) / (A * 1.3));
+    const zScale  = Math.min(120, (SH - 105) / Lvis);
+
+    return {
+      xyScale,
+      zScale,
+      Lvis,
+      groundY: SH * 0.78,
+      floorR: Math.max(params.A * 1.22, 0.45)
+    };
+  }
+
+  function scenePoint(x, y, z, m) {
+    const az = -Math.PI / 4;
+
+    const u = x * Math.cos(az) - y * Math.sin(az);
+    const v = x * Math.sin(az) + y * Math.cos(az);
+
+    return {
+      px: scx + u * m.xyScale,
+      py: m.groundY + v * m.xyScale * 0.34 - z * m.zScale
+    };
+  }
+
+  function bob3D(t, params, metrics) {
+    const p = pos(t, params.A, params.hatomega, params.Omalpha);
+
+    const Lvis = metrics.Lvis;
+    const r2 = p.x * p.x + p.y * p.y;
+
+    const z = Lvis - Math.sqrt(Math.max(0, Lvis * Lvis - r2));
+
+    return {
+      x: p.x,
+      y: p.y,
+      z
+    };
+  }
+
+  function drawSceneCircle(radius, metrics, ctx) {
+    ctx.beginPath();
+
+    for (let i = 0; i <= 160; i++) {
+      const a = 2 * Math.PI * i / 160;
+      const p = scenePoint(
+        radius * Math.cos(a),
+        radius * Math.sin(a),
+        0,
+        metrics
+      );
+
+      if (i === 0) ctx.moveTo(p.px, p.py);
+      else ctx.lineTo(p.px, p.py);
+    }
+
+    ctx.stroke();
+  }
+
+  function sceneLine(ctx, a, b) {
+    ctx.beginPath();
+    ctx.moveTo(a.px, a.py);
+    ctx.lineTo(b.px, b.py);
+    ctx.stroke();
+  }
+
+  function drawSceneBase(params = getParams()) {
+    const m = getSceneMetrics(params);
+
+    sc.clearRect(0, 0, SW, SH);
+
+    sc.fillStyle = '#f6eee3';
+    sc.beginPath();
+    sc.roundRect(0, 0, SW, SH, 12);
+    sc.fill();
+
+    const R = m.floorR;
+
+    /* piano di oscillazione */
+    sc.save();
+    sc.strokeStyle = '#d7d1c7';
+    sc.lineWidth = 0.7;
+
+    for (let i = -4; i <= 4; i++) {
+      const v = R * i / 4;
+
+      sceneLine(
+        sc,
+        scenePoint(-R, v, 0, m),
+        scenePoint( R, v, 0, m)
+      );
+
+      sceneLine(
+        sc,
+        scenePoint(v, -R, 0, m),
+        scenePoint(v,  R, 0, m)
+      );
+    }
+
+    sc.restore();
+
+    /* cerchi sul piano: stessa metrica del diagramma 2D, ma proiettata */
+    sc.save();
+    sc.strokeStyle = '#1e1e3a';
+    sc.lineWidth = 0.55;
+
+    for (let r = 1; r <= 4; r++) {
+      drawSceneCircle((params.A / 4) * r, m, sc);
+    }
+
+    sc.setLineDash([4, 4]);
+    sc.strokeStyle = '#2a2a4a';
+
+    sceneLine(
+      sc,
+      scenePoint(-R, 0, 0, m),
+      scenePoint( R, 0, 0, m)
+    );
+
+    sceneLine(
+      sc,
+      scenePoint(0, -R, 0, m),
+      scenePoint(0,  R, 0, m)
+    );
+
+    sc.setLineDash([2, 6]);
+    drawSceneCircle(params.A, m, sc);
+    sc.restore();
+
+    /* verticale del punto di sospensione */
+    sc.save();
+    sc.strokeStyle = '#b6afa5';
+    sc.lineWidth = 0.8;
+    sc.setLineDash([4, 6]);
+
+    sceneLine(
+      sc,
+      scenePoint(0, 0, 0, m),
+      scenePoint(0, 0, m.Lvis, m)
+    );
+
+    sc.restore();
+
+    /* origine sul piano */
+    const o = scenePoint(0, 0, 0, m);
+    sc.fillStyle = '#4a4a7a';
+    sc.beginPath();
+    sc.arc(o.px, o.py, 3, 0, 2 * Math.PI);
+    sc.fill();
+
+    /* labels */
+    sc.fillStyle = '#555';
+    sc.font = '11px sans-serif';
+
+    const lx = scenePoint(R * 1.05, 0, 0, m);
+    const ly = scenePoint(0, R * 1.05, 0, m);
+
+    sc.fillText('x', lx.px + 4, lx.py);
+    sc.fillText('y', ly.px + 4, ly.py);
+  }
+
+  function appendSceneProjectionSegment(x0, y0, x1, y1, metrics = getSceneMetrics()) {
+    const p0 = scenePoint(x0, y0, 0, metrics);
+    const p1 = scenePoint(x1, y1, 0, metrics);
+
+    sc.save();
+    sc.strokeStyle = '#ba732d';
+    sc.lineWidth = 1.2;
+    sc.lineJoin = 'round';
+    sc.beginPath();
+    sc.moveTo(p0.px, p0.py);
+    sc.lineTo(p1.px, p1.py);
+    sc.stroke();
+    sc.restore();
+  }
+
+  function clearSceneOverlay() {
+    sd.clearRect(0, 0, SW, SH);
+  }
+
+  function drawScenePendulum(t, params = getParams(), metrics = getSceneMetrics(params)) {
+    const b = bob3D(t, params, metrics);
+
+    const pivot = scenePoint(0, 0, metrics.Lvis, metrics);
+    const bob   = scenePoint(b.x, b.y, b.z, metrics);
+    const foot  = scenePoint(b.x, b.y, 0, metrics);
+
+    clearSceneOverlay();
+
+    /* linea di proiezione verticale */
+    sd.save();
+    sd.strokeStyle = 'rgba(70,70,70,0.35)';
+    sd.lineWidth = 1;
+    sd.setLineDash([4, 5]);
+    sd.beginPath();
+    sd.moveTo(bob.px, bob.py);
+    sd.lineTo(foot.px, foot.py);
+    sd.stroke();
+    sd.restore();
+
+    /* ombra/proiezione istantanea sul piano */
+    sd.save();
+    sd.fillStyle = 'rgba(50,50,50,0.20)';
+    sd.beginPath();
+    sd.ellipse(foot.px, foot.py, 8, 3, 0, 0, 2 * Math.PI);
+    sd.fill();
+    sd.restore();
+
+    /* piccola barra di sospensione */
+    const support = Math.max(params.A * 0.2, 0.15);
+    const s0 = scenePoint(-support, 0, metrics.Lvis, metrics);
+    const s1 = scenePoint( support, 0, metrics.Lvis, metrics);
+
+    sd.save();
+    sd.strokeStyle = '#333';
+    sd.lineWidth = 1.4;
+    sd.beginPath();
+    sd.moveTo(s0.px, s0.py);
+    sd.lineTo(s1.px, s1.py);
+    sd.stroke();
+
+    /* filo */
+    sd.strokeStyle = '#333';
+    sd.lineWidth = 1.2;
+    sd.beginPath();
+    sd.moveTo(pivot.px, pivot.py);
+    sd.lineTo(bob.px, bob.py);
+    sd.stroke();
+
+    /* punto di sospensione */
+    sd.fillStyle = '#333';
+    sd.beginPath();
+    sd.arc(pivot.px, pivot.py, 3, 0, 2 * Math.PI);
+    sd.fill();
+
+    /* massa */
+    sd.fillStyle = '#bf6200';
+    sd.shadowColor = '#a0aaff';
+    sd.shadowBlur = 12;
+    sd.beginPath();
+    sd.arc(bob.px, bob.py, 7, 0, 2 * Math.PI);
+    sd.fill();
+
+    sd.restore();
+  }
+
+  /* ── draw static background onto 2D trail canvas ── */
+  function drawBackground(params = getParams()) {
+    const { A, scale } = params;
+
     tc.clearRect(0, 0, W, H);
 
-    /* fill */
     tc.fillStyle = '#f6eee3';
     tc.beginPath();
     tc.roundRect(0, 0, W, H, 12);
     tc.fill();
 
-    /* rings */
     tc.save();
     tc.strokeStyle = '#1e1e3a';
     tc.lineWidth = 0.5;
+
     for (let r = 1; r <= 4; r++) {
       tc.beginPath();
       tc.arc(cx, cy, (A / 4) * r * scale, 0, 2 * Math.PI);
       tc.stroke();
     }
+
     tc.restore();
 
-    /* axes */
     tc.save();
     tc.strokeStyle = '#2a2a4a';
     tc.lineWidth = 0.5;
     tc.setLineDash([4, 4]);
+
     tc.beginPath();
-    tc.moveTo(0, cy); tc.lineTo(W, cy);
-    tc.moveTo(cx, 0); tc.lineTo(cx, H);
+    tc.moveTo(0, cy);
+    tc.lineTo(W, cy);
+    tc.moveTo(cx, 0);
+    tc.lineTo(cx, H);
     tc.stroke();
+
     tc.setLineDash([2, 6]);
     tc.beginPath();
     tc.arc(cx, cy, A * scale, 0, 2 * Math.PI);
     tc.stroke();
+
     tc.restore();
 
     tc.fillStyle = '#555';
@@ -1092,18 +1426,16 @@ Fatto con Opus 4.6.
     tc.fillText('x', W - 14, cy - 6);
     tc.fillText('y', cx + 6, 12);
 
-    /* origin dot */
     tc.fillStyle = '#4a4a7a';
     tc.beginPath();
     tc.arc(cx, cy, 3, 0, 2 * Math.PI);
     tc.fill();
   }
 
-  /* ── draw a segment from (x0,y0) to (x1,y1) onto trail canvas ── */
-  function appendSegment(x0, y0, x1, y1) {
-    const { scale } = getParams();
+  function appendSegment(x0, y0, x1, y1, scale = getParams().scale) {
     const p0 = toCanvas(x0, y0, scale);
     const p1 = toCanvas(x1, y1, scale);
+
     tc.save();
     tc.strokeStyle = '#ba732d';
     tc.lineWidth = 1.2;
@@ -1115,11 +1447,11 @@ Fatto con Opus 4.6.
     tc.restore();
   }
 
-  /* ── draw/clear the dot on the overlay canvas ── */
-  function drawDot(x, y) {
-    const { scale } = getParams();
+  function drawDot(x, y, scale = getParams().scale) {
     dc.clearRect(0, 0, W, H);
+
     const p = toCanvas(x, y, scale);
+
     dc.save();
     dc.fillStyle = '#bf6200';
     dc.shadowColor = '#a0aaff';
@@ -1130,31 +1462,70 @@ Fatto con Opus 4.6.
     dc.restore();
   }
 
-  function clearDot() { dc.clearRect(0, 0, W, H); }
+  function clearDot() {
+    dc.clearRect(0, 0, W, H);
+  }
 
-  /* ── helpers ── */
   function setProgress(frac) {
-    document.getElementById('fp-bar').style.width = (Math.min(frac, 1) * 100).toFixed(1) + '%';
-  }
-  function setTimeLabel(t) {
-    document.getElementById('fp-timeLabel').textContent = 't = ' + (t / 3600).toFixed(2) + ' h';
+    document.getElementById('fp-bar').style.width =
+      (Math.min(frac, 1) * 100).toFixed(1) + '%';
   }
 
-  /* ── Draw Full Path (static) ── */
+  function setTimeLabel(t) {
+    document.getElementById('fp-timeLabel').textContent =
+      't = ' + (t / 3600).toFixed(2) + ' h';
+  }
+
+  function resetView() {
+    stopAnim();
+
+    const params = getParams();
+    const sceneM = getSceneMetrics(params);
+    const p0 = pos(0, params.A, params.hatomega, params.Omalpha);
+
+    drawBackground(params);
+    drawSceneBase(params);
+
+    clearDot();
+    clearSceneOverlay();
+
+    drawDot(p0.x, p0.y, params.scale);
+    drawScenePendulum(0, params, sceneM);
+
+    setProgress(0);
+    setTimeLabel(0);
+  }
+
+  /* ── Draw Full Path ── */
   function drawFull() {
     stopAnim();
-    const { A, dur, hatomega, Omalpha } = getParams();
-    drawBackground();
+
+    const params = getParams();
+    const { A, dur, hatomega, Omalpha, scale } = params;
+    const sceneM = getSceneMetrics(params);
+
+    drawBackground(params);
+    drawSceneBase(params);
     clearDot();
+    clearSceneOverlay();
 
     const N = 20000;
     const dt = dur / N;
+
     let prev = pos(0, A, hatomega, Omalpha);
+
     for (let i = 1; i <= N; i++) {
       const cur = pos(i * dt, A, hatomega, Omalpha);
-      appendSegment(prev.x, prev.y, cur.x, cur.y);
+
+      appendSegment(prev.x, prev.y, cur.x, cur.y, scale);
+      appendSceneProjectionSegment(prev.x, prev.y, cur.x, cur.y, sceneM);
+
       prev = cur;
     }
+
+    drawDot(prev.x, prev.y, scale);
+    drawScenePendulum(dur, params, sceneM);
+
     setProgress(1);
     setTimeLabel(dur);
   }
@@ -1162,16 +1533,21 @@ Fatto con Opus 4.6.
   /* ── Animation ── */
   function startAnim() {
     stopAnim();
-    const { A, dur, hatomega, Omalpha, speed } = getParams();
-    drawBackground();
+
+    const params = getParams();
+    const { A, dur, hatomega, Omalpha, speed, scale } = params;
+    const sceneM = getSceneMetrics(params);
+
+    drawBackground(params);
+    drawSceneBase(params);
     clearDot();
+    clearSceneOverlay();
+
     setProgress(0);
     setTimeLabel(0);
 
-    /* We sample the trail at ~60 pts per pendulum period so the line looks smooth,
-       but we only draw NEW segments each frame — no full redraw ever. */
     const T_pend = 2 * Math.PI / hatomega;
-    const trailDt = T_pend / 60; // sim seconds between trail samples
+    const trailDt = T_pend / 60;
 
     let lastSimTime = 0;
     let lastPos = pos(0, A, hatomega, Omalpha);
@@ -1182,30 +1558,35 @@ Fatto con Opus 4.6.
 
     function step(realTs) {
       if (startRealTs === null) startRealTs = realTs;
+
       const simTime = Math.min((realTs - startRealTs) / 1000 * speed, dur);
 
-      /* append only the NEW trail segments since last frame */
       let t = lastSimTime + trailDt;
+
       while (t <= simTime) {
         const cur = pos(t, A, hatomega, Omalpha);
-        appendSegment(lastPos.x, lastPos.y, cur.x, cur.y);
+
+        appendSegment(lastPos.x, lastPos.y, cur.x, cur.y, scale);
+        appendSceneProjectionSegment(lastPos.x, lastPos.y, cur.x, cur.y, sceneM);
+
         lastPos = cur;
         lastSimTime = t;
         t += trailDt;
       }
 
-      /* dot at exact current position */
       const cur = pos(simTime, A, hatomega, Omalpha);
-      drawDot(cur.x, cur.y);
+
+      drawDot(cur.x, cur.y, scale);
+      drawScenePendulum(simTime, params, sceneM);
+
       setProgress(simTime / dur);
       setTimeLabel(simTime);
 
       if (simTime < dur) {
         animId = requestAnimationFrame(step);
       } else {
-        clearDot();
         isAnimating = false;
-        document.getElementById('fp-btnAnimate').textContent = '▶ Animate';
+        document.getElementById('fp-btnAnimate').textContent = '▶ Avvia';
       }
     }
 
@@ -1213,40 +1594,56 @@ Fatto con Opus 4.6.
   }
 
   function stopAnim() {
-    if (animId) { cancelAnimationFrame(animId); animId = null; }
+    if (animId) {
+      cancelAnimationFrame(animId);
+      animId = null;
+    }
+
     isAnimating = false;
-    document.getElementById('fp-btnAnimate').textContent = '▶ Animate';
+    document.getElementById('fp-btnAnimate').textContent = '▶ Avvia';
   }
 
   /* ── labels ── */
   function refreshLabels() {
     const lat = parseFloat(document.getElementById('fp-lat').value);
-    document.getElementById('fp-latVal').textContent   = Math.abs(lat) + '°' + (lat >= 0 ? 'N' : 'S');
-    document.getElementById('fp-lenVal').textContent   = document.getElementById('fp-len').value + ' m';
-    document.getElementById('fp-ampVal').textContent   = parseFloat(document.getElementById('fp-amp').value).toFixed(1) + ' m';
-    document.getElementById('fp-durVal').textContent   = document.getElementById('fp-dur').value + ' h';
-    document.getElementById('fp-rotVal').textContent   = document.getElementById('fp-rot').value + ' h';
-    document.getElementById('fp-gravVal').textContent  = parseFloat(document.getElementById('fp-grav').value).toFixed(1) + ' m/s²';
-    document.getElementById('fp-speedVal').textContent = document.getElementById('fp-speed').value + '×';
+
+    document.getElementById('fp-latVal').textContent =
+      Math.abs(lat) + '°' + (lat >= 0 ? 'N' : 'S');
+
+    document.getElementById('fp-lenVal').textContent =
+      document.getElementById('fp-len').value + ' m';
+
+    document.getElementById('fp-ampVal').textContent =
+      parseFloat(document.getElementById('fp-amp').value).toFixed(1) + ' m';
+
+    document.getElementById('fp-durVal').textContent =
+      document.getElementById('fp-dur').value + ' h';
+
+    document.getElementById('fp-rotVal').textContent =
+      document.getElementById('fp-rot').value + ' h';
+
+    document.getElementById('fp-gravVal').textContent =
+      parseFloat(document.getElementById('fp-grav').value).toFixed(2) + ' m/s²';
+
+    document.getElementById('fp-speedVal').textContent =
+      document.getElementById('fp-speed').value + '×';
   }
 
   /* ── events ── */
   document.getElementById('fp-btnAnimate').addEventListener('click', () => {
-    if (isAnimating) stopAnim(); else startAnim();
+    if (isAnimating) stopAnim();
+    else startAnim();
   });
+
   document.getElementById('fp-btnFull').addEventListener('click', drawFull);
-  document.getElementById('fp-btnClear').addEventListener('click', () => {
-    stopAnim();
-    drawBackground();
-    clearDot();
-    setProgress(0);
-    setTimeLabel(0);
-  });
+
+  document.getElementById('fp-btnClear').addEventListener('click', resetView);
 
   ['fp-lat','fp-len','fp-amp','fp-dur','fp-rot','fp-grav','fp-speed'].forEach(id => {
     document.getElementById(id).addEventListener('input', () => {
       refreshLabels();
       updateInfo();
+      resetView();
     });
   });
 
