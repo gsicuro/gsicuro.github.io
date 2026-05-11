@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.df2ef6ca5f7db4bb96e71eeed31cd8395a753cb8f1acf820555aeea3b7bf1e34.js" integrity="sha256-3y72yl99tLuW5x7u0xzYOVp1PLjxrPggVVruo7e/HjQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.473afdc2d068f9b372869250f09b4efe275a103e130e4dbad1c6646975f86a33.js" integrity="sha256-Rzr9wtBo&#43;bNyhpJQ8JtO/idaED4TDk260cZkaXX4ajM=" crossorigin="anonymous"></script>
 
   
     
@@ -567,7 +567,7 @@ Editori Riuniti University Press, 2010.</li>
 </tr>
 <tr>
 <td style="text-align:left">11-05</td>
-<td style="text-align:left"><em>TBA</em></td>
+<td style="text-align:left">Brachistocrona. Corpo rigido: definizioni fondamentali.</td>
 </tr>
 <tr>
 <td style="text-align:left">12-05</td>
@@ -1752,14 +1752,16 @@ requestAnimationFrame(step);
 
   const G = 9.81;
   const N = 2600;
+  const CIRCLE_OPT_INTEGRATION_N = 120;
   const DISPLAY_SECONDS_FOR_SLOWEST = 8;
   const EPS = 1e-9;
 
-  const COLORS = {
-    line: "#2563eb",
-    parabola: "#d97706",
-    brachistochrone: "#16a34a"
-  };
+	const COLORS = {
+	  line: "#2563eb",
+	  parabola: "#d97706",
+	  circle: "#9333ea",
+	  brachistochrone: "#16a34a"
+	};
 
   let animationId = null;
 
@@ -1846,7 +1848,151 @@ requestAnimationFrame(step);
 
     return pts;
   }
+function makeCircleArcPointsForAlpha(xFinal, alpha, sampleCount) {
+  const sign = xFinal < 0 ? -1 : 1;
+  const absX = Math.abs(xFinal);
 
+  const L = Math.hypot(absX, 1);
+  const R = L / (2 * Math.sin(alpha / 2));
+
+  const chordAngle = Math.atan2(-1, absX);
+  const tangentAngle = chordAngle - alpha / 2;
+
+  const c = Math.cos(tangentAngle);
+  const s = Math.sin(tangentAngle);
+
+  const pts = [];
+
+  for (let i = 0; i <= sampleCount; i++) {
+    const u = alpha * i / sampleCount;
+
+    const su = Math.sin(u);
+    const cu = Math.cos(u);
+
+    pts.push({
+      x: sign * R * (su * c - (1 - cu) * s),
+      y: R * (su * s + (1 - cu) * c)
+    });
+  }
+
+  return pts;
+}
+
+function circleArcTravelTime(absX, alpha) {
+  const L = Math.hypot(absX, 1);
+  const R = L / (2 * Math.sin(alpha / 2));
+
+  const chordAngle = Math.atan2(-1, absX);
+  const tangentAngle = chordAngle - alpha / 2;
+
+  const sinT = Math.sin(tangentAngle);
+  const cosT = Math.cos(tangentAngle);
+
+  if (sinT >= -1e-14) {
+    return Infinity;
+  }
+
+  let sum = 0;
+
+  for (let i = 0; i <= CIRCLE_OPT_INTEGRATION_N; i++) {
+    const q = i / CIRCLE_OPT_INTEGRATION_N;
+
+    let integrand;
+
+    if (i === 0) {
+      integrand = 2 * Math.sqrt(alpha / (-sinT));
+    } else {
+      const u = alpha * q * q;
+      const hOverR = Math.cos(tangentAngle + u) - cosT;
+
+      if (hOverR <= 0) {
+        return Infinity;
+      }
+
+      integrand = 2 * alpha * q / Math.sqrt(hOverR);
+    }
+
+    const weight =
+      i === 0 || i === CIRCLE_OPT_INTEGRATION_N
+        ? 1
+        : i % 2 === 1
+          ? 4
+          : 2;
+
+    sum += weight * integrand;
+  }
+
+  const integral = sum / (3 * CIRCLE_OPT_INTEGRATION_N);
+
+  return Math.sqrt(R / (2 * G)) * integral;
+}
+
+function findMinimumTimeCircleAlpha(absX) {
+  const chordAngle = Math.atan2(-1, absX);
+
+  const lo = 1e-6;
+  const hi = 2 * (Math.PI + chordAngle) - 1e-6;
+
+  if (hi <= lo) {
+    return lo;
+  }
+
+  const samples = 80;
+
+  let bestIndex = 0;
+  let bestTime = Infinity;
+
+  for (let i = 0; i <= samples; i++) {
+    const alpha = lo + (hi - lo) * i / samples;
+    const t = circleArcTravelTime(absX, alpha);
+
+    if (t < bestTime) {
+      bestTime = t;
+      bestIndex = i;
+    }
+  }
+
+  let a = lo + (hi - lo) * Math.max(0, bestIndex - 1) / samples;
+  let b = lo + (hi - lo) * Math.min(samples, bestIndex + 1) / samples;
+
+  const gr = (Math.sqrt(5) - 1) / 2;
+
+  let c = b - gr * (b - a);
+  let d = a + gr * (b - a);
+
+  let fc = circleArcTravelTime(absX, c);
+  let fd = circleArcTravelTime(absX, d);
+
+  for (let i = 0; i < 60; i++) {
+    if (fc < fd) {
+      b = d;
+      d = c;
+      fd = fc;
+      c = b - gr * (b - a);
+      fc = circleArcTravelTime(absX, c);
+    } else {
+      a = c;
+      c = d;
+      fc = fd;
+      d = a + gr * (b - a);
+      fd = circleArcTravelTime(absX, d);
+    }
+  }
+
+  return 0.5 * (a + b);
+}
+
+function makeMinimumTimeCircleArcPoints(xFinal) {
+  const absX = Math.abs(xFinal);
+
+  if (absX < EPS) {
+    return makeVerticalDropPoints();
+  }
+
+  const alpha = findMinimumTimeCircleAlpha(absX);
+
+  return makeCircleArcPointsForAlpha(xFinal, alpha, N);
+}
   function makeBrachistochronePoints(xFinal) {
     const sign = xFinal < 0 ? -1 : 1;
     const absX = Math.abs(xFinal);
@@ -2386,9 +2532,15 @@ const scale = Math.min(
     const linePoints = makeStraightLinePoints(xFinal);
     const parabolaPoints = makeParabolaPoints(xFinal);
     const brachData = makeBrachistochronePoints(xFinal);
+    const circleArcPoints = makeMinimumTimeCircleArcPoints(xFinal);
 
     const line = buildTrajectory("Retta", COLORS.line, linePoints);
     const parabola = buildTrajectory("Parabola", COLORS.parabola, parabolaPoints);
+    const circleArc = buildTrajectory(
+  "Arco ottimale di cerchio",
+  COLORS.circle,
+  circleArcPoints
+);
     const brachistochrone = buildTrajectory(
       "Brachistocrona",
       COLORS.brachistochrone,
@@ -2430,7 +2582,7 @@ const scale = Math.min(
       };
     }
 
-    const trajectories = [line, parabola, brachistochrone];
+const trajectories = [line, parabola, circleArc, brachistochrone];
 
     const bounds = computeBounds(
       trajectories,
