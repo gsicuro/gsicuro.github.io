@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.5a7258b78b1a0a55ff14f7b40bea22454662eee47d739614d81b3b78c62bfdb4.js" integrity="sha256-WnJYt4saClX/FPe0C&#43;oiRUZi7uR9c5YU2Bs7eMYr/bQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.ee3b838b675cce3dc8e88cbc832e0075890f46548bb10f6deb027b9524948973.js" integrity="sha256-7juDi2dczj3I6Iy8gy4AdYkPRlSLsQ9t6wJ7lSSUiXM=" crossorigin="anonymous"></script>
 
   
     
@@ -239,6 +239,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/teaching/old/oldmodules/" class="">Previously taught</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/fmath2/exams/exams/" class="">Exams</a>
   
 
         </li>
@@ -689,6 +702,189 @@ Quando rifletto su ciò che le persone in genere vogliono ottenere da un calcolo
 </tr>
 </tbody>
 </table>
+<style>
+  #exam-results-plot {
+    --erp-ink: #25324a;
+    --erp-muted: #65728a;
+    --erp-grid: #dfe5ef;
+    --erp-point: #315fbd;
+    --erp-active: #d85830;
+    position: relative;
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    padding: clamp(1rem, 3vw, 1.6rem);
+    border: 1px solid #e3e7ee;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 22px rgba(32, 43, 65, .06);
+    box-sizing: border-box;
+  }
+
+  #exam-results-plot * { box-sizing: border-box; }
+  #exam-results-plot h3 { margin: 0; color: var(--erp-ink); font-size: 1.15rem; }
+  #exam-results-plot .erp-intro,
+  #exam-results-plot .erp-note { color: var(--erp-muted); }
+  #exam-results-plot .erp-intro { margin: .25rem 0 .8rem; font-size: .9rem; }
+  #exam-results-plot .erp-note { margin: .6rem 0 0; font-size: .78rem; }
+  #exam-results-plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+  #exam-results-plot .erp-grid { stroke: var(--erp-grid); stroke-width: 1; }
+  #exam-results-plot .erp-axis { stroke: #9aa5b6; stroke-width: 1.3; }
+  #exam-results-plot .erp-tick { fill: var(--erp-muted); font: 13px system-ui, sans-serif; }
+  #exam-results-plot .erp-label { fill: var(--erp-muted); font: 600 14px system-ui, sans-serif; }
+  #exam-results-plot .erp-point {
+    fill: var(--erp-point);
+    stroke: #fff;
+    stroke-width: 3;
+    cursor: pointer;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: opacity .16s ease, transform .16s ease, fill .16s ease;
+  }
+  #exam-results-plot .erp-points.erp-active .erp-point:not(.erp-selected) { opacity: .13; }
+  #exam-results-plot .erp-point.erp-selected {
+    fill: var(--erp-active);
+    transform: scale(1.45);
+  }
+  #exam-results-plot .erp-point:focus-visible { outline: 3px solid #e9b949; outline-offset: 3px; }
+  #exam-results-plot .erp-tooltip {
+    position: absolute;
+    z-index: 2;
+    max-width: 230px;
+    padding: .55rem .7rem;
+    border-radius: 7px;
+    color: #fff;
+    background: #25324a;
+    box-shadow: 0 7px 20px rgba(20, 30, 50, .22);
+    font: 13px/1.4 system-ui, sans-serif;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, calc(-100% - 13px));
+    transition: opacity .12s ease;
+  }
+  #exam-results-plot .erp-tooltip.erp-visible { opacity: 1; }
+  #exam-results-plot .erp-tooltip strong { display: block; margin-bottom: 2px; }
+</style>
+<div id="exam-results-plot">
+  <h5>Esiti delle prove d'esame passate</h5>
+  <svg viewBox="0 0 900 500" role="img" aria-labelledby="erp-title erp-desc">
+    <title id="erp-title">Voto medio e percentuale di promossi</title>
+    <desc id="erp-desc">Diagramma interattivo delle prove elencate nella tabella precedente.</desc>
+  </svg>
+  <div class="erp-tooltip" role="status" aria-live="polite"></div>
+</div>
+<script>
+(() => {
+  const root = document.getElementById("exam-results-plot");
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = "true";
+
+  /* Legge direttamente i dati dai link della tabella Markdown precedente. */
+  const examTable = [...document.querySelectorAll("table")].find(table =>
+    table.querySelector('a[title*="Media promossi"]')
+  );
+  if (!examTable) return;
+
+  const exams = [...examTable.querySelectorAll('a[title*="Media promossi"]')]
+    .map(link => {
+      const match = link.title.match(/([0-9]+(?:[.,][0-9]+)?)%\s*-\s*Media promossi:\s*([0-9]+(?:[.,][0-9]+)?)/i);
+      if (!match) return null;
+      const row = link.closest("tr");
+      const year = row && row.cells.length ? row.cells[0].textContent.trim() : "";
+      return {
+        label: [link.textContent.trim(), year].filter(Boolean).join("-"),
+        passRate: Number(match[1].replace(",", ".")),
+        average: Number(match[2].replace(",", ".")),
+        url: link.href
+      };
+    })
+    .filter(Boolean);
+
+  const svg = root.querySelector("svg");
+  const tooltip = root.querySelector(".erp-tooltip");
+  const NS = "http://www.w3.org/2000/svg";
+  const W = 900, H = 500;
+  const plot = { left: 80, top: 24, right: 870, bottom: 430 };
+  const xDomain = [18, 30], yDomain = [0, 100];
+  const xTicks = [18, 20, 22, 24, 26, 28, 30];
+  const yTicks = [0, 20, 40, 60, 80, 100];
+  const sx = value => plot.left + (value - xDomain[0]) / (xDomain[1] - xDomain[0]) * (plot.right - plot.left);
+  const sy = value => plot.bottom - (value - yDomain[0]) / (yDomain[1] - yDomain[0]) * (plot.bottom - plot.top);
+
+  function el(tag, attrs = {}, text = "") {
+    const node = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  const axes = el("g", { "aria-hidden": "true" });
+  yTicks.forEach(tick => {
+    const y = sy(tick);
+    axes.append(
+      el("line", { x1: plot.left, y1: y, x2: plot.right, y2: y, class: "erp-grid" }),
+      el("text", { x: plot.left - 13, y: y + 5, "text-anchor": "end", class: "erp-tick" }, `${tick}%`)
+    );
+  });
+  xTicks.forEach(tick => {
+    const x = sx(tick);
+    axes.append(
+      el("line", { x1: x, y1: plot.top, x2: x, y2: plot.bottom, class: "erp-grid" }),
+      el("text", { x, y: plot.bottom + 26, "text-anchor": "middle", class: "erp-tick" }, String(tick))
+    );
+  });
+  axes.append(
+    el("line", { x1: plot.left, y1: plot.bottom, x2: plot.right, y2: plot.bottom, class: "erp-axis" }),
+    el("line", { x1: plot.left, y1: plot.top, x2: plot.left, y2: plot.bottom, class: "erp-axis" }),
+    el("text", { x: (plot.left + plot.right) / 2, y: H - 16, "text-anchor": "middle", class: "erp-label" }, "Voto medio"),
+    el("text", {
+      x: 20, y: (plot.top + plot.bottom) / 2,
+      transform: `rotate(-90 20 ${(plot.top + plot.bottom) / 2})`,
+      "text-anchor": "middle", class: "erp-label"
+    }, "Percentuale promossi")
+  );
+  svg.append(axes);
+
+  const points = el("g", { class: "erp-points" });
+
+  function show(point, exam) {
+    points.classList.add("erp-active");
+    point.classList.add("erp-selected");
+    tooltip.innerHTML = `<strong>${exam.label}</strong>Voto medio: ${exam.average}<br>Promossi: ${exam.passRate}%`;
+    tooltip.classList.add("erp-visible");
+    const svgBox = svg.getBoundingClientRect();
+    const rootBox = root.getBoundingClientRect();
+    tooltip.style.left = `${sx(exam.average) * svgBox.width / W + svgBox.left - rootBox.left}px`;
+    tooltip.style.top = `${sy(exam.passRate) * svgBox.height / H + svgBox.top - rootBox.top}px`;
+  }
+
+  function hide(point) {
+    points.classList.remove("erp-active");
+    point.classList.remove("erp-selected");
+    tooltip.classList.remove("erp-visible");
+  }
+
+  exams.forEach(exam => {
+    const point = el("circle", {
+      cx: sx(exam.average), cy: sy(exam.passRate), r: 9,
+      class: "erp-point", tabindex: "0", role: "link",
+      "aria-label": `${exam.label}: voto medio ${exam.average}, promossi ${exam.passRate}%. Apri la traccia.`
+    });
+    point.addEventListener("mouseenter", () => show(point, exam));
+    point.addEventListener("mouseleave", () => hide(point));
+    point.addEventListener("focus", () => show(point, exam));
+    point.addEventListener("blur", () => hide(point));
+    point.addEventListener("click", () => window.open(exam.url, "_blank", "noopener,noreferrer"));
+    point.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.open(exam.url, "_blank", "noopener,noreferrer");
+      }
+    });
+    points.append(point);
+  });
+  svg.append(points);
+})();
+</script>
 <hr>
 <h2 id="miscellanea">
   Miscellanea
