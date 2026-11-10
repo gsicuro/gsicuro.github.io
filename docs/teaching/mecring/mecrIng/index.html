@@ -692,28 +692,23 @@ $$
   const status = root.querySelector(".rr-status");
   const timeLabel = root.querySelector(".rr-time");
   const pauseButton = root.querySelector(".rr-pause");
-
   const ctx = scene.getContext("2d");
   const gx = graph.getContext("2d");
-
   const theta = Math.PI / 6;
   const duration = 20;
   let omega = 1;
   let t = 0;
   let running = true;
   let lastFrame = null;
-
   // Estensione visibile della scena lungo l'asta.
   // Il valore 2.5 corrisponde alla scala iniziale.
   const baseExtent = 2;
   let cameraExtent = baseExtent;
-
   // m = k = g = 1, alpha = 30 gradi, peso verso -z.
   // q'' + (1 - omega^2/4) q = -g*cos(alpha)
   // Condizioni iniziali: q(0) = 1, q'(0) = 0.
   const g = 0.25;
   const gravityAlongRod = g * Math.cos(theta);
-
   function qAt(time) {
     const a = 1 - omega * omega / 4;
     const f = gravityAlongRod;
@@ -727,13 +722,11 @@ $$
     const u = Math.sqrt(-a) * time;
     return Math.cosh(u) - 2 * f / (-a) * Math.sinh(u / 2) ** 2;
   }
-
   function formatNumber(v) {
     if (Math.abs(v) >= 10000)
       return v.toExponential(2);
     return v.toFixed(2);
   }
-
   function prepare(canvas, c) {
     const r = canvas.getBoundingClientRect();
     const d = Math.min(window.devicePixelRatio || 1, 2);
@@ -747,7 +740,6 @@ $$
     c.clearRect(0, 0, r.width, r.height);
     return [r.width, r.height];
   }
-
   function line(c, a, b, color, width = 1, dash = []) {
     c.beginPath();
     c.setLineDash(dash);
@@ -758,20 +750,17 @@ $$
     c.stroke();
     c.setLineDash([]);
   }
-
   function dot(c, p, r, color) {
     c.beginPath();
     c.arc(p.x, p.y, r, 0, 2 * Math.PI);
     c.fillStyle = color;
     c.fill();
   }
-
   function text(c, s, x, y, color = "#796346") {
     c.font = "12px Georgia, serif";
     c.fillStyle = color;
     c.fillText(s, x, y);
   }
-
   function mixColor(c1, c2, u) {
     u = Math.max(0, Math.min(1, u));
     const a = c1.match(/\w\w/g).map(v => parseInt(v,16));
@@ -781,7 +770,6 @@ $$
     );
     return `rgb(${rgb.join(",")})`;
   }
-
   // Zoom automatico quando il punto si allontana dall'origine,
   // anche nel caso critico e nelle oscillazioni ampie dovute al peso.
   function updateCamera(dt) {
@@ -792,18 +780,14 @@ $$
     // Garantisce un margine se il punto si muove molto velocemente.
     cameraExtent = Math.max(cameraExtent, distance * 1.1);
   }
-
   function drawScene() {
     const [w, h] = prepare(scene, ctx);
-
     // Scala originaria, ridotta durante lo zoom-out.
     const baseScale = Math.min(w * 0.21, h * 0.26);
     const zoom = baseExtent / cameraExtent;
     const scale = baseScale * zoom;
-
     const ox = w * 0.50;
     const oy = h * 0.53;
-
     // Proiezione assonometrica.
     function project(x, y, z) {
       return {
@@ -811,9 +795,7 @@ $$
         y: oy + scale * (0.34*x + 0.48*y - 0.95*z)
       };
     }
-
     const O = project(0,0,0);
-
     // Il piano di riferimento rimane ancorato
     // alla regione fisica iniziale.
     ctx.save();
@@ -825,7 +807,6 @@ $$
            "#bfa984", 0.7);
     }
     ctx.restore();
-
     // Assi cartesiani: estensione fissa nel mondo.
     const axes = [
       ["y", project(2.2,0,0), "#866845"],
@@ -836,14 +817,11 @@ $$
       line(ctx,O,p,color,1.4);
       text(ctx,name,p.x+5,p.y-5,color);
     });
-
     const phi = omega * t;
     const ex = Math.sin(theta)*Math.cos(phi);
     const ey = Math.sin(theta)*Math.sin(phi);
     const ez = Math.cos(theta);
-
     const rod = u => project(u*ex,u*ey,u*ez);
-
     // L'asta viene disegnata sufficientemente lunga
     // da includere la posizione corrente del punto.
     const q = qAt(t);
@@ -852,10 +830,8 @@ $$
       cameraExtent * 1.12,
       Math.abs(q) * 1.15
     );
-
     const qa = -rodExtent;
     const qb = rodExtent;
-
     // Scia della traiettoria reale nello spazio, negli ultimi 6 s.
     // Tutti i punti sono ricalcolati usando la proiezione corrente:
     // quindi la scia segue esattamente lo zoom-out della telecamera.
@@ -871,7 +847,6 @@ $$
         r * Math.cos(theta)
       );
     };
-
     if (t > 0) {
       ctx.save();
       ctx.lineCap = "round";
@@ -895,19 +870,16 @@ $$
       }
       ctx.restore();
     }
-
     // Quattro sezioni del cono z = -2, -1, 1, 2.
     // La proiezione e' ortografica: la direzione della vista
     // e' normale a entrambi i vettori di schermo di project().
     const cameraView = { x: 0.589, y: 0.836, z: 0.6332 };
     const depth = (x,y,z) =>
       cameraView.x*x + cameraView.y*y + cameraView.z*z;
-
     const objects = [];
     const ringLevels = [-2, -1, 1, 2];
     const ringSegments = 480;
     const rodSegments = 320;
-
     // Ogni circonferenza e' l'intersezione del cono con z=costante:
     // r = |z| tan(theta). La suddivisione permette l'occultamento
     // dei tratti anteriori/posteriori, senza cambiare proiezione.
@@ -928,7 +900,6 @@ $$
         });
       }
     }
-
     // Estensione minima dell'asta fino alla sezione z=+-2,
     // indipendentemente dalla posizione del punto e dallo zoom.
     const rodVisibleExtent = Math.max(rodExtent, 2/Math.cos(theta)+0.2);
@@ -949,13 +920,11 @@ $$
         reflection: 0.07+0.37*b
       });
     }
-
     // Painter's algorithm: disegniamo prima le parti lontane.
     // Segmenti piccoli preservano l'ordine nei punti di incrocio.
     // A profondita' quasi uguale, l'asta prevale sul segno tratteggiato.
     objects.sort((a,b) => (a.d-b.d) ||
       (a.kind === "rod" ? 1 : -1));
-
     ctx.save();
     ctx.lineCap = "round";
     for (const piece of objects) {
@@ -970,25 +939,19 @@ $$
       }
     }
     ctx.restore();
-
     // =================================================
     // MOLLA E PUNTO MATERIALE
     // =================================================
-
     // La coordinata q NON viene troncata.
     const P = rod(q);
-
     // Molla lungo l'asta, dall'origine al punto.
     const springEnd = q * 0.88;
     const endP = rod(springEnd);
-
     const vx = endP.y - O.y;
     const vy = -(endP.x - O.x);
     const norm = Math.hypot(vx,vy) || 1;
     const nx = vx/norm, ny = vy/norm;
-
     ctx.beginPath();
-
     for (let i = 0; i <= 160; i++) {
       const u = i/160;
       const p = rod(springEnd*u);
@@ -996,66 +959,106 @@ $$
       const wave = amplitude*Math.sin(24*Math.PI*u);
       const x = p.x + wave*nx;
       const y = p.y + wave*ny;
-
       if (i === 0) ctx.moveTo(x,y);
       else ctx.lineTo(x,y);
     }
-
     ctx.strokeStyle = "#000000";
     ctx.lineWidth = 2*zoom;
     ctx.stroke();
-
-// Sfera: posizione, dimensione e illuminazione
-// scalano tutte con lo zoom della scena.
-const radius = 7 * zoom;
-
-const ball = ctx.createRadialGradient(
-  P.x - 0.3 * radius,
-  P.y - 0.4 * radius,
-  0.1 * radius,
-  P.x,
-  P.y,
-  1.1 * radius
-);
-
-ball.addColorStop(0, "#fff0cb");
-ball.addColorStop(0.25, "#dca36a");
-ball.addColorStop(0.7, "#b96c42");
-ball.addColorStop(1, "#753e2b");
-
-dot(ctx, P, radius, ball);
-
+    // Sferetta/cursore che avvolge l'asta.
+    // Il foro e la parte emergente vengono orientati usando
+    // la direzione proiettata e la profondita' della vera asta.
+    const radius = 7 * zoom;
+    const beadRadiusWorld = 7 / baseScale;
+    const forward = viewFacing >= 0 ? 1 : -1;
+    const axisScreen = {
+      x: rod(q + 1).x - P.x,
+      y: rod(q + 1).y - P.y
+    };
+    const axisLength = Math.hypot(axisScreen.x, axisScreen.y);
+    const axisAngle = Math.atan2(axisScreen.y, axisScreen.x);
+    const frontality = Math.min(1, Math.abs(viewFacing) / Math.hypot(cameraView.x, cameraView.y, cameraView.z));
+    // La superficie opaca occulta l'asta che passa all'interno.
+    const ball = ctx.createRadialGradient(
+      P.x - 0.32*radius, P.y - 0.38*radius, 0.08*radius,
+      P.x + 0.12*radius, P.y + 0.10*radius, 1.15*radius
+    );
+    ball.addColorStop(0, "#fff5d8");
+    ball.addColorStop(0.23, "#eab77d");
+    ball.addColorStop(0.65, "#b96c42");
+    ball.addColorStop(1, "#713d2b");
+    dot(ctx, P, radius, ball);
+    // Apertura sulla faccia rivolta alla telecamera.
+    // Il fattore di schiacciamento e' il coseno dell'angolo
+    // tra l'asse del foro e la direzione di osservazione.
+    if (radius >= 0.12 && frontality > 0.08) {
+      const apertureOffset = forward * beadRadiusWorld * 0.76;
+      const mouth = rod(q + apertureOffset);
+      const holeR = 2.25 * zoom;
+      const visible = Math.min(1, (frontality-0.08)/0.25);
+      ctx.save();
+      ctx.globalAlpha = visible;
+      ctx.translate(mouth.x, mouth.y);
+      ctx.rotate(axisAngle + Math.PI/2);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, holeR*1.45,
+                  holeR*Math.max(0.14, frontality)*1.45,
+                  0, 0, 2*Math.PI);
+      ctx.fillStyle = "#f4d7a3";
+      ctx.fill();
+      ctx.lineWidth = 0.65*zoom;
+      ctx.strokeStyle = "#784627";
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.ellipse(0, 0, holeR,
+                  holeR*Math.max(0.12, frontality),
+                  0, 0, 2*Math.PI);
+      ctx.fillStyle = "#69402c";
+      ctx.fill();
+      ctx.restore();
+      // L'asta esce dal foro verso l'osservatore: il punto
+      // di partenza coincide con l'apertura, non col centro.
+      // Il segmento prosegue fino alla parte visibile dell'asta.
+      const tip = rod(q + forward * beadRadiusWorld * 1.85);
+      ctx.save();
+      ctx.globalAlpha = visible;
+      ctx.lineCap = "round";
+      line(ctx, mouth, tip, "#583e29", 4*zoom);
+      line(ctx, mouth, tip, "#d6a35d", 2.5*zoom);
+      line(ctx, mouth, tip, "#ffe3a9", 0.7*zoom);
+      ctx.restore();
+    }
+    // Piccolo riflesso sul bordo della sfera.
+    ctx.beginPath();
+    ctx.arc(P.x, P.y, radius*0.92, 0.83*Math.PI, 1.47*Math.PI);
+    ctx.strokeStyle = "rgba(255,239,203,0.62)";
+    ctx.lineWidth = 0.65*zoom;
+    ctx.stroke();
     // Valori fisici e scala della visualizzazione.
     text(ctx,
       "q = "+formatNumber(q),
       12,h-36,"#48351f"
     );
   }
-
   function drawGraph() {
     const [w,h] = prepare(graph,gx);
     const L=48,R=15,T=20,B=35;
     const pw=w-L-R, ph=h-T-B;
     const xmax=duration;
-
     const tx = v => L + pw*v/xmax;
-
     let ymax=1.5;
     for(let i=0;i<=400;i++){
       const ti=t*i/400;
       ymax=Math.max(ymax,Math.abs(qAt(ti)));
     }
     ymax*=1.12;
-
     const qy = v => T+ph/2-v*ph/(2*ymax);
-
     // Griglia temporale.
     for(let s=0;s<=duration;s+=5){
       const x=tx(s);
       line(gx,{x,y:T},{x,y:h-B},"#d3c09f");
       text(gx,String(s),x-5,h-B+17);
     }
-
     // Griglia verticale con scala adattiva (anche per q negativo).
     for(let j=-2;j<=2;j++){
       const v=ymax*j/2;
@@ -1069,55 +1072,44 @@ dot(ctx, P, radius, ball);
         4,y+4
       );
     }
-
     text(gx,"q",7,14);
     text(gx,"t(s)",w-42,h-5);
-
     gx.save();
     gx.beginPath();
     gx.rect(L,T,pw,ph);
     gx.clip();
-
     // Curva esatta fino all'istante corrente.
     gx.beginPath();
     for(let i=0;i<=500;i++){
       const ti=t*i/500;
       const x=tx(ti);
       const y=qy(qAt(ti));
-
       if(i===0) gx.moveTo(x,y);
       else gx.lineTo(x,y);
     }
-
     gx.strokeStyle="#9e652c";
     gx.lineWidth=2.5;
     gx.stroke();
-
     const cx=tx(t);
     const cy=qy(qAt(t));
     line(gx,{x:cx,y:T},{x:cx,y:h-B},"#957b56");
     dot(gx,{x:cx,y:cy},5,"#ad5935");
     gx.restore();
-
     gx.textAlign="right";
     text(gx,"t = "+t.toFixed(2)+" s",w-R,14);
     gx.textAlign="left";
   }
-
   function updateLabels() {
     const regime = omega<2 ? "Oscillatorio" :
                    omega>2 ? "Instabile" : "Critico";
-
     status.textContent =
       regime+" · m = 1 · k = 1 · g = 1/4 · α = 30°";
   }
-
   function reset() {
     t=0;
     cameraExtent=baseExtent;
     lastFrame=null;
   }
-
   slider.addEventListener("input",()=>{
     omega=Number(slider.value);
     valueLabel.textContent=omega.toFixed(2)+" rad/s";
@@ -1126,41 +1118,31 @@ dot(ctx, P, radius, ball);
     drawGraph();
     updateLabels();
   });
-
   root.querySelector(".rr-reset").addEventListener(
     "click",reset
   );
-
   pauseButton.addEventListener("click",()=>{
     running=!running;
     pauseButton.textContent=running?"Pausa":"Riprendi";
     lastFrame=null;
   });
-
   function animate(timestamp) {
     let dt=0;
-
     if(lastFrame!==null && running) {
       dt=Math.min((timestamp-lastFrame)/1000,0.05);
       t+=dt;
-
       if(t>=duration) {
         t=0;
         cameraExtent=baseExtent;
       }
     }
-
     lastFrame=timestamp;
-
     if(running) updateCamera(dt);
-
     drawScene();
     drawGraph();
     updateLabels();
-
     requestAnimationFrame(animate);
   }
-
   requestAnimationFrame(animate);
 })();
 </script>
