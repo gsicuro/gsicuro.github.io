@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/mecring/mecrIng/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.7839f44272696f57705eae9647b1dc53da642878657613c686b77dafa2aa113d.js" integrity="sha256-eDn0QnJpb1dwXq6WR7HcU9pkKHhldhPGhrd9r6KqET0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.10fee4b5edbe0d1211b4842d6a2afd7959a3213cefc83b493b8e2b64d3e9749d.js" integrity="sha256-EP7kte2&#43;DRIRtIQtair9eVmjITzvyDtJO44rZNPpdJ0=" crossorigin="anonymous"></script>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
       <script>
@@ -462,6 +462,10 @@ Francesca Brini, Augusto Muracchini, <a href="https://it.wikipedia.org/wiki/Tomm
           <td style="text-align: left">06 Nov</td>
           <td>Equazioni di Lagrange: derivazione ed esempi.</td>
       </tr>
+      <tr>
+          <td style="text-align: left">10 Nov</td>
+          <td>Equazioni differenziali lineari a coefficienti costanti. Esempio.</td>
+      </tr>
   </tbody>
 </table>
 <h2 id="prova-desame">
@@ -547,8 +551,8 @@ Francesca Brini, Augusto Muracchini, <a href="https://it.wikipedia.org/wiki/Tomm
   Miscellanea
   <a class="anchor" href="#miscellanea">#</a>
 </h2>
-<summary> Punto materiale su asta rotante </summary>
 <details>
+<summary> Punto materiale su asta rotante </summary>
 Un punto materiale $P$ è vincolato a muoversi senza attrito lungo un'asta rotante attorno all'asse $z$ con velocità angolare $\omega$: l'asta passa in ogni istante per l'origine $O$ e forma un angolo $\alpha\in\left(0,\frac{\pi}{2}\right]$ con l'asse $z$. Una molla ideale di costante elastica $k$ collega il punto all'origine. Il punto è anche soggetto alla forza di gravità. Detta $q$ la distanza con segno dall'origine lungo l'asta, la lagrangiana del sistema è
 $$\mathcal L(q,\dot q)=\frac{1}{2}m\dot q^2+\frac{1}{2}(m\omega^2\sin^2\alpha-k)q^2-mgq\cos\alpha$$
 e le equazioni del moto associate
@@ -558,7 +562,7 @@ $$q(t)=\begin{cases}\frac{B}{A}+\left(q_0-\frac{B}{A}\right)\cos\Omega t+\frac{v
 q_0+v_0t+\frac{B}{2}t^2&A=0\\
 \frac{B}{A}+\left(q_0-\frac{B}{A}\right)\cosh\hat\Omega t+\frac{v_0}{\hat\Omega}\sinh\hat\Omega t\qquad \hat\Omega=\sqrt{-A}&A<0\end{cases}$$
 dove $q_0=q(0)$ e $v_0=\dot q(0)$.
-Il comportamento del sistema cambia da oscillatorio a instabile per
+Il comportamento del sistema cambia da oscillatorio a instabile per il valore *critico*
 $$
 \boxed{
 \omega^2=\frac{1}{\sin^2\alpha}\frac{k}{m}
