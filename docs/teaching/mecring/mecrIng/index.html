@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/mecring/mecrIng/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.d48c9bff102ab0106fc6dc6da76aba48d2ca79d8b2ae8948ab37ba2c8af810e8.js" integrity="sha256-1Iyb/xAqsBBvxtxtp2q6SNLKediyrolIqze6LIr4EOg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.7839f44272696f57705eae9647b1dc53da642878657613c686b77dafa2aa113d.js" integrity="sha256-eDn0QnJpb1dwXq6WR7HcU9pkKHhldhPGhrd9r6KqET0=" crossorigin="anonymous"></script>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
       <script>
@@ -328,6 +328,7 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#esami-del-corso-di-architettura-ingegneria-e-ingegneria-chimica-biochimica">Esami del corso di Architettura-Ingegneria e Ingegneria chimica-biochimica</a></li>
           </ul>
         </li>
+        <li><a href="#miscellanea">Miscellanea</a></li>
       </ul>
     </li>
   </ul>
@@ -542,7 +543,625 @@ Francesca Brini, Augusto Muracchini, <a href="https://it.wikipedia.org/wiki/Tomm
   </tbody>
 </table>
 <p>*Appelli straordinari per agevolare il cambio di titolarità del corso.</p>
-</article>
+<h2 id="miscellanea">
+  Miscellanea
+  <a class="anchor" href="#miscellanea">#</a>
+</h2>
+<summary> Punto materiale su asta rotante </summary>
+<details>
+Un punto materiale $P$ è vincolato a muoversi senza attrito lungo un'asta rotante attorno all'asse $z$ con velocità angolare $\omega$: l'asta passa in ogni istante per l'origine $O$ e forma un angolo $\alpha\in\left(0,\frac{\pi}{2}\right]$ con l'asse $z$. Una molla ideale di costante elastica $k$ collega il punto all'origine. Il punto è anche soggetto alla forza di gravità. Detta $q$ la distanza con segno dall'origine lungo l'asta, la lagrangiana del sistema è
+$$\mathcal L(q,\dot q)=\frac{1}{2}m\dot q^2+\frac{1}{2}(m\omega^2\sin^2\alpha-k)q^2-mgq\cos\alpha$$
+e le equazioni del moto associate
+$$m\ddot q+\underbrace{\left(\omega^2\sin^2\alpha-\frac{k}{m}\right)}_{A}q=\underbrace{-g\cos\alpha}_{B}$$
+hanno come soluzione
+$$q(t)=\begin{cases}\frac{B}{A}+\left(q_0-\frac{B}{A}\right)\cos\Omega t+\frac{v_0}{\Omega}\sin\Omega t,\qquad \Omega=\sqrt{A}&A>0\\
+q_0+v_0t+\frac{B}{2}t^2&A=0\\
+\frac{B}{A}+\left(q_0-\frac{B}{A}\right)\cosh\hat\Omega t+\frac{v_0}{\hat\Omega}\sinh\hat\Omega t\qquad \hat\Omega=\sqrt{-A}&A<0\end{cases}$$
+dove $q_0=q(0)$ e $v_0=\dot q(0)$.
+Il comportamento del sistema cambia da oscillatorio a instabile per
+$$
+\boxed{
+\omega^2=\frac{1}{\sin^2\alpha}\frac{k}{m}
+}
+$$
+<div class="rotating-rod-demo">
+<style>
+.rotating-rod-demo {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #ffecdc;
+  border: 1px solid #c0a67c;
+  color: #48351f;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 16px 0;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+.rotating-rod-demo * { box-sizing: border-box; }
+.rotating-rod-demo .rr-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.rotating-rod-demo .rr-panel {
+  min-width: 0;
+  background: #fff5ee;
+  border: 1px solid #d9c5a0;
+  border-radius: 10px;
+  padding: 12px;
+}
+.rotating-rod-demo .rr-heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.rotating-rod-demo canvas {
+  display: block;
+  width: 100%;
+  height: 330px;
+}
+.rotating-rod-demo .rr-controls {
+  margin-top: 12px;
+  padding: 14px;
+  background: #fff5ee;
+  border: 1px solid #d9c5a0;
+  border-radius: 10px;
+}
+.rotating-rod-demo .rr-control-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+.rotating-rod-demo input[type="range"] {
+  width: 100%;
+  accent-color: #9e652c;
+  cursor: pointer;
+}
+.rotating-rod-demo .rr-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #806647;
+}
+.rotating-rod-demo .rr-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #796346;
+}
+.rotating-rod-demo button {
+  background: #a5743f;
+  border: 1px solid #805b36;
+  color: #fff3d7;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.rotating-rod-demo button:hover { background: #90602f; }
+@media (max-width: 650px) {
+  .rotating-rod-demo .rr-layout {
+    grid-template-columns: 1fr;
+  }
+  .rotating-rod-demo canvas { height: 280px; }
+}
+</style>
+<div class="rr-layout">
+  <div class="rr-panel">
+    <div class="rr-heading">Asta rotante — vista 3D</div>
+    <canvas class="rr-scene"></canvas>
+  </div>
+  <div class="rr-panel">
+    <div class="rr-heading">Coordinata con segno q(t)</div>
+    <canvas class="rr-graph"></canvas>
+  </div>
+</div>
+<div class="rr-controls">
+  <div class="rr-control-header">
+    <label>Velocità angolare ω</label>
+    <strong class="rr-value">1.00 rad/s</strong>
+  </div>
+  <input class="rr-slider" type="range"
+         min="0" max="3" step="0.01" value="1">
+  <div class="rr-ticks">
+    <span>0</span><span>1</span>
+    <span>2 (critico)</span><span>3</span>
+  </div>
+  <div class="rr-footer">
+    <span class="rr-status"></span>
+    <span class="rr-time"></span>
+    <button class="rr-pause">Pausa</button>
+    <button class="rr-reset">Reset</button>
+  </div>
+</div>
+<script>
+(() => {
+  const root = document.currentScript.closest(".rotating-rod-demo");
+  const scene = root.querySelector(".rr-scene");
+  const graph = root.querySelector(".rr-graph");
+  const slider = root.querySelector(".rr-slider");
+  const valueLabel = root.querySelector(".rr-value");
+  const status = root.querySelector(".rr-status");
+  const timeLabel = root.querySelector(".rr-time");
+  const pauseButton = root.querySelector(".rr-pause");
+
+  const ctx = scene.getContext("2d");
+  const gx = graph.getContext("2d");
+
+  const theta = Math.PI / 6;
+  const duration = 20;
+  let omega = 1;
+  let t = 0;
+  let running = true;
+  let lastFrame = null;
+
+  // Estensione visibile della scena lungo l'asta.
+  // Il valore 2.5 corrisponde alla scala iniziale.
+  const baseExtent = 2;
+  let cameraExtent = baseExtent;
+
+  // m = k = g = 1, alpha = 30 gradi, peso verso -z.
+  // q'' + (1 - omega^2/4) q = -g*cos(alpha)
+  // Condizioni iniziali: q(0) = 1, q'(0) = 0.
+  const g = 0.25;
+  const gravityAlongRod = g * Math.cos(theta);
+
+  function qAt(time) {
+    const a = 1 - omega * omega / 4;
+    const f = gravityAlongRod;
+    // Il limite critico e' un moto uniformemente accelerato.
+    if (Math.abs(a) < 1e-8)
+      return 1 - 0.5 * f * time * time;
+    if (a > 0) {
+      const u = Math.sqrt(a) * time;
+      return Math.cos(u) - 2 * f / a * Math.sin(u / 2) ** 2;
+    }
+    const u = Math.sqrt(-a) * time;
+    return Math.cosh(u) - 2 * f / (-a) * Math.sinh(u / 2) ** 2;
+  }
+
+  function formatNumber(v) {
+    if (Math.abs(v) >= 10000)
+      return v.toExponential(2);
+    return v.toFixed(2);
+  }
+
+  function prepare(canvas, c) {
+    const r = canvas.getBoundingClientRect();
+    const d = Math.min(window.devicePixelRatio || 1, 2);
+    const pw = Math.round(r.width * d);
+    const ph = Math.round(r.height * d);
+    if (canvas.width !== pw || canvas.height !== ph) {
+      canvas.width = pw;
+      canvas.height = ph;
+    }
+    c.setTransform(d, 0, 0, d, 0, 0);
+    c.clearRect(0, 0, r.width, r.height);
+    return [r.width, r.height];
+  }
+
+  function line(c, a, b, color, width = 1, dash = []) {
+    c.beginPath();
+    c.setLineDash(dash);
+    c.moveTo(a.x, a.y);
+    c.lineTo(b.x, b.y);
+    c.strokeStyle = color;
+    c.lineWidth = width;
+    c.stroke();
+    c.setLineDash([]);
+  }
+
+  function dot(c, p, r, color) {
+    c.beginPath();
+    c.arc(p.x, p.y, r, 0, 2 * Math.PI);
+    c.fillStyle = color;
+    c.fill();
+  }
+
+  function text(c, s, x, y, color = "#796346") {
+    c.font = "12px Georgia, serif";
+    c.fillStyle = color;
+    c.fillText(s, x, y);
+  }
+
+  function mixColor(c1, c2, u) {
+    u = Math.max(0, Math.min(1, u));
+    const a = c1.match(/\w\w/g).map(v => parseInt(v,16));
+    const b = c2.match(/\w\w/g).map(v => parseInt(v,16));
+    const rgb = a.map((v,i) =>
+      Math.round(v*(1-u)+b[i]*u)
+    );
+    return `rgb(${rgb.join(",")})`;
+  }
+
+  // Zoom automatico quando il punto si allontana dall'origine,
+  // anche nel caso critico e nelle oscillazioni ampie dovute al peso.
+  function updateCamera(dt) {
+    const distance = Math.abs(qAt(t));
+    const targetExtent = Math.max(baseExtent, distance * 1.35);
+    const alphaSmooth = 1 - Math.exp(-7 * dt);
+    cameraExtent += (targetExtent - cameraExtent) * alphaSmooth;
+    // Garantisce un margine se il punto si muove molto velocemente.
+    cameraExtent = Math.max(cameraExtent, distance * 1.1);
+  }
+
+  function drawScene() {
+    const [w, h] = prepare(scene, ctx);
+
+    // Scala originaria, ridotta durante lo zoom-out.
+    const baseScale = Math.min(w * 0.21, h * 0.26);
+    const zoom = baseExtent / cameraExtent;
+    const scale = baseScale * zoom;
+
+    const ox = w * 0.50;
+    const oy = h * 0.53;
+
+    // Proiezione assonometrica.
+    function project(x, y, z) {
+      return {
+        x: ox + scale * (0.88*x - 0.62*y),
+        y: oy + scale * (0.34*x + 0.48*y - 0.95*z)
+      };
+    }
+
+    const O = project(0,0,0);
+
+    // Il piano di riferimento rimane ancorato
+    // alla regione fisica iniziale.
+    ctx.save();
+    ctx.globalAlpha = 0.30;
+    for (let s = -2; s <= 2.001; s += 0.5) {
+      line(ctx, project(-2,s,0), project(2,s,0),
+           "#bfa984", 0.7);
+      line(ctx, project(s,-2,0), project(s,2,0),
+           "#bfa984", 0.7);
+    }
+    ctx.restore();
+
+    // Assi cartesiani: estensione fissa nel mondo.
+    const axes = [
+      ["y", project(2.2,0,0), "#866845"],
+      ["x", project(0,2.2,0), "#866845"],
+      ["z", project(0,0,2.2), "#644729"]
+    ];
+    axes.forEach(([name,p,color]) => {
+      line(ctx,O,p,color,1.4);
+      text(ctx,name,p.x+5,p.y-5,color);
+    });
+
+    const phi = omega * t;
+    const ex = Math.sin(theta)*Math.cos(phi);
+    const ey = Math.sin(theta)*Math.sin(phi);
+    const ez = Math.cos(theta);
+
+    const rod = u => project(u*ex,u*ey,u*ez);
+
+    // L'asta viene disegnata sufficientemente lunga
+    // da includere la posizione corrente del punto.
+    const q = qAt(t);
+    const rodExtent = Math.max(
+      baseExtent,
+      cameraExtent * 1.12,
+      Math.abs(q) * 1.15
+    );
+
+    const qa = -rodExtent;
+    const qb = rodExtent;
+
+    // Scia della traiettoria reale nello spazio, negli ultimi 6 s.
+    // Tutti i punti sono ricalcolati usando la proiezione corrente:
+    // quindi la scia segue esattamente lo zoom-out della telecamera.
+    const trailSeconds = 3;
+    const trailStart = Math.max(0, t - trailSeconds);
+    const trailSteps = 180;
+    const trailPoint = time => {
+      const r = qAt(time);
+      const angle = omega * time;
+      return project(
+        r * Math.sin(theta) * Math.cos(angle),
+        r * Math.sin(theta) * Math.sin(angle),
+        r * Math.cos(theta)
+      );
+    };
+
+    if (t > 0) {
+      ctx.save();
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      ctx.lineWidth = 2.4 * zoom;
+      for (let i = 1; i <= trailSteps; i++) {
+        const u0 = (i - 1) / trailSteps;
+        const u1 = i / trailSteps;
+        const t0 = trailStart + (t - trailStart) * u0;
+        const t1 = trailStart + (t - trailStart) * u1;
+        const a = trailPoint(t0);
+        const b = trailPoint(t1);
+        // La parte remota è quasi trasparente; quella recente è viva.
+        // Il gradiente dipende dall'eta' assoluta (6 s), cosi' la
+        // scia cresce naturalmente all'inizio della simulazione.
+        const age = t - (t0 + t1) / 2;
+        const freshness = Math.max(0, 1 - age / trailSeconds);
+        const opacity = 0.78 * Math.pow(freshness, 1.65);
+        line(ctx, a, b, `rgba(166,75,42,${opacity.toFixed(4)})`,
+             3.4 * zoom);
+      }
+      ctx.restore();
+    }
+
+    // Quattro sezioni del cono z = -2, -1, 1, 2.
+    // La proiezione e' ortografica: la direzione della vista
+    // e' normale a entrambi i vettori di schermo di project().
+    const cameraView = { x: 0.589, y: 0.836, z: 0.6332 };
+    const depth = (x,y,z) =>
+      cameraView.x*x + cameraView.y*y + cameraView.z*z;
+
+    const objects = [];
+    const ringLevels = [-2, -1, 1, 2];
+    const ringSegments = 480;
+    const rodSegments = 320;
+
+    // Ogni circonferenza e' l'intersezione del cono con z=costante:
+    // r = |z| tan(theta). La suddivisione permette l'occultamento
+    // dei tratti anteriori/posteriori, senza cambiare proiezione.
+    for (const z of ringLevels) {
+      const r = Math.abs(z) * Math.tan(theta);
+      for (let i = 0; i < ringSegments; i++) {
+        // Tratteggio stabile lungo l'arco, senza reinizializzare
+        // la dash pattern a ogni segmento.
+        if (i % 20 >= 12) continue;
+        const a0 = 2 * Math.PI * i / ringSegments;
+        const a1 = 2 * Math.PI * (i+1) / ringSegments;
+        const am = (a0+a1)/2;
+        const p0 = project(r*Math.cos(a0),r*Math.sin(a0),z);
+        const p1 = project(r*Math.cos(a1),r*Math.sin(a1),z);
+        objects.push({
+          kind: "ring", p0, p1,
+          d: depth(r*Math.cos(am),r*Math.sin(am),z)
+        });
+      }
+    }
+
+    // Estensione minima dell'asta fino alla sezione z=+-2,
+    // indipendentemente dalla posizione del punto e dallo zoom.
+    const rodVisibleExtent = Math.max(rodExtent, 2/Math.cos(theta)+0.2);
+    const uMin = -rodVisibleExtent;
+    const uMax = rodVisibleExtent;
+    const viewFacing = depth(ex,ey,ez);
+    for (let i = 0; i < rodSegments; i++) {
+      const u0 = uMin+(uMax-uMin)*i/rodSegments;
+      const u1 = uMin+(uMax-uMin)*(i+1)/rodSegments;
+      const um = (u0+u1)/2;
+      const b = Math.max(0,Math.min(1,
+        0.5 + 0.5*(um/rodVisibleExtent)*viewFacing));
+      const smooth = b*b*(3-2*b);
+      objects.push({
+        kind: "rod", p0: rod(u0), p1: rod(u1),
+        d: um*viewFacing,
+        color: mixColor("6d5237", "edbf65", smooth),
+        reflection: 0.07+0.37*b
+      });
+    }
+
+    // Painter's algorithm: disegniamo prima le parti lontane.
+    // Segmenti piccoli preservano l'ordine nei punti di incrocio.
+    // A profondita' quasi uguale, l'asta prevale sul segno tratteggiato.
+    objects.sort((a,b) => (a.d-b.d) ||
+      (a.kind === "rod" ? 1 : -1));
+
+    ctx.save();
+    ctx.lineCap = "round";
+    for (const piece of objects) {
+      if (piece.kind === "ring") {
+        line(ctx,piece.p0,piece.p1,"#ae9164",0.5*zoom);
+      } else {
+        line(ctx,piece.p0,piece.p1,"#583e29",4*zoom);
+        line(ctx,piece.p0,piece.p1,piece.color,2.5*zoom);
+        ctx.globalAlpha = piece.reflection;
+        line(ctx,piece.p0,piece.p1,"#ffecad",1.5*zoom);
+        ctx.globalAlpha = 1;
+      }
+    }
+    ctx.restore();
+
+    // =================================================
+    // MOLLA E PUNTO MATERIALE
+    // =================================================
+
+    // La coordinata q NON viene troncata.
+    const P = rod(q);
+
+    // Molla lungo l'asta, dall'origine al punto.
+    const springEnd = q * 0.88;
+    const endP = rod(springEnd);
+
+    const vx = endP.y - O.y;
+    const vy = -(endP.x - O.x);
+    const norm = Math.hypot(vx,vy) || 1;
+    const nx = vx/norm, ny = vy/norm;
+
+    ctx.beginPath();
+
+    for (let i = 0; i <= 160; i++) {
+      const u = i/160;
+      const p = rod(springEnd*u);
+      const amplitude = 4 * zoom * Math.sin(Math.PI*u);
+      const wave = amplitude*Math.sin(24*Math.PI*u);
+      const x = p.x + wave*nx;
+      const y = p.y + wave*ny;
+
+      if (i === 0) ctx.moveTo(x,y);
+      else ctx.lineTo(x,y);
+    }
+
+    ctx.strokeStyle = "#000000";
+    ctx.lineWidth = 2*zoom;
+    ctx.stroke();
+
+// Sfera: posizione, dimensione e illuminazione
+// scalano tutte con lo zoom della scena.
+const radius = 7 * zoom;
+
+const ball = ctx.createRadialGradient(
+  P.x - 0.3 * radius,
+  P.y - 0.4 * radius,
+  0.1 * radius,
+  P.x,
+  P.y,
+  1.1 * radius
+);
+
+ball.addColorStop(0, "#fff0cb");
+ball.addColorStop(0.25, "#dca36a");
+ball.addColorStop(0.7, "#b96c42");
+ball.addColorStop(1, "#753e2b");
+
+dot(ctx, P, radius, ball);
+
+    // Valori fisici e scala della visualizzazione.
+    text(ctx,
+      "q = "+formatNumber(q),
+      12,h-36,"#48351f"
+    );
+  }
+
+  function drawGraph() {
+    const [w,h] = prepare(graph,gx);
+    const L=48,R=15,T=20,B=35;
+    const pw=w-L-R, ph=h-T-B;
+    const xmax=duration;
+
+    const tx = v => L + pw*v/xmax;
+
+    let ymax=1.5;
+    for(let i=0;i<=400;i++){
+      const ti=t*i/400;
+      ymax=Math.max(ymax,Math.abs(qAt(ti)));
+    }
+    ymax*=1.12;
+
+    const qy = v => T+ph/2-v*ph/(2*ymax);
+
+    // Griglia temporale.
+    for(let s=0;s<=duration;s+=5){
+      const x=tx(s);
+      line(gx,{x,y:T},{x,y:h-B},"#d3c09f");
+      text(gx,String(s),x-5,h-B+17);
+    }
+
+    // Griglia verticale con scala adattiva (anche per q negativo).
+    for(let j=-2;j<=2;j++){
+      const v=ymax*j/2;
+      const y=qy(v);
+      line(gx,{x:L,y},{x:w-R,y},
+           j===0?"#957b56":"#d3c09f",
+           j===0?1.5:1);
+      text(gx,
+        ymax>1000 ? v.toExponential(1) :
+        v.toFixed(ymax>10?0:1),
+        4,y+4
+      );
+    }
+
+    text(gx,"q",7,14);
+    text(gx,"t(s)",w-42,h-5);
+
+    gx.save();
+    gx.beginPath();
+    gx.rect(L,T,pw,ph);
+    gx.clip();
+
+    // Curva esatta fino all'istante corrente.
+    gx.beginPath();
+    for(let i=0;i<=500;i++){
+      const ti=t*i/500;
+      const x=tx(ti);
+      const y=qy(qAt(ti));
+
+      if(i===0) gx.moveTo(x,y);
+      else gx.lineTo(x,y);
+    }
+
+    gx.strokeStyle="#9e652c";
+    gx.lineWidth=2.5;
+    gx.stroke();
+
+    const cx=tx(t);
+    const cy=qy(qAt(t));
+    line(gx,{x:cx,y:T},{x:cx,y:h-B},"#957b56");
+    dot(gx,{x:cx,y:cy},5,"#ad5935");
+    gx.restore();
+
+    gx.textAlign="right";
+    text(gx,"t = "+t.toFixed(2)+" s",w-R,14);
+    gx.textAlign="left";
+  }
+
+  function updateLabels() {
+    const regime = omega<2 ? "Oscillatorio" :
+                   omega>2 ? "Instabile" : "Critico";
+
+    status.textContent =
+      regime+" · m = 1 · k = 1 · g = 1/4 · α = 30°";
+  }
+
+  function reset() {
+    t=0;
+    cameraExtent=baseExtent;
+    lastFrame=null;
+  }
+
+  slider.addEventListener("input",()=>{
+    omega=Number(slider.value);
+    valueLabel.textContent=omega.toFixed(2)+" rad/s";
+    reset();
+    drawScene();
+    drawGraph();
+    updateLabels();
+  });
+
+  root.querySelector(".rr-reset").addEventListener(
+    "click",reset
+  );
+
+  pauseButton.addEventListener("click",()=>{
+    running=!running;
+    pauseButton.textContent=running?"Pausa":"Riprendi";
+    lastFrame=null;
+  });
+
+  function animate(timestamp) {
+    let dt=0;
+
+    if(lastFrame!==null && running) {
+      dt=Math.min((timestamp-lastFrame)/1000,0.05);
+      t+=dt;
+
+      if(t>=duration) {
+        t=0;
+        cameraExtent=baseExtent;
+      }
+    }
+
+    lastFrame=timestamp;
+
+    if(running) updateCamera(dt);
+
+    drawScene();
+    drawGraph();
+    updateLabels();
+
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
+})();
+</script>
+</div>
+</details></article>
  
       
 
@@ -592,6 +1211,7 @@ Francesca Brini, Augusto Muracchini, <a href="https://it.wikipedia.org/wiki/Tomm
             <li><a href="#esami-del-corso-di-architettura-ingegneria-e-ingegneria-chimica-biochimica">Esami del corso di Architettura-Ingegneria e Ingegneria chimica-biochimica</a></li>
           </ul>
         </li>
+        <li><a href="#miscellanea">Miscellanea</a></li>
       </ul>
     </li>
   </ul>
