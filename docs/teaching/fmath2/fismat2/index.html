@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/fmath2/fismat2/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.be2806afcb0c10db4b34da97a487fac2d8f51d7d4118d6f2c27dec9acad22cb3.js" integrity="sha256-vigGr8sMENtLNNqXpIf6wtj1HX1BGNbywn3smsrSLLM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.691d796a4837862d19a55940c92c1c67b1809fc07177404e07e8038697aa8af2.js" integrity="sha256-aR15akg3hi0ZpVlAySwcZ7GAn8Bxd0BOB&#43;gDhpeqivI=" crossorigin="anonymous"></script>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
       <script>
@@ -2295,110 +2295,39 @@ requestAnimationFrame(step);
 <details>
 <summary> Brachistocrona </summary>
 <style>
+#bc-widget, #bc-widget * { box-sizing: border-box; }
 #bc-widget {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #fdfdfb;
-  color: #222;
-  padding: 2px 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  border: 1px solid #e8e8e1;
-  margin: 0px 0;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+  width: 100%; max-width: 1100px; margin: 20px auto; padding: clamp(14px, 3vw, 28px);
+  color: #172337; background: #ffffff; border: 1px solid #e2e8f0;
+  border-radius: 18px; box-shadow: 0 10px 34px rgba(15,23,42,.06);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-#bc-widget .bc-panel {
-  width: 96%;
-  max-width: none;
-  margin: 10pt;
-}
-  #bc-widget * {
-    box-sizing: border-box;
-  }
-<p>#bc-widget .bc-subtitle {
-font-size: 14px;
-color: #777;
-margin-bottom: 2px;
-font-style: italic;
-text-align: center;
-}</p>
-<p>#bc-widget .bc-controls {
-display: flex;
-align-items: end;
-gap: 18px;
-margin-bottom: 14px;
-flex-wrap: wrap;
-}</p>
-<p>#bc-widget .bc-group {
-background: #f8f8f5;
-border: 1px solid #eef0e8;
-border-radius: 6px;
-padding: 14px;
-min-width: 320px;
-flex: 1;
-}</p>
-<p>#bc-widget label {
-font-size: 11px;
-color: #666;
-display: block;
-margin-bottom: 8px;
-text-transform: uppercase;
-letter-spacing: 0.05em;
-font-weight: 600;
-}</p>
-<p>#bc-widget .bc-row {
-display: flex;
-align-items: center;
-gap: 12px;
-}</p>
-<p>#bc-widget input[type=&ldquo;range&rdquo;] {
-flex: 1;
-accent-color: #444;
-cursor: pointer;
-}</p>
-<p>#bc-widget .bc-val {
-font-size: 14px;
-font-weight: 600;
-color: #222;
-min-width: 56px;
-text-align: right;
-font-variant-numeric: tabular-nums;
-}</p>
-<p>#bc-widget button {
-padding: 10px 24px;
-border-radius: 4px;
-border: 1px solid #ccc;
-background: #fff;
-color: #333;
-font-size: 13px;
-font-weight: 500;
-cursor: pointer;
-transition: all 0.2s;
-}</p>
-<p>#bc-widget button:hover {
-background: #f0f0eb;
-border-color: #999;
-}</p>
-<p>#bc-widget canvas {
-width: 100%;
-max-width: 100%;
-height: auto;
-display: block;
-border: 1px solid #ddd;
-border-radius: 4px;
-background: white;
-}</p>
-<p>#bc-widget #bc-readout {
-margin-top: 12px;
-line-height: 1.45;
-font-size: 13px;
-color: #666;
-text-align: center;
-}
-</style></p>
+#bc-widget .bc-panel { width: 100%; min-width: 0; margin: 0; }
+#bc-widget .bc-heading { margin: 0 0 6px; font-size: clamp(21px, 3vw, 17px); font-weight: 750; letter-spacing: -.03em; }
+#bc-widget .bc-subtitle { margin: 0 0 22px; color: #64748b; font-size: 14px; line-height: 1.5; }
+#bc-widget .bc-controls { display: flex; align-items: flex-end; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+#bc-widget .bc-group { flex: 1 1 300px; min-width: 0; padding: 15px 18px; border-radius: 12px; background: #f8fafc; border: 1px solid #e2e8f0; }
+#bc-widget label { display: block; margin-bottom: 11px; font-size: 12px; font-weight: 700; color: #475569; letter-spacing: .02em; }
+#bc-widget .bc-row { display: flex; gap: 14px; align-items: center; }
+#bc-widget input[type="range"] { flex: 1; min-width: 0; accent-color: #2563eb; cursor: pointer; }
+#bc-widget .bc-val { min-width: 60px; font-size: 17px; font-weight: 750; font-variant-numeric: tabular-nums; text-align: right; }
+#bc-widget button { padding: 14px 23px; border: 0; border-radius: 11px; background: #1d4ed8; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; transition: background .15s, transform .15s; }
+#bc-widget button:hover { background: #1e40af; }
+#bc-widget button:active { transform: translateY(1px); }
+#bc-widget button:focus-visible, #bc-widget input:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+#bc-widget .bc-chart { width: 100%; overflow: hidden; border: 1px solid #e2e8f0; border-radius: 14px; background: #fff; }
+#bc-widget canvas { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 920 / 560; }
+#bc-widget .bc-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 9px 16px; margin-top: 16px; }
+#bc-widget .bc-legend-item { display: flex; align-items: center; gap: 9px; min-width: 0; padding: 10px 12px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 13px; color: #475569; }
+#bc-widget .bc-swatch { width: 22px; flex: 0 0 22px; height: 4px; background: var(--swatch); border-radius: 4px; }
+#bc-widget .bc-legend-item strong { margin-left: auto; white-space: nowrap; color: #172337; font-variant-numeric: tabular-nums; }
+#bc-widget #bc-readout { margin-top: 16px; padding: 14px 16px; border-radius: 11px; background: #f8fafc; color: #475569; font-size: 13px; line-height: 1.65; }
+#bc-widget .bc-note { margin-top: 8px; font-size: 12px; color: #64748b; }
+@media (max-width: 540px) { #bc-widget button { width: 100%; } #bc-widget .bc-controls { gap: 10px; } }
+</style>
 <div id="bc-widget">
 <div class="bc-panel">
+<h5 class="bc-heading">Brachistocrona</h5>
 <div class="bc-controls">
 <div class="bc-group">
 <label for="bc-xInput">Ascissa finale (ordinata finale a -1)</label>
@@ -2407,10 +2336,11 @@ text-align: center;
 <span class="bc-val" id="bc-xValue">2.00</span>
 </div>
 </div>
-<button id="bc-startButton">Start</button>
+<button id="bc-startButton" type="button">Avvia</button>
 </div>
-<canvas id="bc-plot" width="920" height="560"></canvas>
-<div id="bc-readout"></div>
+<div class="bc-chart"><canvas id="bc-plot" width="920" height="560" role="img" aria-label="Grafico delle quattro traiettorie dalla partenza al traguardo"></canvas></div>
+<div class="bc-legend" id="bc-legend" aria-label="Tempi di arrivo"></div>
+<div id="bc-readout" aria-live="off"></div>
 </div>
 </div>
 <script>
@@ -2421,6 +2351,7 @@ text-align: center;
   const xValue = document.getElementById("bc-xValue");
   const startButton = document.getElementById("bc-startButton");
   const readout = document.getElementById("bc-readout");
+  const legend = document.getElementById("bc-legend");
 
   const W = canvas.width;
   const H = canvas.height;
@@ -2866,39 +2797,27 @@ function makeMinimumTimeCircleArcPoints(xFinal) {
     return { xMin, xMax, yMin, yMax };
   }
 
+  // Scala uniforme, con un margine reale per curve, particelle ed etichette.
   function makeTransform(bounds) {
-const margin = {
-  left: 20,
-  right: 30,
-  top: 4,
-  bottom: 10
-};
-
-    const plotLeft = margin.left;
-    const plotRight = W - margin.right;
-    const plotTop = margin.top;
-    const plotBottom = H - margin.bottom;
-
-    let xSpan = bounds.xMax - bounds.xMin;
-    let ySpan = bounds.yMax - bounds.yMin;
-
-    xSpan = Math.max(xSpan, 1e-9);
-    ySpan = Math.max(ySpan, 1e-9);
-
-const scale = Math.min(
-  (plotRight - plotLeft) / (1.03 * xSpan),
-  (plotBottom - plotTop) / (1.03 * ySpan)
-);
-
-    const xCenter = 0.5 * (bounds.xMin + bounds.xMax);
-    const yCenter = 0.5 * (bounds.yMin + bounds.yMax);
-
-    const pxCenter = 0.5 * (plotLeft + plotRight);
-    const pyCenter = 0.5 * (plotTop + plotBottom);
-
+    const plot = { left: 66, right: W - 42, top: 45, bottom: H - 61 };
+    const xSpan = Math.max(bounds.xMax - bounds.xMin, 1e-9);
+    const ySpan = Math.max(bounds.yMax - bounds.yMin, 1e-9);
+    const xPad = Math.max(0.06 * xSpan, 0.07);
+    const yPad = Math.max(0.10 * ySpan, 0.09);
+    const paddedX = xSpan + 2 * xPad;
+    const paddedY = ySpan + 2 * yPad;
+    const scale = Math.min(
+      (plot.right - plot.left) / paddedX,
+      (plot.bottom - plot.top) / paddedY
+    );
+    const xCenter = (bounds.xMin + bounds.xMax) / 2;
+    const yCenter = (bounds.yMin + bounds.yMax) / 2;
+    const pxCenter = (plot.left + plot.right) / 2;
+    const pyCenter = (plot.top + plot.bottom) / 2;
     return {
       sx: x => pxCenter + (x - xCenter) * scale,
-      sy: y => pyCenter - (y - yCenter) * scale
+      sy: y => pyCenter - (y - yCenter) * scale,
+      plot
     };
   }
 
@@ -2920,71 +2839,45 @@ const scale = Math.min(
   }
 
   function drawGrid(transform, bounds) {
+    const { left, right, top, bottom } = transform.plot;
     ctx.save();
-
-    const left = transform.sx(bounds.xMin);
-    const right = transform.sx(bounds.xMax);
-    const top = transform.sy(bounds.yMax);
-    const bottom = transform.sy(bounds.yMin);
-
-    ctx.strokeStyle = "#e8e8ef";
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(left, top, right - left, bottom - top);
+    ctx.strokeStyle = '#e9eef5';
     ctx.lineWidth = 1;
-    ctx.font = "12px system-ui, sans-serif";
-    ctx.fillStyle = "#666";
-
+    ctx.font = '12px system-ui, sans-serif';
     const xStep = niceStep((bounds.xMax - bounds.xMin) / 7);
-    const yStep = niceStep((bounds.yMax - bounds.yMin) / 7);
-
-    const firstX = Math.ceil(bounds.xMin / xStep) * xStep;
-    const firstY = Math.ceil(bounds.yMin / yStep) * yStep;
-
-    ctx.textAlign = "center";
-    ctx.textBaseline = "top";
-
-    for (let x = firstX; x <= bounds.xMax + 1e-12; x += xStep) {
-      const px = transform.sx(x);
-
-      ctx.beginPath();
-      ctx.moveTo(px, top);
-      ctx.lineTo(px, bottom);
-      ctx.stroke();
-
-      ctx.fillText(fmt(x), px, bottom + 7);
+    const yStep = niceStep((bounds.yMax - bounds.yMin) / 6);
+    ctx.beginPath();
+    for (let i = Math.ceil(bounds.xMin / xStep); i * xStep <= bounds.xMax + 1e-10; i++) {
+      const x = i * xStep, px = transform.sx(x);
+      if (px < left + 5 || px > right - 5) continue;
+      ctx.moveTo(px, top); ctx.lineTo(px, bottom);
     }
-
-    ctx.textAlign = "right";
-    ctx.textBaseline = "middle";
-
-    for (let y = firstY; y <= bounds.yMax + 1e-12; y += yStep) {
-      const py = transform.sy(y);
-
-      ctx.beginPath();
-      ctx.moveTo(left, py);
-      ctx.lineTo(right, py);
-      ctx.stroke();
-
-      ctx.fillText(fmt(y), left - 8, py);
+    for (let i = Math.ceil(bounds.yMin / yStep); i * yStep <= bounds.yMax + 1e-10; i++) {
+      const y = i * yStep, py = transform.sy(y);
+      if (py < top + 5 || py > bottom - 5) continue;
+      ctx.moveTo(left, py); ctx.lineTo(right, py);
     }
-
-    ctx.strokeStyle = "#999";
-    ctx.lineWidth = 1.5;
-
-    if (bounds.yMin <= 0 && bounds.yMax >= 0) {
-      const y0 = transform.sy(0);
-      ctx.beginPath();
-      ctx.moveTo(left, y0);
-      ctx.lineTo(right, y0);
-      ctx.stroke();
+    ctx.stroke();
+    ctx.strokeStyle = '#cbd5e1'; ctx.lineWidth = 1;
+    ctx.strokeRect(left, top, right - left, bottom - top);
+    ctx.fillStyle = '#64748b';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    for (let i = Math.ceil(bounds.xMin / xStep); i * xStep <= bounds.xMax + 1e-10; i++) {
+      const x = i * xStep, px = transform.sx(x);
+      if (px >= left + 16 && px <= right - 16) ctx.fillText(fmt(x), px, bottom + 9);
     }
-
-    if (bounds.xMin <= 0 && bounds.xMax >= 0) {
-      const x0 = transform.sx(0);
-      ctx.beginPath();
-      ctx.moveTo(x0, top);
-      ctx.lineTo(x0, bottom);
-      ctx.stroke();
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    for (let i = Math.ceil(bounds.yMin / yStep); i * yStep <= bounds.yMax + 1e-10; i++) {
+      const y = i * yStep, py = transform.sy(y);
+      if (py >= top + 10 && py <= bottom - 10) ctx.fillText(fmt(y), left - 11, py);
     }
-
+    ctx.fillStyle = '#475569'; ctx.font = '600 13px system-ui, sans-serif';
+    ctx.textAlign = 'right'; ctx.textBaseline = 'bottom';
+    ctx.fillText('x', right, bottom + 42);
+    ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+    ctx.fillText('y', left - 27, top - 18);
     ctx.restore();
   }
 
@@ -3033,6 +2926,19 @@ const scale = Math.min(
     ctx.restore();
   }
 
+  function drawPointLabel(label, px, py, plot, isStart) {
+    ctx.save();
+    ctx.font = '600 13px system-ui, sans-serif';
+    ctx.fillStyle = '#0f172a';
+    ctx.textBaseline = isStart ? 'bottom' : 'top';
+    const width = ctx.measureText(label).width;
+    const x = clamp(px + 10, plot.left + 5, plot.right - width - 5);
+    const y = isStart ? Math.max(plot.top + 16, py - 8) : Math.min(plot.bottom - 17, py + 8);
+    ctx.textAlign = 'left';
+    ctx.fillText(label, x, y);
+    ctx.restore();
+  }
+
   function drawStartAndEnd(transform, xFinal) {
     ctx.save();
 
@@ -3053,15 +2959,11 @@ const scale = Math.min(
 
     ctx.textAlign = "left";
     ctx.textBaseline = "bottom";
-    ctx.fillText("(0, 0)", transform.sx(0) + 7, transform.sy(0) - 7);
+    drawPointLabel("(0, 0)", transform.sx(0), transform.sy(0), transform.plot, true);
 
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.fillText(
-      "(" + fmt(xFinal) + ", -1)",
-      transform.sx(xFinal) + 7,
-      transform.sy(-1) + 7
-    );
+    drawPointLabel("(" + fmt(xFinal) + ", -1)", transform.sx(xFinal), transform.sy(-1), transform.plot, false);
 
     ctx.restore();
   }
@@ -3094,50 +2996,19 @@ const scale = Math.min(
     ctx.fillStyle = COLORS.brachistochrone;
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.fillText("Altezza minima", px + 8, py + 8);
+    const minLabel = "Altezza minima";
+    const tx = clamp(px + 8, transform.plot.left + 4, transform.plot.right - ctx.measureText(minLabel).width - 4);
+    const ty = Math.min(py + 8, transform.plot.bottom - 18);
+    ctx.fillText(minLabel, tx, ty);
 
     ctx.restore();
   }
 
-  function drawLegend(state) {
-    ctx.save();
-
-    const x = 50;
-    const y = 450;
-    const row = 24;
-    const width = 290;
-    const height = 28 + row * state.trajectories.length;
-
-    ctx.fillStyle = "rgba(255, 255, 255, 0.90)";
-    ctx.fillRect(x - 14, y - 20, width, height);
-
-    ctx.strokeStyle = "#ddd";
-    ctx.strokeRect(x - 14, y - 20, width, height);
-
-    ctx.font = "700 13px system-ui, sans-serif";
-    ctx.fillStyle = "#222";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "middle";
-    ctx.fillText("Tempi di arrivo", x, y - 4);
-
-    ctx.font = "13px system-ui, sans-serif";
-
-    state.trajectories.forEach((traj, i) => {
-      const yy = y + 20 + i * row;
-
-      ctx.strokeStyle = traj.color;
-      ctx.lineWidth = 4;
-
-      ctx.beginPath();
-      ctx.moveTo(x, yy);
-      ctx.lineTo(x + 30, yy);
-      ctx.stroke();
-
-      ctx.fillStyle = "#222";
-      ctx.fillText(traj.name + ": " + traj.total.toFixed(3) + " s", x + 40, yy);
-    });
-
-    ctx.restore();
+  function renderLegend(state) {
+    legend.innerHTML = state.trajectories.map(traj =>
+      '<div class="bc-legend-item"><span class="bc-swatch" style="--swatch:' + traj.color + '"></span>' +
+      '<span>' + traj.name + '</span><strong>' + traj.total.toFixed(3) + ' s</strong></div>'
+    ).join('');
   }
 
   function drawState(state, physicalTime) {
@@ -3158,7 +3029,7 @@ const scale = Math.min(
       drawParticle(transform, traj, physicalTime);
     }
 
-    drawLegend(state);
+
   }
 
   function renderReadout(state, physicalTime) {
@@ -3194,10 +3065,8 @@ const scale = Math.min(
     }
 
     readout.innerHTML =
-      "Tempo della simulazione: <strong>" + t.toFixed(3) + " s</strong><br>" +
-      timeLine + "<br>" +
-      minText + "<br>" +
-      "La velocità dell'animazione è riscalata: i tempi relativi sono conservati.";
+      "<strong>Tempo della simulazione: " + t.toFixed(3) + " s</strong><br>" +
+      minText + "<div class=\"bc-note\">La velocità dell’animazione è riscalata: i tempi relativi sono conservati.</div>";
   }
 
   function setupState() {
@@ -3289,6 +3158,7 @@ const trajectories = [line, parabola, circleArc, brachistochrone];
     }
 
     const state = setupState();
+    renderLegend(state);
     const wallStart = performance.now();
 
     function frame(now) {
@@ -3320,11 +3190,13 @@ const trajectories = [line, parabola, circleArc, brachistochrone];
     }
 
     const state = setupState();
+    renderLegend(state);
     drawState(state, 0);
     renderReadout(state, 0);
   });
 
   const initialState = setupState();
+  renderLegend(initialState);
   drawState(initialState, 0);
   renderReadout(initialState, 0);
 })();
