@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://gsicuro.github.io/docs/teaching/mecring/mecrIng/">
 <link rel="stylesheet" href="/book.min.cd6973985e1be056bf05e9739271aed3f5eacc6ab1bd186bdabe0ade77e69154.css" integrity="sha256-zWlzmF4b4Fa/BelzknGu0/XqzGqxvRhr2r4K3nfmkVQ=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.b0e5ebdfbc00cdd1cdd31049c6ece95cfa6a4938763f1ae99108ad198086a451.js" integrity="sha256-sOXr37wAzdHN0xBJxuzpXPpqSTh2PxrpkQitGYCGpFE=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b1b971ced2174c5b74855d13eab461165de23aafa1538062483b5540d27dc512.js" integrity="sha256-sblxztIXTFt0hV0T6rRhFl3iOq&#43;hU4BiSDtVQNJ9xRI=" crossorigin="anonymous"></script>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWPR605P3"></script>
       <script>
@@ -1148,6 +1148,625 @@ Nella simulazione sotto, $k=1$, $m=1$, $g=\frac{1}{4}$, $\alpha=\frac{\pi}{6}$, 
     updateLabels();
     requestAnimationFrame(animate);
   }
+  requestAnimationFrame(animate);
+})();
+</script>
+</div>
+</details>
+<details>
+<summary> Pendolo matematico</summary>
+<div class="pendulum-demo">
+<style>
+.pendulum-demo {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #ffecdc;
+  border: 1px solid #c0a67c;
+  color: #48351f;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 16px 0;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+.pendulum-demo * { box-sizing: border-box; }
+/* Mantiene SEMPRE i due pannelli affiancati. */
+.pendulum-demo .pd-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+.pendulum-demo .pd-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important;
+  gap: 12px;
+  min-width: 640px;
+}
+.pendulum-demo .pd-panel {
+  min-width: 0;
+  background: #fff5ee;
+  border: 1px solid #d9c5a0;
+  border-radius: 10px;
+  padding: 12px;
+}
+.pendulum-demo .pd-heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.pendulum-demo canvas {
+  display: block;
+  width: 100%;
+  height: 330px;
+}
+.pendulum-demo .pd-controls {
+  margin-top: 12px;
+  padding: 14px;
+  background: #fff5ee;
+  border: 1px solid #d9c5a0;
+  border-radius: 10px;
+}
+.pendulum-demo .pd-control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.pendulum-demo .pd-control-header label {
+  font-size: 14px;
+}
+.pendulum-demo .pd-number {
+  width: 74px;
+  padding: 5px 7px;
+  border: 1px solid #c0a67c;
+  border-radius: 6px;
+  background: #fffaf4;
+  color: #48351f;
+  font: bold 14px Georgia, serif;
+  text-align: right;
+}
+.pendulum-demo .pd-slider-wrap {
+  padding: 0 9px;
+}
+.pendulum-demo .pd-slider {
+  display: block;
+  width: 100%;
+  margin: 0;
+  accent-color: #9e652c;
+  cursor: pointer;
+}
+.pendulum-demo .pd-ticks {
+  position: relative;
+  height: 30px;
+  margin-top: 7px;
+  font-size: 11px;
+  color: #806647;
+}
+.pendulum-demo .pd-tick {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+.pendulum-demo .pd-tick:first-child {
+  transform: none;
+}
+.pendulum-demo .pd-tick:last-child {
+  transform: translateX(-100%);
+}
+.pendulum-demo .pd-tick.critical {
+  font-weight: bold;
+  color: #9e652c;
+}
+.pendulum-demo .pd-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #796346;
+}
+.pendulum-demo .pd-buttons {
+  display: flex;
+  gap: 6px;
+}
+.pendulum-demo button {
+  background: #a5743f;
+  border: 1px solid #805b36;
+  color: #fff3d7;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.pendulum-demo button:hover {
+  background: #90602f;
+}
+</style>
+<div class="pd-scroll">
+  <div class="pd-layout">
+    <div class="pd-panel">
+      <div class="pd-heading">Pendolo semplice</div>
+      <canvas class="pd-scene"></canvas>
+    </div>
+    <div class="pd-panel">
+      <div class="pd-heading">
+        Diagramma di fase (q,q̇)
+      </div>
+      <canvas class="pd-phase"></canvas>
+    </div>
+  </div>
+</div>
+<div class="pd-controls">
+  <div class="pd-control-header">
+    <label for="pd-v0">Velocità iniziale v₀</label>
+    <input class="pd-number" type="number"
+           min="0" max="3" step="0.01"
+           value="1.50" aria-label="Velocità iniziale">
+  </div>
+  <div class="pd-slider-wrap">
+    <input class="pd-slider" type="range"
+           min="0" max="3" step="0.01" value="1.5"
+           aria-label="Velocità iniziale">
+    <div class="pd-ticks">
+      <span class="pd-tick" style="left:0%">0</span>
+      <span class="pd-tick" style="left:33%">1</span>
+      <span class="pd-tick critical" style="left:66%">
+        2 (critico)
+      </span>
+      <span class="pd-tick" style="left:100%">3</span>
+    </div>
+  </div>
+  <div class="pd-footer">
+    <span class="pd-status"></span>
+    <span class="pd-time"></span>
+    <div class="pd-buttons">
+      <button class="pd-pause">Pausa</button>
+      <button class="pd-reset">Reset</button>
+    </div>
+  </div>
+</div>
+<script>
+(() => {
+  const root = document.currentScript.closest(".pendulum-demo");
+
+  const scene = root.querySelector(".pd-scene");
+  const phase = root.querySelector(".pd-phase");
+  const ctx = scene.getContext("2d");
+  const gx = phase.getContext("2d");
+
+  const slider = root.querySelector(".pd-slider");
+  const number = root.querySelector(".pd-number");
+  const status = root.querySelector(".pd-status");
+  const timeLabel = root.querySelector(".pd-time");
+  const pauseButton = root.querySelector(".pd-pause");
+
+  const PI = Math.PI;
+  const TAU = 2*PI;
+  const trailSeconds = 5;
+
+  // Convenzione:
+  // theta = 0: pendolo verticale verso il basso.
+  // theta > 0: rotazione antioraria nel piano cartesiano
+  //            (asse y positivo verso l'alto).
+  //
+  // x = sin(theta), y = -cos(theta).
+  //
+  // m = g = l = 1
+  // theta'' = -sin(theta)
+  // theta(0) = 0, theta'(0) = v0.
+
+  let v0 = Number(slider.value);
+  let theta = 0;
+  let omega = v0;
+  let t = 0;
+  let running = true;
+  let lastFrame = null;
+  let history = [{t,theta,omega}];
+
+  function wrap(a) {
+    return ((a+PI)%TAU+TAU)%TAU-PI;
+  }
+
+  function prepare(canvas,c) {
+    const r = canvas.getBoundingClientRect();
+    const d = Math.min(window.devicePixelRatio || 1, 2);
+    const pw = Math.round(r.width*d);
+    const ph = Math.round(r.height*d);
+
+    if(canvas.width !== pw || canvas.height !== ph) {
+      canvas.width = pw;
+      canvas.height = ph;
+    }
+
+    c.setTransform(d,0,0,d,0,0);
+    c.clearRect(0,0,r.width,r.height);
+    return [r.width,r.height];
+  }
+
+  function line(c,a,b,color,width=1,dash=[]) {
+    c.beginPath();
+    c.setLineDash(dash);
+    c.moveTo(a.x,a.y);
+    c.lineTo(b.x,b.y);
+    c.strokeStyle = color;
+    c.lineWidth = width;
+    c.stroke();
+    c.setLineDash([]);
+  }
+
+  function dot(c,p,r,color) {
+    c.beginPath();
+    c.arc(p.x,p.y,r,0,TAU);
+    c.fillStyle = color;
+    c.fill();
+  }
+
+  function text(c,s,x,y,color="#796346") {
+    c.font = "12px Georgia, serif";
+    c.fillStyle = color;
+    c.fillText(s,x,y);
+  }
+
+  // Runge-Kutta 4.
+  function integrate(h) {
+    const f = (a,w) => [w,-Math.sin(a)];
+
+    const k1=f(theta,omega);
+    const k2=f(theta+h*k1[0]/2,omega+h*k1[1]/2);
+    const k3=f(theta+h*k2[0]/2,omega+h*k2[1]/2);
+    const k4=f(theta+h*k3[0],omega+h*k3[1]);
+
+    theta += h*(k1[0]+2*k2[0]+2*k3[0]+k4[0])/6;
+    omega += h*(k1[1]+2*k2[1]+2*k3[1]+k4[1])/6;
+  }
+
+  function advance(dt) {
+    const n = Math.max(1,Math.ceil(dt/0.008));
+    const h = dt/n;
+
+    for(let i=0;i<n;i++) {
+      integrate(h);
+      t += h;
+      history.push({t,theta,omega});
+    }
+
+    while(history.length>2 &&
+          history[1].t<t-trailSeconds) {
+      history.shift();
+    }
+  }
+
+  // =========================================
+  // SCENA: PENDOLO
+  // =========================================
+
+  function drawScene() {
+    const [w,h] = prepare(scene,ctx);
+
+    const ox = w*0.50;
+    const oy = h*0.48;
+    const radius = Math.min(w*0.36,h*0.37);
+
+    // In coordinate Canvas la y cresce verso il basso:
+    // la formula seguente rappresenta correttamente
+    // theta misurato dal semiasse y negativo in
+    // senso antiorario nel piano cartesiano.
+    const point = a => ({
+      x: ox+radius*Math.sin(a),
+      y: oy+radius*Math.cos(a)
+    });
+
+    const O = {x:ox,y:oy};
+    const P = point(theta);
+
+    // Circonferenza vincolare.
+    ctx.beginPath();
+    ctx.arc(ox,oy,radius,0,TAU);
+    ctx.strokeStyle = "#d5bb98";
+    ctx.lineWidth = 1.2;
+    ctx.setLineDash([5,5]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Semiasse verticale di riferimento:
+    // theta=0, verso il basso.
+    line(ctx,
+      {x:ox,y:oy},
+      {x:ox,y:oy+radius+16},
+      "#bfa984",1.3,[4,5]
+    );
+
+
+    // Arco orientato che rappresenta theta.
+    // Canvas: angoli positivi in senso orario sullo
+    // schermo. Da pi/2 a pi/2-theta, con anticlockwise
+    // appropriato, equivale al senso antiorario fisico.
+    const a = wrap(theta);
+    const arcR = radius*0.27;
+
+    if(Math.abs(a)>0.015) {
+      const start = PI/2;
+      const end = PI/2-a;
+
+      ctx.beginPath();
+      ctx.arc(ox,oy,arcR,start,end,a>0);
+      ctx.strokeStyle = "#9e652c";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Freccia all'estremità dell'arco.
+      const ex = ox+arcR*Math.cos(end);
+      const ey = oy+arcR*Math.sin(end);
+      const sgn = Math.sign(a);
+      const tx = sgn*Math.sin(end);
+      const ty = -sgn*Math.cos(end);
+      const arrow = 7;
+
+      ctx.beginPath();
+      ctx.moveTo(ex,ey);
+      ctx.lineTo(
+        ex-arrow*tx-3*ty,
+        ey-arrow*ty+3*tx
+      );
+      ctx.moveTo(ex,ey);
+      ctx.lineTo(
+        ex-arrow*tx+3*ty,
+        ey-arrow*ty-3*tx
+      );
+      ctx.strokeStyle = "#9e652c";
+      ctx.lineWidth = 1.7;
+      ctx.stroke();
+
+      const mid = a/2;
+      text(ctx,"q",
+        ox+(arcR+16)*Math.sin(mid),
+        oy+(arcR+16)*Math.cos(mid),
+        "#9e652c"
+      );
+    }
+
+    // Asta.
+    line(ctx,O,P,"#583e29",5);
+    line(ctx,O,P,"#d6a35d",3);
+    line(ctx,O,P,"#ffe3a9",0.8);
+
+    // Perno.
+    dot(ctx,O,5,"#644729");
+    dot(ctx,O,2.2,"#fff0ce");
+
+    // Massa.
+    const ball=ctx.createRadialGradient(
+      P.x-4,P.y-5,1,P.x+2,P.y+2,13
+    );
+    ball.addColorStop(0,"#fff5d8");
+    ball.addColorStop(0.25,"#eab77d");
+    ball.addColorStop(0.70,"#b96c42");
+    ball.addColorStop(1,"#713d2b");
+
+    dot(ctx,P,12,ball);
+
+    text(ctx,
+      "q = "+wrap(theta).toFixed(2)+" rad",
+      12,h-39,"#48351f"
+    );
+    text(ctx,
+      "q̇ = "+omega.toFixed(2)+" rad/s",
+      12,h-20,"#48351f"
+    );
+  }
+
+  // =========================================
+  // DIAGRAMMA DI FASE
+  // =========================================
+
+  function drawPhase() {
+    const [w,h] = prepare(phase,gx);
+
+    const L=47,R=17,T=25,B=43;
+    const pw=w-L-R;
+    const ph=h-T-B;
+
+    const ymax=Math.max(2.5,Math.abs(v0)*1.18);
+
+    const px=a=>L+pw*(a+PI)/TAU;
+    const py=v=>T+ph*(ymax-v)/(2*ymax);
+
+    const ticks=[
+      [-PI,"-π"],
+      [-PI/2,"-π/2"],
+      [0,"0"],
+      [PI/2,"π/2"],
+      [PI,"π"]
+    ];
+
+    ticks.forEach(([a,label])=>{
+      const x=px(a);
+      line(gx,{x,y:T},{x,y:h-B},
+        a===0?"#957b56":"#d3c09f",
+        a===0?1.4:0.8
+      );
+      gx.textAlign="center";
+      text(gx,label,x,h-B+18);
+    });
+    gx.textAlign="left";
+
+    for(let j=-2;j<=2;j++) {
+      const v=j*ymax/2;
+      const y=py(v);
+
+      line(gx,{x:L,y},{x:w-R,y},
+        j===0?"#957b56":"#d3c09f",
+        j===0?1.4:0.8
+      );
+
+      gx.textAlign="right";
+      text(gx,v.toFixed(1),L-7,y+4);
+    }
+    gx.textAlign="left";
+
+    text(gx,"q̇",7,15,"#48351f");
+    text(gx,"q (rad)",w-56,h-7,"#48351f");
+
+    gx.save();
+    gx.beginPath();
+    gx.rect(L,T,pw,ph);
+    gx.clip();
+
+    // Separatrice E=2.
+    gx.setLineDash([4,5]);
+    gx.strokeStyle="rgba(157,117,73,0.45)";
+    gx.lineWidth=1.2;
+
+    for(const sign of [-1,1]) {
+      gx.beginPath();
+      for(let i=0;i<=240;i++) {
+        const a=-PI+TAU*i/240;
+        const v=sign*2*Math.cos(a/2);
+        if(i===0) gx.moveTo(px(a),py(v));
+        else gx.lineTo(px(a),py(v));
+      }
+      gx.stroke();
+    }
+    gx.setLineDash([]);
+
+    // Scia con dissolvenza temporale.
+    gx.lineCap="round";
+    gx.lineJoin="round";
+
+    for(let i=1;i<history.length;i++) {
+      const a=history[i-1];
+      const b=history[i];
+
+      const x0=wrap(a.theta);
+      const x1=wrap(b.theta);
+
+      const age=t-(a.t+b.t)/2;
+      const freshness=Math.max(
+        0,1-age/trailSeconds
+      );
+      const opacity=0.85*Math.pow(freshness,1.6);
+
+      if(opacity<0.002) continue;
+
+      const color=`rgba(166,75,42,${opacity})`;
+
+      if(Math.abs(x1-x0)<=PI) {
+        line(gx,
+          {x:px(x0),y:py(a.omega)},
+          {x:px(x1),y:py(b.omega)},
+          color,2.8
+        );
+      } else {
+        // Attraversamento dei bordi periodici.
+        const forward=b.theta>a.theta;
+        const edge=forward?PI:-PI;
+        const k=forward
+          ? Math.floor((a.theta+PI)/TAU)
+          : Math.ceil((a.theta-PI)/TAU);
+        const crossing=edge+TAU*k;
+
+        const u=Math.max(0,Math.min(1,
+          (crossing-a.theta)/(b.theta-a.theta)
+        ));
+        const wc=a.omega+u*(b.omega-a.omega);
+
+        line(gx,
+          {x:px(x0),y:py(a.omega)},
+          {x:px(edge),y:py(wc)},
+          color,2.8
+        );
+        line(gx,
+          {x:px(-edge),y:py(wc)},
+          {x:px(x1),y:py(b.omega)},
+          color,2.8
+        );
+      }
+    }
+
+    const X=px(wrap(theta));
+    const Y=py(omega);
+
+    dot(gx,{x:X,y:Y},7,"rgba(173,89,53,0.17)");
+    dot(gx,{x:X,y:Y},4.5,"#ad5935");
+    dot(gx,{x:X-1,y:Y-1},1.4,"#fff0ce");
+
+    gx.restore();
+
+    gx.textAlign="right";
+    text(gx,"t = "+t.toFixed(2)+" s",w-R,15);
+    gx.textAlign="left";
+  }
+
+  function updateLabels() {
+    const regime=v0<2-1e-9
+      ? "Oscillazione"
+      : v0>2+1e-9
+      ? "Rotazione completa"
+      : "Separatrice";
+
+    status.textContent=
+      regime+" · m = 1 · g = 1 · ℓ = 1";
+    timeLabel.textContent=
+      "t = "+t.toFixed(1)+" s";
+  }
+
+  function reset() {
+    theta=0;
+    omega=v0;
+    t=0;
+    history=[{t,theta,omega}];
+    lastFrame=null;
+    drawScene();
+    drawPhase();
+    updateLabels();
+  }
+
+  function setVelocity(value) {
+    if(!Number.isFinite(value)) return;
+    v0=Math.max(0,Math.min(4,value));
+    slider.value=v0;
+    number.value=v0.toFixed(2);
+    reset();
+  }
+
+  slider.addEventListener("input",()=>{
+    setVelocity(Number(slider.value));
+  });
+
+  number.addEventListener("change",()=>{
+    setVelocity(Number(number.value));
+  });
+
+  root.querySelector(".pd-reset")
+    .addEventListener("click",reset);
+
+  pauseButton.addEventListener("click",()=>{
+    running=!running;
+    pauseButton.textContent=
+      running?"Pausa":"Riprendi";
+    lastFrame=null;
+  });
+
+  function animate(timestamp) {
+    if(running && lastFrame!==null) {
+      const dt=Math.min(
+        (timestamp-lastFrame)/1000,0.05
+      );
+      advance(dt);
+    }
+
+    lastFrame=timestamp;
+    drawScene();
+    drawPhase();
+    updateLabels();
+
+    requestAnimationFrame(animate);
+  }
+
+  reset();
   requestAnimationFrame(animate);
 })();
 </script>
