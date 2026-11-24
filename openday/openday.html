@@ -23,26 +23,35 @@
 .slide .controlpanel button,
 .slide .controlpanel label,
 .slide .controlpanel strong,
+/* Riquadri */
 .slide .box {
-    font-size: 20px !important;
+    font-size: clamp(18px, 2.5vh, 26px) !important;
 }
 
 /* Formule matematiche */
 .slide .equation {
-    font-size: 22px;
+    font-size: clamp(22px, 3vh, 34px);
 }
 
-/* Titoli, volutamente più grandi */
+/* Titoli */
 .slide h1 {
-    font-size: 48px;
+    font-size: clamp(36px, 5.5vh, 60px);
 }
 
 .slide h2 {
-    font-size: 36px;
+    font-size: clamp(30px, 4.5vh, 46px);
 }
 
 .slide h3 {
-    font-size: 24px;
+    font-size: clamp(24px, 3.3vh, 34px);
+}
+/* Testo normale */
+.slide p,
+.slide li,
+.slide.small-text p,
+.slide.small-text li {
+    font-size: clamp(22px, 3vh, 34px) !important;
+    line-height: 1.35;
 }
 /* Le formule MathJax conservano dimensioni leggibili anche in proiezione. */
 .equation mjx-container[display="true"]{margin:.12em 0!important;overflow:visible}
@@ -120,7 +129,7 @@ window.MathJax = {
     </section>
     
     <section class="slide section-slide">
-        <div class="eyebrow">Parte 01</div>
+        <div class="eyebrow">Parte Prima</div>
         <h1>Le forme della natura</h1>
     </section>
     
@@ -305,9 +314,80 @@ window.MathJax = {
             </div>
         </div>
     </section>
-    
+  <section class="slide"><h2>Agenti in azione</h2>
+    <p>Finora gli ingredienti non seguivano strategie: si muovevano a caso e interagivano secondo regole locali.</p>
+    <img src="dummy.png" alt="Agente" style="width:auto;height:35vh;object-fit:contain;">
+    <p>Strutture estese possono emergere anche quando le componenti agiscono <strong>autonomamente con un obiettivo personale</strong>: diventano <strong>agenti</strong>. Modelli molto utilizzati in economia e nel machine learning.</p>
+</section>
+
+<section class="slide">
+    <h2>Il modello di Schelling</h2>
+    <div class="columns two-thirds">
+        <div>
+        <p>Due tipi di <strong>agenti A e B</strong> occupano alcune celle di una griglia.</p><div class="equation">\(\color{#ad3e33}{\blacksquare}\;\mathrm{A}\qquad\color{#315c94}{\blacksquare}\;\mathrm{B}\qquad\square\;\text{libero}\)</div>
+        <p>Ogni agente desidera almeno una percentuale <strong>\(p\)</strong> di vicini del proprio gruppo. Se la percentuale è troppo bassa, si sposta in una cella libera. Può essere un modello per una <em>città</em> in cui esistono due gruppi sociali che convivono, in modo che ogni cella della griglia sia una abitazione. </p>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3px;width:180px;aspect-ratio:1;margin:20px auto;">
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#ad3e33;"></div>
+
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+</div>
+        </div>
+        <div>
+            <img src="schelling.png" alt="Schelling" style="width:80%;height:auto;object-fit:contain;"><p class="caption center">Thomas Schelling (1921–2016), Nobel per l'Economia 2005</p></div></div>
+</section>
+
+<section class="slide"><h2>Giochiamo</h2>
+    <div class="simrow">
+        <canvas data-schelling="20" width="360" height="360"></canvas>
+        <div class="controlpanel">
+            <strong>\[p=20\%\]</strong>
+            <div class="metric" data-time>Iterazioni: 0</div>
+            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+        <p class="note">Una preferenza debole può lasciare una comunità relativamente <strong>mescolata</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="slide"><h2>Giochiamo</h2>
+    <div class="simrow">
+        <canvas data-schelling="35" width="360" height="360"></canvas>
+        <div class="controlpanel">
+            <strong>\[p=35\%\]</strong>
+            <div class="metric" data-time>Iterazioni: 0</div>
+            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+            <p class="note">Ma basta una preferenza leggermente più forte per far emergere <strong>segregazione spontanea</strong>, anche senza alcun coordinamento centrale!</p>
+        <div style="padding:28px 24px;background:#2b547e;color:white;border-radius:12px;text-align:center;box-shadow:0 5px 18px #0002;">La segregazione può emergere spontaneamente.</div>
+        </div>
+    </div>
+</section>
     <section class="slide section-slide">
-        <div class="eyebrow">Parte 02</div>
+        <div class="eyebrow">Parte Seconda</div>
         <h1>I ritmi della natura</h1>
     </section>
     
@@ -332,69 +412,74 @@ window.MathJax = {
     <section class="slide">
     <h2>Il ciclo delle prede e dei predatori</h2>
 
-    <style>
-        .ciclo-lv {
-            display: grid;
-            grid-template-columns: 1fr 42px 1fr 42px 1fr;
-            grid-template-rows: 1fr 34px 1fr 34px 1fr;
-            gap: 4px;
-            flex: 1;
-            min-height: 0;
-            align-items: stretch;
-        }
+<style>
+    .ciclo-lv {
+        display: grid;
+        grid-template-columns:
+            minmax(0,1fr) clamp(24px,3.5vh,42px)
+            minmax(0,1fr) clamp(24px,3.5vh,42px)
+            minmax(0,1fr);
+        grid-template-rows: 1fr 34px 1fr 34px 1fr;
+        gap: 4px;
+        flex: 1;
+        min-height: 0;
+        align-items: stretch;
+    }
 
-        .ciclo-lv .passo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 14px;
-            border-radius: 12px;
-            font-size: 20px;
-            line-height: 1.3;
-            font-weight: bold;
-            border: 2px solid;
-        }
+    .ciclo-lv .passo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: clamp(6px,1.3vh,14px);
+        border-radius: 12px;
+        font-size: clamp(22px,3vh,36px);;
+        line-height: 1.2;
+        font-weight: bold;
+        border: 2px solid;
+        min-width: 0;
+    }
 
-        .ciclo-lv .prede {
-            background: #e5eef8;
-            color: #315c94;
-            border-color: #315c94;
-        }
+    .ciclo-lv .prede {
+        background: #e5eef8;
+        color: #315c94;
+        border-color: #315c94;
+    }
 
-        .ciclo-lv .predatori {
-            background: #fbe9e6;
-            color: #ad3e33;
-            border-color: #ad3e33;
-        }
+    .ciclo-lv .predatori {
+        background: #fbe9e6;
+        color: #ad3e33;
+        border-color: #ad3e33;
+    }
 
-        .ciclo-lv .passaggio {
-            background: #f5f2ec;
-            color: #344456;
-            border-color: #c8c1b8;
-        }
+    .ciclo-lv .passaggio {
+        background: #f5f2ec;
+        color: #344456;
+        border-color: #c8c1b8;
+    }
 
-        .ciclo-lv .freccia {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font: bold 32px Arial, sans-serif;
-            color: #667789;
-        }
+    .ciclo-lv .freccia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: bold clamp(20px,3.5vh,32px) Arial,sans-serif;
+        color: #667789;
+    }
 
-        .ciclo-lv .centro {
-            grid-column: 2 / 5;
-            grid-row: 2 / 5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 12px;
-            font-size: 26px;
-            font-style: italic;
-            color: #203247;
-        }
-    </style>
+    .ciclo-lv .centro {
+        grid-column: 2 / 5;
+        grid-row: 2 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: clamp(6px,1.2vh,12px);
+        font-size: clamp(22px,3vh,36px);
+        font-style: italic;
+        color: #203247;
+        min-width: 0;
+    }
+</style>
 
     <div class="ciclo-lv">
 
@@ -583,82 +668,6 @@ window.MathJax = {
     <div style="position:absolute;right:0;top:0;width:33.33%;height:100%;overflow:hidden;">
         <img src="pesci.jpg" alt="La funzione del mondo"
              style="width:100%;height:100%;object-fit:cover;object-position:center;">
-    </div>
-</section>
-
-
-<section class="slide section-slide"><div class="eyebrow">Appendice</div><h1>Agenti in azione</h1></section>
-
-<section class="slide"><h2>Agenti in azione</h2>
-    <p>Finora gli ingredienti non seguivano strategie: si muovevano a caso e interagivano secondo regole locali.</p>
-    <img src="dummy.png" alt="Agente" style="width:auto;height:35vh;object-fit:contain;">
-    <p>Strutture estese possono emergere anche quando le componenti agiscono <strong>autonomamente con un obiettivo personale</strong>: diventano <strong>agenti</strong>. Modelli molto utilizzati in economia e nel machine learning.</p>
-</section>
-
-<section class="slide">
-    <h2>Il modello di Schelling</h2>
-    <div class="columns two-thirds">
-        <div>
-        <p>Due tipi di <strong>agenti A e B</strong> occupano alcune celle di una griglia.</p><div class="equation">\(\color{#ad3e33}{\blacksquare}\;\mathrm{A}\qquad\color{#315c94}{\blacksquare}\;\mathrm{B}\qquad\square\;\text{libero}\)</div>
-        <p>Ogni agente desidera almeno una percentuale <strong>\(p\)</strong> di vicini del proprio gruppo. Se la percentuale è troppo bassa, si sposta in una cella libera. Può essere un modello per una <em>città</em> in cui esistono due gruppi sociali che convivono, in modo che ogni cella della griglia sia una abitazione. </p>
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3px;width:180px;aspect-ratio:1;margin:20px auto;">
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#f0f0f0;"></div>
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#315c94;"></div>
-
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#f0f0f0;"></div>
-    <div style="background:#ad3e33;"></div>
-
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#f0f0f0;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#315c94;"></div>
-
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#f0f0f0;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-
-    <div style="background:#f0f0f0;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-    <div style="background:#315c94;"></div>
-    <div style="background:#ad3e33;"></div>
-</div>
-        </div>
-        <div>
-            <img src="schelling.png" alt="Schelling" style="width:80%;height:auto;object-fit:contain;"><p class="caption center">Thomas Schelling (1921–2016), Nobel per l'Economia 2005</p></div></div>
-</section>
-
-<section class="slide"><h2>Giochiamo</h2>
-    <div class="simrow">
-        <canvas data-schelling="20" width="360" height="360"></canvas>
-        <div class="controlpanel">
-            <strong>\[p=20\%\]</strong>
-            <div class="metric" data-time>Iterazioni: 0</div>
-            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
-        <p class="note">Una preferenza debole può lasciare una comunità relativamente <strong>mescolata</strong>.</p>
-        </div>
-    </div>
-</section>
-
-<section class="slide"><h2>Giochiamo</h2>
-    <div class="simrow">
-        <canvas data-schelling="35" width="360" height="360"></canvas>
-        <div class="controlpanel">
-            <strong>\[p=35\%\]</strong>
-            <div class="metric" data-time>Iterazioni: 0</div>
-            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
-            <p class="note">Ma basta una preferenza leggermente più forte per far emergere <strong>segregazione spontanea</strong>, anche senza alcun coordinamento centrale!</p>
-        <div style="padding:28px 24px;background:#2b547e;color:white;border-radius:12px;text-align:center;box-shadow:0 5px 18px #0002;">La segregazione può emergere spontaneamente.</div>
-        </div>
     </div>
 </section>
 
