@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matematica per capire il mondo — Gabriele Sicuro</title>
+<style>
+:root{--ink:#1b2835;--accent:#ad3e33;--blue:#315c94;--green:#218066;--soft:#f5f2ec;--panel:#fff;--border:#dfded9}*{box-sizing:border-box}html,body{margin:0;height:100%;background:#171c26;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}button,input{font:inherit}#stage{position:absolute;inset:0 0 52px;display:grid;place-items:center;overflow:hidden}.slide{display:none;position:absolute;inset:2.3% max(2.5%,calc((100vw - 148vh)/2));background:var(--panel);padding:clamp(24px,3.25vw,65px);box-shadow:0 10px 65px #0005;overflow:hidden;flex-direction:column;gap:clamp(12px,1.5vh,26px)}.slide.active{display:flex}.slide h1{font-size:clamp(30px,3.5vw,64px);line-height:1.13;margin:0;font-weight:normal}.slide h2{font-size:clamp(26px,2.4vw,46px);font-weight:normal;border-bottom:3px solid var(--accent);padding-bottom:.25em;margin:0 0 .2em}.slide h3{font-size:clamp(20px,1.55vw,30px);font-weight:normal;margin:.3em 0}.slide p,.slide li{font-size:clamp(18px,1.55vw,29px);line-height:1.45;margin:.25em 0}.slide small,.caption{font-size:10px;color:#596474}.slide ul{padding-left:1.2em}.slide li{margin:.5em 0}.slide strong,.red{color:var(--accent)}.purple{color:purple}.blue{color:var(--blue)}.green{color:var(--green)}.equation{text-align:center;font-size:clamp(18px,1.9vw,36px);line-height:1.5;padding:.35em .3em;background:#faf8f5;border-radius:8px}.box{background:#f4f5f7;border-left:5px solid var(--blue);padding:clamp(18px,1.4vw,25px);border-radius:5px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:3%;align-items:center;min-height:0;flex:1}.columns.two-thirds{grid-template-columns:1.6fr 1fr}.center{text-align:center}.spacer{flex:1}.image-placeholder{background:repeating-linear-gradient(135deg,#f4f2ed,#f4f2ed 14px,#eae7e1 14px,#eae7e1 28px);border:2px dashed #b1ada5;border-radius:10px;color:#64615b;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;min-height:130px;font-size:clamp(12px,1.1vw,21px);font-family:Arial,sans-serif}.image-placeholder[data-file]{position:relative}.image-placeholder[data-file]::after{content:attr(data-file);position:absolute;bottom:8px;left:8px;right:8px;font-size:12px;color:#73716e}.image-placeholder img{width:100%;height:100%;object-fit:contain}.portrait{height:min(50vh,480px)}.wide{height:min(40vh,360px)}.section-slide{background:#203247;color:white;justify-content:center}.section-slide h1{font-size:clamp(36px,5vw,85px)}.section-slide .eyebrow{color:#e5bb89;text-transform:uppercase;letter-spacing:.2em;font:15px Arial,sans-serif}.title-slide{justify-content:center;background:linear-gradient(130deg,#fff,#f3eae3)}.title-slide h1{max-width:92%;font-size:clamp(38px,4.3vw,78px)}.title-slide .subtitle{font-size:clamp(24px,2.3vw,45px);font-style:italic;color:var(--accent)}.title-slide .byline{margin-top:5vh}.simrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(215px,.55fr);gap:2vw;align-items:center;min-height:0;flex:1}.simrow canvas{display:block;width:100%;max-width: min(55vh,630px);aspect-ratio:1;margin:auto;border:1px solid #adb5bd;background:#fbfaf6;image-rendering:pixelated}.controlpanel{font-family:Arial,sans-serif;font-size:16px;line-height:1.5;background:#f4f6f9;border-radius:10px;padding:16px;align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:10px}.controlpanel button,.act{background:#254c76;color:white;border:0;border-radius:7px;padding:9px 13px;cursor:pointer}.controlpanel button:hover,.act:hover{background:#3972a7}.controlpanel label{display:flex;justify-content:space-between;gap:10px}.controlpanel input[type=range]{width:100%;accent-color:var(--accent)}.controls-inline{display:flex;flex-wrap:wrap;gap:8px}.metric{font-variant-numeric:tabular-nums;color:#445266}.note{font-size:clamp(15px,1.05vw,20px)!important}.small-text p,.small-text li{font-size:clamp(18px,1.15vw,22px)}#toolbar{position:absolute;bottom:0;height:52px;width:100%;display:flex;align-items:center;gap:14px;background:#111925;color:white;padding:0 22px;font:14px Arial,sans-serif}#toolbar button{border:1px solid #627084;background:transparent;color:white;padding:7px 12px;border-radius:6px;cursor:pointer}#toolbar button:hover{background:#32445b}#progress{height:3px;position:absolute;left:0;bottom:52px;background:#cb7466;transition:width .15s}#count{margin-left:auto;color:#aab5c5}#overview{position:absolute;inset:4% 6% 60px;overflow:auto;background:#fafafa;z-index:30;display:none;padding:25px;border-radius:10px;box-shadow:0 10px 45px #0008}#overview.show{display:block}#overview button{font-size:16px;text-align:left;background:white;display:block;width:100%;margin:8px 0;padding:10px 14px;border:1px solid #ddd;cursor:pointer}.footer{margin-top:auto;color:#9d9791;font:12px Arial,sans-serif;display:flex;justify-content:space-between}.tag{font:13px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777}.plot-canvas{height:min(48vh,470px);width:100%;background:white;border:1px solid #ddd}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;align-items:stretch}.three .image-placeholder{min-height:220px}@media(max-width:780px){.slide{inset:1% 1%;padding:22px;overflow:auto}.slide p,.slide li{font-size:16px}.columns,.columns.two-thirds,.simrow{grid-template-columns:1fr;gap:12px}.portrait{height:180px}.image-placeholder{min-height:80px}.slide h2{font-size:26px}.simrow canvas{max-width:300px}.controlpanel{padding:10px}.footer{display:none}}
+/* Font uniforme per il testo della presentazione */
+.slide {
+    font-size: 18px;
+}
+
+.slide p,
+.slide li,
+.slide small,
+.slide .caption,
+.slide .note,
+.slide .metric,
+.slide .tag,
+.slide .eyebrow,
+.slide .subtitle,
+.slide .image-placeholder,
+.slide .image-placeholder::after,
+.slide .controlpanel,
+.slide .controlpanel button,
+.slide .controlpanel label,
+.slide .controlpanel strong,
+.slide .box {
+    font-size: 20px !important;
+}
+
+/* Formule matematiche */
+.slide .equation {
+    font-size: 22px;
+}
+
+/* Titoli, volutamente più grandi */
+.slide h1 {
+    font-size: 48px;
+}
+
+.slide h2 {
+    font-size: 36px;
+}
+
+.slide h3 {
+    font-size: 24px;
+}
+/* Le formule MathJax conservano dimensioni leggibili anche in proiezione. */
+.equation mjx-container[display="true"]{margin:.12em 0!important;overflow:visible}
+.equation mjx-container{max-width:100%}
+.math-inline mjx-container{display:inline-block!important}
+
+/* Animazione di particelle: moto casuale e reazioni, disegnata su Canvas. */
+.reaction-animation{display:block;width:min(43vh,100%);height:auto;aspect-ratio:1;margin:0 auto;background:#fae9d8;border:1px solid #c6b39f;border-radius:12px;}
+
+/* Layout delle due slide interattive di Lotka-Volterra */
+#lotka-laboratorio, #lotka-fase { gap:clamp(8px,1vh,16px); }
+#lotka-laboratorio > p, #lotka-fase > p { margin:0; }
+.lv-lab { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(230px,0.85fr); gap:clamp(12px,1.6vw,25px); align-items:stretch; flex:1; min-height:0; }
+.lv-lab canvas { display:block; width:100%; height:100%; min-height:0; background:white; border:1px solid #dce1e7; border-radius:8px; }
+.lv-panel { min-width:0; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:clamp(5px,0.85vh,11px); background:#f4f6f9; padding:clamp(10px,1.2vw,20px); border-radius:10px; font:15px Arial,sans-serif; }
+.lv-panel strong { font-size:18px; }
+.lv-presets, .lv-actions { display:flex; flex-wrap:wrap; gap:6px; }
+.lv-presets button, .lv-actions button { font:15px Arial,sans-serif; background:#254c76; color:white; border:0; border-radius:6px; cursor:pointer; padding:7px 11px; }
+.lv-presets button.selected { background:#ad3e33; box-shadow:0 0 0 2px #e6c4bf inset; }
+.lv-actions button:disabled { opacity:.45; cursor:default; }
+.lv-control { display:grid; grid-template-columns:20px minmax(0,1fr) 55px; align-items:center; column-gap:8px; font:15px Arial,sans-serif; }
+.lv-control input[type=range] { width:100%; min-width:0; accent-color:#ad3e33; }
+.lv-control output { text-align:right; font-variant-numeric:tabular-nums; }
+.lv-explain, .lv-stats { font:14px/1.35 Arial,sans-serif; color:#445266; }
+#lotka-laboratorio > .caption, #lotka-fase > .caption { font-size:13px!important; }
+@media(max-width:780px){
+  .lv-lab{grid-template-columns:1fr;}
+  .lv-lab canvas{height:auto;aspect-ratio:920/540;}
+  .lv-panel{gap:8px;}
+}
+
+</style>
+
+
+<script>
+window.MathJax = {
+    loader: {
+        load: ['[tex]/color']
+    },
+    tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        packages: {'[+]': ['color']}
+    },
+    options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+    },
+    svg: {
+        fontCache: 'global'
+    }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+</head><body>
+
+<div id="stage">
+    <section class="slide title-slide active">
+        <div class="tag">Dipartimento di Matematica · Alma Mater — Università di Bologna</div>
+        <h1>Matematica per capire il mondo</h1>
+        <div class="subtitle">Da semplici regole alla complessità</div>
+        <div class="byline"><p>Gabriele Sicuro</p><p class="caption">Bologna, 27 novembre 2026</p></div>
+        <div class="spacer"></div>
+        <div style="text-align: center;">
+            <img src="logo.png" alt="Logo" style="max-width: 210px; max-height: 100px; width: auto; height: auto;"> 
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Indice</h2>
+        <div class="spacer"></div>
+        <h3>Parte prima — <strong>Le forme della natura</strong></h3>
+        <h3>Parte seconda — <strong>I ritmi della natura</strong></h3>
+        <div class="spacer"></div>
+    </section>
+    
+    <section class="slide section-slide">
+        <div class="eyebrow">Parte 01</div>
+        <h1>Le forme della natura</h1>
+    </section>
+    
+    <section class="slide small-text">
+        <h2><em>L'origine della tigre</em></h2>
+        <div class="columns two-thirds">
+            <div>
+                <p><em><strong>All'inizio non c'erano strisce sul corpo della tigre.</strong> Quelle strisce […] sono tutte disegnate in segno di gratitudine verso la tigre dal <strong>corvo</strong> […] Le strisce rappresentano il valore.</em></p><p><em>In seguito, la <strong>vespa</strong> rubò una delle strisce della tigre. Per questo ha striature di tigre su tutto il corpo…</em></p>
+                <p class="caption">Leggenda dell'etnia nàxī, Cina</p>
+            </div>
+            <div style="position: absolute; right: 0; top: 0; width: 33.33%;height: 100%;overflow: hidden;">
+                <img src="Tiger.jpg" alt="Tigre" style="width: 100%;height: 100%;object-fit: cover;object-position: center;">
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide small-text">
+        <h2>La strana geometria</h2>
+        <p>Le strisce della tigre, della vespa o della zebra, o la geometria delle macchie del giaguaro o del leopardo, sembrano troppo eleganti e complesse per essere frutto del caso: da qui i miti, i <em>pourquoi-tales</em>.</p>
+        <div class="columns" style="display:flex;gap:20px;align-items:center;"><div style="flex:1;text-align:center;"><img src="puffer2.png" alt="Pesce palla" style="width:100%;height:40vh;object-fit:contain;"></div><div style="flex:1;text-align:center;"><img src="sgombro.png" alt="Sgombro" style="width:100%;height:50vh;object-fit:contain;"></div></div>
+        <p>Queste geometrie sono ovunque in natura, persino sulle nostre dita. Miliardi di singole <strong>cellule</strong> agiscono in base a stimoli ricevuti <strong>localmente</strong>. Eppure una certa coordinazione <strong>emerge</strong> dando vita a geometrie inattese. Come è possibile?</p>
+    </section>
+    
+    <section class="slide">
+        <h2>Alan Turing</h2>
+        <div class="columns two-thirds">
+            <div>
+                <p>Nel 1952, il matematico britannico <strong>Alan Turing</strong> si chiese pressappoco la stessa cosa.</p>
+                <div class="box"><p>È possibile costruire un modello matematico che descriva come gli organismi viventi costruiscono questi motivi geometrici complessi sulla base di semplici principi locali?</p></div>
+            </div>
+            <div>
+                <div style="text-align:center;"><img src="Turing2.png" alt="Alan Turing" style="max-width:100%;height:40vh;width:auto;object-fit:contain;"></div>
+                <p class="caption center">Alan Turing (1912–1954)</p>
+            </div>
+        </div>
+        <p>La domanda riguarda la <strong>morfogenesi</strong>: come strutture sofisticate possano emergere senza una «guida intelligente», per esempio nello sviluppo degli arti degli embrioni dei vertebrati.</p>
+    </section>
+    
+
+    <section class="slide">
+        <h2>Un semplice modello</h2>
+                <p>
+                    Turing capì che una grande varietà di
+                    comportamenti può nascere da due componenti
+                    <strong>in competizione, interagenti tra loro</strong>.
+                </p>
+        <div class="columns" style="grid-template-columns:50vh 1fr;">
+            <div>
+
+                <!-- Animazione interattiva Canvas: rossi rapidi, blu lenti, reazione e disattivazione -->
+                <canvas class="reaction-animation" data-reaction width="500" height="500" aria-label="Particelle rosse rapide e blu lente in moto casuale; una rossa diventa blu e una blu si disattiva"></canvas>
+            </div>
+
+            <div class="box small-text">
+                <h3>Un esempio: il modello di Gray–Scott</h3>
+                <ul>
+                    <li>
+                        Un <span class="red">substrato \(S\)</span>, più veloce,
+                        riempie lo spazio e viene rifornito
+                        al tasso <span class="red">\(r\)</span>.
+                    </li>
+                    <li>
+                        Un <span class="blue">attivatore \(A\)</span>, più lento,
+                        consuma \(S\) per replicarsi:
+                        \[S + 2A → 3A;\] si disattiva con tasso
+                        <span class="blue">\(k\)</span>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 1: DIFFUSIONE -->
+    <section class="slide small-text">
+        <h2>Un sistema di <em>equazioni differenziali</em></h2>
+        <p>Studiamo le <strong>concentrazioni</strong> di substrato e attivatore, \(S(x,y,t)\) e \(A(x,y,t)\), invece del numero discreto di elementi. Queste concentrazioni <strong>dipendono dal tempo</strong> e vorremmo capire come cambiano al passare di esso. Matematicamente, siamo interessati a 
+            \[\frac{\partial S(x,y,t)}{\partial t},\qquad \frac{\partial A(x,y,t)}{\partial t}.\]
+            Ma per descrivere queste quantità abbiamo bisogno di tenere conto di <strong> quattro ingredienti.</strong></p>
+    </section>
+
+    <section class="slide small-text">
+        <h2>Un sistema di <em>equazioni differenziali</em></h2>
+        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=\textcolor{blue}{D_S\Delta S}\\[5pt]\frac{\partial A}{\partial t}&=\textcolor{blue}{D_A\Delta A}\end{aligned}\]</div>
+        <div class="box">
+            <h3>1. La <span class="blue"><em>diffusione</em></span></h3>
+            <p>Le due sostanze si muovono <em>caoticamente</em> nello spazio, tendendo a distribuirsi dalle zone dove sono più concentrate verso quelle dove lo sono meno. Il simbolo \(\Delta\) è il <strong>laplaciano</strong>, che descrive come la concentrazione varia nello spazio. Se abbiamo una funzione \(f(x,y)\), esso è</p>
+            <div class="equation">\[\Delta f=\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}\]</div>
+            <p>I coefficienti positivi \(D_S\) e \(D_A\) determinano la rapidità della diffusione: \(D_S>D_A\).</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: INTERAZIONE -->
+    <section class="slide small-text">
+        <h2>Un sistema di <em>equazioni differenziali</em></h2>
+        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S\textcolor{red}{-SA^2}\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A\textcolor{red}{+SA^2}\end{aligned}\]</div>
+        <div class="box">
+            <h3>2. L'<span class="red"><em>interazione</em></span></h3>
+            <div class="equation">\[S+2A\longrightarrow 3A\]</div>
+            <p>L'attivatore \(A\) utilizza il substrato \(S\) per <strong>replicarsi</strong>. Il termine \(\textcolor{red}{-SA^2}\) indica che il substrato viene consumato, mentre \(\textcolor{red}{+SA^2}\) indica che la concentrazione dell'attivatore aumenta. Più attivatore è già presente, più rapidamente può avvenire la reazione: è un esempio di <strong>autocatalisi</strong>.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: RIFORNIMENTO -->
+    <section class="slide small-text">
+        <h2>Un sistema di <em>equazioni differenziali</em></h2>
+        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S-SA^2\textcolor{green}{+r(1-S)}\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A+SA^2\end{aligned}\]</div>
+        <div class="box">
+            <h3>3. Il <span class="green"><em>rifornimento del substrato</em></span></h3>
+            <p>Il substrato viene continuamente immesso nel sistema, per esempio da cellule che lo producono, e il termine \(\textcolor{green}{+r(1-S)}\) descrive questo meccanismo: se \(S\) è piccolo, il rifornimento è maggiore, se \(S\) è vicino a 1, il rifornimento diminuisce. Il parametro \(r\) controlla la rapidità del rifornimento.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: DISATTIVAZIONE -->
+    <section class="slide small-text">
+        <h2>Un sistema di <em>equazioni differenziali</em></h2>
+        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S-SA^2+r(1-S)\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A+SA^2\textcolor{purple}{-kA}\end{aligned}\]</div>
+        <div class="box">
+            <h3>4. La <span class="purple"><em>disattivazione dell'attivatore</em></span></h3>
+            <p>L'attivatore non funziona ininterrottamente. Il termine \(\textcolor{purple}{-kA}\), \(k>0\), descrive la perdita di attivatore.
+        </div>
+    </section>
+    
+    <section class="slide">
+        <h2>Un esperimento</h2>
+        <p>La competizione tra <strong>diffusione, autocatalisi, rifornimento e rimozione</strong> può produrre sorprendenti strutture spaziali. Facciamo qualche esperimento.</p>
+        <p>Assumiamo un tessuto quadrato. Il substrato riempie il tessuto, ma nella regione centrale è più diluito e sono presenti attivatori.</p>
+        <div class="center"><canvas class="seed-display" width="250" height="250" style="width:min(33vh,300px);aspect-ratio:1;border:2px solid #b1a7a0"></canvas></div>
+        <p>Concentriamoci sugli attivatori, che immaginiamo siano gli elementi colorati: <strong>dove il plot è scuro, ci sono attivatori.</strong> Come evolve la situazione?</p>
+    </section>
+
+    <section class="slide">
+        <h2>Prova zero: ignoriamo l'interazione</h2>
+        <div class="simrow">
+            <canvas data-gray="0" width="160" height="160"></canvas>
+            <div class="controlpanel">
+            <div class="metric">f = 0.030 · k = 0.056<br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <p class="note">Reazione \[S + 2A \to 3A\] <strong>disattivata</strong>: solo diffusione, rifornimento e rimozione.</p>
+            <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div></div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Prima prova: accendiamo l'interazione</h2>
+        <div class="simrow">
+            <canvas data-gray="1" width="160" height="160"></canvas>
+            <div class="controlpanel">
+            <div class="metric">f = 0.030 · k = 0.056<br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide">
+        <h2>Seconda prova: acceleriamo la disattivazione</h2>
+        <div class="simrow">
+            <canvas data-gray="2" width="160" height="160"></canvas>
+            <div class="controlpanel">
+            <div class="metric">f = 0.030 · <strong>k = 0.060</strong><br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <p class="note">Il tasso di disattivazione degli attivatori è leggermente <strong>aumentato</strong>.</p>
+            <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide">
+        <h2>Terza prova: rallentiamo il rifornimento</h2>
+        <div class="simrow">
+            <canvas data-gray="3" width="160" height="160"></canvas>
+            <div class="controlpanel">
+            <div class="metric"><strong>f = 0.028</strong> · k = 0.056</strong><br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <p class="note">Il tasso di rifornimento del substrato è leggermente <strong>ridotto</strong>.
+            </p><div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div></div></div>
+    </section>
+    
+    <section class="slide">
+        <h2>Inattese instabilità</h2>
+        <div class="columns two-thirds">
+            <div><p>Strutture complesse possono emergere da regole <strong>semplici</strong> e da composti che si muovono <strong>a caso e senza strategia</strong>.</p> <p>Contrariamente a quanto si potrebbe attendere, non si ottiene necessariamente un <strong>mescolamento omogeneo</strong>, ma strutture complesse che nascono dalla competizione tra elementi con velocità diverse.</p><p>Un tema che collega equazioni differenziali, processi stocastici e analisi numerica.</p>
+            </div>
+            <div style="text-align:center;"><img src="Haeckel.jpg" alt="Radiolari" style="width:90%;height:auto;object-fit:contain;">
+            <p class="caption">Ernst Haeckel, gusci di radiolari</p></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide section-slide">
+        <div class="eyebrow">Parte 02</div>
+        <h1>I ritmi della natura</h1>
+    </section>
+    
+    <section class="slide">
+        <h2>Prede e predatori</h2>
+        <div style="display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:25px;align-items:center;flex:1;min-height:0;">
+            <div><img src="catmouse.png" alt="Prede e predatori" style="width:100%;height:45vh;object-fit:contain;"></div>
+            <div>
+                <p>Oltre a <strong>strutture spaziali</strong> che emergono da interazioni locali, esistono <strong>strutture temporali</strong> che sembrano emergere senza un motivo ovvio.</p><br>
+                <p>Un esempio: sistemi in cui coesistono <strong>prede e predatori</strong>.</p>
+            </div>
+            <div><img src="catmouse2.png" alt="Prede e predatori" style="width:100%;height:45vh;object-fit:contain;"></div>
+        </div>
+    </section>
+    
+    <section class="slide">
+        <h2>Linci e lepri in Canada</h2>
+        <div><img src="pop.png" alt="Lepri e linci" style="width:100%;height:auto;object-fit:contain;align-items:center;"></div>
+        <p class="caption">Numero di pellicce vendute alla Hudson's Bay Company negli anni. Da Wikipedia.</p>
+    </section>
+    
+    <section class="slide small-text"><h2>Matematica nascosta, Alfred Lotka e Vito Volterra</h2>
+        <div class="columns">
+            <div style="text-align:right;">
+                <img src="lotka.png" alt="Alfred Lotka" style="width:45%;height:auto;">
+                <p class="caption">Alfred Lotka (1880–1949)</p>
+            </div>
+            <div style="text-align:left;">
+                <img src="volterra.png" alt="Vito Volterra" style="width:45%;height:auto;">
+                <p class="caption">Vito Volterra (1860–1940)</p>
+            </div>
+        </div>
+        <p><strong>Perché queste fluttuazioni?</strong> Studiando le popolazioni di pesci nell'Adriatico, nel 1926 <strong>Vito Volterra</strong> ottenne una serie di equazioni che riproducevano questo comportamento. Equazioni simili erano state ottenute in precedenza da <strong>Alfred Lotka</strong> per le reazioni chimiche.</p>
+    </section>
+
+   
+<section class="slide small-text">
+    <h2>Il modello di Lotka–Volterra</h2>
+    <p>Consideriamo due popolazioni al variare del tempo:</p>
+
+    <div class="columns" style="grid-template-columns:1fr 1fr;gap:30px;align-items:start;">
+
+        <!-- COLONNA SINISTRA: PREDE -->
+        <div><h3 style="text-align:center;background:#e5eef8;color:#315c94;border:2px solid #315c94;border-radius:10px;padding:12px;">Prede \(X(t)\)</h3>
+            <div class="equation">
+                \[
+                X(t+1)=X(t)
+                \textcolor{blue}{+aX(t)}
+                \textcolor{purple}{-bX(t)Y(t)}
+                \]
+            </div>
+
+            <p>La popolazione delle prede:</p>
+            <ul>
+                <li><span class="blue">aumenta grazie alle nascite;</span></li>
+                <li><span class="purple">diminuisce a causa della predazione.</span></li>
+            </ul>
+        </div>
+
+        <!-- COLONNA DESTRA: PREDATORI -->
+        <div><h3 style="text-align:center;background:#fbe9e6;color:#ad3e33;border:2px solid #ad3e33;border-radius:10px;padding:12px;">Predatori \(Y(t)\)</h3>
+
+            <div class="equation">
+                \[
+                Y(t+1)=Y(t)
+                \textcolor{red}{-dY(t)}
+                \textcolor{green}{+cX(t)Y(t)}
+                \]
+            </div>
+
+            <p>La popolazione dei predatori:</p>
+            <ul>
+                <li><span class="red">diminuisce a causa della mortalità;</span></li>
+                <li><span class="green">aumenta grazie alla disponibilità di prede.</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <p>Qui \(a,b,c,d\) sono numeri positivi. Quando</p>
+            \[
+            X(t)=\frac{d}{c},
+            \qquad
+            Y(t)=\frac{a}{b}
+            \]
+        <p>le popolazioni non cambiano: sono in <strong>equilibrio</strong>.</p>
+    </div>
+</section>
+
+
+<!-- Laboratorio interattivo: Lotka-Volterra -->
+<section class="slide small-text" id="lotka-laboratorio">
+    <h2>Un laboratorio: prede e predatori</h2>
+    <p>Come cambiano le oscillazioni se modifichiamo natalità, predazione e mortalità?</p>
+    <div class="lv-lab">
+        <canvas data-lvinteractive width="920" height="540" aria-label="Grafico temporale interattivo delle popolazioni di prede e predatori"></canvas>
+        <div class="lv-panel">
+            <strong style="font-size:18px">Modifica i parametri</strong>
+            <div class="lv-presets" aria-label="Scenari di Lotka-Volterra"><button type="button" data-lvpreset="A">A</button><button type="button" data-lvpreset="B">B</button><button type="button" data-lvpreset="C">C</button></div>
+            <div class="lv-explain" data-lvexplain>Predatori quasi assenti; forte crescita delle prede.</div>
+            <label class="lv-control"><b>a</b><input aria-label="Natalità delle prede a" data-lvparam="a" type="range" min="0.1" max="1.5" step="0.01" value="0.55"><output data-lvvalue="a">0.55</output></label>
+            <label class="lv-control"><b>b</b><input aria-label="Pressione di predazione b" data-lvparam="b" type="range" min="0.001" max="1" step="0.001" value="0.015"><output data-lvvalue="b">0.015</output></label>
+            <label class="lv-control"><b>c</b><input aria-label="Crescita dei predatori grazie alle prede c" data-lvparam="c" type="range" min="0.0001" max="0.16" step="0.0001" value="0.0001"><output data-lvvalue="c">0.0001</output></label>
+            <label class="lv-control"><b>d</b><input aria-label="Mortalità dei predatori d" data-lvparam="d" type="range" min="0.1" max="3" step="0.01" value="1.70"><output data-lvvalue="d">1.70</output></label>
+            <div class="lv-stats" data-lvstatus>t = 0.0 · Prede: 24.0 · Predatori: 6.0</div>
+            <div class="lv-actions"><button type="button" data-lvaction="start">Avvia</button><button type="button" data-lvaction="toggle" disabled>Pausa</button><button type="button" data-lvaction="reset">Ricomincia</button><button type="button" data-lvaction="defaults">Valori iniziali</button></div>
+        </div>
+    </div>
+    <p class="caption">Condizioni iniziali: \(X(0)=24\), \(Y(0)=6\). <span style="color:#be5447">● Prede</span> &nbsp; <span style="color:#366a9d">● Predatori</span></p>
+</section>
+<!-- Diagramma di fase: stesso modello, stessi parametri e scenari -->
+<section class="slide small-text" id="lotka-fase">
+    <h2>Lotka–Volterra: il piano delle fasi</h2>
+    <p>Ogni punto rappresenta una coppia di popolazioni \( (X(t),Y(t)) \). Osserviamo l'orbita nel piano mentre cambia il tempo.</p>
+    <div class="lv-lab">
+        <canvas data-lvphase width="920" height="540" aria-label="Diagramma di fase delle popolazioni X e Y"></canvas>
+        <div class="lv-panel">
+            <strong style="font-size:18px">Modifica i parametri</strong>
+            <div class="lv-presets" aria-label="Scenari di Lotka-Volterra"><button type="button" data-lvpreset="A">A</button><button type="button" data-lvpreset="B">B</button><button type="button" data-lvpreset="C">C</button></div>
+            <div class="lv-explain" data-lvexplain>Predatori quasi assenti; forte crescita delle prede.</div>
+            <label class="lv-control"><b>a</b><input aria-label="Natalità delle prede a" data-lvparam="a" type="range" min="0.1" max="1.5" step="0.01" value="0.55"><output data-lvvalue="a">0.55</output></label>
+            <label class="lv-control"><b>b</b><input aria-label="Pressione di predazione b" data-lvparam="b" type="range" min="0.001" max="1" step="0.001" value="0.015"><output data-lvvalue="b">0.015</output></label>
+            <label class="lv-control"><b>c</b><input aria-label="Crescita dei predatori grazie alle prede c" data-lvparam="c" type="range" min="0.0001" max="0.16" step="0.0001" value="0.0001"><output data-lvvalue="c">0.0001</output></label>
+            <label class="lv-control"><b>d</b><input aria-label="Mortalità dei predatori d" data-lvparam="d" type="range" min="0.1" max="3" step="0.01" value="1.70"><output data-lvvalue="d">1.70</output></label>
+            <div class="lv-stats" data-lvstatus>t = 0.0 · Prede: 24.0 · Predatori: 6.0</div>
+            <div class="lv-actions"><button type="button" data-lvaction="start">Avvia</button><button type="button" data-lvaction="toggle" disabled>Pausa</button><button type="button" data-lvaction="reset">Ricomincia</button><button type="button" data-lvaction="defaults">Valori iniziali</button></div>
+        </div>
+    </div>
+    <p class="caption">Ascissa: X (prede). Ordinata: Y (predatori). Partenza: \(X(0)=24\), \(Y(0)=6\).</p>
+</section>
+
+<section class="slide small-text">
+    <h2 style="width:63%;">Conclusioni</h2>
+    <div style="width:63%;display:flex;flex-direction:column;flex:1;gap:20px;justify-content:center;">
+        <p>Come <strong>Turing</strong>, <strong>Volterra</strong> e molti altri hanno mostrato, la matematica permette di comprendere fenomeni biologici, ecologici e sociali apparentemente misteriosi.</p>
+        <div style="margin-top:20px;padding:28px 24px;background:#2b547e;color:white;border-radius:12px;text-align:center;box-shadow:0 5px 18px #0002;">
+            <p style="font-size:26px!important;line-height:1.35;margin:0;color:white;">
+                <em>Da <span style="color:#e5bb89;font-weight:bold;">regole semplici</span>
+                possono emergere
+                <span style="color:#e5bb89;font-weight:bold;">strutture e comportamenti</span>
+                sorprendentemente complessi.</em>
+            </p>
+        </div>
+        <p>È questo il motivo conduttore di una immensità di fenomeni osservati nei più svariati contesti, dalla biologia all'intelligenza artificiale. La <strong>matematica</strong> è da sempre uno strumento essenziale per <em>catturarlo e interpretarlo</em>.</p>
+    </div>
+
+    <div style="position:absolute;right:0;top:0;width:33.33%;height:100%;overflow:hidden;">
+        <img src="pesci.jpg" alt="La funzione del mondo"
+             style="width:100%;height:100%;object-fit:cover;object-position:center;">
+    </div>
+</section>
+
+
+<section class="slide section-slide"><div class="eyebrow">Appendice</div><h1>Agenti in azione</h1></section>
+
+<section class="slide"><h2>Agenti in azione</h2>
+    <p>Finora gli ingredienti non seguivano strategie: si muovevano a caso e interagivano secondo regole locali.</p>
+    <img src="dummy.png" alt="Agente" style="width:auto;height:35vh;object-fit:contain;">
+    <p>Strutture estese possono emergere anche quando le componenti agiscono <strong>autonomamente con un obiettivo personale</strong>: diventano <strong>agenti</strong>. Modelli molto utilizzati in economia e nel machine learning.</p>
+</section>
+
+<section class="slide">
+    <h2>Il modello di Schelling</h2>
+    <div class="columns two-thirds">
+        <div>
+        <p>Due tipi di <strong>agenti A e B</strong> occupano alcune celle di una griglia.</p><div class="equation">\(\color{#ad3e33}{\blacksquare}\;\mathrm{A}\qquad\color{#315c94}{\blacksquare}\;\mathrm{B}\qquad\square\;\text{libero}\)</div>
+        <p>Ogni agente desidera almeno una percentuale <strong>\(p\)</strong> di vicini del proprio gruppo. Se la percentuale è troppo bassa, si sposta in una cella libera. Può essere un modello per una <em>città</em> in cui esistono due gruppi sociali che convivono, in modo che ogni cella della griglia sia una abitazione. </p>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3px;width:180px;aspect-ratio:1;margin:20px auto;">
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#ad3e33;"></div>
+
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+
+    <div style="background:#f0f0f0;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+    <div style="background:#315c94;"></div>
+    <div style="background:#ad3e33;"></div>
+</div>
+        </div>
+        <div>
+            <img src="schelling.png" alt="Schelling" style="width:80%;height:auto;object-fit:contain;"><p class="caption center">Thomas Schelling (1921–2016), Nobel per l'Economia 2005</p></div></div>
+</section>
+
+<section class="slide"><h2>Giochiamo</h2>
+    <div class="simrow">
+        <canvas data-schelling="20" width="360" height="360"></canvas>
+        <div class="controlpanel">
+            <strong>\[p=20\%\]</strong>
+            <div class="metric" data-time>Iterazioni: 0</div>
+            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+        <p class="note">Una preferenza debole può lasciare una comunità relativamente <strong>mescolata</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="slide"><h2>Giochiamo</h2>
+    <div class="simrow">
+        <canvas data-schelling="35" width="360" height="360"></canvas>
+        <div class="controlpanel">
+            <strong>\[p=35\%\]</strong>
+            <div class="metric" data-time>Iterazioni: 0</div>
+            <div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
+            <p class="note">Ma basta una preferenza leggermente più forte per far emergere <strong>segregazione spontanea</strong>, anche senza alcun coordinamento centrale!</p>
+        <div style="padding:28px 24px;background:#2b547e;color:white;border-radius:12px;text-align:center;box-shadow:0 5px 18px #0002;">La segregazione può emergere spontaneamente.</div>
+        </div>
+    </div>
+</section>
+
+
+<div id="progress"></div><nav id="toolbar"><button id="prev">◀ Indietro</button><button id="next">Avanti ▶</button><button id="list">☷ Indice slide</button><span>← → navigazione · F schermo intero · spazio pausa · R riavvia</span><span id="count"></span></nav><div id="overview"><h2>Indice delle slide</h2><div id="entries"></div><button id="close">Chiudi</button></div>
+<script>
+'use strict';
+// HTML, CSS, Canvas e JavaScript, senza GIF, MP4 né librerie esterne.
+const slides=[...document.querySelectorAll('.slide')];let index=0,sim=null;const $=(s,r=document)=>r.querySelector(s);
+function titleFor(s,i){return (s.querySelector('h2,h1')?.textContent||`Slide ${i+1}`).trim()}
+function show(n){if(sim)sim.destroy();slides[index].classList.remove('active');index=(n+slides.length)%slides.length;let s=slides[index];s.classList.add('active');$('#count').textContent=`${index+1} / ${slides.length}`;$('#progress').style.width=`${(index+1)/slides.length*100}%`;sim=createSimulation(s)}
+$('#prev').onclick=()=>show(index-1);$('#next').onclick=()=>show(index+1);$('#list').onclick=()=>$('#overview').classList.add('show');$('#close').onclick=()=>$('#overview').classList.remove('show');let entries=$('#entries');slides.forEach((s,i)=>{let b=document.createElement('button');b.textContent=`${String(i+1).padStart(2,'0')} · ${titleFor(s,i)}`;b.onclick=()=>{$('#overview').classList.remove('show');show(i)};entries.append(b)});
+document.addEventListener('keydown',e=>{if(e.target?.matches('input[type=range]') && ['ArrowRight','ArrowLeft','ArrowUp','ArrowDown'].includes(e.key))return;if($('#overview').classList.contains('show')){if(e.key==='Escape')$('#overview').classList.remove('show');return}if(['ArrowRight','PageDown','Enter'].includes(e.key)){e.preventDefault();show(index+1)}if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();show(index-1)}if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}if(e.key===' '){e.preventDefault();sim?.toggle()}if(e.key.toLowerCase()==='r')sim?.reset()});
+
+// Evoluzione Gray–Scott con laplaciano a cinque punti e contorno periodico.
+class GrayScott {
+
+    constructor(s, mode) {
+        this.slide = s;
+        this.canvas = $('canvas[data-gray]', s);
+        this.ctx = this.canvas.getContext('2d', {alpha:false});
+        this.n = this.canvas.width;
+
+        const presets = [
+            {f:0.030, k:0.056, reaction:false},
+            {f:0.030, k:0.056, reaction:true},
+            {f:0.030, k:0.060, reaction:true},
+            {f:0.028, k:0.056, reaction:true}
+        ];
+
+        const p = presets[mode] ?? presets[1];
+
+        this.f = p.f;
+        this.k = p.k;
+        this.reaction = p.reaction;
+
+        this.ds = 0.10;
+        this.da = 0.05;
+        this.dt = 1.0;
+        this.running = true;
+
+        // Aggiorna i parametri visualizzati nella slide
+        const metric = this.slide.querySelector('.metric:not([data-time])');
+
+        if (metric) {
+            metric.innerHTML =
+                `f = ${this.f.toFixed(3)} · k = ${this.k.toFixed(3)}<br>` +
+                `D<sub>S</sub> = ${this.ds.toFixed(2)} · D<sub>A</sub> = ${this.da.toFixed(2)}`;
+        }
+
+        this.reset();
+
+        // La prova zero viene mostrata molto più lentamente
+        const slowMode = (mode === 0);
+        const stepsPerFrame = slowMode ? 1 : 10;
+        const intervalMs = slowMode ? 180 : 50;
+
+        this.interval = setInterval(() => {
+            if (!this.running) return;
+            for (let j = 0; j < stepsPerFrame; j++) this.step();
+            this.draw();
+        }, intervalMs);
+
+        this.bind();
+    }
+
+    reset() {
+        const n = this.n;
+        const L = n * n;
+
+        // Doppio buffer, senza nuove allocazioni ad ogni passo
+        this.S = new Float64Array(L);
+        this.A = new Float64Array(L);
+        this.nextS = new Float64Array(L);
+        this.nextA = new Float64Array(L);
+
+        // Substrato ovunque, attivatore assente
+        this.S.fill(1);
+        this.A.fill(0);
+
+        // Perturbazione centrale
+        const r = Math.round(n * 0.10);
+
+        for (let y = 0; y < n; y++) {
+            for (let x = 0; x < n; x++) {
+                if (Math.abs(x-n/2) < r &&
+                    Math.abs(y-n/2) < r) {
+
+                    const i = y*n+x;
+                    this.S[i] = 0.50;
+                    this.A[i] = 0.25;
+                }
+            }
+        }
+
+        this.steps = 0;
+        this.draw();
+    }
+
+    step() {
+        const n = this.n;
+        const S = this.S;
+        const A = this.A;
+        const nextS = this.nextS;
+        const nextA = this.nextA;
+
+        const f = this.f;
+        const k = this.k;
+        const ds = this.ds;
+        const da = this.da;
+
+        for (let y = 0; y < n; y++) {
+
+            const ym = (y+n-1)%n;
+            const yp = (y+1)%n;
+
+            for (let x = 0; x < n; x++) {
+
+                const xm = (x+n-1)%n;
+                const xp = (x+1)%n;
+                const i = y*n+x;
+
+                // Laplaciano a cinque punti
+                const lapS =
+                    S[ym*n+x] + S[yp*n+x] +
+                    S[y*n+xm] + S[y*n+xp] - 4*S[i];
+
+                const lapA =
+                    A[ym*n+x] + A[yp*n+x] +
+                    A[y*n+xm] + A[y*n+xp] - 4*A[i];
+
+                // Reazione autocatalitica
+                const reaction = this.reaction
+                    ? S[i]*A[i]*A[i]
+                    : 0;
+
+                // Aggiornamento simultaneo delle concentrazioni
+                nextS[i] = S[i] + this.dt * (
+                    ds*lapS - reaction + f*(1-S[i])
+                );
+
+                nextA[i] = A[i] + this.dt * (
+                    da*lapA + reaction - (f+k)*A[i]
+                );
+            }
+        }
+
+        // Scambio dei buffer
+        [this.S, this.nextS] = [nextS, S];
+        [this.A, this.nextA] = [nextA, A];
+
+        this.steps++;
+    }
+
+    draw() {
+        const n = this.n;
+        const img = this.ctx.createImageData(n, n);
+        const pixels = img.data;
+
+        for (let i = 0; i < n*n; i++) {
+
+            // Visualizziamo la concentrazione degli attivatori
+            const v = Math.max(0, Math.min(1, this.A[i]/0.45));
+
+            const j = 4*i;
+
+            pixels[j]   = Math.round(249-208*v);
+            pixels[j+1] = Math.round(232-199*v);
+            pixels[j+2] = Math.round(200-130*v);
+            pixels[j+3] = 255;
+        }
+
+        this.ctx.putImageData(img, 0, 0);
+
+        const t = $('[data-time]', this.slide);
+        if (t) {
+            t.textContent = `Passi: ${this.steps.toLocaleString('it-IT')}`;
+        }
+    }
+
+    bind() {
+        bindControls(this);
+    }
+
+    toggle() {
+        this.running = !this.running;
+
+        const b = $('[data-action=toggle]', this.slide);
+        if (b) b.textContent = this.running ? 'Pausa' : 'Riprendi';
+    }
+
+    destroy() {
+        clearInterval(this.interval);
+    }
+}
+
+function bindControls(obj){obj.slide.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>obj[b.dataset.action]?.())}
+function computeLV(which){let pars=which==='scarce'?[.52,.05,.018,2.1,22,2]:which==='intense'?[.75,.38,.055,.55,18,4]:[.72,.055,.055,.66,24,6];let [a,b,c,d,x,y]=pars;let data=[];const h=.018;for(let t=0;t<55;t+=h){if(Math.round(t/h)%15===0)data.push({t,x,y});function f(x,y){return [(a-b*y)*x,(c*x-d)*y]}let k1=f(x,y),k2=f(x+k1[0]*h/2,y+k1[1]*h/2),k3=f(x+k2[0]*h/2,y+k2[1]*h/2),k4=f(x+k3[0]*h,y+k3[1]*h);x=Math.max(1e-10,x+h*(k1[0]+2*k2[0]+2*k3[0]+k4[0])/6);y=Math.max(1e-10,y+h*(k1[1]+2*k2[1]+2*k3[1]+k4[1])/6);if(!Number.isFinite(x+y)||x>2e4||y>2e4)break}return data}
+function plotSeries(canvas,which){let data=computeLV(which),ctx=canvas.getContext('2d');let w=canvas.width,h=canvas.height;ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h);let pad=60,maxX=data.at(-1).t,maxY=Math.max(...data.map(d=>Math.max(d.x,d.y)))*1.12;maxY=Math.min(maxY,1e5);ctx.strokeStyle='#e2e6ea';ctx.lineWidth=1;for(let i=0;i<=5;i++){let y=pad+(h-pad*1.5)*i/5;ctx.beginPath();ctx.moveTo(pad,y);ctx.lineTo(w-25,y);ctx.stroke()}ctx.fillStyle='#485261';ctx.font='20px Arial';ctx.fillText('Popolazione',pad,28);ctx.fillText('tempo',w-92,h-15);for(let [key,color,label] of [['x','#be5447','Prede X'],['y','#366a9d','Predatori Y']]){ctx.strokeStyle=color;ctx.lineWidth=3;ctx.beginPath();data.forEach((d,i)=>{let x=pad+(w-pad-35)*d.t/maxX,y=h-pad/2-(h-pad*1.5)*Math.min(d[key],maxY)/maxY;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});ctx.stroke();ctx.fillStyle=color;ctx.fillText(label,key==='x'?w*.60:w*.78,28)}}
+class LVOrbit{constructor(s){this.slide=s;this.canvas=$('[data-lvorbit]',s);this.ctx=this.canvas.getContext('2d');this.path=computeLV('cycle');this.running=true;this.i=0;this.draw();this.interval=setInterval(()=>{if(this.running){this.i=(this.i+2)%this.path.length;this.draw()}},40);bindControls(this)}reset(){this.i=0;this.draw()}toggle(){this.running=!this.running;this.slide.querySelector('[data-action=toggle]').textContent=this.running?'Pausa':'Riprendi'}destroy(){clearInterval(this.interval)}draw(){let ctx=this.ctx,w=this.canvas.width,h=this.canvas.height,p=56,d=this.path;ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h);let xmax=Math.max(...d.map(z=>z.x))*1.1,ymax=Math.max(...d.map(z=>z.y))*1.1;let X=v=>p+(w-2*p)*v/xmax,Y=v=>h-p-(h-2*p)*v/ymax;ctx.strokeStyle='#8994a0';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p,p);ctx.lineTo(p,h-p);ctx.lineTo(w-p,h-p);ctx.stroke();ctx.font='21px Arial';ctx.fillStyle='#333';ctx.fillText('Predatori Y',p,27);ctx.fillText('Prede X',w-140,h-15);ctx.strokeStyle='#bccbdc';ctx.lineWidth=2;ctx.beginPath();d.forEach((v,j)=>j===0?ctx.moveTo(X(v.x),Y(v.y)):ctx.lineTo(X(v.x),Y(v.y)));ctx.stroke();ctx.strokeStyle='#a43d35';ctx.lineWidth=4;ctx.beginPath();for(let j=0;j<=this.i;j++){let v=d[j];j===0?ctx.moveTo(X(v.x),Y(v.y)):ctx.lineTo(X(v.x),Y(v.y))}ctx.stroke();let v=d[this.i];ctx.beginPath();ctx.fillStyle='#aa352e';ctx.arc(X(v.x),Y(v.y),9,0,2*Math.PI);ctx.fill();$('[data-time]',this.slide).textContent=`t = ${v.t.toFixed(1)} | X = ${v.x.toFixed(2)}, Y = ${v.y.toFixed(2)}`}}
+// Schelling: stato 0 vuoto, +1 rosso, -1 blu. Vicinato di Moore (otto celle).
+class Schelling{constructor(s,pct){this.slide=s;this.canvas=$('[data-schelling]',s);this.ctx=this.canvas.getContext('2d');this.n=42;this.threshold=pct/100;this.running=true;this.reset();this.interval=setInterval(()=>{if(this.running){for(let i=0;i<60;i++)this.step();this.draw()}},90);bindControls(this)}reset(){this.grid=new Int8Array(this.n*this.n);for(let i=0;i<this.grid.length;i++){let x=Math.random();this.grid[i]=x<.16?0:x<.58?1:-1}this.steps=0;this.draw()}neighbors(i){let n=this.n,x=i%n,y=Math.floor(i/n),same=0,total=0;for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){if(!dx&&!dy)continue;let nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=n||ny>=n)continue;let s=this.grid[ny*n+nx];if(s){total++;if(s===this.grid[i])same++}}return total===0?1:same/total}step(){let n=this.grid.length,from=-1;for(let a=0;a<30;a++){let i=Math.floor(Math.random()*n);if(this.grid[i]!==0&&this.neighbors(i)<this.threshold){from=i;break}}if(from<0)return;let target=-1;for(let a=0;a<60;a++){let j=Math.floor(Math.random()*n);if(this.grid[j]===0){target=j;break}}if(target<0)return;this.grid[target]=this.grid[from];this.grid[from]=0;this.steps++}draw(){let c=this.ctx,n=this.n,sz=this.canvas.width/n;c.fillStyle='#fff';c.fillRect(0,0,this.canvas.width,this.canvas.height);for(let y=0;y<n;y++)for(let x=0;x<n;x++){let v=this.grid[y*n+x];c.fillStyle=v===1?'#ce665d':v===-1?'#5281b7':'#f8f7f2';c.fillRect(x*sz+.4,y*sz+.4,sz-.8,sz-.8)}$('[data-time]',this.slide).textContent=`Spostamenti: ${this.steps.toLocaleString('it-IT')}`}toggle(){this.running=!this.running;this.slide.querySelector('[data-action=toggle]').textContent=this.running?'Pausa':'Riprendi'}destroy(){clearInterval(this.interval)}}
+
+// Grafico temporale interattivo di Lotka-Volterra (modello continuo).
+// Gli scenari sono condivisi dalle due slide (tempo e piano di fase).
+// Il Lotka-Volterra continuo con X0,Y0>0 non raggiunge esattamente lo zero.
+const LV_PRESETS = {
+    A: {a:0.55,b:0.015,c:0.0001,d:1.70,T:12,
+        label:'A — Predatori quasi assenti; forte crescita delle prede.'},
+    B: {a:0.30,b:0.80,c:0.001,d:0.20,T:16,
+        label:'B — Le prede crollano; successivamente diminuiscono anche i predatori.'},
+    C: {a:0.72,b:0.055,c:0.055,d:0.66,T:80,
+        label:'C — Oscillazioni periodiche di prede e predatori.'}
+};
+let LV_SELECTION = {preset:'A',params:{a:0.55,b:0.015,c:0.0001,d:1.70},T:12};
+function integrateLV(p,T){
+    // Runge-Kutta quarto ordine, h=0.01, X(0)=24, Y(0)=6.
+    let x=24,y=6,t=0;const h=0.01,steps=Math.round(T/h),data=[{t,x,y}];
+    const f=(u,v)=>[(p.a-p.b*v)*u,(p.c*u-p.d)*v];
+    for(let j=1;j<=steps;j++){
+        const k1=f(x,y),k2=f(x+h*k1[0]/2,y+h*k1[1]/2),
+              k3=f(x+h*k2[0]/2,y+h*k2[1]/2),k4=f(x+h*k3[0],y+h*k3[1]);
+        x+=h*(k1[0]+2*k2[0]+2*k3[0]+k4[0])/6;
+        y+=h*(k1[1]+2*k2[1]+2*k3[1]+k4[1])/6;
+        t=j*h;
+        if(!Number.isFinite(x+y)||x<0||y<0||x>1e9||y>1e9)break;
+        if(j%10===0)data.push({t,x,y});
+    }
+    return data;
+}
+class LVInteractive {
+    constructor(slide){
+        this.slide=slide;
+        this.phase=Boolean(slide.querySelector('[data-lvphase]'));
+        this.canvas=slide.querySelector('[data-lvphase],[data-lvinteractive]');
+        this.ctx=this.canvas.getContext('2d');
+        this.inputs=[...slide.querySelectorAll('[data-lvparam]')];
+        this.running=false;
+        this.started=false;
+        this.inputs.forEach(el=>el.addEventListener('input',()=>this.fromSliders()));
+        slide.querySelectorAll('[data-lvpreset]').forEach(btn=>{
+            btn.onclick=()=>this.applyPreset(btn.dataset.lvpreset);
+        });
+        slide.querySelector('[data-lvaction="start"]').onclick=()=>this.start();
+        slide.querySelector('[data-lvaction="toggle"]').onclick=()=>this.toggle();
+        slide.querySelector('[data-lvaction="reset"]').onclick=()=>this.reset();
+        slide.querySelector('[data-lvaction="defaults"]').onclick=()=>this.applyPreset('A');
+        this.syncFromShared();
+        this.reset();
+        this.interval=setInterval(()=>{
+            if(!this.running||this.data.length<2)return;
+            if(this.i>=this.data.length-1){
+                this.running=false;
+                this.updateButtons();
+                return;
+            }
+            this.i++;
+            this.expandAxes();
+            this.draw();
+            if(this.i>=this.data.length-1){
+                this.running=false;
+                this.updateButtons();
+            }
+        },45);
+    }
+    syncFromShared(){
+        this.params={...LV_SELECTION.params};
+        this.T=LV_SELECTION.T;
+        this.preset=LV_SELECTION.preset;
+        for(const el of this.inputs)el.value=this.params[el.dataset.lvparam];
+        this.refreshUI();
+    }
+    refreshUI(){
+        for(const el of this.inputs){
+            const name=el.dataset.lvparam,v=this.params[name];
+            this.slide.querySelector(`[data-lvvalue="${name}"]`).textContent=
+                v.toFixed(name==='c'&&v<0.01?4:(name==='b'||name==='c'?3:2));
+        }
+        this.slide.querySelectorAll('[data-lvpreset]').forEach(btn=>{
+            const selected=btn.dataset.lvpreset===this.preset;
+            btn.classList.toggle('selected',selected);
+            btn.setAttribute('aria-pressed',String(selected));
+        });
+        this.slide.querySelector('[data-lvexplain]').textContent=
+            this.preset?LV_PRESETS[this.preset].label:'Parametri personalizzati: confronto delle popolazioni.';
+    }
+    updateButtons(){
+        const start=this.slide.querySelector('[data-lvaction="start"]');
+        const pause=this.slide.querySelector('[data-lvaction="toggle"]');
+        start.disabled=this.running;
+        pause.disabled=!this.started || this.i>=this.data.length-1;
+        pause.textContent=this.running?'Pausa':'Riprendi';
+    }
+    applyPreset(name){
+        const p=LV_PRESETS[name];
+        this.params={a:p.a,b:p.b,c:p.c,d:p.d};
+        this.T=p.T;this.preset=name;
+        LV_SELECTION={preset:name,params:{...this.params},T:this.T};
+        this.inputs.forEach(el=>el.value=this.params[el.dataset.lvparam]);
+        this.refreshUI();this.reset();
+    }
+    fromSliders(){
+        this.inputs.forEach(el=>this.params[el.dataset.lvparam]=Number(el.value));
+        this.preset=null;
+        LV_SELECTION={preset:null,params:{...this.params},T:this.T};
+        this.refreshUI();this.reset();
+    }
+    reset(){
+        // Prepariamo tutti i punti ma NON cominciamo a mostrarli fino al clic su Avvia.
+        this.running=false;
+        this.started=false;
+        this.data=integrateLV(this.params,this.T);
+        this.i=0;
+        // Scala iniziale vicina alle due popolazioni di partenza.
+        // Le scale crescono solo quando i dati effettivamente mostrati le superano.
+        this.xmax=32;
+        this.ymax=30;
+        this.targetXmax=32;
+        this.targetYmax=30;
+        this.expandAxes();
+        this.updateButtons();
+        this.draw();
+    }
+    start(){
+        if(this.i>=this.data.length-1){
+            this.reset();
+        }
+        this.started=true;
+        this.running=true;
+        this.updateButtons();
+    }
+    toggle(){
+        if(!this.started||this.i>=this.data.length-1)return;
+        this.running=!this.running;
+        this.updateButtons();
+    }
+    expandAxes(){
+        const z=this.data[this.i];
+        if(!z)return;
+        // Target continuo: allarga gli assi prima che i punti tocchino il bordo.
+        // Oltre 200 non si espande ulteriormente, ma il calcolo continua.
+        const cap=200, margin=1.15, trigger=0.82, easing=0.17;
+        if(this.phase){
+            if(z.x>this.targetXmax*trigger)
+                this.targetXmax=Math.min(cap,Math.max(this.targetXmax,z.x*margin));
+            if(z.y>this.targetYmax*trigger)
+                this.targetYmax=Math.min(cap,Math.max(this.targetYmax,z.y*margin));
+            this.xmax+=easing*(this.targetXmax-this.xmax);
+        }else{
+            // Nel grafico temporale entrambi i valori usano lo stesso asse Y.
+            const largest=Math.max(z.x,z.y);
+            if(largest>this.targetYmax*trigger)
+                this.targetYmax=Math.min(cap,Math.max(this.targetYmax,largest*margin));
+        }
+        this.ymax+=easing*(this.targetYmax-this.ymax);
+    }
+    draw(){
+        const ctx=this.ctx,w=this.canvas.width,h=this.canvas.height;
+        const left=75,right=w-25,top=42,bottom=h-62;
+        const data=this.data,z=data[this.i];
+        ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h);
+        ctx.font='18px Arial';
+        const xx=this.phase?(v=>left+(right-left)*v/this.xmax):
+                            (t=>left+(right-left)*t/this.T);
+        const yy=v=>bottom-(bottom-top)*v/this.ymax;
+        ctx.textAlign='right';ctx.fillStyle='#526070';
+        for(let k=0;k<=4;k++){
+            const v=this.ymax*k/4,py=yy(v);
+            ctx.strokeStyle='#e4e8ed';ctx.lineWidth=1;
+            ctx.beginPath();ctx.moveTo(left,py);ctx.lineTo(right,py);ctx.stroke();
+            ctx.fillStyle='#526070';ctx.fillText(this.formatAxis(v),left-10,py+6);
+        }
+        ctx.strokeStyle='#677687';ctx.lineWidth=2;
+        ctx.beginPath();ctx.moveTo(left,top);ctx.lineTo(left,bottom);ctx.lineTo(right,bottom);ctx.stroke();
+        ctx.textAlign='left';ctx.fillStyle='#394656';
+        ctx.fillText(this.phase?'Predatori Y':'Popolazione',left,25);
+        ctx.fillText(this.phase?'Prede X':'Tempo',right-85,h-13);
+        ctx.textAlign='center';
+        for(let k=0;k<=4;k++){
+            const v=(this.phase?this.xmax:this.T)*k/4;
+            ctx.fillText(this.formatAxis(v),xx(v),bottom+26);
+        }
+        // Ritaglia solo le curve: quando X o Y superano 200, gli assi
+        // restano fermi e i punti fuori scala non invadono le etichette.
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(left,top,right-left,bottom-top);
+        ctx.clip();
+        if(this.phase){
+            // Visualizza soltanto l'orbita gia percorsa, senza anticipare il futuro.
+            ctx.strokeStyle='#ad3e33';ctx.lineWidth=3.5;ctx.beginPath();
+            for(let j=0;j<=this.i;j++){
+                const v=data[j];j?ctx.lineTo(xx(v.x),yy(v.y)):ctx.moveTo(xx(v.x),yy(v.y));
+            }
+            ctx.stroke();
+            ctx.fillStyle='#ad3e33';ctx.beginPath();ctx.arc(xx(z.x),yy(z.y),6,0,2*Math.PI);ctx.fill();
+        }else{
+            for(const [key,color] of [['x','#be5447'],['y','#366a9d']]){
+                ctx.lineWidth=3.4;ctx.strokeStyle=color;ctx.beginPath();
+                for(let j=0;j<=this.i;j++){
+                    const v=data[j];j?ctx.lineTo(xx(v.t),yy(v[key])):ctx.moveTo(xx(v.t),yy(v[key]));
+                }
+                ctx.stroke();
+                ctx.fillStyle=color;ctx.beginPath();ctx.arc(xx(z.t),yy(z[key]),5,0,2*Math.PI);ctx.fill();
+            }
+        }
+        ctx.restore();
+        const nice=n=>n>=10000?n.toExponential(2):n<0.1?n.toPrecision(2):n.toFixed(1);
+        this.slide.querySelector('[data-lvstatus]').textContent=
+            `t = ${z.t.toFixed(1)} · Prede: ${nice(z.x)} · Predatori: ${nice(z.y)}`;
+    }
+    formatAxis(n){
+        if(n>=10000)return n.toExponential(1);
+        if(n>=10)return n.toFixed(0);
+        return n.toFixed(1);
+    }
+    destroy(){clearInterval(this.interval)}
+}
+// Animazione illustrativa (non simulazione quantitativa della cinetica chimica).
+class BrownianReaction {
+    constructor(slide) {
+        this.slide=slide;
+        this.canvas=slide.querySelector('[data-reaction]');
+        this.ctx=this.canvas.getContext('2d');
+        this.w=this.canvas.width;this.h=this.canvas.height;
+        this.radius=10;this.duration=18;this.reactionTime=7.5;
+        this.running=true;this.last=0;
+        this.reset();
+        this.tick=this.tick.bind(this);
+        this.raf=requestAnimationFrame(this.tick);
+    }
+    // Dinamica browniana con memoria breve della velocita: rossi caldi, blu freddi.
+    particle(kind,x,y) {
+        const angle=Math.random()*Math.PI*2;
+        const speed=kind==='red'?105:27;
+        return {kind,x,y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed};
+    }
+    integrate(p,dt) {
+        if(p.kind==='grey')return;
+        const hot=p.kind==='red';
+        const sigma=hot?540:92;
+        const damping=Math.exp(-(hot?3.3:2.0)*dt);
+        p.vx=p.vx*damping+(Math.random()*2-1)*sigma*Math.sqrt(dt);
+        p.vy=p.vy*damping+(Math.random()*2-1)*sigma*Math.sqrt(dt);
+        const speed=Math.hypot(p.vx,p.vy);
+        const maximum=hot?215:67;
+        if(speed>maximum){p.vx*=maximum/speed;p.vy*=maximum/speed;}
+        p.x+=p.vx*dt;p.y+=p.vy*dt;
+        const r=this.radius;
+        if(p.x<r){p.x=2*r-p.x;p.vx=Math.abs(p.vx);}
+        if(p.x>this.w-r){p.x=2*(this.w-r)-p.x;p.vx=-Math.abs(p.vx);}
+        if(p.y<r){p.y=2*r-p.y;p.vy=Math.abs(p.vy);}
+        if(p.y>this.h-r){p.y=2*(this.h-r)-p.y;p.vy=-Math.abs(p.vy);}
+        p.x=Math.max(r,Math.min(this.w-r,p.x));
+        p.y=Math.max(r,Math.min(this.h-r,p.y));
+    }
+    freePosition() {
+        const r=this.radius;
+        for(let j=0;j<250;j++){
+            const x=r+Math.random()*(this.w-2*r),y=r+Math.random()*(this.h-2*r);
+            if(this.particles.every(p=>(p.x-x)**2+(p.y-y)**2>(2.15*r)**2))return [x,y];
+        }
+        return null;
+    }
+    // Tre cammini indipendenti simulati A RITROSO dal preciso istante di contatto.
+    // Riprodotti in avanti, i due blu incontrano una rossa senza interpolazioni artificiali.
+    backwardPath(kind,x,y) {
+        const dt=1/60,n=Math.round(this.reactionTime/dt);
+        const p=this.particle(kind,x,y);
+        const positions=new Array(n+1);
+        positions[n]={x,y};
+        for(let i=n-1;i>=0;i--){
+            this.integrate(p,dt);
+            positions[i]={x:p.x,y:p.y};
+        }
+        return positions;
+    }
+    reset() {
+        this.elapsed=0;this.spawnClock=0;this.reacted=false;this.greyed=false;
+        this.particles=[];
+        // Due blu e una rossa si toccano simultaneamente a t = reactionTime.
+        const cx=this.w*.52,cy=this.h*.48,r=this.radius;
+        this.paths=[
+            this.backwardPath('blue',cx-2*r,cy),
+            this.backwardPath('blue',cx+2*r,cy),
+            this.backwardPath('red',cx,cy)
+        ];
+        this.special=this.paths.map((path,i)=>this.particle(i===2?'red':'blue',path[0].x,path[0].y));
+        this.particles.push(...this.special);
+        for(let i=0;i<115;i++){
+            const spot=this.freePosition();
+            if(spot)this.particles.push(this.particle('red',...spot));
+        }
+        this.draw();
+    }
+    tick(now) {
+        if(!this.running)return;
+        if(!this.last)this.last=now;
+        const dt=Math.min((now-this.last)/1000,.035);this.last=now;
+        this.step(dt);this.draw();
+        this.raf=requestAnimationFrame(this.tick);
+    }
+    step(dt) {
+        this.elapsed+=dt;this.spawnClock+=dt;
+        if(this.elapsed>=this.duration){this.reset();return;}
+        if(this.spawnClock>=1.35 && this.particles.length<155){
+            this.spawnClock=0;
+            const spot=this.freePosition();
+            if(spot)this.particles.push(this.particle('red',...spot));
+        }
+        // Fondo di particelle rosse: moto caotico e urti elastici con separazione.
+        for(let i=3;i<this.particles.length;i++)this.integrate(this.particles[i],dt);
+        if(this.elapsed<this.reactionTime){
+            const k=Math.min(this.paths[0].length-1,Math.floor(this.elapsed*60));
+            this.special.forEach((p,i)=>{p.x=this.paths[i][k].x;p.y=this.paths[i][k].y;});
+        } else {
+            if(!this.reacted){
+                this.special.forEach((p,i)=>{const q=this.paths[i].at(-1);p.x=q.x;p.y=q.y;});
+                this.reacted=true;
+                this.special[2].kind='blue';
+                for(const p of this.special){
+                    const a=Math.random()*Math.PI*2;
+                    p.vx=28*Math.cos(a);p.vy=28*Math.sin(a);
+                }
+            }
+            for(const p of this.special)this.integrate(p,dt);
+            if(this.elapsed>11.8&&!this.greyed){
+                this.greyed=true;
+                this.special[0].kind='grey';
+                this.special[0].vx=0;this.special[0].vy=0;
+            }
+        }
+        const r=this.radius,minD=2*r;
+        for(let i=0;i<this.particles.length;i++){
+            for(let j=i+1;j<this.particles.length;j++){
+                const a=this.particles[i],b=this.particles[j];
+                const dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy;
+                if(d2<=1e-9||d2>=minD*minD)continue;
+                const d=Math.sqrt(d2),nx=dx/d,ny=dy/d,push=minD-d;
+                const fixedA=i<3&&(this.elapsed<this.reactionTime||a.kind==='grey');
+                const fixedB=j<3&&(this.elapsed<this.reactionTime||b.kind==='grey');
+                if(fixedA&&fixedB)continue;
+                if(fixedA){b.x+=nx*push;b.y+=ny*push;}
+                else if(fixedB){a.x-=nx*push;a.y-=ny*push;}
+                else {a.x-=nx*push/2;a.y-=ny*push/2;b.x+=nx*push/2;b.y+=ny*push/2;}
+                const rel=(b.vx-a.vx)*nx+(b.vy-a.vy)*ny;
+                if(rel<0){
+                    if(!fixedA){a.vx+=rel*nx;a.vy+=rel*ny;}
+                    if(!fixedB){b.vx-=rel*nx;b.vy-=rel*ny;}
+                }
+                for(const p of [a,b]){
+                    p.x=Math.max(r,Math.min(this.w-r,p.x));
+                    p.y=Math.max(r,Math.min(this.h-r,p.y));
+                }
+            }
+        }
+    }
+    draw() {
+        const ctx=this.ctx,w=this.w,h=this.h;
+        ctx.fillStyle='#fae9d8';ctx.fillRect(0,0,w,h);
+        // Fondo prima, poi le tre particelle protagoniste sempre ben visibili.
+        const ordered=[...this.particles.slice(3),...this.special];
+        for(const p of ordered){
+            ctx.beginPath();ctx.arc(p.x,p.y,this.radius,0,Math.PI*2);
+            ctx.fillStyle=p.kind==='red'?'#d06859':p.kind==='blue'?'#4e84c1':'#92969d';
+            ctx.fill();
+            ctx.strokeStyle='#fff9';ctx.lineWidth=1;ctx.stroke();
+            ctx.beginPath();ctx.arc(p.x-3,p.y-3,2.8,0,Math.PI*2);
+            ctx.fillStyle=p.kind==='grey'?'#ffffff20':'#ffffff65';ctx.fill();
+        }
+    }
+    toggle(){this.running=!this.running;if(this.running){this.last=0;this.raf=requestAnimationFrame(this.tick);}else cancelAnimationFrame(this.raf);}
+    destroy(){this.running=false;cancelAnimationFrame(this.raf);}
+}
+function createSimulation(s){if($('[data-reaction]',s))return new BrownianReaction(s);if($('[data-lvinteractive],[data-lvphase]',s))return new LVInteractive(s);let c=$('canvas[data-gray]',s);if(c)return new GrayScott(s,Number(c.dataset.gray));if($('[data-lvorbit]',s))return new LVOrbit(s);c=$('canvas[data-schelling]',s);if(c)return new Schelling(s,Number(c.dataset.schelling));return null}
+document.querySelectorAll('[data-lvplot]').forEach(c=>plotSeries(c,c.dataset.lvplot));let seed=$('.seed-display');if(seed){let ctx=seed.getContext('2d');ctx.fillStyle='#ffe0a5';ctx.fillRect(0,0,250,250);ctx.fillStyle='#a94439';ctx.fillRect(92,92,66,66)}show(0);
+</script></body></html>
