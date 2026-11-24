@@ -203,55 +203,1122 @@ window.MathJax = {
     </section>
 
     <!-- SLIDE 1: DIFFUSIONE -->
-    <section class="slide small-text">
-        <h2>Un sistema di <em>equazioni differenziali</em></h2>
-        <p>Studiamo le <strong>concentrazioni</strong> di substrato e attivatore, \(S(x,y,t)\) e \(A(x,y,t)\), invece del numero discreto di elementi. Queste concentrazioni <strong>dipendono dal tempo</strong> e vorremmo capire come cambiano al passare di esso. Matematicamente, siamo interessati a 
-            \[\frac{\partial S(x,y,t)}{\partial t},\qquad \frac{\partial A(x,y,t)}{\partial t}.\]
-            Ma per descrivere queste quantità abbiamo bisogno di tenere conto di <strong> quattro ingredienti.</strong></p>
-    </section>
 
-    <section class="slide small-text">
-        <h2>Un sistema di <em>equazioni differenziali</em></h2>
-        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=\textcolor{blue}{D_S\Delta S}\\[5pt]\frac{\partial A}{\partial t}&=\textcolor{blue}{D_A\Delta A}\end{aligned}\]</div>
-        <div class="box">
-            <h3>1. La <span class="blue"><em>diffusione</em></span></h3>
-            <p>Le due sostanze si muovono <em>caoticamente</em> nello spazio, tendendo a distribuirsi dalle zone dove sono più concentrate verso quelle dove lo sono meno. Il simbolo \(\Delta\) è il <strong>laplaciano</strong>, che descrive come la concentrazione varia nello spazio. Se abbiamo una funzione \(f(x,y)\), esso è</p>
-            <div class="equation">\[\Delta f=\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}\]</div>
-            <p>I coefficienti positivi \(D_S\) e \(D_A\) determinano la rapidità della diffusione: \(D_S>D_A\).</p>
-        </div>
-    </section>
+<section class="slide small-text">
+    <h2>Primo ingrediente: la diffusione</h2>
 
-    <!-- SLIDE 2: INTERAZIONE -->
-    <section class="slide small-text">
-        <h2>Un sistema di <em>equazioni differenziali</em></h2>
-        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S\textcolor{red}{-SA^2}\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A\textcolor{red}{+SA^2}\end{aligned}\]</div>
-        <div class="box">
-            <h3>2. L'<span class="red"><em>interazione</em></span></h3>
-            <div class="equation">\[S+2A\longrightarrow 3A\]</div>
-            <p>L'attivatore \(A\) utilizza il substrato \(S\) per <strong>replicarsi</strong>. Il termine \(\textcolor{red}{-SA^2}\) indica che il substrato viene consumato, mentre \(\textcolor{red}{+SA^2}\) indica che la concentrazione dell'attivatore aumenta. Più attivatore è già presente, più rapidamente può avvenire la reazione: è un esempio di <strong>autocatalisi</strong>.</p>
+    <p>
+        Il <strong>substrato \(S\)</strong> e l'<strong>attivatore \(A\)</strong>
+        si muovono casualmente nello spazio, ma con
+        <strong>velocità di diffusione diverse</strong>.
+    </p>
+
+    <style>
+        .randomwalk-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5%;
+            align-items: center;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .randomwalk-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .randomwalk-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            width: min(36vh, 100%);
+            aspect-ratio: 1;
+            border: 2px solid #999;
+            background: #faf8f5;
+        }
+
+        .randomwalk-cell {
+            border: 1px solid #d1d1d1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .randomwalk-particle {
+            width: 55%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: inset -3px -3px 5px #0002,
+                        0 2px 5px #0002;
+        }
+
+        .randomwalk-title {
+            font-size: clamp(22px, 3vh, 30px);
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+
+    <div class="randomwalk-columns">
+
+        <!-- ATTIVATORE: BLU, LENTO -->
+        <div class="randomwalk-item">
+            <div class="randomwalk-grid" id="walk-blue"></div>
         </div>
-    </section>
+
+        <!-- SUBSTRATO: ROSSO, VELOCE -->
+        <div class="randomwalk-item">
+            <div class="randomwalk-grid" id="walk-red"></div>
+        </div>
+
+    </div>
+<p> </p>
+<p> In questo tipo di dinamica, la distanza \(\ell\) percorsa in un tempo \(t\) va <em>in media</em> come \[\langle\ell^2\rangle=2Dt,\qquad D>0\]
+Attivatori e substrato hanno quindi un valore diverso di \(D\)! </p>
+
+<script>
+(() => {
+    function createWalk(id, color, rate) {
+        const grid = document.getElementById(id);
+        const cells = [];
+
+        // Costruzione della griglia 5x5
+        for (let i = 0; i < 25; i++) {
+            const cell = document.createElement('div');
+            cell.className = 'randomwalk-cell';
+            grid.appendChild(cell);
+            cells.push(cell);
+        }
+
+        let x = 2, y = 2;
+        let timer = null;
+
+        const particle = document.createElement('div');
+        particle.className = 'randomwalk-particle';
+        particle.style.background = color;
+
+        function draw() {
+            cells[y * 5 + x].appendChild(particle);
+        }
+
+        function step() {
+            const neighbors = [];
+
+            if (x > 0) neighbors.push([x - 1, y]);
+            if (x < 4) neighbors.push([x + 1, y]);
+            if (y > 0) neighbors.push([x, y - 1]);
+            if (y < 4) neighbors.push([x, y + 1]);
+
+            // Scelta uniforme tra le celle adiacenti disponibili
+            const next = neighbors[
+                Math.floor(Math.random() * neighbors.length)
+            ];
+
+            [x, y] = next;
+            draw();
+        }
+
+        // Tempo di attesa esponenziale:
+        // P(T > t) = exp(-rate*t)
+        function exponentialWaitingTime() {
+            return -Math.log(1 - Math.random()) / rate;
+        }
+
+        function scheduleNextJump() {
+            const waitingTime = exponentialWaitingTime();
+
+            timer = setTimeout(() => {
+                if (grid.closest('.slide').classList.contains('active')) {
+                    step();
+                }
+                scheduleNextJump();
+            }, waitingTime * 1000);
+        }
+
+        draw();
+        scheduleNextJump();
+    }
+
+    // Tassi medi di salto, in salti al secondo
+    createWalk('walk-blue', '#315c94', 1.2);
+    createWalk('walk-red',  '#ad3e33', 7.0);
+})();
+</script>
+
+</section>
+
+
+<section class="slide small-text">
+    <h2>Secondo ingrediente: l'interazione</h2>
+
+    <p>
+        Quando <span class="blue"><strong>due attivatori</strong></span>
+        incontrano contemporaneamente una particella di
+        <span class="red"><strong>substrato</strong></span>,
+        quest'ultima si trasforma in un nuovo attivatore.
+    </p>
+
+    <style>
+        .reaction-walk-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+            gap: 12px;
+        }
+
+        .reaction-walk-canvas {
+            display: block;
+            width: min(43vh, 85%);
+            aspect-ratio: 1;
+            border: 2px solid #aaa;
+            border-radius: 8px;
+            background: #faf8f5;
+        }
+
+        .reaction-walk-status {
+            font-size: clamp(18px, 2.4vh, 24px);
+            text-align: center;
+            min-height: 1.5em;
+        }
+    </style>
+
+    <div class="reaction-walk-layout">
+
+        <canvas class="reaction-walk-canvas"
+                width="500" height="500"
+                data-reaction-walk></canvas>
+
+        <div class="reaction-walk-status" data-reaction-status>
+            Moto casuale indipendente
+        </div>
+
+        <div class="equation" style="width:min(43vh,85%);">
+            \[
+            S+2A\longrightarrow 3A
+            \]
+        </div>
+
+    </div>
+
+    <script>
+    (() => {
+        const slide = document.currentScript.closest('.slide');
+        const canvas = slide.querySelector('[data-reaction-walk]');
+        const status = slide.querySelector('[data-reaction-status]');
+        const ctx = canvas.getContext('2d');
+
+        const N = 5;
+        const CELL = 100;
+        const RADIUS = 19;
+
+        const BLUE = '#315c94';
+        const RED = '#ad3e33';
+
+        // Tassi medi di salto al secondo
+        const RATE_BLUE = 1.2;
+        const RATE_RED = 7.0;
+
+        // Un fotogramma ogni 50 ms
+        const DT = 0.05;
+
+        // Durate delle fasi, in fotogrammi
+        const BEFORE = 160;  // 8 secondi
+        const CONTACT = 16;  // 0.8 secondi
+        const AFTER = 140;   // 7 secondi
+        const END = 20;      // 1 secondo
+
+        const TOTAL = BEFORE + CONTACT + AFTER + END;
+
+        let paths = [];
+        let frame = 0;
+        let wasActive = false;
+
+        // Salto verso una delle 4 direzioni.
+        // Al bordo, un tentativo di uscire
+        // lascia la particella nella stessa cella.
+        function jump(pos) {
+            const x = pos % N;
+            const y = Math.floor(pos / N);
+
+            const direction = Math.floor(Math.random() * 4);
+
+            if (direction === 0 && x > 0) return pos - 1;
+            if (direction === 1 && x < 4) return pos + 1;
+            if (direction === 2 && y > 0) return pos - N;
+            if (direction === 3 && y < 4) return pos + N;
+
+            return pos;
+        }
+
+        // Moto browniano discreto con tempi
+        // di attesa esponenziali.
+        function evolve(pos, rate, duration) {
+            let elapsed = 0;
+
+            while (true) {
+                const waiting =
+                    -Math.log(1 - Math.random()) / rate;
+
+                elapsed += waiting;
+
+                if (elapsed > duration) break;
+
+                pos = jump(pos);
+            }
+
+            return pos;
+        }
+
+        function generatePaths() {
+            paths = [[], [], []];
+
+            // Tutte e tre si incontrano nella cella centrale.
+            const meetingCell = 12;
+
+            const rates = [
+                RATE_BLUE,
+                RATE_BLUE,
+                RATE_RED
+            ];
+
+            // 1. Evoluzione ALL'INDIETRO.
+            // Si parte dalla collisione e si ricostruiscono
+            // le tre traiettorie precedenti.
+            for (let p = 0; p < 3; p++) {
+                let pos = meetingCell;
+
+                paths[p][BEFORE] = pos;
+
+                for (let i = BEFORE - 1; i >= 0; i--) {
+                    pos = evolve(pos, rates[p], DT);
+                    paths[p][i] = pos;
+                }
+            }
+
+            // 2. Le tre particelle rimangono brevemente
+            // insieme nella cella dell'incontro.
+            for (let p = 0; p < 3; p++) {
+                for (let i = BEFORE + 1;
+                     i < BEFORE + CONTACT; i++) {
+                    paths[p][i] = meetingCell;
+                }
+            }
+
+            // 3. Evoluzione IN AVANTI.
+            // Dopo la reazione tutte e tre sono blu
+            // e diffondono lentamente.
+            for (let p = 0; p < 3; p++) {
+                let pos = meetingCell;
+
+                for (let i = BEFORE + CONTACT;
+                     i < BEFORE + CONTACT + AFTER; i++) {
+                    pos = evolve(pos, RATE_BLUE, DT);
+                    paths[p][i] = pos;
+                }
+
+                // Breve pausa alla fine della sequenza
+                for (let i = BEFORE + CONTACT + AFTER;
+                     i < TOTAL; i++) {
+                    paths[p][i] = pos;
+                }
+            }
+        }
+
+        function drawGrid() {
+            ctx.clearRect(0, 0, 500, 500);
+
+            ctx.fillStyle = '#faf8f5';
+            ctx.fillRect(0, 0, 500, 500);
+
+            ctx.strokeStyle = '#c9c9c9';
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i <= N; i++) {
+                const u = i * CELL;
+
+                ctx.beginPath();
+                ctx.moveTo(u, 0);
+                ctx.lineTo(u, 500);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(0, u);
+                ctx.lineTo(500, u);
+                ctx.stroke();
+            }
+        }
+
+        function drawParticle(x, y, color) {
+            ctx.beginPath();
+            ctx.arc(x, y, RADIUS, 0, 2 * Math.PI);
+
+            ctx.fillStyle = color;
+            ctx.fill();
+
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Piccolo riflesso
+            ctx.beginPath();
+            ctx.arc(x - 6, y - 6, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = '#ffffff77';
+            ctx.fill();
+        }
+
+        function draw() {
+            drawGrid();
+
+            const collision =
+                frame >= BEFORE &&
+                frame < BEFORE + CONTACT;
+
+            const transformed = frame >= BEFORE + 5;
+
+            if (collision) {
+                // Evidenziamo la cella della reazione
+                ctx.fillStyle = '#e8c76a55';
+                ctx.fillRect(2 * CELL, 2 * CELL,
+                             CELL, CELL);
+
+                ctx.strokeStyle = '#d3a43b';
+                ctx.lineWidth = 5;
+                ctx.strokeRect(2 * CELL + 3,
+                               2 * CELL + 3,
+                               CELL - 6, CELL - 6);
+            }
+
+            // Posizioni delle tre particelle
+            const positions = paths.map(p => p[frame]);
+
+            // Per mostrare tutte le particelle
+            // quando occupano una stessa cella,
+            // le rappresentiamo con piccoli offset.
+            for (let p = 0; p < 3; p++) {
+                const pos = positions[p];
+
+                const x = pos % N;
+                const y = Math.floor(pos / N);
+
+                const others = positions
+                    .map((v, i) => v === pos ? i : -1)
+                    .filter(i => i >= 0);
+
+                const rank = others.indexOf(p);
+
+                const offsets = {
+                    1: [[0, 0]],
+                    2: [[-19, 0], [19, 0]],
+                    3: [[-20, 14], [20, 14], [0, -20]]
+                };
+
+                const [dx, dy] =
+                    offsets[others.length][rank];
+
+                const cx = x * CELL + CELL / 2 + dx;
+                const cy = y * CELL + CELL / 2 + dy;
+
+                const color =
+                    p === 2 && !transformed ? RED : BLUE;
+
+                drawParticle(cx, cy, color);
+            }
+
+            if (frame < BEFORE) {
+                status.textContent =
+                    'Due attivatori lenti e un substrato veloce';
+            } else if (!transformed) {
+                status.textContent =
+                    'Le tre particelle si incontrano!';
+            } else if (collision) {
+                status.textContent =
+                    'Il substrato diventa un attivatore!';
+            } else {
+                status.textContent =
+                    'Tre attivatori diffondono lentamente';
+            }
+        }
+
+        generatePaths();
+        draw();
+
+        // Avvio automatico quando la slide è visibile
+        setInterval(() => {
+            const active = slide.classList.contains('active');
+
+            if (!active) {
+                wasActive = false;
+                return;
+            }
+
+            if (!wasActive) {
+                // Ogni apertura genera nuove traiettorie
+                generatePaths();
+                frame = 0;
+                wasActive = true;
+            }
+
+            draw();
+            frame++;
+
+            if (frame >= TOTAL) {
+                generatePaths();
+                frame = 0;
+            }
+
+        }, 50);
+    })();
+    </script>
+
+</section>
 
     <!-- SLIDE 3: RIFORNIMENTO -->
     <section class="slide small-text">
-        <h2>Un sistema di <em>equazioni differenziali</em></h2>
-        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S-SA^2\textcolor{green}{+r(1-S)}\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A+SA^2\end{aligned}\]</div>
-        <div class="box">
-            <h3>3. Il <span class="green"><em>rifornimento del substrato</em></span></h3>
-            <p>Il substrato viene continuamente immesso nel sistema, per esempio da cellule che lo producono, e il termine \(\textcolor{green}{+r(1-S)}\) descrive questo meccanismo: se \(S\) è piccolo, il rifornimento è maggiore, se \(S\) è vicino a 1, il rifornimento diminuisce. Il parametro \(r\) controlla la rapidità del rifornimento.</p>
-        </div>
-    </section>
+        <h2>Terzo ingrediente: il rifornimento</h2>
+    <p>
+        Il <span class="red"><strong>substrato \(S\)</strong></span>
+        diffonde nello spazio. Nuove particelle vengono
+        continuamente introdotte con un certo tasso \(r\) dove c'è spazio disponibile.
+    </p>
+
+    <style>
+        .supply-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+            gap: 18px;
+        }
+
+        .supply-grid {
+            display: block;
+            width: min(43vh, 85%);
+            aspect-ratio: 1;
+            border: 2px solid #aaa;
+            border-radius: 8px;
+            background: #faf8f5;
+        }
+
+        .supply-caption {
+            font-size: clamp(18px, 2.4vh, 24px);
+            text-align: center;
+        }
+    </style>
+
+    <div class="supply-layout">
+
+        <canvas class="supply-grid"
+                data-supply-grid
+                width="500"
+                height="500"></canvas>
+
+    </div>
+
+    <script>
+    (() => {
+        const slide = document.currentScript.closest('.slide');
+        const canvas = slide.querySelector('[data-supply-grid]');
+        const ctx = canvas.getContext('2d');
+
+        const N = 5;
+        const CELL = 100;
+        const RADIUS = 17;
+
+        const INITIAL_PARTICLES = 15;
+
+        // Tasso medio dei salti (al secondo)
+        const RATE_DIFFUSION = 1.0;
+
+        // Tasso medio di comparsa di nuove particelle
+        const RATE_SUPPLY = 1;
+
+        // Durata di un passo di evoluzione
+        const DT = 0.15;
+
+        // La particella nuova resta opaca per 4 passi
+        const HIGHLIGHT_STEPS = 400;
+
+        const RED = '#ad3e33';
+
+        let particles = [];
+        let wasActive = false;
+
+        // Salto a una cella adiacente.
+        // Il bordo è riflettente.
+function jump(pos, particle) {
+    const x = pos % N;
+    const y = Math.floor(pos / N);
+
+    const neighbors = [];
+
+    if (x > 0) neighbors.push(pos - 1);
+    if (x < N - 1) neighbors.push(pos + 1);
+    if (y > 0) neighbors.push(pos - N);
+    if (y < N - 1) neighbors.push(pos + N);
+
+    // La direzione è scelta casualmente.
+    const target = neighbors[
+        Math.floor(Math.random() * neighbors.length)
+    ];
+
+    // Conta le particelle nella cella di destinazione
+    const occupancy = particles.filter(
+        p => p !== particle && p.pos === target
+    ).length;
+
+    // Se la cella contiene già 4 particelle,
+    // il salto viene rifiutato.
+    return occupancy < 4 ? target : pos;
+}
+
+        // Tempo di attesa esponenziale
+        function exponentialTime(rate) {
+            return -Math.log(1 - Math.random()) / rate;
+        }
+
+        function reset() {
+            particles = [];
+
+            // 15 celle iniziali distinte
+            const cells = Array.from({length:25}, (_,i) => i);
+
+            // Mescolamento casuale
+            for (let i = cells.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i+1));
+                [cells[i], cells[j]] = [cells[j], cells[i]];
+            }
+
+            for (let i = 0; i < INITIAL_PARTICLES; i++) {
+                particles.push({
+                    pos: cells[i],
+                    age: HIGHLIGHT_STEPS
+                });
+            }
+
+            draw();
+        }
+
+function evolve() {
+
+    // Movimento delle particelle
+    for (const p of particles) {
+        let elapsed = 0;
+
+        while (true) {
+            elapsed += exponentialTime(RATE_DIFFUSION);
+
+            if (elapsed > DT) break;
+
+            p.pos = jump(p.pos, p);
+        }
+
+        p.age++;
+    }
+
+    // Processo di Poisson per il rifornimento
+    const probability = 1 - Math.exp(-RATE_SUPPLY * DT);
+
+    if (Math.random() < probability) {
+
+        // Conta le particelle in ogni cella
+        const counts = new Array(N * N).fill(0);
+
+        for (const p of particles) {
+            counts[p.pos]++;
+        }
+
+        // Ogni cella ha un peso proporzionale
+        // allo spazio ancora disponibile.
+        const weights = counts.map(
+            n => Math.max(0, 1 - n / 4)
+        );
+
+        const totalWeight = weights.reduce(
+            (sum, w) => sum + w, 0
+        );
+
+        if (totalWeight > 0) {
+
+            // Estrazione di una cella con
+            // probabilità proporzionale al suo peso.
+            let r = Math.random() * totalWeight;
+            let selected = -1;
+
+            for (let i = 0; i < weights.length; i++) {
+                r -= weights[i];
+
+                if (r < 0) {
+                    selected = i;
+                    break;
+                }
+            }
+
+            if (selected >= 0) {
+                particles.push({
+                    pos: selected,
+                    age: 0
+                });
+            }
+        }
+    }
+
+    draw();
+}
+
+        function draw() {
+            ctx.clearRect(0, 0, 500, 500);
+
+            ctx.fillStyle = '#faf8f5';
+            ctx.fillRect(0, 0, 500, 500);
+
+            // Griglia 5x5
+            ctx.strokeStyle = '#c9c9c9';
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i <= N; i++) {
+                const u = i * CELL;
+
+                ctx.beginPath();
+                ctx.moveTo(u, 0);
+                ctx.lineTo(u, 500);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(0, u);
+                ctx.lineTo(500, u);
+                ctx.stroke();
+            }
+
+            // Raggruppa le particelle per cella.
+            // Se più particelle sono nella stessa cella,
+            // vengono disegnate con piccoli offset.
+            const groups = new Map();
+
+            particles.forEach(p => {
+                if (!groups.has(p.pos)) groups.set(p.pos, []);
+                groups.get(p.pos).push(p);
+            });
+
+            for (const [pos, group] of groups) {
+                const x = pos % N;
+                const y = Math.floor(pos / N);
+
+                group.forEach((p, i) => {
+                    const count = group.length;
+                    const angle = 2*Math.PI*i/count;
+                    const distance = count === 1 ? 0 : 19;
+
+                    const cx = x*CELL + CELL/2
+                             + distance*Math.cos(angle);
+
+                    const cy = y*CELL + CELL/2
+                             + distance*Math.sin(angle);
+
+                    ctx.globalAlpha =
+                        p.age < HIGHLIGHT_STEPS ? 1 : 0.5;
+
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, RADIUS, 0, 2*Math.PI);
+                    ctx.fillStyle = RED;
+                    ctx.fill();
+
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                });
+            }
+
+            ctx.globalAlpha = 1;
+        }
+
+        reset();
+
+        // Avvio automatico quando si entra nella slide
+        setInterval(() => {
+            const active = slide.classList.contains('active');
+
+            if (!active) {
+                wasActive = false;
+                return;
+            }
+
+            if (!wasActive) {
+                reset();
+                wasActive = true;
+            }
+
+            evolve();
+
+        }, DT * 1000);
+    })();
+    </script>
+
+</section>
+
 
     <!-- SLIDE 4: DISATTIVAZIONE -->
-    <section class="slide small-text">
-        <h2>Un sistema di <em>equazioni differenziali</em></h2>
-        <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S-SA^2+r(1-S)\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A+SA^2\textcolor{purple}{-kA}\end{aligned}\]</div>
-        <div class="box">
-            <h3>4. La <span class="purple"><em>disattivazione dell'attivatore</em></span></h3>
-            <p>L'attivatore non funziona ininterrottamente. Il termine \(\textcolor{purple}{-kA}\), \(k>0\), descrive la perdita di attivatore.
+
+<section class="slide small-text">
+    <h2>Quarto ingrediente: la disattivazione dell'attivatore</h2>
+
+    <p>
+        L'<span class="blue"><strong>attivatore \(A\)</strong></span>
+        diffonde nello spazio, ma può
+        <strong>disattivarsi spontaneamente</strong>
+        con un certo tasso \(k\).
+    </p>
+
+    <style>
+        .deactivation-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+            gap: 18px;
+        }
+
+        .deactivation-grid {
+            display: block;
+            width: min(43vh, 85%);
+            aspect-ratio: 1;
+            border: 2px solid #aaa;
+            border-radius: 8px;
+            background: #faf8f5;
+        }
+
+        .deactivation-status {
+            font-size: clamp(18px, 2.4vh, 24px);
+            text-align: center;
+            min-height: 1.5em;
+        }
+    </style>
+
+    <div class="deactivation-layout">
+
+        <canvas class="deactivation-grid"
+                data-deactivation-grid
+                width="500"
+                height="500"></canvas>
+
+        <div class="deactivation-status" data-deactivation-status>
+            Attivatore in movimento
         </div>
-    </section>
+
+    </div>
+
+    <script>
+    (() => {
+        const slide = document.currentScript.closest('.slide');
+        const canvas = slide.querySelector('[data-deactivation-grid]');
+        const status = slide.querySelector('[data-deactivation-status]');
+        const ctx = canvas.getContext('2d');
+
+        const N = 5;
+        const CELL = 100;
+        const RADIUS = 19;
+
+        const BLUE = '#315c94';
+        const GRAY = '#999999';
+
+        // Tassi in eventi al secondo
+        const RATE_DIFFUSION = 1.2;
+        const RATE_DEACTIVATION = 0.22;
+
+        // Durata della fase grigia prima di ricominciare
+        const GRAY_DURATION = 2500;
+
+        let pos = 12;
+        let steps = 0;
+        const MIN_STEPS = 3;
+        let active = true;
+        let nextJump = 0;
+        let nextDeactivation = 0;
+        let grayUntil = 0;
+        let wasVisible = false;
+        let lastTime = 0;
+
+        // Tempo di attesa esponenziale
+        function expTime(rate) {
+            return -Math.log(1 - Math.random()) / rate;
+        }
+
+        // Movimento verso una cella adiacente
+        function jump(position) {
+            const x = position % N;
+            const y = Math.floor(position / N);
+
+            const neighbors = [];
+
+            if (x > 0) neighbors.push(position - 1);
+            if (x < N - 1) neighbors.push(position + 1);
+            if (y > 0) neighbors.push(position - N);
+            if (y < N - 1) neighbors.push(position + N);
+
+            return neighbors[
+                Math.floor(Math.random() * neighbors.length)
+            ];
+        }
+
+        function reset() {
+            pos = 12;
+            active = true;
+            steps = 0;
+
+            nextJump = expTime(RATE_DIFFUSION);
+            nextDeactivation = expTime(RATE_DEACTIVATION);
+
+            grayUntil = 0;
+            lastTime = performance.now();
+
+            draw();
+        }
+
+        function draw() {
+            ctx.fillStyle = '#faf8f5';
+            ctx.fillRect(0, 0, 500, 500);
+
+            // Griglia 5x5
+            ctx.strokeStyle = '#c9c9c9';
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i <= N; i++) {
+                const u = i * CELL;
+
+                ctx.beginPath();
+                ctx.moveTo(u, 0);
+                ctx.lineTo(u, 500);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(0, u);
+                ctx.lineTo(500, u);
+                ctx.stroke();
+            }
+
+            const x = (pos % N) * CELL + CELL / 2;
+            const y = Math.floor(pos / N) * CELL + CELL / 2;
+
+            ctx.globalAlpha = active ? 1 : 0.5;
+
+            ctx.beginPath();
+            ctx.arc(x, y, RADIUS, 0, 2 * Math.PI);
+            ctx.fillStyle = active ? BLUE : GRAY;
+            ctx.fill();
+
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.globalAlpha = 1;
+
+            status.textContent = active
+                ? 'Attivatore in movimento'
+                : 'Attivatore disattivato';
+        }
+
+        function update(now) {
+            const visible = slide.classList.contains('active');
+
+            if (!visible) {
+                wasVisible = false;
+                requestAnimationFrame(update);
+                return;
+            }
+
+            if (!wasVisible) {
+                reset();
+                wasVisible = true;
+            }
+
+            const dt = Math.min((now - lastTime) / 1000, 0.1);
+            lastTime = now;
+
+if (active) {
+    nextJump -= dt;
+
+    // Prima compie almeno 5 salti
+    while (nextJump <= 0 && active) {
+        pos = jump(pos);
+        steps++;
+
+        nextJump += expTime(RATE_DIFFUSION);
+
+        // Dopo il quinto salto parte
+        // il processo casuale di disattivazione
+        if (steps === MIN_STEPS) {
+            nextDeactivation = expTime(RATE_DEACTIVATION);
+        }
+    }
+
+    // La disattivazione è possibile
+    // soltanto dopo almeno 5 salti
+    if (steps >= MIN_STEPS) {
+        nextDeactivation -= dt;
+
+        if (nextDeactivation <= 0) {
+            active = false;
+            grayUntil = now + GRAY_DURATION;
+        }
+    }
+
+} else if (now >= grayUntil) {
+    reset();
+}
+
+            draw();
+            requestAnimationFrame(update);
+        }
+
+        reset();
+        requestAnimationFrame(update);
+    })();
+    </script>
+
+</section>
+
     
+<section class="slide">
+    <h2>Dalle regole alle equazioni</h2>
+
+    <p>
+        I <strong>quattro ingredienti</strong> che abbiamo osservato
+        si possono tradurre in due equazioni per la <em>densità</em> \(\mathcal S(x,y,t)\) del substrato \(S\), una per la densità \(\mathcal A(x,y,t)\) dell'attivatore \(A\).
+    </p>
+
+    <style>
+        .gray-equations {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+            gap: clamp(12px, 2vh, 24px);
+        }
+
+        .gray-equation-row {
+            display: grid;
+            grid-template-columns: 155px minmax(0, 1fr);
+            gap: 14px;
+            align-items: center;
+        }
+
+        .gray-equation-label {
+            font-size: clamp(19px, 2.8vh, 27px);
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .gray-equation-formula {
+            background: #faf8f5;
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: clamp(19px, 2.5vh, 28px);
+            text-align: center;
+        }
+
+        .gray-legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px 25px;
+            font-size: clamp(17px, 2.2vh, 23px);
+        }
+
+        .gray-legend span {
+            white-space: nowrap;
+        }
+
+        .gray-takeaway {
+            text-align: center;
+            font-size: clamp(20px, 2.6vh, 28px);
+            font-style: italic;
+            color: #203247;
+            margin-top: 6px;
+        }
+
+        @media (max-width: 780px) {
+            .gray-equation-row {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+
+            .gray-equation-label {
+                text-align: left;
+            }
+
+            .gray-equation-formula {
+                overflow-x: auto;
+            }
+        }
+    </style>
+
+    <div class="gray-equations">
+
+        <div class="gray-equation-row">
+            <div class="gray-equation-label red">
+                Substrato \(S\)
+            </div>
+
+            <div class="gray-equation-formula">
+                \[
+                \frac{\partial S}{\partial t}
+                =
+                \textcolor{#218066}{D_S\left(\frac{\partial^2\mathcal  S}{\partial x^2}+\frac{\partial^2\mathcal  S}{\partial y^2}\right)}
+                \;-\;
+                \textcolor{#9B59B6}{\mathcal S\mathcal A^2}
+                \;+\;
+                \textcolor{#ad3e33}{r(1-\mathcal S)}
+                \]
+            </div>
+        </div>
+
+        <div class="gray-equation-row">
+            <div class="gray-equation-label blue">
+                Attivatore \(A\)
+            </div>
+
+            <div class="gray-equation-formula">
+                \[
+                \frac{\partial \mathcal A}{\partial t}
+                =
+                \textcolor{#218066}{D_A\left(\frac{\partial^2\mathcal  A}{\partial x^2}+\frac{\partial^2\mathcal  A}{\partial y^2}\right)}
+                \;+\;
+                \textcolor{#9B59B6}{\mathcal S\mathcal A^2}
+                \;-\;
+                \textcolor{#315c94}{k\mathcal A}
+                \]
+            </div>
+        </div>
+
+        <div class="gray-legend">
+            <span style="color:#218066;">
+                ● Diffusione
+            </span>
+            <span style="color:#9B59B6;">
+                ● Interazione
+            </span>
+            <span style="color:#ad3e33;">
+                ● Rifornimento
+            </span>
+            <span style="color:#315c94;">
+                ● Rimozione
+            </span>
+        </div>
+
+    </div>
+</section>
+
+
     <section class="slide">
         <h2>Un esperimento</h2>
         <p>La competizione tra <strong>diffusione, autocatalisi, rifornimento e rimozione</strong> può produrre sorprendenti strutture spaziali. Facciamo qualche esperimento.</p>
@@ -303,21 +1370,24 @@ window.MathJax = {
             <p class="note">Il tasso di rifornimento del substrato è leggermente <strong>ridotto</strong>.
             </p><div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div></div></div>
     </section>
-    
-    <section class="slide">
-        <h2>Inattese instabilità</h2>
-        <div class="columns two-thirds">
-            <div><p>Strutture complesse possono emergere da regole <strong>semplici</strong> e da composti che si muovono <strong>a caso e senza strategia</strong>.</p> <p>Contrariamente a quanto si potrebbe attendere, non si ottiene necessariamente un <strong>mescolamento omogeneo</strong>, ma strutture complesse che nascono dalla competizione tra elementi con velocità diverse.</p><p>Un tema che collega equazioni differenziali, processi stocastici e analisi numerica.</p>
-            </div>
-            <div style="text-align:center;"><img src="Haeckel.jpg" alt="Radiolari" style="width:90%;height:auto;object-fit:contain;">
-            <p class="caption">Ernst Haeckel, gusci di radiolari</p></div>
-            </div>
-        </div>
-    </section>
+
+
+<section class="slide small-text">
+    <h2 style="width:63%;">Inattese instabilità</h2>
+    <div style="width:63%;display:flex;flex-direction:column;flex:1;gap:20px;justify-content:center;">
+        <p>Strutture complesse possono emergere da regole <strong>semplici</strong> e da composti che si muovono <strong>a caso e senza strategia</strong>.</p> <p>Contrariamente a quanto si potrebbe attendere, non si ottiene necessariamente un <strong>mescolamento omogeneo</strong>, ma strutture complesse che nascono dalla competizione tra elementi con velocità diverse.</p><p>Un tema che collega equazioni differenziali, processi stocastici e analisi numerica.</p>
+    </div>
+
+    <div style="position:absolute;right:0;top:0;width:33.33%;height:100%;overflow:hidden;">
+        <img src="Haeckel.jpg" alt="Hackel, radiolari"
+             style="width:100%;height:100%;object-fit:cover;object-position:center;">
+    </div>
+</section>
+
   <section class="slide"><h2>Agenti in azione</h2>
-    <p>Finora gli ingredienti non seguivano strategie: si muovevano a caso e interagivano secondo regole locali.</p>
+    <p>Gli ingredienti del modello che abbiamo studiato non erano ``senzienti'', non seguivano strategie: si muovevano a caso e interagivano secondo regole locali.</p>
     <img src="dummy.png" alt="Agente" style="width:auto;height:35vh;object-fit:contain;">
-    <p>Strutture estese possono emergere anche quando le componenti agiscono <strong>autonomamente con un obiettivo personale</strong>: diventano <strong>agenti</strong>. Modelli molto utilizzati in economia e nel machine learning.</p>
+    <p>Strutture estese possono emergere anche quando le componenti agiscono <strong>autonomamente con un obiettivo personale</strong>: diventano <strong>agenti</strong>, un concetto molto utilizzato in economia, ma anche nello studio dell'intelligenza artificiale.</p>
 </section>
 
 <section class="slide">
@@ -325,7 +1395,9 @@ window.MathJax = {
     <div class="columns two-thirds">
         <div>
         <p>Due tipi di <strong>agenti A e B</strong> occupano alcune celle di una griglia.</p><div class="equation">\(\color{#ad3e33}{\blacksquare}\;\mathrm{A}\qquad\color{#315c94}{\blacksquare}\;\mathrm{B}\qquad\square\;\text{libero}\)</div>
-        <p>Ogni agente desidera almeno una percentuale <strong>\(p\)</strong> di vicini del proprio gruppo. Se la percentuale è troppo bassa, si sposta in una cella libera. Può essere un modello per una <em>città</em> in cui esistono due gruppi sociali che convivono, in modo che ogni cella della griglia sia una abitazione. </p>
+        <p>Ogni agente desidera almeno una percentuale <strong>\(p\)</strong> di vicini del proprio gruppo. Vuole cioè
+        \[\frac{\text{vicini del proprio gruppo}}{\text{vicini}}\geq p.\]    
+        Se la percentuale è troppo bassa, si sposta in una cella libera. </p>
         <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3px;width:180px;aspect-ratio:1;margin:20px auto;">
     <div style="background:#ad3e33;"></div>
     <div style="background:#315c94;"></div>
@@ -600,9 +1672,59 @@ window.MathJax = {
     <div class="box">
         <p>Qui \(a,b,c,d\) sono numeri positivi. Quando</p>
             \[
-            X(t)=\frac{d}{c},
+            X(t)=\frac{d}{c}\equiv X_\star,
             \qquad
-            Y(t)=\frac{a}{b}
+            Y(t)=\frac{a}{b}\equiv Y_\star
+            \]
+        <p>le popolazioni non cambiano: sono in <strong>equilibrio</strong>.</p>
+    </div>
+</section>
+
+<section class="slide small-text">
+    <h2>Il modello di Lotka–Volterra</h2>
+    <p>Consideriamo due popolazioni al variare del tempo:</p>
+
+    <div class="columns" style="grid-template-columns:1fr 1fr;gap:30px;align-items:start;">
+
+        <!-- COLONNA SINISTRA: PREDE -->
+        <div><h3 style="text-align:center;background:#e5eef8;color:#315c94;border:2px solid #315c94;border-radius:10px;padding:12px;">Prede \(X(t)\)</h3>
+            <div class="equation">
+                \[
+                X(t+1)=X(t)+aX(t)(Y_\star-Y(t))
+                \]
+            </div>
+
+            <p>La popolazione delle prede:</p>
+            <ul>
+                <li><span class="blue">aumenta grazie alle nascite;</span></li>
+                <li><span class="purple">diminuisce a causa della predazione.</span></li>
+            </ul>
+        </div>
+
+        <!-- COLONNA DESTRA: PREDATORI -->
+        <div><h3 style="text-align:center;background:#fbe9e6;color:#ad3e33;border:2px solid #ad3e33;border-radius:10px;padding:12px;">Predatori \(Y(t)\)</h3>
+
+            <div class="equation">
+                \[
+                Y(t+1)=Y(t)+cY(t)\left(X(t)-X_\star\right)
+                \]
+            </div>
+
+            <p>La popolazione dei predatori:</p>
+            <ul>
+                <li><span class="red">diminuisce a causa della mortalità;</span></li>
+                <li><span class="green">aumenta grazie alla disponibilità di prede.</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <p>Qui \(a,b,c,d\) sono numeri positivi. Quando</p>
+            \[
+            X(t)=\frac{d}{c}\equiv X_\star,
+            \qquad
+            Y(t)=\frac{a}{b}\equiv Y_\star
             \]
         <p>le popolazioni non cambiano: sono in <strong>equilibrio</strong>.</p>
     </div>
@@ -1056,15 +2178,62 @@ class LVInteractive {
         ctx.beginPath();
         ctx.rect(left,top,right-left,bottom-top);
         ctx.clip();
-        if(this.phase){
-            // Visualizza soltanto l'orbita gia percorsa, senza anticipare il futuro.
-            ctx.strokeStyle='#ad3e33';ctx.lineWidth=3.5;ctx.beginPath();
-            for(let j=0;j<=this.i;j++){
-                const v=data[j];j?ctx.lineTo(xx(v.x),yy(v.y)):ctx.moveTo(xx(v.x),yy(v.y));
-            }
-            ctx.stroke();
-            ctx.fillStyle='#ad3e33';ctx.beginPath();ctx.arc(xx(z.x),yy(z.y),6,0,2*Math.PI);ctx.fill();
-        }else{
+        
+if(this.phase){
+    // Orbita percorsa fino all'istante corrente
+    ctx.strokeStyle='#ad3e33';
+    ctx.lineWidth=3.5;
+    ctx.beginPath();
+
+    for(let j=0;j<=this.i;j++){
+        const v=data[j];
+        j ? ctx.lineTo(xx(v.x),yy(v.y))
+          : ctx.moveTo(xx(v.x),yy(v.y));
+    }
+    ctx.stroke();
+
+    // Punto corrente della traiettoria
+    ctx.fillStyle='#ad3e33';
+    ctx.beginPath();
+    ctx.arc(xx(z.x),yy(z.y),6,0,2*Math.PI);
+    ctx.fill();
+
+    // Punto di equilibrio positivo
+    const eqX = this.params.d / this.params.c;
+    const eqY = this.params.a / this.params.b;
+
+    // Lo mostriamo soltanto se è visibile sugli assi
+    if(eqX <= this.xmax && eqY <= this.ymax){
+
+        const px = xx(eqX);
+        const py = yy(eqY);
+
+        // Rombo verde
+        ctx.fillStyle = '#218066';
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+
+        ctx.beginPath();
+        ctx.moveTo(px, py - 11);
+        ctx.lineTo(px + 11, py);
+        ctx.lineTo(px, py + 11);
+        ctx.lineTo(px - 11, py);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+
+        // Etichetta del punto di equilibrio
+        ctx.font = 'bold 19px Arial';
+        ctx.fillStyle = '#218066';
+
+        // Evita che l'etichetta esca dal grafico
+        ctx.textAlign = px > right - 180 ? 'right' : 'left';
+        const labelX = px > right - 180 ? px - 16 : px + 16;
+        const labelY = Math.max(top + 18, py - 14);
+
+        ctx.fillText('Equilibrio', labelX, labelY);
+    }
+}else{
             for(const [key,color] of [['x','#be5447'],['y','#366a9d']]){
                 ctx.lineWidth=3.4;ctx.strokeStyle=color;ctx.beginPath();
                 for(let j=0;j<=this.i;j++){
@@ -1243,5 +2412,5 @@ class BrownianReaction {
     destroy(){this.running=false;cancelAnimationFrame(this.raf);}
 }
 function createSimulation(s){if($('[data-reaction]',s))return new BrownianReaction(s);if($('[data-lvinteractive],[data-lvphase]',s))return new LVInteractive(s);let c=$('canvas[data-gray]',s);if(c)return new GrayScott(s,Number(c.dataset.gray));if($('[data-lvorbit]',s))return new LVOrbit(s);c=$('canvas[data-schelling]',s);if(c)return new Schelling(s,Number(c.dataset.schelling));return null}
-document.querySelectorAll('[data-lvplot]').forEach(c=>plotSeries(c,c.dataset.lvplot));let seed=$('.seed-display');if(seed){let ctx=seed.getContext('2d');ctx.fillStyle='#ffe0a5';ctx.fillRect(0,0,250,250);ctx.fillStyle='#a94439';ctx.fillRect(92,92,66,66)}show(0);
+document.querySelectorAll('[data-lvplot]').forEach(c=>plotSeries(c,c.dataset.lvplot));let seed=$('.seed-display');if(seed){let ctx=seed.getContext('2d');ctx.fillStyle='#ffe0a5';ctx.fillRect(0,0,250,250);ctx.fillStyle='#08306B';ctx.fillRect(92,92,66,66)}show(0);
 </script></body></html>
