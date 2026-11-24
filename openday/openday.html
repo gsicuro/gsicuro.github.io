@@ -139,9 +139,9 @@ window.MathJax = {
     
     <section class="slide small-text">
         <h2>La strana geometria</h2>
-        <p>Le strisce della tigre, della vespa o della zebra, o la geometria delle macchie del giaguaro o del leopardo, sembrano troppo eleganti e complesse per essere frutto del caso: da qui i miti, i <em>pourquoi-tales</em>.</p>
+        <p>Le strisce della tigre, della vespa o della zebra, o la geometria delle macchie del giaguaro o del leopardo, sembrano prodotte da un artista: da qui i miti, i <em>pourquoi-tales</em>.</p>
         <div class="columns" style="display:flex;gap:20px;align-items:center;"><div style="flex:1;text-align:center;"><img src="puffer2.png" alt="Pesce palla" style="width:100%;height:40vh;object-fit:contain;"></div><div style="flex:1;text-align:center;"><img src="sgombro.png" alt="Sgombro" style="width:100%;height:50vh;object-fit:contain;"></div></div>
-        <p>Queste geometrie sono ovunque in natura, persino sulle nostre dita. Miliardi di singole <strong>cellule</strong> agiscono in base a stimoli ricevuti <strong>localmente</strong>. Eppure una certa coordinazione <strong>emerge</strong> dando vita a geometrie inattese. Come è possibile?</p>
+        <p>Eppure sappiamo che non è esattamente così. Miliardi di singole <strong>cellule</strong> agiscono in base a stimoli <strong>locali</strong> senza poter <em>vedere</em> l'animale nel suo complesso. Una certa coordinazione <strong>emerge</strong> dando vita a geometrie inattese. Come è possibile?</p>
     </section>
     
     <section class="slide">
@@ -218,7 +218,7 @@ window.MathJax = {
         <div class="equation">\[\begin{aligned}\frac{\partial S}{\partial t}&=D_S\Delta S\textcolor{red}{-SA^2}\\[5pt]\frac{\partial A}{\partial t}&=D_A\Delta A\textcolor{red}{+SA^2}\end{aligned}\]</div>
         <div class="box">
             <h3>2. L'<span class="red"><em>interazione</em></span></h3>
-            \[S+2A\longrightarrow 3A\]
+            <div class="equation">\[S+2A\longrightarrow 3A\]</div>
             <p>L'attivatore \(A\) utilizza il substrato \(S\) per <strong>replicarsi</strong>. Il termine \(\textcolor{red}{-SA^2}\) indica che il substrato viene consumato, mentre \(\textcolor{red}{+SA^2}\) indica che la concentrazione dell'attivatore aumenta. Più attivatore è già presente, più rapidamente può avvenire la reazione: è un esempio di <strong>autocatalisi</strong>.</p>
         </div>
     </section>
@@ -329,6 +329,131 @@ window.MathJax = {
         <p class="caption">Numero di pellicce vendute alla Hudson's Bay Company negli anni. Da Wikipedia.</p>
     </section>
     
+    <section class="slide">
+    <h2>Il ciclo delle prede e dei predatori</h2>
+
+    <style>
+        .ciclo-lv {
+            display: grid;
+            grid-template-columns: 1fr 42px 1fr 42px 1fr;
+            grid-template-rows: 1fr 34px 1fr 34px 1fr;
+            gap: 4px;
+            flex: 1;
+            min-height: 0;
+            align-items: stretch;
+        }
+
+        .ciclo-lv .passo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 20px;
+            line-height: 1.3;
+            font-weight: bold;
+            border: 2px solid;
+        }
+
+        .ciclo-lv .prede {
+            background: #e5eef8;
+            color: #315c94;
+            border-color: #315c94;
+        }
+
+        .ciclo-lv .predatori {
+            background: #fbe9e6;
+            color: #ad3e33;
+            border-color: #ad3e33;
+        }
+
+        .ciclo-lv .passaggio {
+            background: #f5f2ec;
+            color: #344456;
+            border-color: #c8c1b8;
+        }
+
+        .ciclo-lv .freccia {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: bold 32px Arial, sans-serif;
+            color: #667789;
+        }
+
+        .ciclo-lv .centro {
+            grid-column: 2 / 5;
+            grid-row: 2 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 12px;
+            font-size: 26px;
+            font-style: italic;
+            color: #203247;
+        }
+    </style>
+
+    <div class="ciclo-lv">
+
+        <!-- Riga superiore -->
+        <div class="passo prede" style="grid-area:1/1;">
+            Più prede
+        </div>
+        <div class="freccia" style="grid-area:1/2;">→</div>
+
+        <div class="passo passaggio" style="grid-area:1/3;">
+            Più cibo per i predatori
+        </div>
+        <div class="freccia" style="grid-area:1/4;">→</div>
+
+        <div class="passo predatori" style="grid-area:1/5;">
+            Più predatori
+        </div>
+
+        <!-- Lato destro -->
+        <div class="freccia" style="grid-area:2/5;">↓</div>
+
+        <div class="passo passaggio" style="grid-area:3/5;">
+            Più prede vengono cacciate
+        </div>
+
+        <div class="freccia" style="grid-area:4/5;">↓</div>
+
+        <!-- Riga inferiore -->
+        <div class="passo prede" style="grid-area:5/5;">
+            Meno prede
+        </div>
+        <div class="freccia" style="grid-area:5/4;">←</div>
+
+        <div class="passo passaggio" style="grid-area:5/3;">
+            Meno cibo per i predatori
+        </div>
+        <div class="freccia" style="grid-area:5/2;">←</div>
+
+        <div class="passo predatori" style="grid-area:5/1;">
+            Meno predatori
+        </div>
+
+        <!-- Lato sinistro -->
+        <div class="freccia" style="grid-area:4/1;">↑</div>
+
+        <div class="passo passaggio" style="grid-area:3/1;">
+            Meno prede vengono cacciate
+        </div>
+
+        <div class="freccia" style="grid-area:2/1;">↑</div>
+
+        <!-- Centro -->
+        <div class="centro">
+            
+        </div>
+
+    </div>
+</section>
+
     <section class="slide small-text"><h2>Matematica nascosta, Alfred Lotka e Vito Volterra</h2>
         <div class="columns">
             <div style="text-align:right;">
@@ -340,7 +465,7 @@ window.MathJax = {
                 <p class="caption">Vito Volterra (1860–1940)</p>
             </div>
         </div>
-        <p><strong>Perché queste fluttuazioni?</strong> Studiando le popolazioni di pesci nell'Adriatico, nel 1926 <strong>Vito Volterra</strong> ottenne una serie di equazioni che riproducevano questo comportamento. Equazioni simili erano state ottenute in precedenza da <strong>Alfred Lotka</strong> per le reazioni chimiche.</p>
+        <p><strong>Che ingredienti entrano in gioco?</strong> Studiando le popolazioni di pesci nell'Adriatico, nel 1926 <strong>Vito Volterra</strong> ottenne una serie di equazioni che per questo fenomeno. Equazioni simili erano state ottenute in precedenza da <strong>Alfred Lotka</strong> per le reazioni chimiche.</p>
     </section>
 
    
