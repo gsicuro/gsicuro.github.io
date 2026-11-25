@@ -1272,7 +1272,7 @@ if (active) {
 
             <div class="gray-equation-formula">
                 \[
-                \frac{\partial S}{\partial t}
+                \frac{\partial\mathcal S}{\partial t}
                 =
                 \textcolor{#218066}{D_S\left(\frac{\partial^2\mathcal  S}{\partial x^2}+\frac{\partial^2\mathcal  S}{\partial y^2}\right)}
                 \;-\;
@@ -1320,56 +1320,506 @@ if (active) {
 </section>
 
 
+<section class="slide small-text" id="turing-instability">
+    <h2>Quando la diffusione casuale crea ordine: i <em>patterns</em> di Turing</h2>
+
+    <p>
+        Partiamo da uno stato quasi <strong>uniforme</strong>,
+        con piccolissime perturbazioni casuali. La presenza di <strong>diffusione</strong> fa una grande differenza! Uso \(r=0.060\) e \(k=0.062\).
+    </p>
+
+    <style>
+        .turing-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+            gap: clamp(8px, 1.5vh, 18px);
+        }
+
+        .turing-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(15px, 4vw, 65px);
+            width: 100%;
+            align-items: start;
+        }
+
+        .turing-case {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 9px;
+            min-width: 0;
+        }
+
+        .turing-case-title {
+            font-size: clamp(20px, 2.8vh, 28px);
+            font-weight: bold;
+            text-align: center;
+            color: #203247;
+        }
+
+        .turing-case canvas {
+            display: block;
+            width: min(35vh, 100%);
+            height: auto;
+            aspect-ratio: 1;
+            background: #faf8f5;
+            border: 2px solid #adb5bd;
+            border-radius: 6px;
+            image-rendering: pixelated;
+        }
+
+        .turing-parameters {
+            font-size: clamp(17px, 2.2vh, 23px);
+            text-align: center;
+            color: #445266;
+        }
+
+        .turing-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font: 17px Arial, sans-serif;
+        }
+
+        .turing-controls button {
+            background: #254c76;
+            color: white;
+            border: 0;
+            border-radius: 7px;
+            padding: 9px 16px;
+            cursor: pointer;
+        }
+
+        .turing-controls button:hover {
+            background: #3972a7;
+        }
+
+        .turing-controls button:disabled {
+            opacity: 0.45;
+            cursor: default;
+        }
+
+        .turing-controls [data-turing-start] {
+            background: #218066;
+        }
+
+        .turing-controls [data-turing-start]:hover {
+            background: #2c987b;
+        }
+
+        .turing-step {
+            min-width: 110px;
+            text-align: center;
+            color: #445266;
+        }
+
+        .turing-conclusion {
+            font-size: clamp(19px, 2.5vh, 27px);
+            font-style: italic;
+            color: #203247;
+            text-align: center;
+        }
+    </style>
+
+    <div class="turing-layout">
+
+        <div class="turing-comparison">
+
+            <div class="turing-case">
+                <div class="turing-case-title">
+                    Senza diffusione
+                </div>
+
+                <canvas data-turing-no
+                        width="140"
+                        height="140"></canvas>
+
+                <div class="turing-parameters">
+                    \(D_S=D_A=0\)
+                </div>
+            </div>
+
+            <div class="turing-case">
+                <div class="turing-case-title">
+                    Con diffusione
+                </div>
+
+                <canvas data-turing-yes
+                        width="140"
+                        height="140"></canvas>
+
+                <div class="turing-parameters">
+                    \(D_S=0.10,\quad D_A=0.02\)
+                </div>
+            </div>
+
+        </div>
+
+        <div class="turing-controls">
+
+            <button type="button" data-turing-start>
+                Avvia
+            </button>
+
+            <button type="button"
+                    data-turing-pause
+                    disabled>
+                Pausa
+            </button>
+
+            <button type="button" data-turing-reset>
+                Ricomincia
+            </button>
+
+            <span class="turing-step" data-turing-step>
+                Passi: 0
+            </span>
+
+        </div>
+
+        <div class="turing-conclusion">
+            La diffusione può amplificare le differenze,
+            anziché cancellarle.
+        </div>
+
+    </div>
+
+    <script>
+    (() => {
+        const slide = document.currentScript.closest('.slide');
+
+        const canvasNo = slide.querySelector('[data-turing-no]');
+        const canvasYes = slide.querySelector('[data-turing-yes]');
+
+        const ctxNo = canvasNo.getContext('2d');
+        const ctxYes = canvasYes.getContext('2d');
+
+        const startButton = slide.querySelector('[data-turing-start]');
+        const pauseButton = slide.querySelector('[data-turing-pause]');
+        const resetButton = slide.querySelector('[data-turing-reset]');
+        const stepLabel = slide.querySelector('[data-turing-step]');
+
+        // -------------------------------------------------
+        // PARAMETRI
+        // -------------------------------------------------
+
+        const N = 140;
+        const SIZE = N * N;
+
+        const R = 0.060;
+        const K = 0.062;
+
+        const DS = 0.10;
+        const DA = 0.02;
+
+        const DT = 1.0;
+
+        // Equilibrio omogeneo non banale
+        const S_EQ = 0.4560303134724235;
+        const A_EQ = 0.2675260753414311;
+
+        const NOISE = 0.002;
+
+        // Velocità dell'animazione
+        const STEPS_PER_FRAME = 12;
+        const FRAME_INTERVAL = 60;
+
+        // Palette coerente con le altre slide
+        const BG = [250, 248, 245];     // #faf8f5
+        const BLUE = [49, 92, 148];     // #315c94
+
+        // -------------------------------------------------
+        // SISTEMI
+        // -------------------------------------------------
+
+        function createSystem(ds, da) {
+            return {
+                ds,
+                da,
+                s: new Float32Array(SIZE),
+                a: new Float32Array(SIZE),
+                nextS: new Float32Array(SIZE),
+                nextA: new Float32Array(SIZE)
+            };
+        }
+
+        const withoutDiffusion = createSystem(0, 0);
+        const withDiffusion = createSystem(DS, DA);
+
+        // Vicini periodici
+        const left = new Int32Array(SIZE);
+        const right = new Int32Array(SIZE);
+        const up = new Int32Array(SIZE);
+        const down = new Int32Array(SIZE);
+
+        for (let y = 0; y < N; y++) {
+            for (let x = 0; x < N; x++) {
+                const i = y * N + x;
+
+                left[i] = y * N + (x + N - 1) % N;
+                right[i] = y * N + (x + 1) % N;
+                up[i] = ((y + N - 1) % N) * N + x;
+                down[i] = ((y + 1) % N) * N + x;
+            }
+        }
+
+        // -------------------------------------------------
+        // STATO DELLA SIMULAZIONE
+        // -------------------------------------------------
+
+        let steps = 0;
+        let running = false;
+        let started = false;
+        let wasVisible = false;
+
+        function updateButtons() {
+            startButton.disabled = started;
+
+            pauseButton.disabled = !started;
+            pauseButton.textContent =
+                running ? 'Pausa' : 'Riprendi';
+        }
+
+        // -------------------------------------------------
+        // INIZIALIZZAZIONE
+        // -------------------------------------------------
+
+        function reset() {
+            steps = 0;
+            running = false;
+            started = false;
+
+            // Stesso rumore nei due sistemi
+            for (let i = 0; i < SIZE; i++) {
+                const s0 = S_EQ +
+                    (Math.random() - 0.5) * NOISE;
+
+                const a0 = A_EQ +
+                    (Math.random() - 0.5) * NOISE;
+
+                withoutDiffusion.s[i] = s0;
+                withoutDiffusion.a[i] = a0;
+
+                withDiffusion.s[i] = s0;
+                withDiffusion.a[i] = a0;
+            }
+
+            updateButtons();
+            render();
+        }
+
+        // -------------------------------------------------
+        // EVOLUZIONE GRAY-SCOTT
+        // -------------------------------------------------
+
+        function evolve(system) {
+            const s = system.s;
+            const a = system.a;
+            const ns = system.nextS;
+            const na = system.nextA;
+
+            const ds = system.ds;
+            const da = system.da;
+
+            for (let i = 0; i < SIZE; i++) {
+                const S = s[i];
+                const A = a[i];
+
+                const reaction = S * A * A;
+
+                let lapS = 0;
+                let lapA = 0;
+
+                if (ds !== 0 || da !== 0) {
+                    const l = left[i];
+                    const r = right[i];
+                    const u = up[i];
+                    const d = down[i];
+
+                    lapS = s[l] + s[r] +
+                           s[u] + s[d] - 4 * S;
+
+                    lapA = a[l] + a[r] +
+                           a[u] + a[d] - 4 * A;
+                }
+
+                ns[i] = S + DT * (
+                    ds * lapS
+                    - reaction
+                    + R * (1 - S)
+                );
+
+                na[i] = A + DT * (
+                    da * lapA
+                    + reaction
+                    - (R + K) * A
+                );
+            }
+
+            system.s = ns;
+            system.a = na;
+
+            system.nextS = s;
+            system.nextA = a;
+        }
+
+        // -------------------------------------------------
+        // VISUALIZZAZIONE
+        // -------------------------------------------------
+
+        function draw(system, ctx) {
+            const image = ctx.createImageData(N, N);
+            const pixels = image.data;
+
+            for (let i = 0; i < SIZE; i++) {
+
+                const A = system.a[i];
+
+                // Valori vicini all'equilibrio: crema.
+                // Concentrazioni maggiori: blu intenso.
+                //
+                // Scala identica per entrambe le immagini.
+                const deviation = A - A_EQ;
+
+                const intensity = Math.max(
+                    0,
+                    Math.min(1,
+                        Math.tanh(Math.max(0, deviation) * 16)
+                    )
+                );
+
+                const p = i * 4;
+
+                pixels[p] = Math.round(
+                    BG[0] * (1 - intensity) +
+                    BLUE[0] * intensity
+                );
+
+                pixels[p + 1] = Math.round(
+                    BG[1] * (1 - intensity) +
+                    BLUE[1] * intensity
+                );
+
+                pixels[p + 2] = Math.round(
+                    BG[2] * (1 - intensity) +
+                    BLUE[2] * intensity
+                );
+
+                pixels[p + 3] = 255;
+            }
+
+            ctx.putImageData(image, 0, 0);
+        }
+
+        function render() {
+            draw(withoutDiffusion, ctxNo);
+            draw(withDiffusion, ctxYes);
+
+            stepLabel.textContent = 'Passi: ' + steps;
+        }
+
+        // -------------------------------------------------
+        // PULSANTI
+        // -------------------------------------------------
+
+        startButton.addEventListener('click', () => {
+            if (started) return;
+
+            started = true;
+            running = true;
+            updateButtons();
+        });
+
+        pauseButton.addEventListener('click', () => {
+            if (!started) return;
+
+            running = !running;
+            updateButtons();
+        });
+
+        resetButton.addEventListener('click', () => {
+            reset();
+        });
+
+        // -------------------------------------------------
+        // CICLO DI ANIMAZIONE
+        // -------------------------------------------------
+
+        setInterval(() => {
+            const visible =
+                slide.classList.contains('active');
+
+            // Quando si lascia la slide,
+            // la simulazione si ferma.
+            if (!visible) {
+                if (wasVisible) {
+                    running = false;
+                    updateButtons();
+                }
+
+                wasVisible = false;
+                return;
+            }
+
+            // Entrando nuovamente nella slide,
+            // ricomincia dallo stato iniziale.
+            if (!wasVisible) {
+                reset();
+                wasVisible = true;
+            }
+
+            if (!running) return;
+
+            for (let j = 0; j < STEPS_PER_FRAME; j++) {
+                evolve(withoutDiffusion);
+                evolve(withDiffusion);
+                steps++;
+            }
+
+            render();
+
+        }, FRAME_INTERVAL);
+
+        reset();
+    })();
+    </script>
+</section>
+
+
     <section class="slide">
         <h2>Un esperimento</h2>
-        <p>La competizione tra <strong>diffusione, autocatalisi, rifornimento e rimozione</strong> può produrre sorprendenti strutture spaziali. Facciamo qualche esperimento.</p>
-        <p>Assumiamo un tessuto quadrato. Il substrato riempie il tessuto, ma nella regione centrale è più diluito e sono presenti attivatori.</p>
+        <p>La competizione tra <strong>diffusione, autocatalisi, rifornimento e rimozione</strong> può quindi produrre sorprendenti strutture spaziali. Facciamo qualche esperimento guardando come una goccia di attivatori evolve in un substrato omogeneo.</p>
         <div class="center"><canvas class="seed-display" width="250" height="250" style="width:min(33vh,300px);aspect-ratio:1;border:2px solid #b1a7a0"></canvas></div>
-        <p>Concentriamoci sugli attivatori, che immaginiamo siano gli elementi colorati: <strong>dove il plot è scuro, ci sono attivatori.</strong> Come evolve la situazione?</p>
     </section>
 
     <section class="slide">
-        <h2>Prova zero: ignoriamo l'interazione</h2>
-        <div class="simrow">
-            <canvas data-gray="0" width="160" height="160"></canvas>
-            <div class="controlpanel">
-            <div class="metric">f = 0.030 · k = 0.056<br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
-            <p class="note">Reazione \[S + 2A \to 3A\] <strong>disattivata</strong>: solo diffusione, rifornimento e rimozione.</p>
-            <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div></div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>Prima prova: accendiamo l'interazione</h2>
+        <h2>Prima prova</h2>
         <div class="simrow">
             <canvas data-gray="1" width="160" height="160"></canvas>
             <div class="controlpanel">
-            <div class="metric">f = 0.030 · k = 0.056<br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <div class="metric">r = 0.030 · k = 0.056<br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
             <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
             </div>
         </div>
     </section>
     
     <section class="slide">
-        <h2>Seconda prova: acceleriamo la disattivazione</h2>
+        <h2>Seconda prova: un rifornimento più basso</h2>
         <div class="simrow">
             <canvas data-gray="2" width="160" height="160"></canvas>
             <div class="controlpanel">
-            <div class="metric">f = 0.030 · <strong>k = 0.060</strong><br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
-            <p class="note">Il tasso di disattivazione degli attivatori è leggermente <strong>aumentato</strong>.</p>
+            <div class="metric">r = 0.030 · <strong>k = 0.060</strong><br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
+            <p class="note">Il tasso di rifornimento del substrato è <strong>abbassato</strong>.</p>
             <div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div>
             </div>
         </div>
-    </section>
-    
-    <section class="slide">
-        <h2>Terza prova: rallentiamo il rifornimento</h2>
-        <div class="simrow">
-            <canvas data-gray="3" width="160" height="160"></canvas>
-            <div class="controlpanel">
-            <div class="metric"><strong>f = 0.028</strong> · k = 0.056</strong><br>D<sub>S</sub> = 0.10 · D<sub>A</sub> = 0.05</div>
-            <p class="note">Il tasso di rifornimento del substrato è leggermente <strong>ridotto</strong>.
-            </p><div class="metric" data-time>Passi: 0</div><div class="controls-inline"><button data-action="toggle">Pausa</button><button data-action="reset">Ricomincia</button></div></div></div>
     </section>
 
 
@@ -1462,6 +1912,9 @@ if (active) {
         </div>
     </div>
 </section>
+
+
+
     <section class="slide section-slide">
         <div class="eyebrow">Parte terza</div>
         <h1>Ritmi e popolazioni</h1>
@@ -1809,9 +2262,9 @@ class GrayScott {
 
         const presets = [
             {f:0.030, k:0.056, reaction:false},
-            {f:0.030, k:0.056, reaction:true},
-            {f:0.030, k:0.060, reaction:true},
-            {f:0.028, k:0.056, reaction:true}
+            {f:0.060, k:0.062, reaction:true},
+            {f:0.030, k:0.062, reaction:true},
+            {f:0.060, k:0.065, reaction:true}
         ];
 
         const p = presets[mode] ?? presets[1];
@@ -1830,7 +2283,7 @@ class GrayScott {
 
         if (metric) {
             metric.innerHTML =
-                `f = ${this.f.toFixed(3)} · k = ${this.k.toFixed(3)}<br>` +
+                `r = ${this.f.toFixed(3)} · k = ${this.k.toFixed(3)}<br>` +
                 `D<sub>S</sub> = ${this.ds.toFixed(2)} · D<sub>A</sub> = ${this.da.toFixed(2)}`;
         }
 
