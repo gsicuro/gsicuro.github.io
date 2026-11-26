@@ -53,6 +53,18 @@
     font-size: clamp(22px, 3vh, 34px) !important;
     line-height: 1.35;
 }
+.slide.slide-full-image {
+    padding: 0;
+    inset: 0;
+    overflow: hidden;
+    background: black;
+}
+.slide.slide-full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 /* Le formule MathJax conservano dimensioni leggibili anche in proiezione. */
 .equation mjx-container[display="true"]{margin:.12em 0!important;overflow:visible}
 .equation mjx-container{max-width:100%}
@@ -133,7 +145,7 @@ window.MathJax = {
         <div class="eyebrow">Parte prima</div>
         <h1>La matematica dei <em>patterns</em></h1>
     </section>
-    
+
     <section class="slide small-text">
         <h2><em>L'origine della tigre</em></h2>
         <div class="columns two-thirds">
@@ -146,10 +158,15 @@ window.MathJax = {
             </div>
         </div>
     </section>
+
+    <section class="slide">
+        <h2><em>The Home Version</em></h2>
+        <img src="tabby2.png" alt="Soriano" style="width:100%;object-fit:contain;">
+    </section>
     
     <section class="slide small-text">
-        <h2>La strana geometria</h2>
-        <p>Le strisce della tigre, della vespa o della zebra, o la geometria delle macchie del giaguaro o del leopardo, sembrano prodotte da un artista: da qui i miti, i <em>pourquoi-tales</em>.</p>
+        <h2>Una strana geometria</h2>
+        <p>I disegni sul manto dei gatti, le strisce della tigre, della vespa o della zebra, o la geometria delle macchie del giaguaro o del leopardo, sembrano prodotte da un artista: da qui i miti, i <em>pourquoi-tales</em>.</p>
         <div class="columns" style="display:flex;gap:20px;align-items:center;"><div style="flex:1;text-align:center;"><img src="puffer2.png" alt="Pesce palla" style="width:100%;height:40vh;object-fit:contain;"></div><div style="flex:1;text-align:center;"><img src="sgombro.png" alt="Sgombro" style="width:100%;height:50vh;object-fit:contain;"></div></div>
         <p>Eppure sappiamo che non è esattamente così. Miliardi di singole <strong>cellule</strong> agiscono in base a stimoli <strong>locali</strong> senza poter <em>vedere</em> l'animale nel suo complesso. Una certa coordinazione <strong>emerge</strong> dando vita a geometrie inattese. Come è possibile?</p>
     </section>
