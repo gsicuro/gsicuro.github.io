@@ -1331,13 +1331,13 @@ if (active) {
 
             <div class="gray-equation-formula">
                 \[
-                \frac{\partial\mathcal S}{\partial t}
+                \frac{\partial\mathcal S(x,y,t)}{\partial t}
                 =
-                \textcolor{#218066}{D_S\left(\frac{\partial^2\mathcal  S}{\partial x^2}+\frac{\partial^2\mathcal  S}{\partial y^2}\right)}
+                \textcolor{#218066}{D_S\left(\frac{\partial^2\mathcal  S(x,y,t)}{\partial x^2}+\frac{\partial^2\mathcal  S(x,y,t)}{\partial y^2}\right)}
                 \;-\;
-                \textcolor{#9B59B6}{\mathcal S\mathcal A^2}
+                \textcolor{#9B59B6}{\mathcal S(x,y,t)\mathcal A(x,y,t)^2}
                 \;+\;
-                \textcolor{#ad3e33}{r(1-\mathcal S)}
+                \textcolor{#ad3e33}{r(1-\mathcal S(x,y,t))}
                 \]
             </div>
         </div>
@@ -1349,13 +1349,13 @@ if (active) {
 
             <div class="gray-equation-formula">
                 \[
-                \frac{\partial \mathcal A}{\partial t}
+                \frac{\partial \mathcal A(x,y,t)}{\partial t}
                 =
-                \textcolor{#218066}{D_A\left(\frac{\partial^2\mathcal  A}{\partial x^2}+\frac{\partial^2\mathcal  A}{\partial y^2}\right)}
+                \textcolor{#218066}{D_A\left(\frac{\partial^2\mathcal  A(x,y,t)}{\partial x^2}+\frac{\partial^2\mathcal  A(x,y,t)}{\partial y^2}\right)}
                 \;+\;
-                \textcolor{#9B59B6}{\mathcal S\mathcal A^2}
+                \textcolor{#9B59B6}{\mathcal S(x,y,t)\mathcal A(x,y,t)^2}
                 \;-\;
-                \textcolor{#315c94}{k\mathcal A}
+                \textcolor{#315c94}{k\mathcal A(x,y,t)}
                 \]
             </div>
         </div>
